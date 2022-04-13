@@ -1,4 +1,9 @@
+[<img align="right" src=images/BAS_logo_colour.jpg width=350px>](https://bas.ac.uk/ai)
+[<img align="left" src=images/cambridge_university2.svg width=300px>](https://ai4er-cdt.esc.cam.ac.uk/)
+<br/>
+
 # Antarctic-Food-Optimisation
+
 <h1>Optimising remote field station food supplies for the British Antarctic Survey</h1>
 
 Optimising logistics operations has a crucial impact on the overall carbon emissions entailed when 
