@@ -1,39 +1,32 @@
-% Use this editor as a MiniZinc scratch book
-enum ingredients = {rice, beans, tomatoes, peppers, cheese, beef, mushrooms, paprika, wine, basil, bread, eggs};
+enum ingredients;
+enum meals;
+enum people;
+int: numPeople;
+array[meals, ingredients] of bool: mealIngredients;
+array[people, ingredients] of bool: eats;
 
-enum meals = {chilli, risotto, shakshuka, soup, omelette};
+array[people] of people: guests = people;
+array[1..numPeople] of var meals: servedMeals;
 
-array[meals, ingredients] of bool: mealIngredients = [|
-  true, true, true, false, false, true, false, true, true, false,       
-   false, false
-  |true, false, true, false, true, false, true, false, true, true,
-   false, false
-  |false, false, true, true, true, false, false, true, false, true,
-   false, true
-  |false, false, true, false, false, false, true, false, false, true,
-   true, false
-  |false, false, true, true, false, false, true, false, false, false,
-   false, true   
-  |]; 
-  
-enum people = {Sophie, HandsomeScientist, ToughHandyman, SturdyPilot, ManlyCook};
+% Make sure everyone can eat the ingredients.
+constraint forall(i in 1..numPeople)
+          (forall(item in ingredients)
+          (mealIngredients[servedMeals[i], item] <= 
+           eats[people[i], item]));
 
-% Sophie is vegetarian and allergic to milk.
-% HandsomeScientist is vegan.
-% ToughHandyman doesn't like spicy food.
-% SturdyPilot is teetotal and allergic to gluten.
-% ManlyCook eats everything.     
-array [people, ingredients] of bool: eats = [|
-  true, true, true, true, false, false, true, true, true, true, true, 
-  true
-  |true, true, true, true, false, false, true, true, true, true,
-   true, false
-  |true, true, true, false, true, true, true, false, true, true,
-   true, true
-  |true, true, true, true, true, true, true, true, false, true,
-   false, true
-  |true, true, true, true, true, true, true, true, true, true,
-   true, true|];
+% We don't want to make the cook prepare lots of different recipes.
+include "global_cardinality_fn.mzn";
+array[1..numPeople] of var int: occurrences = 
+  global_cardinality(servedMeals, [i | i in 1..numPeople]);
+var int: numRecipes = count(o in occurrences)(o > 0);
+
+solve minimize numRecipes;
+
+%output["\(guests) \n \(servedMeals) \n \(numRecipes)"];
+output["\(guests[i]) will be served \(servedMeals[i]).\n" | i in people];
+
+   
+
 
 
 

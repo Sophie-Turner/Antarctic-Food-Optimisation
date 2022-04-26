@@ -42,4 +42,9 @@ waste should be minimized.
 how many servings of each meal should be offered to the group?
 
 
+contains    eats    valid
+0		0       1
+0		1	  1
+1		0	  0
+1		1	  1
 
