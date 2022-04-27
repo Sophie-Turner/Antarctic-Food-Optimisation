@@ -1,0 +1,75 @@
+ingredients = {wheat, tomatoes, cheese, mushrooms, cream, potato, chicken, herbs, spices, yoghurt, aubergine, beef, onion, beans, olives, lettuce};
+
+meals = {margarita, mushroomSoup, chickenCurry, moussaka, ratatouille, jacketSpudBeans, oliveSalad, nothing};
+
+numMeals = 8;
+
+mealIngredients = [|
+    true, true, true, false, false, false, false, true, false,           
+    false, false, false, false, false, false, false|
+    false, false, false, true, true, true, false, true, false,           
+    false, false, false, true, false, false, false|
+    false, true, false, false, false, true, true, false, true,           
+    true, false, false, true, false, false, false|
+    false, true, false, false, false, true, false, true, true,           
+    false, true, true, true, false, false, false|
+    false, true, false, true, false, false, false, true, false,           
+    false, true, false, true, false, false, false|
+    false, false, false, false, false, true, false, false, false,           
+    false, false, false, false, true, false, true|
+    false, true, false, false, false, false, false, true, false,           
+    false, false, false, true, false, true, true|
+    false, false, false, false, false, false, false, false, false,           
+    false, false, false, false, false, false, false|
+  |]; 
+  
+people = {ArrogantArchitect, BurlyBuilder, CuddlyCook, DramaticDentist, EagerEndocrinologist, FussyFarmer, GrumpyGrocer, HappyHandyman, InventiveIntern, JovialJournalist, KinkyKickboxer, LethargicLocksmith, MoodyManager, NormalNurse, OldOptician, PeculiarPilot, RiskyRobber, ShyScientist, TallTailor, UnpleasantUndertaker, VigourousVicar, WiseWizard};
+
+numPeople = 22;
+    
+eats = [|
+  true, true, true, true, true, true, true, true, true, true, true, 
+  true, true, true, true, true|
+  true, true, true, true, true, false, true, true, true, true, true, 
+  true, true, true, false, false|
+  false, true, true, true, true, true, true, true, true, true, true, 
+  true, true, true, true, true|
+  true, false, false, true, true, true, true, true, true, true, true, 
+  true, true, false, true, true|
+  true, true, true, true, true, true, true, false, true, true, true, 
+  true, true, true, true, false|
+  false, true, true, true, false, false, true, true, false, true,
+  true, true, true, true, true, true|
+  false, true, true, false, true, true, false, true, false, true,
+  true, true, true, false, true, true|
+  true, true, true, true, true, true, true, true, true, true, true, 
+  true, true, true, true, true|
+  true, true, true, true, true, true, true, true, true, true, true, 
+  true, true, true, false, true|
+  true, true, false, true, true, false, true, true, true, true, true, 
+  true, true, true, true, true|
+  true, true, true, true, true, true, true, true, true, false, false, 
+  false, true, true, true, true|
+  true, true, true, false, false, false, false, true, true, true,
+  true, true, true, true, true, true|
+  true, true, true, true, false, true, true, true, true, true, true, 
+  true, false, false, true, false|
+  true, true, false, false, true, false, true, true, false, false,
+  true, true, true, true, true, true|
+  true, true, true, true, true, true, true, true, true, true, true, 
+  true, true, true, true, true|
+  true, true, true, true, true, false, true, true, true, true, true, 
+  true, true, true, true, true|
+  true, true, true, true, true, false, true, true, true, true, true, 
+  false, true, true, true, true|
+  true, true, false, true, true, false, true, true, true, true, true, 
+  true, true, false, true, true|
+  true, true, true, true, true, true, false, true, false, false,
+  false, true, true, true, true, true|
+  true, true, true, true, true, true, true, true, true, true, true, 
+  true, true, true, true, true|
+  true, true, true, true, true, true, true, false, true, true, true, 
+  true, true, true, true, true|
+  true, true, true, false, false, true, true, true, false, true,  
+  true, true, true, true, true, true|
+  |];

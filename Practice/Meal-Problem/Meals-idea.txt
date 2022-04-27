@@ -1,4 +1,4 @@
-banquet problem 1:
+meal problem 1:
 
 meal data:
 list of ingredients
@@ -17,7 +17,7 @@ minimise total meat *(AND maximise total happiness)
 
 ---------------------------------------------------------
 
-Banquet problem 2:
+meal problem 2:
 
 meal data:
 list of meals
