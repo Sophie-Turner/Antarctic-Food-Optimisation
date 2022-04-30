@@ -2,13 +2,21 @@ enum ingredients;
 % A null ingredient is needed for static 2d array placeholders.
 ingredients: nothing;
 
-array[ingredients] of float: ingredientsCost;
+set of ingredients: containsMeat;
+set of ingredients: containsMilk;
+set of ingredients: containsGluten;
+set of ingredients: containsSugar;
+set of ingredients: containsEgg;
+
+array[ingredients] of float: ingredientsBuyCost;
+array[ingredients] of float: ingredientsStorageCost;
 
 enum meals;
 int: numMeals = length(meals);
 int: maxIngredients;
 
-constraint assert(length(ingredientsCost) = length(ingredients), "Each ingredient needs an associated cost.");
+constraint assert(length(ingredientsBuyCost) = length(ingredients), "Each ingredient needs an associated cost.");
+constraint assert(length(ingredientsStorageCost) = length(ingredients), "Each ingredient needs an associated cost.");
 
 array[meals, 1..maxIngredients] of ingredients: mealIngredients;
 % add amounts of igredient required per meal to calculate cost and how much ingredient required.
@@ -43,7 +51,8 @@ var int: numRecipes = count(o in occurrences)(o > 0);
 % find cost of that ingredient. 
 var float: totalCost = sum(person in people,
                        j in 1..maxIngredients)
-                       (ingredientsCost[mealIngredients[servedMeals[person], j]] 
+                       ((ingredientsBuyCost[mealIngredients[servedMeals[person], j]] 
+                        + ingredientsStorageCost[mealIngredients[servedMeals[person], j]]) 
                         * mealIngredientsAmounts[servedMeals[person], j]);
 
 solve minimize totalCost;

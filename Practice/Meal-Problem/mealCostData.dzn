@@ -1,0 +1,49 @@
+ingredients = {null, noodles, mushrooms, peppers, broccoli, peas, soySauce, flour, cheese, tomatoes, pepperoni, chicken, cream};
+nothing = null;
+
+containsMeat = {pepperoni, chicken};
+containsMilk = {cheese, cream};
+containsGluten = {flour, noodles};
+containsSugar = {};
+containsEgg = {noodles};
+
+% cost in pounds sterling per 100g
+ingredientsBuyCost = [0.00, 0.20, 0.50, 1.00, 1.00, 0.50, 1.00, 1.00, 0.50, 0.20, 1.00, 1.00, 0.50];
+ingredientsStorageCost = [0.00, 0.20, 0.20, 0.10, 1.00, 1.00, 0.10, 1.00, 0.10, 1.00, 0.50, 1.00, 1.00];
+
+meals = {vegChowMein, pepperoniPizza, chickenNoodles, mushroomSoup, kievs};
+
+maxIngredients = 5;
+
+mealIngredients = 
+     [|noodles, mushrooms, peppers, broccoli, soySauce
+     |flour, cheese, pepperoni, tomatoes, mushrooms
+     |noodles, chicken, peas, soySauce, null
+     |mushrooms, cream, null, null, null
+     |chicken, flour, peas, broccoli, null|];
+
+% amount of ingredient in meal x 100g
+mealIngredientsAmounts = 
+    [|1.0, 1.0, 0.5, 0.5, 0.0|
+      2.0, 2.0, 2.0, 2.0, 0.5|
+      2.0, 0.5, 2.0, 0.0, 0.0|
+      1.0, 1.0, 1.0, 0.0, 0.0|
+      2.0, 0.5, 1.0, 0.5, 0.0|];
+          
+% later add storage cost and purchase cost of ingredients and add to ingredientsCost.
+          
+people = {Fairy, Vampire, Zombie, Witch, Wizard, Angel, Mermaid, Elf, Giant, Goblin};
+
+maxRefusals = 2;
+
+doesNotEat =
+     [|pepperoni, chicken|
+     cream, null|
+     null, null|
+     flour, noodles|
+     cream, chicken|
+     null, null|
+     null, null|
+     mushrooms, null|
+     mushrooms, cream|
+     broccoli, soySauce|];

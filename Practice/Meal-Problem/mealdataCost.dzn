@@ -2,7 +2,8 @@ ingredients = {null, flour, sugar, coconutFat, oatMilk, eggs, chocolate, strawbe
 nothing = null;
 
 % cost in pounds sterling per 100g
-ingredientsCost = [0.00, 0.20, 0.50, 1.00, 1.00, 0.50, 1.00, 1.00, 0.50, 0.20];
+ingredientsBuyCost = [0.00, 0.20, 0.50, 1.00, 1.00, 0.50, 1.00, 1.00, 0.50, 0.20];
+ingredientsStorageCost = [0.00, 0.20, 0.20, 0.10, 1.00, 1.00, 0.10, 1.00, 0.10, 0.20];
 
 meals = {lemonPancake, chocolateCake, strawberryCrumble, bananaMousse};
 
@@ -14,7 +15,6 @@ mealIngredients =
      sugar, flour, strawberries, null, null|
      sugar, eggs, banana, null, null|];
 
-% add amounts of igredient required per meal to calculate cost and how much ingredient required.
 % amount of ingredient in meal x 100g
 mealIngredientsAmounts = 
     [|1.0, 1.0, 0.5, 0.5, 0.0|
