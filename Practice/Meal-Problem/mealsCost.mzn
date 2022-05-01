@@ -1,12 +1,9 @@
 enum ingredients;
 % A null ingredient is needed for static 2d array placeholders.
-ingredients: nothing;
+ingredients: notIngredient;
 
-set of ingredients: containsMeat;
-set of ingredients: containsMilk;
-set of ingredients: containsGluten;
-set of ingredients: containsSugar;
-set of ingredients: containsEgg;
+enum contains;
+contains: nothing;
 
 array[ingredients] of float: ingredientsBuyCost;
 array[ingredients] of float: ingredientsStorageCost;
@@ -14,11 +11,13 @@ array[ingredients] of float: ingredientsStorageCost;
 enum meals;
 int: numMeals = length(meals);
 int: maxIngredients;
+int: maxContains;
 
 constraint assert(length(ingredientsBuyCost) = length(ingredients), "Each ingredient needs an associated cost.");
 constraint assert(length(ingredientsStorageCost) = length(ingredients), "Each ingredient needs an associated cost.");
 
 array[meals, 1..maxIngredients] of ingredients: mealIngredients;
+array[meals, 1..maxContains] of contains: mealContains;
 % add amounts of igredient required per meal to calculate cost and how much ingredient required.
 array[meals, 1..maxIngredients] of float: mealIngredientsAmounts;
      
@@ -26,7 +25,8 @@ enum people;
 int: numPeople = length(people);
 int: maxRefusals;
 
-array[people, 1..maxRefusals] of ingredients: doesNotEat;
+array[people, 1..maxRefusals] of contains: doesNotEat;
+%array[people, 1..maxRefusals] of ingredients: doesNotEat; 
  
 array[people] of var meals: servedMeals;
 
@@ -35,9 +35,9 @@ constraint forall(person in people)
                  (forall(i in 1..maxRefusals 
                  % ignore null placeholders.
                   where doesNotEat[person, i] != nothing)
-                 (forall(j in 1..maxIngredients)
+                 (forall(j in 1..maxContains)
                  (doesNotEat[person, i] != 
-                  mealIngredients[servedMeals[person], j])));
+                  mealContains[servedMeals[person], j])));
            
 % We don't want to make the cook prepare lots of different recipes.
 include "global_cardinality_fn.mzn";
@@ -54,6 +54,8 @@ var float: totalCost = sum(person in people,
                        ((ingredientsBuyCost[mealIngredients[servedMeals[person], j]] 
                         + ingredientsStorageCost[mealIngredients[servedMeals[person], j]]) 
                         * mealIngredientsAmounts[servedMeals[person], j]);
+
+% Include environmental impact.
 
 solve minimize totalCost;
 
