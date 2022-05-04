@@ -26,7 +26,7 @@ int: numPeople = length(people);
 int: maxRefusals;
 
 array[people, 1..maxRefusals] of contains: doesNotEat;
-%array[people, 1..maxRefusals] of ingredients: doesNotEat; 
+%array[people, 1..maxRefusals] of ingredients: doesNotEat;  
  
 array[people] of var meals: servedMeals;
 
