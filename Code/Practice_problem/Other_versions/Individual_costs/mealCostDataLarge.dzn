@@ -141,4 +141,7 @@ doesNotEat =
      milk, none|
      egg, none|];
      
+% contains = {none, meat, milk, gluten, egg};
+numRefusals = [36, 18, 18, 9, 18]; % num people who do not eat categories. None means they eat everything.
+     
      

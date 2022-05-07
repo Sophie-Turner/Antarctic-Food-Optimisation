@@ -1,0 +1,52 @@
+ingredients = {null, noodles, mushrooms, peppers, broccoli, peas, soySauce, flour, cheese, tomatoes, pepperoni, chicken, cream, sugar, coconutFat, oatMilk, eggs, chocolate, strawberries, banana, lemon};
+notIngredient = null;
+
+nothing = none;
+
+% cost in pounds sterling per 100g
+ingredientsBuyCost = [0.00, 0.20, 0.50, 1.00, 1.00, 0.50, 1.00, 1.00, 0.50, 0.20, 1.00, 1.00, 0.50, 1.00, 2.00, 2.00, 0.50, 2.00, 2.00, 0.50, 0.50];
+ingredientsStorageCost = [0.00, 0.20, 0.20, 0.10, 1.00, 1.00, 0.10, 1.00, 0.10, 1.00, 0.50, 1.00, 1.00, 0.20, 0.10, 1.00, 1.00, 0.10, 1.00, 0.50, 0.50];
+
+meals = {vegChowMein, pepperoniPizza, chickenNoodles, mushroomSoup, kievs, lemonPancake, chocolateCake, strawberryCrumble, bananaMousse};
+
+maxIngredients = 5;
+mealIngredients = 
+     [|noodles, mushrooms, peppers, broccoli, soySauce
+     |flour, cheese, pepperoni, tomatoes, mushrooms
+     |noodles, chicken, peas, soySauce, null
+     |mushrooms, cream, null, null, null
+     |chicken, flour, peas, broccoli, null
+     |flour, oatMilk, eggs, lemon, null
+     |flour, sugar, coconutFat, eggs, chocolate
+     |sugar, flour, strawberries, null, null
+     |sugar, eggs, banana, null, null|];
+     
+maxContains = 2;     
+mealContains = [|gluten, none|
+                 meat, milk|
+                 meat, gluten|
+                 milk, none|
+                 meat, none|
+                 egg, gluten|
+                 gluten, sugars|
+                 sugars, gluten|
+                 sugars, egg|];
+
+% amount of ingredient in meal x 100g
+mealIngredientsAmounts = 
+    [|1.0, 1.0, 0.5, 0.5, 0.0|
+      2.0, 2.0, 2.0, 2.0, 0.5|
+      2.0, 0.5, 2.0, 0.0, 0.0|
+      1.0, 1.0, 1.0, 0.0, 0.0|
+      2.0, 0.5, 1.0, 0.5, 0.0|
+      1.0, 1.0, 0.5, 0.5, 0.0|
+      2.0, 2.0, 2.0, 0.5, 1.0|
+      1.0, 1.0, 1.0, 0.0, 0.0|
+      2.0, 2.0, 0.5, 0.0, 0.0|];
+            
+numPeople = 90;
+     
+% contains = {none, meat, milk, gluten, egg, sugars};
+numRefusals = [36, 18, 18, 9, 18, 9]; % num people who do not eat categories. None means they eat everything.
+     
+     
