@@ -1,0 +1,58 @@
+ingredients = {null, noodlesDried, mushroomsTinned, peppersFrozen, broccoliFrozen, peasFrozen, soySauce, flour, cheeseFrozen, tomatoesTinned, pepperoniFrozen, chickenFrozen, creamPowder, rice, potatoesFresh, wine, beansTinned, oil, chipsFrozen, fishFrozen, eggsFresh, quornFrozen, porkFrozen, butterFrozen, milkPowder, beefFrozen, lambFrozen};
+notIngredient = null;
+
+nothing = none;
+
+% Costs in pennies per 100g or 100ml of ingredient.
+% Frozen or tinned/dry.
+% By sea (SDA from UK) or air (Twin Otter from South America or South Atlantic).
+costSources = {purchase, transport, storage, cooking};
+costs = [|0,0,0,0 | 40,0,1,0 | 30,0,1,0 | 30,0,2,0 | 10,0,2,0 |
+          30,0,2,0 | 100,0,1,0 | 10,0,1,0 | 60,0,2,0 | 20,0,1,0 | 
+          70,0,2,0 | 90,0,2,0 | 40,0,1,0 | 20,0,1,0 | 10,0,1,0 |     
+          80,0,1,0 | 8,0,1,0 | 13,0,1,0 | 17,0,2,0 | 70,0,2,0 | 
+          36,0,1,0 | 59,0,2,0 | 57,0,2,0 | 70,0,2,0 | 89,0,1,0 |
+          40,0,2,0 | 80,0,2,0|];
+
+% Greenhouse gas emissions associated with 100g of igredient.
+%emissionSources = {production, transport, storage, cooking};
+%emissions = [];
+
+% Grams of packaging per 100g of ingredient.
+%packagingWaste = [];
+
+% Amount of nutrients in 100g of ingredient.
+%nutrients = {calories, carbohydrate, fat, fibre, micronutrients, protein, vitaminD};
+%nutrition = [];
+
+meals = {vegChowMein, pepperoniPizza, chickenNoodles, mushroomSoup, kievs};
+
+numOptions = 3; % 3 choices of meal will be served at the buffet bar.
+
+maxIngredients = 5;
+mealIngredients = 
+     [|noodlesDried, mushroomsTinned, peppersFrozen, broccoliFrozen, soySauce
+     |flour, cheeseFrozen, pepperoniFrozen, tomatoesTinned, mushroomsTinned
+     |noodlesDried, chickenFrozen, peasFrozen, soySauce, null
+     |mushroomsTinned, creamPowder, null, null, null
+     |chickenFrozen, flour, peasFrozen, broccoliFrozen, null|];
+     
+maxContains = 2;     
+mealContains = [|gluten, none|
+                 meat, milk|
+                 meat, gluten|
+                 milk, none|
+                 meat, none|];
+
+% amount of ingredient in meal x 100g.
+mealIngredientsAmounts = 
+    [|2, 2, 1, 1, 0|
+      2, 2, 2, 2, 1|
+      2, 1, 2, 0, 0|
+      1, 1, 1, 0, 0|
+      2, 1, 1, 1, 0|];
+          
+numPeople = 10;
+     
+% contains = {none, meat, milk, gluten, egg, sugars};
+numRefusals = [4, 3, 1, 1, 2, 0]; % num people who do not eat categories. None means they eat everything.
