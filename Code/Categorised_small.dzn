@@ -1,0 +1,38 @@
+ingredients = {null, noodles, mushrooms, peppers, broccoli, peas, soySauce, flour, cheese, tomatoes, pepperoni, chicken, cream};
+notIngredient = null;
+
+nothing = none;
+
+% cost in pennies per 10g
+ingredientsBuyCost = [0, 2, 5, 10, 10, 5, 10, 10, 5, 2, 10, 10, 5];
+ingredientsStorageCost = [0, 2, 2, 1, 10, 10, 1, 10, 1, 10, 5, 10, 10];
+
+meals = {vegChowMein, pepperoniPizza, chickenNoodles, mushroomSoup, kievs};
+
+maxIngredients = 5;
+mealIngredients = 
+     [|noodles, mushrooms, peppers, broccoli, soySauce
+     |flour, cheese, pepperoni, tomatoes, mushrooms
+     |noodles, chicken, peas, soySauce, null
+     |mushrooms, cream, null, null, null
+     |chicken, flour, peas, broccoli, null|];
+     
+maxContains = 2;     
+mealContains = [|gluten, none|
+                 meat, milk|
+                 meat, gluten|
+                 milk, none|
+                 meat, none|];
+
+% amount of ingredient in meal x 10g
+mealIngredientsAmounts = 
+    [|10, 10, 5, 5, 0|
+      20, 20, 20, 20, 5|
+      20, 5, 20, 0, 0|
+      10, 10, 10, 0, 0|
+      20, 5, 10, 5, 0|];
+          
+numPeople = 10;
+     
+% contains = {none, meat, milk, gluten, egg, sugars};
+numRefusals = [4, 3, 1, 1, 2, 0]; % num people who do not eat categories. None means they eat everything.
