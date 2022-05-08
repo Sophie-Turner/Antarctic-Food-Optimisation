@@ -3,9 +3,9 @@ notIngredient = null;
 
 nothing = none;
 
-% cost in pennies per 10g
-ingredientsBuyCost = [0, 2, 5, 10, 10, 5, 10, 10, 5, 2, 10, 10, 5];
-ingredientsStorageCost = [0, 2, 2, 1, 10, 10, 1, 10, 1, 10, 5, 10, 10];
+% cost in pennies per 100g or 100ml
+ingredientsBuyCost = [0, 40, 30, 30, 10, 30, 100, 10, 60, 20, 70, 90, 40];
+ingredientsStorageCost = [0, 0, 0, 2, 2, 2, 0, 0, 2, 0, 2, 2, 0]; % frozen or tinned/dry
 
 meals = {vegChowMein, pepperoniPizza, chickenNoodles, mushroomSoup, kievs};
 
@@ -24,13 +24,13 @@ mealContains = [|gluten, none|
                  milk, none|
                  meat, none|];
 
-% amount of ingredient in meal x 10g
+% amount of ingredient in meal x 100g
 mealIngredientsAmounts = 
-    [|10, 10, 5, 5, 0|
-      20, 20, 20, 20, 5|
-      20, 5, 20, 0, 0|
-      10, 10, 10, 0, 0|
-      20, 5, 10, 5, 0|];
+    [|2, 2, 1, 1, 0|
+      2, 2, 2, 2, 1|
+      2, 1, 2, 0, 0|
+      1, 1, 1, 0, 0|
+      2, 1, 1, 1, 0|];
           
 numPeople = 10;
      
