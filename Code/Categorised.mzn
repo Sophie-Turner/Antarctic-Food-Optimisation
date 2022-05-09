@@ -10,6 +10,8 @@ array[ingredients, costSources] of int: costs;
 
 % Assumed that all meals contain enough vitamins and minerals apart from vitamin D which can be lacking in this environment. 
 enum nutrients = {calories, carbohydrate, fat, fibre, protein};
+% Amount of each nutrient in 100g of ingredient.
+array[ingredients, nutrients] of int: nutrition;
 
 enum meals;
 int: numMeals = length(meals);
@@ -37,6 +39,7 @@ int: physicalMultiplier = 1;
 % Men need 25% more food than women need.
 int: numMen;
 float: menMultiplier = 0.25;
+
 
 array[nutrients] of var float: totalNutrientsRequired;
 constraint forall(i in nutrients)

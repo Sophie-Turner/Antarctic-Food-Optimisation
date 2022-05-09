@@ -1,4 +1,16 @@
 ingredients = {null, noodlesDried, mushroomsTinned, peppersFrozen, broccoliFrozen, peasFrozen, soySauce, flour, cheeseFrozen, tomatoesTinned, pepperoniFrozen, chickenFrozen, creamPowder, rice, potatoesFresh, wine, beansTinned, oil, chipsFrozen, fishFrozen, eggsFresh, quornFrozen, porkFrozen, butterFrozen, milkPowder, beefFrozen, lambFrozen};
+
+% base carbs
+ingredients = {noodlesDried, flour, rice, chipsFrozen};
+% liquids
+ingredients = {soySauce, wine, oil};
+% veg
+ingredients = {mushroomsTinned, peppersFrozen, broccoliFrozen, peasFrozen, tomatoesTinned, potatoesFresh, beansTinned};
+% non-meat animal products
+ingredients = {cheeseFrozen, creamPowder, eggsFresh, butterFrozen, milkPowder;
+% meats
+ingredients = {pepperoniFrozen, chickenFrozen, fishFrozen, quornFrozen, porkFrozen, beefFrozen, lambFrozen};
+
 notIngredient = null;
 
 nothing = none;
@@ -22,7 +34,22 @@ costs = [|0,0,0,0 | 40,0,1,0 | 30,0,1,0 | 30,0,2,0 | 10,0,2,0 |
 %packagingWaste = [];
 
 % Amount of nutrients in 100g of ingredient.
-%nutrition = [];
+% nutrients = {calories, carbohydrate, fat, fibre, protein};
+nutrition = [|0,0,0,0,0 | 138,25,2,1,5 | 22,3,0,1,3 | 40,9,0,4,2 |
+             34,7,0,3,3 | 81,14,0,5,5 | 53,5,1,1,8 | 364,76,1,3,10 |
+             402,1,33,0,25 | 18,4,0,1,1 | 494,0,44,0,23 |
+             239,0,14,0,27 | 196,4,19,0,3 | 130,28,0,0,3 |
+             77,17,0,2,2 | 81,3,0,0,0 | 350,63,1,16,21 |
+             812,0,95,0,0 | 536,53,15,5,7 | 206,0,12,0,22 |
+             155,1,11,0,13 | 99,2,2,6,14 | 242,0,14,0,27 |
+             717,0,81,0,1 | 44,5,1,0,3 | 250,0,15,0,26 |
+             294,0,21,0,25|];
+
+% storage space limits in square cm.
+%storageTypes = {dry, frozen};
+%storageLimits = [3000, 1000];
+% storage space square cm taken by 100g of ingredients.
+%spaceTaken = [|0,0 | 10,0|];
 
 meals = {vegChowMein, pepperoniPizza, chickenNoodles, mushroomSoup, kievs};
 
