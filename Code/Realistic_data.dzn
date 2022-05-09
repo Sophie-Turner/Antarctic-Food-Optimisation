@@ -22,7 +22,6 @@ costs = [|0,0,0,0 | 40,0,1,0 | 30,0,1,0 | 30,0,2,0 | 10,0,2,0 |
 %packagingWaste = [];
 
 % Amount of nutrients in 100g of ingredient.
-%nutrients = {calories, carbohydrate, fat, fibre, micronutrients, protein, vitaminD};
 %nutrition = [];
 
 meals = {vegChowMein, pepperoniPizza, chickenNoodles, mushroomSoup, kievs};
@@ -54,5 +53,11 @@ mealIngredientsAmounts =
           
 numPeople = 10;
      
+% num people who do not eat categories. None means they eat everything.     
 % contains = {none, meat, milk, gluten, egg, sugars};
-numRefusals = [4, 3, 1, 1, 2, 0]; % num people who do not eat categories. None means they eat everything.
+numRefusals = [4, 3, 1, 1, 2, 0]; 
+
+% physical workers need +50% more nutrients per day.
+numPhysicalWorkers = 5;
+% males need +25% more nutrients per day.
+numMen = 6; 
