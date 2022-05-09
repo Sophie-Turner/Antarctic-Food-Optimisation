@@ -38,6 +38,13 @@ int: physicalMultiplier = 1;
 int: numMen;
 float: menMultiplier = 0.25;
 
+array[nutrients] of var float: totalNutrientsRequired;
+constraint forall(i in nutrients)
+          (totalNutrientsRequired[i] = 
+          (minNutrients[i] * numPeople) 
+          + (minNutrients[i] * numPhysicalWorkers * physicalMultiplier)
+          + (minNutrients[i] * numMen * menMultiplier));
+
 % Make sure the correct variety of meal types exists (at least 1 vegan and 1 gluten free meal).
 include "alldifferent.mzn";
 constraint alldifferent(mealsServed);
@@ -67,5 +74,4 @@ solve minimize totalCost;
 
 output["\(numServed[i]) servings of \(mealsServed[i]) will be provided.\n" | i in 1..numOptions];  
 output["A total of \(totalMealsServed) servings of food will be provided.\n"];
-output["The total cost will be \(totalCost)p."];
-  
+output["The total cost will be \(totalCost)p.\n"];  
