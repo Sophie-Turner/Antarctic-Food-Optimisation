@@ -1,15 +1,9 @@
-ingredients = {null, noodlesDried, mushroomsTinned, peppersFrozen, broccoliFrozen, peasFrozen, soySauce, flour, cheeseFrozen, tomatoesTinned, pepperoniFrozen, chickenFrozen, creamPowder, rice, potatoesFresh, wine, beansTinned, oil, chipsFrozen, fishFrozen, eggsFresh, quornFrozen, porkFrozen, butterFrozen, milkPowder, beefFrozen, lambFrozen};
-
-% base carbs
-ingredients = {noodlesDried, flour, rice, chipsFrozen};
-% liquids
-ingredients = {soySauce, wine, oil};
-% veg
-ingredients = {mushroomsTinned, peppersFrozen, broccoliFrozen, peasFrozen, tomatoesTinned, potatoesFresh, beansTinned};
-% non-meat animal products
-ingredients = {cheeseFrozen, creamPowder, eggsFresh, butterFrozen, milkPowder;
-% meats
-ingredients = {pepperoniFrozen, chickenFrozen, fishFrozen, quornFrozen, porkFrozen, beefFrozen, lambFrozen};
+ingredients = {null, 
+               noodlesDried, flour, rice, chipsFrozen,
+               mushroomsTinned, peppersFrozen, broccoliFrozen, peasFrozen, tomatoesTinned, potatoesFresh, beansTinned,
+               cheeseFrozen, creamPowder, butterFrozen, milkPowder, eggsFresh,
+               pepperoniFrozen, chickenFrozen, fishFrozen, quornFrozen, porkFrozen, beefFrozen, lambFrozen,
+               soySauce, wine, oil};
 
 notIngredient = null;
 
@@ -19,12 +13,12 @@ nothing = none;
 % Frozen or tinned/dry.
 % By sea (SDA from UK) or air (Twin Otter from South America or South Atlantic).
 costSources = {purchase, transport, storage, cooking};
-costs = [|0,0,0,0 | 40,0,1,0 | 30,0,1,0 | 30,0,2,0 | 10,0,2,0 |
-          30,0,2,0 | 100,0,1,0 | 10,0,1,0 | 60,0,2,0 | 20,0,1,0 | 
-          70,0,2,0 | 90,0,2,0 | 40,0,1,0 | 20,0,1,0 | 10,0,1,0 |     
-          80,0,1,0 | 8,0,1,0 | 13,0,1,0 | 17,0,2,0 | 70,0,2,0 | 
-          36,0,1,0 | 59,0,2,0 | 57,0,2,0 | 70,0,2,0 | 89,0,1,0 |
-          40,0,2,0 | 80,0,2,0|];
+costs = [|0,0,0,0 | 
+          40,0,1,0 | 10,0,1,0 | 20,0,1,0 | 17,0,2,0 |
+          30,0,1,0 | 30,0,2,0 | 10,0,2,0 | 30,0,2,0 | 20,0,1,0 | 10,0,1,0 | 8,0,1,0 |
+          60,0,2,0 | 40,0,1,0 | 70,0,2,0 | 89,0,1,0 | 36,0,1,0 |
+          70,0,2,0 | 90,0,2,0 | 70,0,2,0 | 59,0,2,0 | 57,0,2,0 | 40,0,2,0 | 80,0,2,0 |
+          100,0,1,0 | 80,0,1,0 | 13,0,1,0 |];
 
 % Greenhouse gas emissions associated with 100g of igredient.
 %emissionSources = {production, transport, storage, cooking};
@@ -35,15 +29,12 @@ costs = [|0,0,0,0 | 40,0,1,0 | 30,0,1,0 | 30,0,2,0 | 10,0,2,0 |
 
 % Amount of nutrients in 100g of ingredient.
 % nutrients = {calories, carbohydrate, fat, fibre, protein};
-nutrition = [|0,0,0,0,0 | 138,25,2,1,5 | 22,3,0,1,3 | 40,9,0,4,2 |
-             34,7,0,3,3 | 81,14,0,5,5 | 53,5,1,1,8 | 364,76,1,3,10 |
-             402,1,33,0,25 | 18,4,0,1,1 | 494,0,44,0,23 |
-             239,0,14,0,27 | 196,4,19,0,3 | 130,28,0,0,3 |
-             77,17,0,2,2 | 81,3,0,0,0 | 350,63,1,16,21 |
-             812,0,95,0,0 | 536,53,15,5,7 | 206,0,12,0,22 |
-             155,1,11,0,13 | 99,2,2,6,14 | 242,0,14,0,27 |
-             717,0,81,0,1 | 44,5,1,0,3 | 250,0,15,0,26 |
-             294,0,21,0,25|];
+nutrition = [|0,0,0,0,0 | 
+              138,25,2,1,5 | 364,76,1,3,10 | 130,28,0,0,3 | 536,53,15,5,7 |
+              22,3,0,1,3 | 40,9,0,4,2 | 34,7,0,3,3 | 81,14,0,5,5 | 18,4,0,1,1 | 77,17,0,2,2 | 350,63,1,16,21 |
+              402,1,33,0,25 | 196,4,19,0,3 | 717,0,81,0,1 | 44,5,1,0,3 | 155,1,11,0,13 |
+              494,0,44,0,23 | 239,0,14,0,27 | 206,0,12,0,22 | 99,2,2,6,14 | 242,0,14,0,27 | 250,0,15,0,26 | 294,0,21,0,25 |
+              53,5,1,1,8 | 81,3,0,0,0 | 812,0,95,0,0 |];
 
 % storage space limits in square cm.
 %storageTypes = {dry, frozen};
