@@ -2,8 +2,8 @@ ingredients = {null,
                noodlesDried, flour, rice, chipsFrozen,
                mushroomsTinned, peppersFrozen, broccoliFrozen, peasFrozen, tomatoesTinned, potatoesFresh, beansTinned,
                cheeseFrozen, creamPowder, butterFrozen, milkPowder, eggsFresh,
-               pepperoniFrozen, chickenFrozen, fishFrozen, quornFrozen, porkFrozen, beefFrozen, lambFrozen,
-               soySauce, wine, oil};
+               pepperoniFrozen, poultryMeatFrozen, fishFrozen, quornFrozen, porkFrozen, beefFrozen, lambFrozen,
+               oil, soySauce, wine, gravyPowder};
 
 notIngredient = null;
 
@@ -18,7 +18,7 @@ costs = [|0,0,0,0 |
           30,0,1,0 | 30,0,2,0 | 10,0,2,0 | 30,0,2,0 | 20,0,1,0 | 10,0,1,0 | 8,0,1,0 |
           60,0,2,0 | 40,0,1,0 | 70,0,2,0 | 89,0,1,0 | 36,0,1,0 |
           70,0,2,0 | 90,0,2,0 | 70,0,2,0 | 59,0,2,0 | 57,0,2,0 | 40,0,2,0 | 80,0,2,0 |
-          100,0,1,0 | 80,0,1,0 | 13,0,1,0 |];
+          13,0,1,0 | 100,0,1,0 | 80,0,1,0 | 77,0,1,0 |];
 
 % Greenhouse gas emissions associated with 100g of igredient.
 %emissionSources = {production, transport, storage, cooking};
@@ -34,7 +34,7 @@ nutrition = [|0,0,0,0,0 |
               22,3,0,1,3 | 40,9,0,4,2 | 34,7,0,3,3 | 81,14,0,5,5 | 18,4,0,1,1 | 77,17,0,2,2 | 350,63,1,16,21 |
               402,1,33,0,25 | 196,4,19,0,3 | 717,0,81,0,1 | 44,5,1,0,3 | 155,1,11,0,13 |
               494,0,44,0,23 | 239,0,14,0,27 | 206,0,12,0,22 | 99,2,2,6,14 | 242,0,14,0,27 | 250,0,15,0,26 | 294,0,21,0,25 |
-              53,5,1,1,8 | 81,3,0,0,0 | 812,0,95,0,0 |];
+              812,0,95,0,0 | 53,5,1,1,8 | 81,3,0,0,0 | 79,5,6,0,2 |];
 
 % storage space limits in square cm.
 %storageTypes = {dry, frozen};
@@ -50,9 +50,9 @@ maxIngredients = 5;
 mealIngredients = 
      [|noodlesDried, mushroomsTinned, peppersFrozen, broccoliFrozen, soySauce
      |flour, cheeseFrozen, pepperoniFrozen, tomatoesTinned, mushroomsTinned
-     |noodlesDried, chickenFrozen, peasFrozen, soySauce, null
+     |noodlesDried, poultryMeatFrozen, peasFrozen, soySauce, null
      |mushroomsTinned, creamPowder, null, null, null
-     |chickenFrozen, flour, peasFrozen, broccoliFrozen, null|];
+     |poultryMeatFrozen, flour, peasFrozen, broccoliFrozen, null|];
      
 maxContains = 2;     
 mealContains = [|gluten, none|
@@ -61,7 +61,7 @@ mealContains = [|gluten, none|
                  milk, none|
                  meat, none|];
 
-% amount of ingredient in meal x 100g.
+% amount of ingredient in meal x 100g or 100ml.
 mealIngredientsAmounts = 
     [|2, 2, 1, 1, 0|
       2, 2, 2, 2, 1|

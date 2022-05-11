@@ -15,7 +15,7 @@ array[ingredients, nutrients] of int: nutrition;
 
 enum meals;
 int: numMeals = length(meals);
-int: numOptions;
+int: numOptions; % Number of different meal options offered at this meal.
 int: maxIngredients;
 int: maxContains;
 
@@ -28,6 +28,8 @@ array[contains] of int: numRefusals;
  
 array[1..numOptions] of var meals: mealsServed;
 array[1..numOptions] of var int: numServed;  
+% Assume that meals are served in canteen dishes and each dish contains a batch of 4 portions. 
+int: mealsPerBatch = 4;
 
 % The minimum grams of nutrients people require per day.
 array[nutrients] of int: minNutrients = [2000, 275, 60, 23, 45];
@@ -39,7 +41,6 @@ int: physicalMultiplier = 1;
 % Men need 25% more food than women need.
 int: numMen;
 float: menMultiplier = 0.25;
-
 
 array[nutrients] of var float: totalNutrientsRequired;
 constraint forall(i in nutrients)
@@ -53,7 +54,7 @@ include "alldifferent.mzn";
 constraint alldifferent(mealsServed);
                                 
 % There must be a variety of meals on offer.                                
-constraint forall(count in numServed)(count > 0);                                 
+constraint forall(count in numServed)(count mod 4 = 0);                                  
                                 
 % Make sure everyone can eat something and there are enough servings for each diet type.            
 constraint forall(foodType in contains)
@@ -66,6 +67,14 @@ constraint forall(foodType in contains)
 var int: totalMealsServed = sum(numServed);
 constraint totalMealsServed >= numPeople;
 
+array[nutrients] of var int: totalNutritionServed;
+constraint forall(nutrient in nutrients)
+           (totalNutritionServed[nutrient] = 
+            sum(i in 1..numOptions, j in 1..maxIngredients)
+            (nutrition[mealIngredients[mealsServed[i], j], nutrient]
+             * mealIngredientsAmounts[mealsServed[i], j]
+             * numServed[i]));  
+
 % For every meal served, for every ingredient in that meal and its amount, 
 % find cost of that ingredient.                         
 var int: totalCost = sum(i in 1..numOptions, j in 1..maxIngredients)
@@ -73,8 +82,12 @@ var int: totalCost = sum(i in 1..numOptions, j in 1..maxIngredients)
                     * mealIngredientsAmounts[mealsServed[i], j]
                     * numServed[i]);                     
 
-solve minimize totalCost;
+% maximise nutrition and minimise cost, giving equal weight to both for now.
+var float: objective = totalNutritionServed[calories] div totalCost; 
+
+solve maximize objective;
 
 output["\(numServed[i]) servings of \(mealsServed[i]) will be provided.\n" | i in 1..numOptions];  
 output["A total of \(totalMealsServed) servings of food will be provided.\n"];
-output["The total cost will be \(totalCost)p.\n"];  
+output["The total cost will be \(totalCost)p.\n"]; 
+%output["The total amount of \(nutrients[i]) served is \(totalNutritionServed[i]).\n" | i in nutrients]; 
