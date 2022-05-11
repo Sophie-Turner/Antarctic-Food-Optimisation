@@ -2,6 +2,12 @@ enum ingredients;
 % A null ingredient is needed for static 2d array placeholders.
 ingredients: notIngredient;
 
+% Types of foods. Not used so far. Might not be required.
+set of int: animalRange;               
+array[animalRange] of ingredients: nonMeatAnimal;
+set of int: meatRange;
+array[meatRange] of ingredients: meats;
+
 enum contains = {none, meat, milk, gluten, egg, sugars};
 contains: nothing;
 
@@ -42,19 +48,20 @@ int: physicalMultiplier = 1;
 int: numMen;
 float: menMultiplier = 0.25;
 
+% Work out how much nutrition the group needs per day.
 array[nutrients] of var float: totalNutrientsRequired;
 constraint forall(i in nutrients)
           (totalNutrientsRequired[i] = 
           (minNutrients[i] * numPeople) 
           + (minNutrients[i] * numPhysicalWorkers * physicalMultiplier)
-          + (minNutrients[i] * numMen * menMultiplier));
+          + (minNutrients[i] * numMen * menMultiplier)); 
 
 % Make sure the correct variety of meal types exists (at least 1 vegan and 1 gluten free meal).
 include "alldifferent.mzn";
 constraint alldifferent(mealsServed);
                                 
-% There must be a variety of meals on offer.                                
-constraint forall(count in numServed)(count mod 4 = 0);                                  
+% There must be a variety of meals on offer, and no negative values.                                
+constraint forall(count in numServed)(count mod 4 = 0 /\ count > 0);                                  
                                 
 % Make sure everyone can eat something and there are enough servings for each diet type.            
 constraint forall(foodType in contains)
@@ -63,10 +70,18 @@ constraint forall(foodType in contains)
            (forall(j in 1..maxContains)
            (mealContains[mealsServed[i], j] != foodType) 
             * numServed[i]));
+            
+% Make sure there is a vegan option.            
+constraint exists(option in mealsServed)
+          (forall(item in 1..maxContains)
+          (mealContains[option, item] != meat
+          /\ mealContains[option, item] != egg
+          /\ mealContains[option, item] != milk));
 
 var int: totalMealsServed = sum(numServed);
 constraint totalMealsServed >= numPeople;
 
+% Work out the total nutrition on offer.
 array[nutrients] of var int: totalNutritionServed;
 constraint forall(nutrient in nutrients)
            (totalNutritionServed[nutrient] = 
@@ -74,6 +89,9 @@ constraint forall(nutrient in nutrients)
             (nutrition[mealIngredients[mealsServed[i], j], nutrient]
              * mealIngredientsAmounts[mealsServed[i], j]
              * numServed[i]));  
+             
+% Don't serve more than people can eat.             
+constraint totalNutritionServed[calories] < totalNutrientsRequired[calories];
 
 % For every meal served, for every ingredient in that meal and its amount, 
 % find cost of that ingredient.                         
@@ -82,12 +100,13 @@ var int: totalCost = sum(i in 1..numOptions, j in 1..maxIngredients)
                     * mealIngredientsAmounts[mealsServed[i], j]
                     * numServed[i]);                     
 
-% maximise nutrition and minimise cost, giving equal weight to both for now.
-var float: objective = totalNutritionServed[calories] div totalCost; 
+% maximise nutrition and minimise cost and food waste.
+% giving extra weight to food waste otherwise it suggests silly amounts of food.
+var float: objective = totalNutritionServed[calories] div (totalCost + (totalMealsServed - numPeople)*100); 
 
 solve maximize objective;
 
 output["\(numServed[i]) servings of \(mealsServed[i]) will be provided.\n" | i in 1..numOptions];  
 output["A total of \(totalMealsServed) servings of food will be provided.\n"];
 output["The total cost will be \(totalCost)p.\n"]; 
-%output["The total amount of \(nutrients[i]) served is \(totalNutritionServed[i]).\n" | i in nutrients]; 
+output["The total amount of \(nutrients[i]) served is \(totalNutritionServed[i]).\n" | i in nutrients]; 

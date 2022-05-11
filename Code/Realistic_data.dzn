@@ -4,6 +4,11 @@ ingredients = {null,
                cheeseFrozen, creamPowder, butterFrozen, milkPowder, eggsFresh,
                pepperoniFrozen, poultryMeatFrozen, fishFrozen, quornFrozen, porkFrozen, beefFrozen, lambFrozen,
                oil, soySauce, wine, gravyPowder};
+               
+animalRange = 13..17;
+nonMeatAnimal = ingredients[animalRange];
+meatRange = 18..24;               
+meats = ingredients[meatRange];
 
 notIngredient = null;
 
@@ -42,7 +47,7 @@ nutrition = [|0,0,0,0,0 |
 % storage space square cm taken by 100g of ingredients.
 %spaceTaken = [|0,0 | 10,0|];
 
-meals = {vegChowMein, pepperoniPizza, chickenNoodles, mushroomSoup, kievs};
+meals = {vegChowMein, pepperoniPizza, chickenNoodles, mushroomSoup, kievs, risotto};
 
 numOptions = 3; % 3 choices of meal will be served at the buffet bar.
 
@@ -50,24 +55,27 @@ maxIngredients = 5;
 mealIngredients = 
      [|noodlesDried, mushroomsTinned, peppersFrozen, broccoliFrozen, soySauce
      |flour, cheeseFrozen, pepperoniFrozen, tomatoesTinned, mushroomsTinned
-     |noodlesDried, poultryMeatFrozen, peasFrozen, soySauce, null
-     |mushroomsTinned, creamPowder, null, null, null
-     |poultryMeatFrozen, flour, peasFrozen, broccoliFrozen, null|];
+     |noodlesDried, poultryMeatFrozen, peasFrozen, soySauce, broccoliFrozen
+     |mushroomsTinned, creamPowder, potatoesFresh, butterFrozen, gravyPowder
+     |poultryMeatFrozen, flour, peasFrozen, broccoliFrozen, chipsFrozen
+     |rice, oil, wine, mushroomsTinned, tomatoesTinned|];
      
-maxContains = 2;     
-mealContains = [|gluten, none|
-                 meat, milk|
-                 meat, gluten|
-                 milk, none|
-                 meat, none|];
+maxContains = 3;     
+mealContains = [|gluten, egg, none|
+                 meat, milk, gluten|
+                 meat, gluten, egg|
+                 milk, none, none|
+                 meat, gluten, none|
+                 none, none, none|];
 
 % amount of ingredient in meal x 100g or 100ml.
 mealIngredientsAmounts = 
     [|2, 2, 1, 1, 0|
       2, 2, 2, 2, 1|
-      2, 1, 2, 0, 0|
-      1, 1, 1, 0, 0|
-      2, 1, 1, 1, 0|];
+      2, 1, 2, 1, 1|
+      1, 1, 1, 1, 0|
+      2, 1, 1, 1, 1|
+      2, 1, 1, 1, 1|];
           
 numPeople = 10;
      
