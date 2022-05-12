@@ -2,12 +2,6 @@ enum ingredients;
 % A null ingredient is needed for static 2d array placeholders.
 ingredients: notIngredient;
 
-% Types of foods. Not used so far. Might not be required.
-set of int: animalRange;               
-array[animalRange] of ingredients: nonMeatAnimal;
-set of int: meatRange;
-array[meatRange] of ingredients: meats;
-
 enum contains = {none, meat, milk, gluten, egg, sugars};
 contains: nothing;
 
@@ -25,8 +19,6 @@ array[ingredients, nutrients] of int: nutrition;
 array[ingredients, nutrients] of var int: batchNutrition;
 constraint forall(i in ingredients, j in nutrients)(batchNutrition[i, j] = (nutrition[i, j] * batchSize));
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% FINISH LATER FROM HERE %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 enum meals;
 int: numMeals = length(meals);
 int: numOptions; % Number of different meal options offered at this meal.
@@ -37,13 +29,15 @@ array[meals, 1..maxIngredients] of ingredients: mealIngredients;
 array[meals, 1..maxContains] of contains: mealContains;
 % add amounts of igredient required per meal to calculate cost and how much ingredient required.
 array[meals, 1..maxIngredients] of int: mealIngredientsAmounts;
+array[meals, 1..maxIngredients] of var int: batchIngredientsAmounts;
+constraint forall(i in meals, j in 1..maxIngredients)
+(batchIngredientsAmounts[i, j] = (mealIngredientsAmounts[i, j] * batchSize));
+
 int: numPeople;
 array[contains] of int: numRefusals;
  
-array[1..numOptions] of var meals: mealsServed;
-array[1..numOptions] of var int: numServed;  
-% Assume that meals are served in canteen dishes and each dish contains a batch of 4 portions. 
-int: mealsPerBatch = 4;
+array[1..numOptions] of var meals: mealsServed;  
+array[1..numOptions] of var int: batchesServed;
 
 % The minimum grams of nutrients people require per day.
 array[nutrients] of int: minNutrients = [2000, 275, 60, 23, 45];
@@ -69,7 +63,7 @@ include "alldifferent.mzn";
 constraint alldifferent(mealsServed);
                                 
 % There must be a variety of meals on offer, and no negative values.                                
-constraint forall(count in numServed)(count mod 4 = 0 /\ count > 0);                                  
+constraint forall(count in batchesServed)(count > 0);                                  
                                 
 % Make sure everyone can eat something and there are enough servings for each diet type.            
 constraint forall(foodType in contains)
@@ -77,7 +71,7 @@ constraint forall(foodType in contains)
             sum(i in 1..numOptions)
            (forall(j in 1..maxContains)
            (mealContains[mealsServed[i], j] != foodType) 
-            * numServed[i]));
+            * batchesServed[i] * batchSize));
             
 % Make sure there is a vegan option.            
 constraint exists(option in mealsServed)
@@ -86,7 +80,7 @@ constraint exists(option in mealsServed)
           /\ mealContains[option, item] != egg
           /\ mealContains[option, item] != milk));
 
-var int: totalMealsServed = sum(numServed);
+var int: totalMealsServed = sum(batchesServed) * batchSize;
 constraint totalMealsServed >= numPeople;
 
 % Work out the total nutrition on offer.
@@ -95,8 +89,8 @@ constraint forall(nutrient in nutrients)
            (totalNutritionServed[nutrient] = 
             sum(i in 1..numOptions, j in 1..maxIngredients)
             (nutrition[mealIngredients[mealsServed[i], j], nutrient]
-             * mealIngredientsAmounts[mealsServed[i], j]
-             * numServed[i]));  
+             * batchIngredientsAmounts[mealsServed[i], j]
+             * batchesServed[i]));  
              
 % Don't serve more than people can eat.             
 constraint totalNutritionServed[calories] < totalNutrientsRequired[calories];
@@ -104,9 +98,10 @@ constraint totalNutritionServed[calories] < totalNutrientsRequired[calories];
 % For every meal served, for every ingredient in that meal and its amount, 
 % find cost of that ingredient.                         
 var int: totalCost = sum(i in 1..numOptions, j in 1..maxIngredients)
-                   (sum(k in costSources)(costs[mealIngredients[mealsServed[i], j], k])
-                    * mealIngredientsAmounts[mealsServed[i], j]
-                    * numServed[i]);                     
+                   (sum(k in costSources)(batchCosts[mealIngredients[mealsServed[i], j], k] 
+                    div batchSize)
+                    * batchIngredientsAmounts[mealsServed[i], j]
+                    * batchesServed[i]);                     
 
 % maximise nutrition and minimise cost and food waste.
 % giving extra weight to food waste otherwise it suggests silly amounts of food.
@@ -114,7 +109,7 @@ var float: objective = totalNutritionServed[calories] div (totalCost + (totalMea
 
 solve maximize objective;
 
-output["\(numServed[i]) servings of \(mealsServed[i]) will be provided.\n" | i in 1..numOptions];  
+output["\(batchesServed[i]) batches of \(batchSize) servings of \(mealsServed[i]) will be provided.\n" | i in 1..numOptions];  
 output["A total of \(totalMealsServed) servings of food will be provided.\n"];
 output["The total cost will be \(totalCost)p.\n"]; 
 output["The total amount of \(nutrients[i]) served is \(totalNutritionServed[i]).\n" | i in nutrients]; 

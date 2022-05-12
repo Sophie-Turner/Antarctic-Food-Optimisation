@@ -4,11 +4,6 @@ ingredients = {null,
                cheeseFrozen, creamPowder, butterFrozen, milkPowder, eggsFresh,
                pepperoniFrozen, poultryMeatFrozen, fishFrozen, quornFrozen, porkFrozen, beefFrozen, lambFrozen,
                oil, soySauce, wine, gravyPowder};
-               
-animalRange = 13..17;
-nonMeatAnimal = ingredients[animalRange];
-meatRange = 18..24;               
-meats = ingredients[meatRange];
 
 notIngredient = null;
 
@@ -79,7 +74,7 @@ mealIngredientsAmounts =
       2, 1, 1, 1, 1|
       2, 1, 1, 1, 1|];
           
-numPeople = 10;
+numPeople = 40;
      
 % num people who do not eat categories. None means they eat everything.     
 % contains = {none, meat, milk, gluten, egg, sugars};
