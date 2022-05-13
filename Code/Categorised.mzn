@@ -2,12 +2,6 @@ enum ingredients;
 % A null ingredient is needed for static 2d array placeholders.
 ingredients: notIngredient;
 
-% Types of foods. Not used so far. Might not be required.
-set of int: animalRange;               
-array[animalRange] of ingredients: nonMeatAnimal;
-set of int: meatRange;
-array[meatRange] of ingredients: meats;
-
 enum contains = {none, meat, milk, gluten, egg, sugars};
 contains: nothing;
 

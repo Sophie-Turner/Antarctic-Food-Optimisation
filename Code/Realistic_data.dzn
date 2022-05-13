@@ -4,11 +4,6 @@ ingredients = {null,
                cheeseFrozen, creamPowder, butterFrozen, milkPowder, eggsFresh,
                pepperoniFrozen, poultryMeatFrozen, fishFrozen, quornFrozen, porkFrozen, beefFrozen, lambFrozen,
                oil, soySauce, wine, gravyPowder};
-               
-animalRange = 13..17;
-nonMeatAnimal = ingredients[animalRange];
-meatRange = 18..24;               
-meats = ingredients[meatRange];
 
 notIngredient = null;
 
@@ -47,7 +42,7 @@ nutrition = [|0,0,0,0,0 |
 % storage space square cm taken by 100g of ingredients.
 %spaceTaken = [|0,0 | 10,0|];
 
-meals = {vegChowMein, pepperoniPizza, chickenNoodles, mushroomSoup, kievs, risotto};
+meals = {vegChowMein, pepperoniPizza, chickenNoodles, mushroomSoup, kievs, risotto, quornLasagne, jacketSpud};
 
 numOptions = 3; % 3 choices of meal will be served at the buffet bar.
 
@@ -58,7 +53,9 @@ mealIngredients =
      |noodlesDried, poultryMeatFrozen, peasFrozen, soySauce, broccoliFrozen
      |mushroomsTinned, creamPowder, potatoesFresh, butterFrozen, gravyPowder
      |poultryMeatFrozen, flour, peasFrozen, broccoliFrozen, chipsFrozen
-     |rice, oil, wine, mushroomsTinned, tomatoesTinned|];
+     |rice, oil, wine, mushroomsTinned, tomatoesTinned
+     |flour, tomatoesTinned, cheeseFrozen, quornFrozen, peppersFrozen
+     |potatoesFresh, oil, beansTinned, peasFrozen, mushroomsTinned|];
      
 maxContains = 3;     
 mealContains = [|gluten, egg, none|
@@ -66,6 +63,8 @@ mealContains = [|gluten, egg, none|
                  meat, gluten, egg|
                  milk, none, none|
                  meat, gluten, none|
+                 none, none, none|
+                 gluten, milk, egg|
                  none, none, none|];
 
 % amount of ingredient in meal x 100g or 100ml.
@@ -75,7 +74,9 @@ mealIngredientsAmounts =
       2, 1, 2, 1, 1|
       1, 1, 1, 1, 0|
       2, 1, 1, 1, 1|
-      2, 1, 1, 1, 1|];
+      2, 1, 1, 1, 1|
+      1, 2, 1, 2, 1|
+      2, 0, 1, 1, 1|];
           
 numPeople = 10;
      
