@@ -1,0 +1,51 @@
+SDA from UK
+
+ship has 1440 m3 max food capacity (total storage capacity minus fuel storage) 
+
+100g of dired pasta is
+11cm x 6cm x 5cm = 330 cm3 = 0.00033 m3
+
+1440 / 0.00033 = 4363636
+The ship can carry about 4363636 x 100g portions of food
+
+ship fuel costs £20,000 per day
+= 2,000,000p 
+
+voyage takes 20 days
+
+cost of moving 100g food = (2,000,000p x 20) / 4363636
+= 9p 
+considering only 1-way journey (not the return journey)
+
+
+TWIN OTTER for Falkands
+
+distance from Stanley, Falklands to Rothera = 1873 km = 1164 mi
+
+travels 1.27 km per kg of fuel
+but idk how much fuel is required for takeoff so didn't include that yet
+
+aviation fuel currently costs 61p per kg
+
+Twin Otter is designed to carry 20 people
+but BAS ones carry 5 people
+Assume max food capacity of Twin Otter is equivalent to 15 people
+Average British man in clothes and shoes weighs 84 kg
+84kg x 15 = 1260 kg
+Twin Otter can carry max 12600 x 100g portions of food
+
+requires = 1873km / 1.27km per kg = 1475 kg of fuel
+which costs 1475kg x 61p = 89975p = £899.75
+
+cost of moving 100g food = 89975p / 12600 = 7p
+considering only 1-way journey (not the return journey)
+but probably more due to takeoff
+
+
+https://www.bas.ac.uk/polar-operations/sites-and-facilities/facility/rrs-sir-david-attenborough/
+https://en.wikipedia.org/wiki/De_Havilland_Canada_DHC-6_Twin_Otter#Specifications
+https://www.aircraftcostcalculator.com/AircraftOperatingCosts/511/Viking+Air-DeHavilland+6-400+Twin+Otter
+https://www.vikingair.com/sites/default/files/Viking-Twin-Otter-Series-400-Technical-Specifications-R-01-2018.pdf
+https://ansperformance.eu/acronym/nm/
+https://www.bas.ac.uk/polar-operations/sites-and-facilities/facility/twin-otter-aircraft/
+https://www.flightdeckfriend.com/ask-a-pilot/how-much-does-jet-fuel-cost/#:~:text=With%20a%20metric%20tonne%20being,or%20about%20%240.43%20per%20KG.
