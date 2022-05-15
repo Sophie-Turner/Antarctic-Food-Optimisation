@@ -28,8 +28,8 @@ array[contains] of int: numRefusals;
  
 array[1..numOptions] of var meals: mealsServed;
 array[1..numOptions] of var int: numServed;  
-% Assume that meals are served in canteen dishes and each dish contains a batch of 4 portions. 
-int: mealsPerBatch = 4;
+% Assume that meals are served in canteen dishes with a minimum batch size of 4 portions. 
+int: minBatchSize = 4;
 
 % The minimum grams of nutrients people require per day.
 array[nutrients] of int: minNutrients = [2000, 275, 60, 23, 45];
@@ -54,8 +54,8 @@ constraint forall(i in nutrients)
 include "alldifferent.mzn";
 constraint alldifferent(mealsServed);
                                 
-% There must be a variety of meals on offer, and no negative values.                                
-constraint forall(count in numServed)(count mod 4 = 0 /\ count > 0);                                  
+% There must be a variety of meals on offer and no negative values.                                
+constraint forall(count in numServed)(count >= minBatchSize);                                  
                                 
 % Make sure everyone can eat something and there are enough servings for each diet type.            
 constraint forall(foodType in contains)
@@ -72,8 +72,9 @@ constraint exists(option in mealsServed)
           /\ mealContains[option, item] != egg
           /\ mealContains[option, item] != milk));
 
+% Make sure there are enough portions for everyone.
 var int: totalMealsServed = sum(numServed);
-constraint totalMealsServed >= numPeople;
+constraint totalMealsServed = numPeople;
 
 % Work out the total nutrition on offer.
 array[nutrients] of var int: totalNutritionServed;
@@ -96,7 +97,7 @@ var int: totalCost = sum(i in 1..numOptions, j in 1..maxIngredients)
 
 % maximise nutrition and minimise cost and food waste.
 % giving extra weight to food waste otherwise it suggests silly amounts of food.
-var float: objective = totalNutritionServed[calories] div (totalCost + (totalMealsServed - numPeople)*100); 
+var float: objective = totalNutritionServed[calories] div totalCost; 
 
 solve maximize objective;
 

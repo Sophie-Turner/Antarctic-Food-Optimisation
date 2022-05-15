@@ -117,11 +117,3 @@ mealIngredientsAmounts =
           
 numPeople = 20;
      
-% num people who do not eat categories. None means they eat everything.     
-% contains = {none, meat, milk, gluten, egg, sugars};
-numRefusals = [14, 4, 2, 2, 3, 0]; 
-
-% physical workers need +100% more nutrients per day.
-numPhysicalWorkers = 5;
-% males need +25% more nutrients per day.
-numMen = 6; 
