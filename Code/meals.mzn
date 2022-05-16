@@ -47,8 +47,8 @@ include "alldifferent.mzn";
  
 array[weekdays, 1..numOptions] of var meals: mealsServed; 
 array[weekdays, 1..numOptions] of var int: numServed;
-constraint alldifferent(mealsServed);
 % A variety of meals must be offered.
+constraint alldifferent(mealsServed);
 constraint forall(day in weekdays, optionNum in 1..numOptions)
                  (numServed[day, optionNum] > 0);
 % The right number of meals must be offered.
@@ -57,13 +57,12 @@ constraint forall(day in weekdays)
                      (numServed[day, optionNum]) = numPeople);
                  
 % multiply by 2 because each meal is served twice a day.
-var int: mealsCost = 2 * sum(day in weekdays)
-                             (sum(optionNum in 1..numOptions, ingredientNum in 1..maxIngredients)
-                                 ((sum(costSource in costSources)
-                                     (costs[mealIngredients[mealsServed[day, optionNum], ingredientNum], costSource])
-                                  * mealIngredientsAmounts[mealsServed[day, optionNum], ingredientNum]
-                                  * numServed[day, optionNum])
-                                  + mealCookingCosts[mealsServed[day, optionNum]]));  
+var int: mealsCost = 2 * sum(day in weekdays, optionNum in 1..numOptions, ingredientNum in 1..maxIngredients)
+                            (sum(costSource in costSources)
+                                 (costs[mealIngredients[mealsServed[day, optionNum], ingredientNum], costSource])
+                              * mealIngredientsAmounts[mealsServed[day, optionNum], ingredientNum]
+                              * numServed[day, optionNum]
+                              + mealCookingCosts[mealsServed[day, optionNum]]);  
 
 % Each side is offfered at least once.
 array[weekdays, 1..numSidesOffered] of var sides: sidesServed;
@@ -73,12 +72,11 @@ constraint forall(day in weekdays, optionNum in 1..numSidesOffered)
                  (numSidesServed[day, optionNum] = numPeople);
                  
 % multiply by 2 because each meal is served twice a day.
-var int: sidesCost = 2 * sum(day in weekdays)
-                             (sum(optionNum in 1..numSidesOffered)
-                                 ((sum(costSource in costSources)
+var int: sidesCost = 2 * sum(day in weekdays, optionNum in 1..numSidesOffered)
+                                 (sum(costSource in costSources)
                                      (costs[sideIngredients[sidesServed[day, optionNum]], costSource])
-                                  * numSidesServed[day, optionNum])
-                                  + sideCookingCosts[sidesServed[day, optionNum]]));                 
+                                  * numSidesServed[day, optionNum]
+                                  + sideCookingCosts[sidesServed[day, optionNum]]);                 
 
 
 array[weekdays, 1..numDessertsOffered] of var desserts: dessertsServed;
@@ -87,19 +85,17 @@ array[weekdays, 1..numDessertsOffered] of var int: numDessertsServed;
 constraint forall(day in weekdays, optionNum in 1..numDessertsOffered)
                  (numDessertsServed[day, optionNum] = numPeople);
 
-% multiply by 2 because each meal is served twice a day.
-var int: dessertsCost = 2 * sum(day in weekdays)
-                               (sum(optionNum in 1..numDessertsOffered, ingredientNum in 1..maxIngredients)
-                                   ((sum(costSource in costSources)
-                                        (costs[dessertIngredients[dessertsServed[day, optionNum], ingredientNum], costSource])
-                                     * dessertAmounts[dessertsServed[day, optionNum], ingredientNum]
-                                     * numDessertsServed[day, optionNum])
-                                     + dessertCookingCosts[dessertsServed[day, optionNum]]));
+var int: dessertsCost = 2 * sum(day in weekdays, optionNum in 1..numDessertsOffered, ingredientNum in 1..maxIngredients)
+                               (sum(costSource in costSources)
+                                   (costs[dessertIngredients[dessertsServed[day, optionNum], ingredientNum], costSource])
+                                * numDessertsServed[day, optionNum]
+                                * dessertAmounts[dessertsServed[day, optionNum], ingredientNum]
+                                + dessertCookingCosts[dessertsServed[day, optionNum]]);
 
-var int: totalCost = mealsCost + sidesCost;
+var int: totalCost = mealsCost + sidesCost + dessertsCost;
 
 solve satisfy;
 
 %output["\(mealsOffered)\n\(mealsServed)"];
-output["On \(day), for \(time), \(numServed[day, 1]) servings of \(mealsServed[day, 1]), \(numServed[day, 2]) servings of \(mealsServed[day, 2]) and \(numServed[day, 3]) servings of \(mealsServed[day, 3])\nwill be provided with \(numSidesServed[day, 1]) optional extra servings of \(sidesServed[day, 1]) and \(numDessertsServed[day, 1]) servings of \(desserts[day]) for dessert.\n" | day in weekdays, time in mealtimes];
-output["The total cost per week will be \(totalCost)p including purchase, transport, storage and cooking."];
+output["On \(day), for \(time), \(numServed[day, 1]) servings of \(mealsServed[day, 1]), \(numServed[day, 2]) servings of \(mealsServed[day, 2]) and \(numServed[day, 3]) servings of \(mealsServed[day, 3])\nwill be provided with \(numSidesServed[day, 1]) optional extra servings of \(sidesServed[day, 1]) and \(numDessertsServed[day, 1]) servings of \(dessertsServed[day, 1]) for dessert.\n" | day in weekdays, time in mealtimes];
+output["The total cost per week will be \(mealsCost)p including purchase, transport, storage and cooking."];
