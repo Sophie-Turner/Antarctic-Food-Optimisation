@@ -1,9 +1,11 @@
 ingredients = {null, 
                noodlesDried, flour, rice, pasta, chipsFrozen, breadRollsFrozen,
                mushroomsTinned, peppersFrozen, broccoliFrozen, peasFrozen, tomatoesTinned, potatoesFresh, beansTinned, aubergineFresh,  
-               cheeseFrozen, creamPowder, butterFrozen, milkPowder, eggsFresh, veganCheeseFrozen,
+               cheeseFrozen, creamPowder, butterFrozen, milkPowder, oatMilk, eggsFresh, veganCheeseFrozen,
                pepperoniFrozen, poultryMeatFrozen, fishFrozen, quornFrozen, porkFrozen, beefFrozen, lambFrozen, veganSausagesFrozen,
-               oil, soySauce, wine, gravyPowder, onionPowder, spicesDried, herbsDried};
+               oil, soySauce, wine, gravyPowder, onionPowder, spicesDried, herbsDried,
+               sugar, darkChocolate, yoghurtFrozen, veganYoghurtFrozen, custardTinned, jellyPowder, fruitMixFrozen,
+                applesFresh, grapesFresh, orangesFresh, nuts, biscuits};
 
 notIngredient = null;
 nothing = none;
@@ -11,13 +13,15 @@ nothing = none;
 % Costs in pennies per 100g or 100ml of ingredient.
 % Frozen or tinned/dry.
 % By sea (SDA from UK) or air (Twin Otter from South America or South Atlantic).
-costSources = {purchase, transport, storage, cooking};
-costs = [|0,0,0,0 | 
-          40,9,1,3 | 10,9,1,20 | 20,9,1,6 | 14,9,1,12 | 17,9,2,20 | 23,9,2,0 |
-          30,9,1,0 | 30,9,2,0 | 10,9,2,6 | 30,9,2,0 | 20,9,1,0 | 10,7,1,60 | 8,9,1,0 | 11,7,2,10 | 
-          60,9,2,0 | 40,9,1,0 | 70,9,2,0 | 89,9,1,0 | 36,7,1,3 | 115,9,2,0 |
-          70,9,2,0 | 90,9,2,40 | 70,9,2,3 | 59,9,2,12 | 57,9,2,40 | 40,9,2,40 | 80,9,2,40 | 128,9,2,10 |
-          13,9,1,0 | 100,7,1,0 | 80,7,1,0 | 77,9,1,0 | 160,9,1,0 | 590,9,1,0 | 330,9,1,0 |];
+costSources = {purchase, transport, storage};
+costs = [|0,0,0 | 
+          40,9,1 | 10,9,1 | 20,9,1 | 14,9,1 | 17,9,2 | 23,9,2 |
+          30,9,1 | 30,9,2 | 10,9,2 | 30,9,2 | 20,9,1 | 10,7,1 | 8,9,1 | 11,7,2 | 
+          60,9,2 | 40,9,1 | 70,9,2 | 89,9,1 | 19,9,1 | 36,7,1 | 115,9,2 |
+          70,9,2 | 90,9,2 | 70,9,2 | 59,9,2 | 57,9,2 | 40,9,2 | 80,9,2 | 128,9,2 |
+          13,9,1 | 100,7,1 | 80,7,1 | 77,9,1 | 160,9,1 | 590,9,1 | 330,9,1 |
+          16,9,1 | 135,9,1 | 17,9,2 | 35,9,2 | 25,9,1 | 52,9,1 | 44,9,2 | 
+           27,7,1 | 40,7,1 | 30,7,1 | 125,9,1 | 12,9,1 |];
 
 % Assume SDA ship costs £20,000 per day to move, takes 20 days and can store 1440 metres cubed of food. ~ 9p per 100g.
 
@@ -33,9 +37,11 @@ costs = [|0,0,0,0 |
 nutrition = [|0,0,0,0,0 | 
               138,25,2,1,5 | 364,76,1,3,10 | 130,28,0,0,3 | 131,25,1,1,5 | 536,53,15,5,7 | 286,57,1,2,11 |
               22,3,0,1,3 | 40,9,0,4,2 | 34,7,0,3,3 | 81,14,0,5,5 | 18,4,0,1,1 | 77,17,0,2,2 | 350,63,1,16,21 | 25,6,0,3,1 |
-              402,1,33,0,25 | 196,4,19,0,3 | 717,0,81,0,1 | 44,5,1,0,3 | 155,1,11,0,13 | 270,21,21,0,0 |
+              402,1,33,0,25 | 196,4,19,0,3 | 717,0,81,0,1 | 44,5,1,0,3 | 57,7,3,1,1 | 155,1,11,0,13 | 270,21,21,0,0 |
               494,0,44,0,23 | 239,0,14,0,27 | 206,0,12,0,22 | 99,2,2,6,14 | 242,0,14,0,27 | 250,0,15,0,26 | 294,0,21,0,25 | 216,10,15,4,11 |
-              812,0,95,0,0 | 53,5,1,1,8 | 81,3,0,0,0 | 79,5,6,0,2 | 40,9,0,2,1 | 0,0,0,0,0 | 0,0,0,0,0 |];
+              812,0,95,0,0 | 53,5,1,1,8 | 81,3,0,0,0 | 79,5,6,0,2 | 40,9,0,2,1 | 0,0,0,0,0 | 0,0,0,0,0 |
+              400,100,0,0,0 | 548,33,38,13,12 | 105,0,9,0,3 | 66,8,2,1,7 | 96,15,3,0,3 | 296,66,0,0,6 | 37,5,0,0,0 |
+               53,12,0,2,0 | 73,17,0,0,0 | 41,8,0,0,0 | 701,3,69,6,15 | 67,2,3,0,0 |];
 
 % storage space limits in square cm.
 %storageTypes = {dry, frozen};
@@ -47,6 +53,9 @@ meals = {vegChowMein, pepperoniPizza, chickenNoodles, mushroomSoup, kievs, mushr
  veganPizza, quornChilli, chickenCurry, veganBangersMash, veganCanneloni, beefBurgers, roastPork, stuffedPeppers, stuffedAubergine, shakshuka};
 
 numOptions = 3; % 3 choices of meal will be served at the buffet bar.
+
+% Oven and grill cost 10p for 10 mins. Hob and microwave cost 6p for 10 mins.
+%mealCookingCosts = []; 
 
 maxIngredients = 5;
 mealIngredients = 
@@ -83,72 +92,47 @@ mealIngredients =
      
 % amount of ingredient in meal x 100g or 100ml.
 mealIngredientsAmounts = 
-    [|2, 2, 1, 1, 0|
-      2, 2, 2, 2, 1|
-      2, 1, 2, 1, 1|
-      1, 1, 1, 1, 0|
-      2, 1, 1, 1, 1|
-      2, 1, 1, 1, 1|
-      1, 2, 1, 2, 1|
-      2, 0, 1, 1, 1|
-      2, 1, 1, 1, 1|
-      1, 2, 2, 2, 0|
-      2, 2, 1, 2, 1|
-      2, 2, 2, 1, 1|
-      3, 1, 1, 1, 2|
-      2, 2, 1, 1, 1|
-      3, 2, 1, 2, 1|
-      2, 3, 2, 1, 1|
-      3, 1, 1, 1, 1|
-      2, 2, 1, 1, 2|
-      2, 1, 1, 1, 1|
-      3, 2, 1, 1, 1|
-      2, 1, 1, 1, 1|
-      2, 2, 1, 1, 2|
-      1, 2, 1, 1, 1|
-      2, 2, 0, 0, 1|
-      2, 2, 1, 0, 2|
-      1, 1, 1, 0, 1|
-      2, 1, 1, 0, 1|
-      2, 1, 1, 1, 1|
-      2, 1, 1, 1, 0|
-      2, 1, 2, 1, 1|];     
+    [|2, 2, 1, 1, 0| 2, 2, 2, 2, 1| 2, 1, 2, 1, 1| 1, 1, 1, 1, 0| 2, 1, 1, 1, 1|
+      2, 1, 1, 1, 1| 1, 2, 1, 2, 1| 2, 0, 1, 1, 1| 2, 1, 1, 1, 1| 1, 2, 2, 2, 0|
+      2, 2, 1, 2, 1| 2, 2, 2, 1, 1| 3, 1, 1, 1, 2| 2, 2, 1, 1, 1| 3, 2, 1, 2, 1|
+      2, 3, 2, 1, 1| 3, 1, 1, 1, 1| 2, 2, 1, 1, 2| 2, 1, 1, 1, 1| 3, 2, 1, 1, 1|
+      2, 1, 1, 1, 1| 2, 2, 1, 1, 2| 1, 2, 1, 1, 1| 2, 2, 0, 0, 1| 2, 2, 1, 0, 2|
+      1, 1, 1, 0, 1| 2, 1, 1, 0, 1| 2, 1, 1, 1, 1| 2, 1, 1, 1, 0| 2, 1, 2, 1, 1|];     
      
 maxContains = 3;     
-mealContains = [|gluten, egg, none|
-                 meat, milk, gluten|
-                 meat, gluten, egg|
-                 milk, none, none|
-                 meat, gluten, none|
-                 none, none, none|
-                 gluten, milk, egg|
-                 none, none, none|
-                 gluten, milk, none|
-                 meat, none, none|
-                 none, none, none|
-                 egg, gluten, milk|
-                 none, none, none|
-                 meat, none, none|
-                 meat, none, none|
-                 none, none, none|
-                 meat, none, none|
-                 none, none, none|
-                 egg, none, none|
-                 meat, none, none|
-                 gluten, none, none|
-                 egg, none, none|
-                 meat, milk, none|
-                 none, none, none|
-                 gluten, none, none|
-                 gluten, meat, milk|
-                 meat, none, none|
-                 none, none, none|
-                 none, none, none|
-                 egg, milk, none|];
+mealContains = [|gluten, egg, none| meat, milk, gluten| meat, gluten, egg| milk, none, none| meat, gluten, none|
+                 none, none, none| gluten, milk, egg| none, none, none| gluten, milk, none| meat, none, none|
+                 none, none, none| egg, gluten, milk| none, none, none| meat, none, none| meat, none, none|
+                 none, none, none| meat, none, none| none, none, none| egg, none, none| meat, none, none|
+                 gluten, none, none| egg, none, none| meat, milk, none| none, none, none| gluten, none, none|
+                 gluten, meat, milk| meat, none, none| none, none, none| none, none, none| egg, milk, none|];
 
 numSidesOffered = 1;              
 sides = {breadRolls, roastPotatoes, Rice, veganSausages, peas, chips};                    
 sideContains = [breadRollsFrozen, potatoesFresh, rice, veganSausagesFrozen, peasFrozen, chipsFrozen];
           
+numDessertsOffered = 1;
+desserts = {veganMousse, veganFruitYoghurt, fruitSalad, fruitYoghurt, walnutCake, chocolateCake, spongeCustard, jelly, cheeseBiscuits,
+            chocolateMousse, pancakes, veganPancakes};
+
+dessertIngredients = [|darkChocolate, oil, sugar, null, null|
+                       veganYoghurtFrozen, fruitMixFrozen, null, null, null|
+                       applesFresh, orangesFresh, grapesFresh, null, null|
+                       yoghurtFrozen, fruitMixFrozen, null, null, null|
+                       flour, sugar, butterFrozen, eggsFresh, nuts|
+                       flour, sugar, butterFrozen, eggsFresh, darkChocolate|
+                       flour, sugar, butterFrozen, eggsFresh, custardTinned|
+                       jellyPowder, fruitMixFrozen, null, null, null|
+                       biscuits, cheeseFrozen, grapesFresh, null, null|
+                       eggsFresh, darkChocolate, sugar, null, null|
+                       milkPowder, flour, eggsFresh, sugar, fruitMixFrozen|
+                       oatMilk, flour, oil, sugar, fruitMixFrozen|];
+                       
+dessertAmounts = [| 1,1,1,0,0 | 3,1,0,0,0 | 1,1,1,0,0 | 3,1,0,0,0 | 1,1,1,1,1 | 1,1,1,1,1 | 1,1,1,1,2 | 1,1,0,0,0 | 2,2,1,0,0 | 
+                    1,1,1,0,0 | 1,1,1,1,1 | 1,1,1,1,1 |];          
+dessertContains = [| sugars, none, none | none, none, none | none, none, none | milk, none, none | milk, egg, sugars |
+                     milk, egg, sugars | milk, egg, sugars | sugars, meat, none | milk, none, none | sugars, egg, none | 
+                     sugars, egg, milk | sugars, none, none |];
+                    
 numPeople = 20;
      

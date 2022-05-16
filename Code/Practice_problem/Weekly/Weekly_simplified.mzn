@@ -28,6 +28,12 @@ enum sides;
 array[1..6] of ingredients: sideContains;
 int: numSidesOffered; 
 
+enum desserts;
+array[desserts, 1..maxIngredients] of ingredients: dessertIngredients;
+array[desserts, 1..maxContains] of contains: dessertContains;
+array[desserts, 1..maxIngredients] of int: dessertAmounts;
+int: numDessertsOffered;
+
 int: numPeople;
  
 enum weekdays = {Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday}; 
@@ -42,7 +48,10 @@ array[weekdays] of var sides: sidesServed;
 % Each side is offfered at least once.
 constraint forall(option in sides)(exists (day in weekdays)(sidesServed[day] = sides[option]));
 
+array[weekdays] of var desserts: dessertsServed;
+constraint alldifferent(dessertsServed);
+
 solve satisfy;
 
 %output["\(mealsOffered)\n\(mealsServed)"];
-output["The meals served for \(day) \(time) are \(mealsServed[day, 1]), \(mealsServed[day, 2]) and \(mealsServed[day, 3]) with optional extra \(sidesServed[day]).\n" | day in weekdays, time in mealtimes];
+output["The meals served for \(day) \(time) are \(mealsServed[day, 1]), \(mealsServed[day, 2]) and \(mealsServed[day, 3]) \nwith optional extra \(sidesServed[day]), and the dessert is \(desserts[day]).\n" | day in weekdays, time in mealtimes];
