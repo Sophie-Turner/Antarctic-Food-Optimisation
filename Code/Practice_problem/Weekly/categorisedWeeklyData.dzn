@@ -53,7 +53,7 @@ mealIngredients =
      [|noodlesDried, mushroomsTinned, peppersFrozen, broccoliFrozen, soySauce
      |flour, cheeseFrozen, pepperoniFrozen, tomatoesTinned, mushroomsTinned
      |noodlesDried, poultryMeatFrozen, peasFrozen, soySauce, broccoliFrozen
-     |mushroomsTinned, creamPowder, potatoesFresh, butterFrozen, breadRollsFrozen
+     |mushroomsTinned, creamPowder, potatoesFresh, butterFrozen, herbsDried
      |poultryMeatFrozen, flour, peasFrozen, broccoliFrozen, chipsFrozen
      |rice, oil, wine, mushroomsTinned, tomatoesTinned
      |pasta, tomatoesTinned, cheeseFrozen, quornFrozen, peppersFrozen
@@ -86,7 +86,7 @@ mealIngredientsAmounts =
     [|2, 2, 1, 1, 0|
       2, 2, 2, 2, 1|
       2, 1, 2, 1, 1|
-      1, 1, 1, 1, 1|
+      1, 1, 1, 1, 0|
       2, 1, 1, 1, 1|
       2, 1, 1, 1, 1|
       1, 2, 1, 2, 1|
@@ -118,7 +118,7 @@ maxContains = 3;
 mealContains = [|gluten, egg, none|
                  meat, milk, gluten|
                  meat, gluten, egg|
-                 milk, gluten, none|
+                 milk, none, none|
                  meat, gluten, none|
                  none, none, none|
                  gluten, milk, egg|
@@ -145,6 +145,10 @@ mealContains = [|gluten, egg, none|
                  none, none, none|
                  none, none, none|
                  egg, milk, none|];
+
+numSidesOffered = 1;              
+sides = {breadRolls, roastPotatoes, Rice, veganSausages, peas, chips};                    
+sideContains = [breadRollsFrozen, potatoesFresh, rice, veganSausagesFrozen, peasFrozen, chipsFrozen];
           
 numPeople = 20;
      

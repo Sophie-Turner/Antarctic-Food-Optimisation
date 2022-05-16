@@ -23,6 +23,11 @@ array[meals, 1..maxIngredients] of ingredients: mealIngredients;
 array[meals, 1..maxContains] of contains: mealContains;
 % add amounts of igredient required per meal to calculate cost and how much ingredient required.
 array[meals, 1..maxIngredients] of int: mealIngredientsAmounts;
+
+enum sides;
+array[1..6] of ingredients: sideContains;
+int: numSidesOffered; 
+
 int: numPeople;
  
 enum weekdays = {Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday}; 
@@ -33,7 +38,11 @@ include "alldifferent.mzn";
 % All the options on each mealtime should be different, and each row of meals should be different, but the whole array doesn't need to be different.
 constraint alldifferent(mealsServed);
 
+array[weekdays] of var sides: sidesServed;
+% Each side is offfered at least once.
+constraint forall(option in sides)(exists (day in weekdays)(sidesServed[day] = sides[option]));
+
 solve satisfy;
 
 %output["\(mealsOffered)\n\(mealsServed)"];
-output["The meals served for \(day) \(time) are \(mealsServed[day, 1]), \(mealsServed[day, 2]) and \(mealsServed[day, 3]).\n" | day in weekdays, time in mealtimes];
+output["The meals served for \(day) \(time) are \(mealsServed[day, 1]), \(mealsServed[day, 2]) and \(mealsServed[day, 3]) with optional extra \(sidesServed[day]).\n" | day in weekdays, time in mealtimes];
