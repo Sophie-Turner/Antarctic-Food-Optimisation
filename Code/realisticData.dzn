@@ -54,8 +54,8 @@ numOptions = 3; % 3 choices of meal will be served at the buffet bar.
 meals = {vegChowMein, pepperoniPizza, chickenNoodles, mushroomSoup, kievs, mushroomRisotto, quornLasagne, jacketSpud, marghertia, moussaka, ratatouille, vegSpagBol, potatoCurry, sushi, paella, beanChilli, shepherdsPie, veganSausageCasserole, mushroomOmelette, fishAndChips,
  veganPizza, quornChilli, chickenCurry, veganBangersMash, veganCanneloni, beefBurgers, roastPork, stuffedPeppers, stuffedAubergine, shakshuka};
 
-% Oven and grill cost 10p for 10 mins. Hob and microwave cost 6p for 10 mins.
-mealCookingCosts = [6, 12, 6, 12, 20, 36, 30, 60, 12, 30, 72, 30, 72, 8, 36, 36, 20, 36, 6, 20, 12, 36, 72, 20, 30, 3, 72, 18, 18, 24]; 
+% Oven and grill cost 10p for 10 mins. Hob and microwave cost 6p for 10 mins. Several 100g portions of food fit in each.
+mealCookingCosts = [2, 4, 2, 4, 7, 12, 10, 20, 4, 10, 24, 10, 24, 3, 12, 12, 10, 12, 2, 7, 4, 12, 24, 7, 10, 1, 24, 6, 6, 8]; 
 
 maxIngredients = 5;
 mealIngredients = 
@@ -110,14 +110,14 @@ mealContains = [|gluten, egg, none| meat, milk, gluten| meat, gluten, egg| milk,
 numSidesOffered = 1;              
 sides = {breadRolls, roastPotatoes, Rice, veganSausages, peas, chips};                     
 % Oven and grill cost 10p for 10 mins. Hob and microwave cost 6p for 10 mins.
-sideCookingCosts = [0, 30, 8, 20, 6, 20];          
+sideCookingCosts = [0, 10, 3, 7, 2, 7];          
 sideIngredients = [breadRollsFrozen, potatoesFresh, rice, veganSausagesFrozen, peasFrozen, chipsFrozen]; 
           
 numDessertsOffered = 1;
 desserts = {veganMousse, veganFruitYoghurt, fruitSalad, fruitYoghurt, walnutCake, chocolateCake, spongeCustard, jelly, cheeseBiscuits,
             chocolateMousse, pancakes, veganPancakes};
 % Oven and grill cost 10p for 10 mins. Hob and microwave cost 6p for 10 mins.
-dessertCookingCosts = [0, 0, 0, 0, 40, 40, 40, 0, 0, 0, 1, 1]; 
+dessertCookingCosts = [0, 0, 0, 0, 13, 13, 13, 0, 0, 0, 1, 1]; 
 
 dessertIngredients = [|darkChocolate, oil, sugar, null, null|
                        veganYoghurtFrozen, fruitMixFrozen, null, null, null|
@@ -138,5 +138,12 @@ dessertContains = [| sugars, none, none | none, none, none | none, none, none | 
                      milk, egg, sugars | milk, egg, sugars | sugars, meat, none | milk, none, none | sugars, egg, none | 
                      sugars, egg, milk | sugars, none, none |];
                     
-numPeople = 20;
+numPeople = 20; 
+% physical workers need +100% more nutrients per day.
+numPhysicalWorkers = 10;
+% males need +25% more nutrients per day.
+numMen = 14; 
+% num people who do not eat categories. None means they eat everything.     
+% contains = {none, meat, milk, gluten, egg, sugars};
+numRefusals = [0, 6, 3, 2, 2, 1];
      

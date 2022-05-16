@@ -13,17 +13,16 @@ enum nutrients = {calories, carbohydrate, fat, fibre, protein};
 % Amount of each nutrient in 100g of ingredient.
 array[ingredients, nutrients] of int: nutrition;
 
-enum meals;
-array[meals] of int: mealCookingCosts;
-int: numMeals = length(meals);
-int: numOptions; % Number of different meal options offered at this meal.
 int: maxIngredients;
 int: maxContains;
 
+enum meals;
+array[meals] of int: mealCookingCosts;
 array[meals, 1..maxIngredients] of ingredients: mealIngredients;
 array[meals, 1..maxContains] of contains: mealContains;
 % add amounts of igredient required per meal to calculate cost and how much ingredient required.
 array[meals, 1..maxIngredients] of int: mealIngredientsAmounts;
+int: numOptions; % Number of different meal options offered at this meal.
 
 enum sides;
 array[sides] of int: sideCookingCosts;
@@ -38,6 +37,26 @@ array[desserts, 1..maxIngredients] of int: dessertAmounts;
 int: numDessertsOffered;
 
 int: numPeople;
+% The minimum grams of nutrients people require per day.
+array[nutrients] of int: minNutrients = [2000, 275, 60, 23, 45];
+% It is higer in the winter because of the colder climate.
+float: winterMultiplier = 0.25;
+% physical workers need +100% more nutrients per day.
+int: numPhysicalWorkers;
+int: physicalMultiplier = 1;
+% males need +25% more nutrients per day.
+int: numMen; 
+float: menMultiplier = 0.25;
+% num people who do not eat categories.
+array[contains] of int: numRefusals;
+
+% Work out how much nutrition the group needs per day.
+array[nutrients] of var float: totalNutrientsRequired;
+constraint forall(i in nutrients)
+          (totalNutrientsRequired[i] = 
+          (minNutrients[i] * numPeople) 
+          + (minNutrients[i] * numPhysicalWorkers * physicalMultiplier)
+          + (minNutrients[i] * numMen * menMultiplier)); 
  
 enum weekdays = {Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday}; 
 enum mealtimes = {lunch, tea}; 
@@ -47,14 +66,32 @@ include "alldifferent.mzn";
  
 array[weekdays, 1..numOptions] of var meals: mealsServed; 
 array[weekdays, 1..numOptions] of var int: numServed;
+
 % A variety of meals must be offered.
 constraint alldifferent(mealsServed);
 constraint forall(day in weekdays, optionNum in 1..numOptions)
-                 (numServed[day, optionNum] > 0);
+                 (numServed[day, optionNum] >= numPeople div 4);
 % The right number of meals must be offered.
 constraint forall(day in weekdays)
                  (sum(optionNum in 1..numOptions)
                      (numServed[day, optionNum]) = numPeople);
+                 
+% Make sure everyone can eat something and there are enough servings for each diet type.            
+constraint forall(day in weekdays, 
+                  foodType in contains)
+                     (numRefusals[foodType] <= 
+                      sum(optionNum in 1..numOptions)
+                         (forall(itemNum in 1..maxContains)
+                                (mealContains[mealsServed[day, optionNum], itemNum] != foodType) 
+                                 * numServed[day, optionNum]));            
+            
+% Make sure there is a vegan option.            
+constraint forall(day in weekdays)
+                 (exists(optionNum in 1..numOptions)
+                        (forall(itemNum in 1..maxContains)
+                               (mealContains[mealsServed[day, optionNum], itemNum] != meat
+                               /\ mealContains[mealsServed[day, optionNum], itemNum] != egg
+                               /\ mealContains[mealsServed[day, optionNum], itemNum] != milk)));                 
                  
 % multiply by 2 because each meal is served twice a day.
 var int: mealsCost = 2 * sum(day in weekdays, optionNum in 1..numOptions, ingredientNum in 1..maxIngredients)
@@ -94,7 +131,7 @@ var int: dessertsCost = 2 * sum(day in weekdays, optionNum in 1..numDessertsOffe
 
 var int: totalCost = mealsCost + sidesCost + dessertsCost;
 
-solve satisfy;
+solve minimize totalCost;
 
 %output["\(mealsOffered)\n\(mealsServed)"];
 output["On \(day), for \(time), \(numServed[day, 1]) servings of \(mealsServed[day, 1]), \(numServed[day, 2]) servings of \(mealsServed[day, 2]) and \(numServed[day, 3]) servings of \(mealsServed[day, 3])\nwill be provided with \(numSidesServed[day, 1]) optional extra servings of \(sidesServed[day, 1]) and \(numDessertsServed[day, 1]) servings of \(dessertsServed[day, 1]) for dessert.\n" | day in weekdays, time in mealtimes];
