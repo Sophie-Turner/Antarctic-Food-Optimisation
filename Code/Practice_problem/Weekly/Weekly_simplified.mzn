@@ -26,16 +26,12 @@ array[meals, 1..maxIngredients] of int: mealIngredientsAmounts;
 int: numPeople;
  
 enum weekdays = {Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday}; 
-enum mealtimes = {dinner, tea}; 
+enum mealtimes = {lunch, tea}; 
  
-array[weekdays] of var meals: mealsOffered;
+array[weekdays, 1..numOptions] of var meals: mealsServed; 
 include "alldifferent.mzn";
 % All the options on each mealtime should be different, and each row of meals should be different, but the whole array doesn't need to be different.
-constraint alldifferent(mealsOffered);
-array[weekdays, 1..numOptions] of var meals: mealsServed;
-constraint forall(i in 1..length(weekdays), j in 1..numOptions)
-                 (mealsServed[weekdays[i], j] = 
-                  mealsOffered[weekdays[((i+j) mod 7)+1]]);
+constraint alldifferent(mealsServed);
 
 solve satisfy;
 

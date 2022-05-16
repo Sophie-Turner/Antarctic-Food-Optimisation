@@ -1,8 +1,8 @@
 ingredients = {null, 
-               noodlesDried, flour, rice, pasta, chipsFrozen,
-               mushroomsTinned, peppersFrozen, broccoliFrozen, peasFrozen, tomatoesTinned, potatoesFresh, beansTinned, aubergineFresh,
-               cheeseFrozen, creamPowder, butterFrozen, milkPowder, eggsFresh,
-               pepperoniFrozen, poultryMeatFrozen, fishFrozen, quornFrozen, porkFrozen, beefFrozen, lambFrozen, veganSausages,
+               noodlesDried, flour, rice, pasta, chipsFrozen, breadRollsFrozen,
+               mushroomsTinned, peppersFrozen, broccoliFrozen, peasFrozen, tomatoesTinned, potatoesFresh, beansTinned, aubergineFresh,  
+               cheeseFrozen, creamPowder, butterFrozen, milkPowder, eggsFresh, veganCheeseFrozen,
+               pepperoniFrozen, poultryMeatFrozen, fishFrozen, quornFrozen, porkFrozen, beefFrozen, lambFrozen, veganSausagesFrozen,
                oil, soySauce, wine, gravyPowder, onionPowder, spicesDried, herbsDried};
 
 notIngredient = null;
@@ -13,9 +13,9 @@ nothing = none;
 % By sea (SDA from UK) or air (Twin Otter from South America or South Atlantic).
 costSources = {purchase, transport, storage, cooking};
 costs = [|0,0,0,0 | 
-          40,9,1,3 | 10,9,1,20 | 20,9,1,6 | 14,9,1,12 | 17,9,2,20 |
-          30,9,1,0 | 30,9,2,0 | 10,9,2,6 | 30,9,2,0 | 20,9,1,0 | 10,7,1,60 | 8,9,1,0 | 11,7,2,10 |
-          60,9,2,0 | 40,9,1,0 | 70,9,2,0 | 89,9,1,0 | 36,7,1,3 |
+          40,9,1,3 | 10,9,1,20 | 20,9,1,6 | 14,9,1,12 | 17,9,2,20 | 23,9,2,0 |
+          30,9,1,0 | 30,9,2,0 | 10,9,2,6 | 30,9,2,0 | 20,9,1,0 | 10,7,1,60 | 8,9,1,0 | 11,7,2,10 | 
+          60,9,2,0 | 40,9,1,0 | 70,9,2,0 | 89,9,1,0 | 36,7,1,3 | 115,9,2,0 |
           70,9,2,0 | 90,9,2,40 | 70,9,2,3 | 59,9,2,12 | 57,9,2,40 | 40,9,2,40 | 80,9,2,40 | 128,9,2,10 |
           13,9,1,0 | 100,7,1,0 | 80,7,1,0 | 77,9,1,0 | 160,9,1,0 | 590,9,1,0 | 330,9,1,0 |];
 
@@ -31,9 +31,9 @@ costs = [|0,0,0,0 |
 % Amount of nutrients in 100g of ingredient.
 % nutrients = {calories, carbohydrate, fat, fibre, protein};
 nutrition = [|0,0,0,0,0 | 
-              138,25,2,1,5 | 364,76,1,3,10 | 130,28,0,0,3 | 131,25,1,1,5 | 536,53,15,5,7 |
+              138,25,2,1,5 | 364,76,1,3,10 | 130,28,0,0,3 | 131,25,1,1,5 | 536,53,15,5,7 | 286,57,1,2,11 |
               22,3,0,1,3 | 40,9,0,4,2 | 34,7,0,3,3 | 81,14,0,5,5 | 18,4,0,1,1 | 77,17,0,2,2 | 350,63,1,16,21 | 25,6,0,3,1 |
-              402,1,33,0,25 | 196,4,19,0,3 | 717,0,81,0,1 | 44,5,1,0,3 | 155,1,11,0,13 |
+              402,1,33,0,25 | 196,4,19,0,3 | 717,0,81,0,1 | 44,5,1,0,3 | 155,1,11,0,13 | 270,21,21,0,0 |
               494,0,44,0,23 | 239,0,14,0,27 | 206,0,12,0,22 | 99,2,2,6,14 | 242,0,14,0,27 | 250,0,15,0,26 | 294,0,21,0,25 | 216,10,15,4,11 |
               812,0,95,0,0 | 53,5,1,1,8 | 81,3,0,0,0 | 79,5,6,0,2 | 40,9,0,2,1 | 0,0,0,0,0 | 0,0,0,0,0 |];
 
@@ -43,7 +43,8 @@ nutrition = [|0,0,0,0,0 |
 % storage space square cm taken by 100g of ingredients.
 %spaceTaken = [|0,0 | 10,0|];
 
-meals = {vegChowMein, pepperoniPizza, chickenNoodles, mushroomSoup, kievs, mushroomRisotto, quornLasagne, jacketSpud, marghertia, moussaka, ratatouille, vegSpagBol, veganCurry, sushi, paella, veganChilli, shepherdsPie, veganSausageCasserole, mushroomOmelette, fishAndChips};
+meals = {vegChowMein, pepperoniPizza, chickenNoodles, mushroomSoup, kievs, mushroomRisotto, quornLasagne, jacketSpud, marghertia, moussaka, ratatouille, vegSpagBol, potatoCurry, sushi, paella, beanChilli, shepherdsPie, veganSausageCasserole, mushroomOmelette, fishAndChips,
+ veganPizza, quornChilli, chickenCurry, veganBangersMash, veganCanneloni, beefBurgers, roastPork, stuffedPeppers, stuffedAubergine, shakshuka};
 
 numOptions = 3; % 3 choices of meal will be served at the buffet bar.
 
@@ -52,7 +53,7 @@ mealIngredients =
      [|noodlesDried, mushroomsTinned, peppersFrozen, broccoliFrozen, soySauce
      |flour, cheeseFrozen, pepperoniFrozen, tomatoesTinned, mushroomsTinned
      |noodlesDried, poultryMeatFrozen, peasFrozen, soySauce, broccoliFrozen
-     |mushroomsTinned, creamPowder, potatoesFresh, butterFrozen, gravyPowder
+     |mushroomsTinned, creamPowder, potatoesFresh, butterFrozen, breadRollsFrozen
      |poultryMeatFrozen, flour, peasFrozen, broccoliFrozen, chipsFrozen
      |rice, oil, wine, mushroomsTinned, tomatoesTinned
      |pasta, tomatoesTinned, cheeseFrozen, quornFrozen, peppersFrozen
@@ -66,38 +67,26 @@ mealIngredients =
      |rice, fishFrozen, wine, tomatoesTinned, onionPowder
      |rice, beansTinned, tomatoesTinned, wine, spicesDried
      |potatoesFresh, lambFrozen, peasFrozen, gravyPowder, onionPowder
-     |veganSausages, potatoesFresh, onionPowder, herbsDried, aubergineFresh
+     |veganSausagesFrozen, potatoesFresh, onionPowder, herbsDried, aubergineFresh
      |eggsFresh, mushroomsTinned, herbsDried, oil, onionPowder
-     |fishFrozen, chipsFrozen, peasFrozen, broccoliFrozen, herbsDried|];
+     |fishFrozen, chipsFrozen, peasFrozen, broccoliFrozen, herbsDried
+     |flour, veganCheeseFrozen, tomatoesTinned, mushroomsTinned, peppersFrozen
+     |rice, quornFrozen, beansTinned, spicesDried, tomatoesTinned
+     |poultryMeatFrozen, rice, potatoesFresh, spicesDried, creamPowder
+     |veganSausagesFrozen, potatoesFresh, onionPowder, gravyPowder, peasFrozen
+     |pasta, veganCheeseFrozen, herbsDried, onionPowder, tomatoesTinned
+     |breadRollsFrozen, beefFrozen, cheeseFrozen, onionPowder, chipsFrozen
+     |porkFrozen, herbsDried, potatoesFresh, gravyPowder, peasFrozen
+     |peppersFrozen, rice, veganCheeseFrozen, herbsDried, beansTinned
+     |aubergineFresh, rice, wine, veganCheeseFrozen, spicesDried
+     |tomatoesTinned, eggsFresh, peppersFrozen, spicesDried, cheeseFrozen|];
      
-maxContains = 3;     
-mealContains = [|gluten, egg, none|
-                 meat, milk, gluten|
-                 meat, gluten, egg|
-                 milk, none, none|
-                 meat, gluten, none|
-                 none, none, none|
-                 gluten, milk, egg|
-                 none, none, none|
-                 gluten, milk, none|
-                 meat, none, none|
-                 none, none, none|
-                 egg, gluten, milk|
-                 none, none, none|
-                 meat, none, none|
-                 meat, none, none|
-                 none, none, none|
-                 meat, none, none|
-                 none, none, none|
-                 egg, none, none|
-                 meat, none, none|];
-
 % amount of ingredient in meal x 100g or 100ml.
 mealIngredientsAmounts = 
     [|2, 2, 1, 1, 0|
       2, 2, 2, 2, 1|
       2, 1, 2, 1, 1|
-      1, 1, 1, 1, 0|
+      1, 1, 1, 1, 1|
       2, 1, 1, 1, 1|
       2, 1, 1, 1, 1|
       1, 2, 1, 2, 1|
@@ -113,7 +102,49 @@ mealIngredientsAmounts =
       3, 1, 1, 1, 1|
       2, 2, 1, 1, 2|
       2, 1, 1, 1, 1|
-      3, 2, 1, 1, 1|];
+      3, 2, 1, 1, 1|
+      2, 1, 1, 1, 1|
+      2, 2, 1, 1, 2|
+      1, 2, 1, 1, 1|
+      2, 2, 0, 0, 1|
+      2, 2, 1, 0, 2|
+      1, 1, 1, 0, 1|
+      2, 1, 1, 0, 1|
+      2, 1, 1, 1, 1|
+      2, 1, 1, 1, 0|
+      2, 1, 2, 1, 1|];     
+     
+maxContains = 3;     
+mealContains = [|gluten, egg, none|
+                 meat, milk, gluten|
+                 meat, gluten, egg|
+                 milk, gluten, none|
+                 meat, gluten, none|
+                 none, none, none|
+                 gluten, milk, egg|
+                 none, none, none|
+                 gluten, milk, none|
+                 meat, none, none|
+                 none, none, none|
+                 egg, gluten, milk|
+                 none, none, none|
+                 meat, none, none|
+                 meat, none, none|
+                 none, none, none|
+                 meat, none, none|
+                 none, none, none|
+                 egg, none, none|
+                 meat, none, none|
+                 gluten, none, none|
+                 egg, none, none|
+                 meat, milk, none|
+                 none, none, none|
+                 gluten, none, none|
+                 gluten, meat, milk|
+                 meat, none, none|
+                 none, none, none|
+                 none, none, none|
+                 egg, milk, none|];
           
 numPeople = 20;
      
