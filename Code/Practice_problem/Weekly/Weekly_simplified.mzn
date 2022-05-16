@@ -39,19 +39,20 @@ int: numPeople;
 enum weekdays = {Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday}; 
 enum mealtimes = {lunch, tea}; 
  
+include "alldifferent.mzn"; 
+% All the options on each mealtime should be different, and each row of meals should be different, but the whole array doesn't need to be different. 
+ 
 array[weekdays, 1..numOptions] of var meals: mealsServed; 
-include "alldifferent.mzn";
-% All the options on each mealtime should be different, and each row of meals should be different, but the whole array doesn't need to be different.
 constraint alldifferent(mealsServed);
 
-array[weekdays] of var sides: sidesServed;
 % Each side is offfered at least once.
-constraint forall(option in sides)(exists (day in weekdays)(sidesServed[day] = sides[option]));
+array[weekdays, 1..numSidesOffered] of var sides: sidesServed;
+constraint forall(option in sides)(exists (day in weekdays, j in 1..numSidesOffered)(sidesServed[day, j] = sides[option]));
 
-array[weekdays] of var desserts: dessertsServed;
+array[weekdays, 1..numDessertsOffered] of var desserts: dessertsServed;
 constraint alldifferent(dessertsServed);
 
 solve satisfy;
 
 %output["\(mealsOffered)\n\(mealsServed)"];
-output["The meals served for \(day) \(time) are \(mealsServed[day, 1]), \(mealsServed[day, 2]) and \(mealsServed[day, 3]) \nwith optional extra \(sidesServed[day]), and the dessert is \(desserts[day]).\n" | day in weekdays, time in mealtimes];
+output["The meals served for \(day) \(time) are \(mealsServed[day, 1]), \(mealsServed[day, 2]) and \(mealsServed[day, 3]) \nwith optional extra \(sidesServed[day, 1]), and the dessert is \(desserts[day]).\n" | day in weekdays, time in mealtimes];
