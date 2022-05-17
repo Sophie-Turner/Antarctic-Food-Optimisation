@@ -107,11 +107,12 @@ mealContains = [|gluten, egg, none| meat, milk, gluten| meat, gluten, egg| milk,
                  gluten, none, none| egg, none, none| meat, milk, none| none, none, none| gluten, none, none|
                  gluten, meat, milk| meat, none, none| none, none, none| none, none, none| egg, milk, none|];
 
+% The sides can all be eated by every diet type.
 numSidesOffered = 1;              
-sides = {breadRolls, roastPotatoes, Rice, veganSausages, peas, chips};                     
+sides = {roastPotatoes, Rice, veganSausages, peas, chips};                     
 % Oven and grill cost 10p for 10 mins. Hob and microwave cost 6p for 10 mins.
-sideCookingCosts = [0, 10, 3, 7, 2, 7];          
-sideIngredients = [breadRollsFrozen, potatoesFresh, rice, veganSausagesFrozen, peasFrozen, chipsFrozen]; 
+sideCookingCosts = [10, 3, 7, 2, 7];          
+sideIngredients = [potatoesFresh, rice, veganSausagesFrozen, peasFrozen, chipsFrozen]; 
           
 numDessertsOffered = 1;
 desserts = {veganMousse, veganFruitYoghurt, fruitSalad, fruitYoghurt, walnutCake, chocolateCake, spongeCustard, jelly, cheeseBiscuits,
