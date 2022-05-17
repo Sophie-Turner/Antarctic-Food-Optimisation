@@ -1,5 +1,5 @@
 [<img align="right" src=Images/BAS_logo_colour.jpg width=350px>](https://bas.ac.uk/ai)
-[<img align="left" src=Images/cambridge_university2.svg width=300px>](https://ai4er-cdt.esc.cam.ac.uk/)
+[<img align="left" src=Images/Cambridge_university.svg width=300px>](https://ai4er-cdt.esc.cam.ac.uk/)
 <br/><br/><br/>
 
 # Antarctic-Food-Optimisation
