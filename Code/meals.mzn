@@ -63,12 +63,15 @@ float: menMultiplier = 0.25;
 array[contains] of int: numRefusals;
 
 % Work out how much nutrition the group needs per day.
-array[nutrients] of var float: totalNutrientsRequired;
+array[nutrients] of var float: dailyNutrientsRequired;
 constraint forall(i in nutrients)
-          (totalNutrientsRequired[i] = 
+          (dailyNutrientsRequired[i] = 
           (minNutrients[i] * numPeople) 
           + (minNutrients[i] * numPhysicalWorkers * physicalMultiplier)
           + (minNutrients[i] * numMen * menMultiplier)); 
+% Work out how much nutrition the group needs per week.
+var float: weeklyCalsRequired;
+constraint weeklyCalsRequired = dailyNutrientsRequired[calories] * 7;
  
 %%%%%%%%%%%%%%%%%%%%%%%%% MAIN MEALS PROCESSING %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
  
@@ -104,6 +107,15 @@ constraint forall(day in weekdays)
                                /\ mealContains[mealsServed[day, optionNum], itemNum] != egg
                                /\ mealContains[mealsServed[day, optionNum], itemNum] != milk)));                 
                  
+% Work out the nutrition on offer.
+array[nutrients] of var int: mealsNutritionServed;
+constraint forall(nutrient in nutrients)
+           (mealsNutritionServed[nutrient] = 
+            sum(day in weekdays, optionNum in 1..numOptions, item in 1..maxIngredients)
+            (nutrition[mealIngredients[mealsServed[day, optionNum], item], nutrient]
+             * mealIngredientsAmounts[mealsServed[day, optionNum], item]
+             * numServed[day, optionNum]));                  
+                 
 % Multiply by 2 because each meal is served twice a day.
 var int: mealsCost = 2 * sum(day in weekdays, optionNum in 1..numOptions, ingredientNum in 1..maxIngredients)
                             (sum(costSource in costSources)
@@ -120,6 +132,14 @@ constraint forall(option in sides)(exists (day in weekdays, j in 1..numSidesOffe
 array[weekdays, 1..numSidesOffered] of var int: numSidesServed;
 constraint forall(day in weekdays, optionNum in 1..numSidesOffered)
                  (numSidesServed[day, optionNum] = numPeople);
+                 
+% Work out the nutrition on offer.
+array[nutrients] of var int: sidesNutritionServed;
+constraint forall(nutrient in nutrients)
+           (sidesNutritionServed[nutrient] = 
+            sum(day in weekdays, optionNum in 1..numSidesOffered)
+            (nutrition[sideIngredients[sidesServed[day, optionNum]], nutrient]
+             * numPeople));                 
                  
 % Multiply by 2 because each meal is served twice a day.
 var int: sidesCost = 2 * sum(day in weekdays, optionNum in 1..numSidesOffered)
@@ -141,6 +161,15 @@ constraint forall(day in weekdays,
                         numPeople - max(itemNum in 1..maxContains)
                            (numRefusals[dessertContains[dessertsServed[day, optionNum], itemNum]]));                     
 
+% Work out the nutrition on offer.
+array[nutrients] of var int: dessertsNutritionServed;
+constraint forall(nutrient in nutrients)
+           (dessertsNutritionServed[nutrient] = 
+            sum(day in weekdays, optionNum in 1..numDessertsOffered, item in 1..maxIngredients)
+            (nutrition[dessertIngredients[dessertsServed[day, optionNum], item], nutrient]
+             * dessertAmounts[dessertsServed[day, optionNum], item]
+             * numDessertsServed[day, optionNum]));
+
 var int: dessertsCost = 2 * sum(day in weekdays, optionNum in 1..numDessertsOffered, ingredientNum in 1..maxIngredients)
                                (sum(costSource in costSources)
                                    (costs[dessertIngredients[dessertsServed[day, optionNum], ingredientNum], costSource])
@@ -148,12 +177,16 @@ var int: dessertsCost = 2 * sum(day in weekdays, optionNum in 1..numDessertsOffe
                                 * dessertAmounts[dessertsServed[day, optionNum], ingredientNum]
                                 + dessertCookingCosts[dessertsServed[day, optionNum]]);
 
+%%%%%%%%%%%%%%%%%%%%%% GENERAL CONSTRAINTS %%%%%%%%%%%%%%%%%%%%%
+
+% Make sure everyone gets enough food energy.
+var int: totalCalsServed = mealsNutritionServed[calories] + sidesNutritionServed[calories] + dessertsNutritionServed[calories] * 2;
+constraint totalCalsServed >= weeklyCalsRequired;
+
 %%%%%%%%%%%%%%%%%%%%%% OBJECTIVE %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 var int: totalCost = mealsCost + sidesCost + dessertsCost;
-
 solve minimize totalCost;
 
-%output["\(mealsOffered)\n\(mealsServed)"];
 output["On \(day), for \(time), \(numServed[day, 1]) servings of \(mealsServed[day, 1]), \(numServed[day, 2]) servings of \(mealsServed[day, 2]) and \(numServed[day, 3]) servings of \(mealsServed[day, 3])\nwill be provided with \(numSidesServed[day, 1]) optional extra servings of \(sidesServed[day, 1]) and \(numDessertsServed[day, 1]) servings of \(dessertsServed[day, 1]) for dessert.\n" | day in weekdays, time in mealtimes];
-output["The total cost per week will be \(mealsCost)p including purchase, transport, storage and cooking."];
+output["The total cost per week will be \(mealsCost)p including purchase, transport, storage and cooking.\n"];
