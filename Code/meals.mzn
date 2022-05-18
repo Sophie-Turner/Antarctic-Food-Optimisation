@@ -9,8 +9,11 @@ ingredients: notIngredient;
 enum contains = {none, meat, milk, gluten, egg, sugars};
 contains: nothing;
 
-enum costSources;
+enum costSources = {purchase, transportCost, storageCost};
 array[ingredients, costSources] of int: costs;
+
+enum emissionsSources = {production, transportEmission, storageEmission};
+array[ingredients, emissionsSources] of float: emissions;
 
 int: maxIngredients;
 int: maxContains;
@@ -85,6 +88,8 @@ array[weekdays, 1..numOptions] of var int: numServed;
 constraint alldifferent(mealsServed);
 constraint forall(day in weekdays, optionNum in 1..numOptions)
                  (numServed[day, optionNum] >= numPeople div 4);
+%constraint forall(day in weekdays, optionNum in 1..numOptions)
+%                 (numServed[day, optionNum] >= 0);
 % The right number of meals must be offered.
 constraint forall(day in weekdays)
                  (sum(optionNum in 1..numOptions)

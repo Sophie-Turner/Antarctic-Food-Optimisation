@@ -11,8 +11,9 @@ notIngredient = null;
 nothing = none;
 
 % Costs in pennies per 100g or 100ml of ingredient.
-% Frozen or tinned/dry. purchase, transport, storage.
+% Frozen or tinned/dry.
 % By sea (SDA from UK) or air (Twin Otter from South America or South Atlantic).
+costSources = {purchase, transport, storage};
 costs = [|0,0,0 | 
           40,9,1 | 10,9,1 | 20,9,1 | 14,9,1 | 17,9,2 | 23,9,2 |
           30,9,1 | 30,9,2 | 10,9,2 | 30,9,2 | 20,9,1 | 10,7,1 | 8,9,1 | 11,7,2 | 
@@ -25,16 +26,8 @@ costs = [|0,0,0 |
 % Assume SDA ship costs £20,000 per day to move, takes 20 days and can store 1440 metres cubed of food. ~ 9p per 100g.
 
 % Greenhouse gas emissions associated with 100g of igredient.
-% production, transport, storage.
-%include the transportation from the proudction source.
-emissions = [| 0,0,0 |
-             0.18,0,0 | 0.07,0,0 | 0.15,0,0 | 0.18,0,0 | 0.20,0,0 | 0.06,0,0 |
-             0.24,0,0 | 0.10,0,0 | 0.07,0,0 | 0.10,0,0 | 0.05,0,0 | 0.07,0,0 | 0.10,0,0 |
-             0.97,0,0 | 0.44,0,0 | 0.76,0,0 | 0.14,0,0 | 0.05,0,0 | 0.33,0,0 | 0.22,0,0 |
-             0.60,0,0 | 0.42,0,0 | 0.44,0,0 | 0.40,0,0 | 0.60,0,0 | 2.42,0,0 | 2.58,0,0 | 0.07,0,0 |
-             0.16,0,0 | 0.22,0,0 | 0.12,0,0 | 0.28,0,0 | 0.28,0,0 | 0.28,0,0 | 0.28,0,0 |
-             0.06,0,0 | 0.42,0,0 | 0.97,0,0 | 0.22,0,0 | 0.97,0,0 | 0.08,0,0 | 0.10,0,0 |
-              0.05,0,0 | 0.05,0,0 | 0.05,0,0 | 0.14,0,0 | 0.18,0,0 |];
+%emissionSources = {production, transport, storage, cooking};
+%emissions = [];
 
 % Grams of packaging per 100g of ingredient.
 %packagingWaste = [];
@@ -122,23 +115,29 @@ sideCookingCosts = [10, 3, 7, 2, 7];
 sideIngredients = [potatoesFresh, rice, veganSausagesFrozen, peasFrozen, chipsFrozen]; 
           
 numDessertsOffered = 1;
-desserts = {veganMousse, veganFruitYoghurt, fruitSalad, walnutCake, chocolateCake, spongeCustard, jelly, cheeseBiscuits, veganPancakes};
+desserts = {veganMousse, veganFruitYoghurt, fruitSalad, fruitYoghurt, walnutCake, chocolateCake, spongeCustard, jelly, cheeseBiscuits,
+            chocolateMousse, pancakes, veganPancakes};
 % Oven and grill cost 10p for 10 mins. Hob and microwave cost 6p for 10 mins.
-dessertCookingCosts = [0, 0, 0, 13, 13, 13, 0, 0, 1]; 
+dessertCookingCosts = [0, 0, 0, 0, 13, 13, 13, 0, 0, 0, 1, 1]; 
 
 dessertIngredients = [|darkChocolate, oil, sugar, null, null|
                        veganYoghurtFrozen, fruitMixFrozen, null, null, null|
                        applesFresh, orangesFresh, grapesFresh, null, null|
+                       yoghurtFrozen, fruitMixFrozen, null, null, null|
                        flour, sugar, butterFrozen, eggsFresh, nuts|
                        flour, sugar, butterFrozen, eggsFresh, darkChocolate|
                        flour, sugar, butterFrozen, eggsFresh, custardTinned|
                        jellyPowder, fruitMixFrozen, null, null, null|
                        biscuits, cheeseFrozen, grapesFresh, null, null|
+                       eggsFresh, darkChocolate, sugar, null, null|
+                       milkPowder, flour, eggsFresh, sugar, fruitMixFrozen|
                        oatMilk, flour, oil, sugar, fruitMixFrozen|];
                        
-dessertAmounts = [| 1,1,1,0,0 | 3,1,0,0,0 | 1,1,1,0,0 | 1,1,1,1,1 | 1,1,1,1,1 | 1,1,1,1,2 | 1,1,0,0,0 | 2,2,1,0,0 | 1,1,1,1,1 |];          
-dessertContains = [| sugars, none, none | none, none, none | none, none, none | milk, egg, sugars |
-                     milk, egg, sugars | milk, egg, sugars | sugars, meat, none | milk, none, none | sugars, none, none |];
+dessertAmounts = [| 1,1,1,0,0 | 3,1,0,0,0 | 1,1,1,0,0 | 3,1,0,0,0 | 1,1,1,1,1 | 1,1,1,1,1 | 1,1,1,1,2 | 1,1,0,0,0 | 2,2,1,0,0 | 
+                    1,1,1,0,0 | 1,1,1,1,1 | 1,1,1,1,1 |];          
+dessertContains = [| sugars, none, none | none, none, none | none, none, none | milk, none, none | milk, egg, sugars |
+                     milk, egg, sugars | milk, egg, sugars | sugars, meat, none | milk, none, none | sugars, egg, none | 
+                     sugars, egg, milk | sugars, none, none |];
                     
 numPeople = 20; 
 % physical workers need +100% more nutrients per day.
