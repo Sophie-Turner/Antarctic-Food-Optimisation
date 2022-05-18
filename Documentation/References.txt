@@ -1,6 +1,6 @@
 food prices and nutritional values https://www.tesco.com/groceries/
 
-emissions
+food emissions
 rice https://www.ccacoalition.org/en/resources/life-cycle-greenhouse-gas-emissions-california-rice-production#:~:text=The%20100%2Dyear%20global%20warming,which%20field%20emissions%20contributed%2069%25.
 bread https://www.sheffield.ac.uk/news/nr/loaf-bread-energy-1.684676
 capsicum pepper https://www.researchgate.net/publication/263362657_Estimation_of_Carbon_Emission_and_LCA_Life_Cycle_Assessment_from_Pepper_Capsicum_annuum_L_Production_System
@@ -10,10 +10,10 @@ chocolate https://www.news-medical.net/health/Impact-of-Chocolate-on-our-Climate
 refined sugar https://www.researchgate.net/publication/280015218_The_Product_Carbon_Footprint_of_EU_beet_sugar_Part_I
 biscuits https://www.sciencedirect.com/science/article/pii/S0959652619316154
 
-cooking
+cooking emissions
 https://consumerecology.com/carbon-footprint-of-cooking/
 
-SDA boat
+SDA boat 
 https://www.bas.ac.uk/polar-operations/sites-and-facilities/facility/rrs-sir-david-attenborough/
 
 Twin otter aircraft
@@ -23,3 +23,4 @@ https://www.vikingair.com/sites/default/files/Viking-Twin-Otter-Series-400-Techn
 https://ansperformance.eu/acronym/nm/
 https://www.bas.ac.uk/polar-operations/sites-and-facilities/facility/twin-otter-aircraft/
 https://www.flightdeckfriend.com/ask-a-pilot/how-much-does-jet-fuel-cost/#:~:text=With%20a%20metric%20tonne%20being,or%20about%20%240.43%20per%20KG.
+https://www.carbonindependent.org/22.html

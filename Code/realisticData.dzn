@@ -29,13 +29,13 @@ costs = [|0,0,0 |
 % production, transport, storage.
 %include the transportation from the proudction source.
 emissions = [| 0,0,0 |
-             18,0,1 | 7,0,1 | 15,0,1 | 18,0,1 | 20,0,2 | 6,0,2 |
-             24,0,1 | 10,0,2 | 7,0,2 | 10,0,2 | 5,0,1 | 7,0,1 | 10,0,1 | 10,0,2 |
-             97,0,2 | 44,0,1 | 76,0,2 | 14,0,1 | 5,0,1 | 33,0,1 | 22,0,2 |
-             60,0,2 | 42,0,2 | 44,0,2 | 40,0,2 | 60,0,2 | 242,0,2 | 258,0,2 | 7,0,2 |
-             16,0,1 | 22,0,1 | 12,0,1 | 28,0,1 | 28,0,1 | 28,0,1 | 28,0,1 |
-             6,0,1 | 42,0,1 | 97,0,2 | 22,0,2 | 97,0,1 | 8,0,1 | 10,0,2 |
-              5,0,1 | 5,0,1 | 5,0,1 | 14,0,1 | 18,0,1 |];
+             18,19,1 | 7,19,1 | 15,19,1 | 18,19,1 | 20,19,2 | 6,19,2 |
+             24,19,1 | 10,19,2 | 7,19,2 | 10,19,2 | 5,19,1 | 7,37,1 | 10,19,1 | 10,37,2 |
+             97,19,2 | 44,19,1 | 76,19,2 | 14,19,1 | 5,19,1 | 33,37,1 | 22,19,2 |
+             60,19,2 | 42,19,2 | 44,19,2 | 40,19,2 | 60,19,2 | 242,19,2 | 258,19,2 | 7,19,2 |
+             16,19,1 | 22,37,1 | 12,37,1 | 28,19,1 | 28,19,1 | 28,19,1 | 28,19,1 |
+             6,19,1 | 42,19,1 | 97,19,2 | 22,19,2 | 97,19,1 | 8,19,1 | 10,19,2 |
+              5,37,1 | 5,37,1 | 5,37,1 | 14,19,1 | 18,19,1 |];
 
 % Grams of packaging per 100g of ingredient.
 %packagingWaste = [];
@@ -63,6 +63,7 @@ meals = {vegChowMein, pepperoniPizza, chickenNoodles, mushroomSoup, kievs, mushr
  veganPizza, quornChilli, chickenCurry, veganBangersMash, veganCanneloni, beefBurgers, roastPork, stuffedPeppers, stuffedAubergine, shakshuka};
 
 % Oven and grill cost 10p for 10 mins. Hob and microwave cost 6p for 10 mins. Several 100g portions of food fit in each.
+% Most oven energy is for preheating. It doesn't increase linearly with time.
 mealCookingCosts = [2, 4, 2, 4, 7, 12, 10, 12, 4, 10, 12, 10, 12, 3, 12, 12, 10, 12, 2, 7, 4, 12, 12, 7, 10, 1, 12, 6, 6, 8]; 
 
 maxIngredients = 5;

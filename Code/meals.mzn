@@ -88,8 +88,7 @@ array[weekdays, 1..numOptions] of var int: numServed;
 constraint alldifferent(mealsServed);
 constraint forall(day in weekdays, optionNum in 1..numOptions)
                  (numServed[day, optionNum] >= numPeople div 4);
-%constraint forall(day in weekdays, optionNum in 1..numOptions)
-%                 (numServed[day, optionNum] >= 0);
+
 % The right number of meals must be offered.
 constraint forall(day in weekdays)
                  (sum(optionNum in 1..numOptions)
