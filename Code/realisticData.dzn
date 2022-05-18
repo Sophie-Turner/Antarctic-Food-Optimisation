@@ -24,18 +24,18 @@ costs = [|0,0,0 |
 
 % Assume SDA ship costs £20,000 per day to move, takes 20 days and can store 1440 metres cubed of food. ~ 9p per 100g.
 
-% Greenhouse gas emissions associated with 10kg of igredient. 
-% 10kg because then it can be int, same magnitude as cost for obj fn, and relative measure. 
+% kg of greenhouse gas emissions associated with 10kg of igredient. 
+% 10kg because then it can be int, same magnitude as 100g cost for obj fn, and relative measure. 
 % production, transport, storage.
 %include the transportation from the proudction source.
 emissions = [| 0,0,0 |
-             18,0,0 | 7,0,0 | 15,0,0 | 18,0,0 | 20,0,0 | 6,0,0 |
-             24,0,0 | 10,0,0 | 7,0,0 | 10,0,0 | 5,0,0 | 7,0,0 | 10,0,0 | 10,0,0 |
-             97,0,0 | 44,0,0 | 76,0,0 | 14,0,0 | 5,0,0 | 33,0,0 | 22,0,0 |
-             60,0,0 | 42,0,0 | 44,0,0 | 40,0,0 | 60,0,0 | 242,0,0 | 258,0,0 | 7,0,0 |
-             16,0,0 | 22,0,0 | 12,0,0 | 28,0,0 | 28,0,0 | 28,0,0 | 28,0,0 |
-             6,0,0 | 42,0,0 | 97,0,0 | 22,0,0 | 97,0,0 | 8,0,0 | 10,0,0 |
-              5,0,0 | 5,0,0 | 5,0,0 | 14,0,0 | 18,0,0 |];
+             18,0,1 | 7,0,1 | 15,0,1 | 18,0,1 | 20,0,2 | 6,0,2 |
+             24,0,1 | 10,0,2 | 7,0,2 | 10,0,2 | 5,0,1 | 7,0,1 | 10,0,1 | 10,0,2 |
+             97,0,2 | 44,0,1 | 76,0,2 | 14,0,1 | 5,0,1 | 33,0,1 | 22,0,2 |
+             60,0,2 | 42,0,2 | 44,0,2 | 40,0,2 | 60,0,2 | 242,0,2 | 258,0,2 | 7,0,2 |
+             16,0,1 | 22,0,1 | 12,0,1 | 28,0,1 | 28,0,1 | 28,0,1 | 28,0,1 |
+             6,0,1 | 42,0,1 | 97,0,2 | 22,0,2 | 97,0,1 | 8,0,1 | 10,0,2 |
+              5,0,1 | 5,0,1 | 5,0,1 | 14,0,1 | 18,0,1 |];
 
 % Grams of packaging per 100g of ingredient.
 %packagingWaste = [];
@@ -63,7 +63,7 @@ meals = {vegChowMein, pepperoniPizza, chickenNoodles, mushroomSoup, kievs, mushr
  veganPizza, quornChilli, chickenCurry, veganBangersMash, veganCanneloni, beefBurgers, roastPork, stuffedPeppers, stuffedAubergine, shakshuka};
 
 % Oven and grill cost 10p for 10 mins. Hob and microwave cost 6p for 10 mins. Several 100g portions of food fit in each.
-mealCookingCosts = [2, 4, 2, 4, 7, 12, 10, 20, 4, 10, 24, 10, 24, 3, 12, 12, 10, 12, 2, 7, 4, 12, 24, 7, 10, 1, 24, 6, 6, 8]; 
+mealCookingCosts = [2, 4, 2, 4, 7, 12, 10, 12, 4, 10, 12, 10, 12, 3, 12, 12, 10, 12, 2, 7, 4, 12, 12, 7, 10, 1, 12, 6, 6, 8]; 
 
 maxIngredients = 5;
 mealIngredients = 
@@ -138,7 +138,7 @@ dessertIngredients = [|darkChocolate, oil, sugar, null, null|
                        oatMilk, flour, oil, sugar, fruitMixFrozen|];
                        
 dessertAmounts = [| 1,1,1,0,0 | 3,1,0,0,0 | 1,1,1,0,0 | 1,1,1,1,1 | 1,1,1,1,1 | 1,1,1,1,2 | 1,1,0,0,0 | 2,2,1,0,0 | 1,1,1,1,1 |];          
-dessertContains = [| sugars, none, none | none, none, none | none, none, none | milk, egg, sugars |
+dessertContains = [| sugars, none, none | none, none, none | none, none, none | nut, egg, sugars |
                      milk, egg, sugars | milk, egg, sugars | sugars, meat, none | milk, none, none | sugars, none, none |];
                     
 numPeople = 20; 
@@ -147,8 +147,8 @@ numPhysicalWorkers = 10;
 % males need +25% more nutrients per day.
 numMen = 14; 
 % num people who do not eat categories. None means they eat everything.     
-% contains = {none, meat, milk, gluten, egg, sugars};
-numRefusals = [0, 6, 3, 2, 2, 1];
+% contains = {none, meat, milk, gluten, egg, nut, seed, sugars};
+numRefusals = [0, 6, 3, 2, 2, 0, 0, 1];
 
 % Expand num people data to account for people arriving and leaving on different days. 
      

@@ -6,7 +6,7 @@ enum ingredients;
 % A null ingredient is needed for static 2d array placeholders.
 ingredients: notIngredient;
 
-enum contains = {none, meat, milk, gluten, egg, sugars};
+enum contains = {none, meat, milk, gluten, egg, nut, seed, sugars};
 contains: nothing;
 
 enum costSources = {purchase, transportCost, storageCost};
