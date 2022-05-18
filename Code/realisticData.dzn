@@ -24,17 +24,18 @@ costs = [|0,0,0 |
 
 % Assume SDA ship costs £20,000 per day to move, takes 20 days and can store 1440 metres cubed of food. ~ 9p per 100g.
 
-% Greenhouse gas emissions associated with 100g of igredient.
+% Greenhouse gas emissions associated with 10kg of igredient. 
+% 10kg because then it can be int, same magnitude as cost for obj fn, and relative measure. 
 % production, transport, storage.
 %include the transportation from the proudction source.
 emissions = [| 0,0,0 |
-             0.18,0,0 | 0.07,0,0 | 0.15,0,0 | 0.18,0,0 | 0.20,0,0 | 0.06,0,0 |
-             0.24,0,0 | 0.10,0,0 | 0.07,0,0 | 0.10,0,0 | 0.05,0,0 | 0.07,0,0 | 0.10,0,0 |
-             0.97,0,0 | 0.44,0,0 | 0.76,0,0 | 0.14,0,0 | 0.05,0,0 | 0.33,0,0 | 0.22,0,0 |
-             0.60,0,0 | 0.42,0,0 | 0.44,0,0 | 0.40,0,0 | 0.60,0,0 | 2.42,0,0 | 2.58,0,0 | 0.07,0,0 |
-             0.16,0,0 | 0.22,0,0 | 0.12,0,0 | 0.28,0,0 | 0.28,0,0 | 0.28,0,0 | 0.28,0,0 |
-             0.06,0,0 | 0.42,0,0 | 0.97,0,0 | 0.22,0,0 | 0.97,0,0 | 0.08,0,0 | 0.10,0,0 |
-              0.05,0,0 | 0.05,0,0 | 0.05,0,0 | 0.14,0,0 | 0.18,0,0 |];
+             18,0,0 | 7,0,0 | 15,0,0 | 18,0,0 | 20,0,0 | 6,0,0 |
+             24,0,0 | 10,0,0 | 7,0,0 | 10,0,0 | 5,0,0 | 7,0,0 | 10,0,0 | 10,0,0 |
+             97,0,0 | 44,0,0 | 76,0,0 | 14,0,0 | 5,0,0 | 33,0,0 | 22,0,0 |
+             60,0,0 | 42,0,0 | 44,0,0 | 40,0,0 | 60,0,0 | 242,0,0 | 258,0,0 | 7,0,0 |
+             16,0,0 | 22,0,0 | 12,0,0 | 28,0,0 | 28,0,0 | 28,0,0 | 28,0,0 |
+             6,0,0 | 42,0,0 | 97,0,0 | 22,0,0 | 97,0,0 | 8,0,0 | 10,0,0 |
+              5,0,0 | 5,0,0 | 5,0,0 | 14,0,0 | 18,0,0 |];
 
 % Grams of packaging per 100g of ingredient.
 %packagingWaste = [];
