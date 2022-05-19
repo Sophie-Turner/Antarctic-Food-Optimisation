@@ -10,15 +10,25 @@ ingredients = {null,
 notIngredient = null;
 nothing = none;
 
-portionTypes = {kilograms, litres, litres_equivalent};
-ingredientPortions = [kilograms,
-                      kilograms, kilograms, kilograms, kilograms, kilograms, kilograms,
-                      kilograms, kilograms, kilograms, kilograms, kilograms, kilograms, kilograms, kilograms,
-                      kilograms, litres_equivalent, kilograms, litres_equivalent, litres, kilograms, kilograms,
-                      kilograms, kilograms, kilograms, kilograms, kilograms, kilograms, kilograms, kilograms,
-                      litres, litres, litres, litres_equivalent, kilograms, kilograms, kilograms,
-                      kilograms, kilograms, litres, litres, kilograms, kilograms, kilograms,
-                      kilograms, kilograms, kilograms, kilograms, kilograms]; 
+% How many 'portions' in 100g eg num eggs, num potatoes, etc.
+portionMultiplier = [0,
+            0.1, 0.1, 0.1, 0.1, 0.1, 1,
+            0.75, 0.1, 0.1, 0.1, 0.25, 0.75, 0.4, 0.33,
+            0.1, 0.01, 0.1, 0.01, 0.1, 2, 0.1,
+            0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1,
+            0.1, 0.01, 0.1, 0.01, 0.1, 0.1, 0.1,
+            0.1, 0.1, 0.1, 0.1, 0.25, 0.1, 0.1,
+             1, 0.1, 0.75, 0.1, 0.1];
+             
+portionTypes = {kilograms, litres, medium, tins};
+ingredientTypes = [kilograms,
+                   kilograms, kilograms, kilograms, kilograms, kilograms, medium,
+                   tins, kilograms, kilograms, kilograms, tins, medium, tins, medium,
+                   kilograms, kilograms, kilograms, kilograms, litres, medium, kilograms,
+                   kilograms, kilograms, kilograms, kilograms, kilograms, kilograms, kilograms, kilograms,
+                   litres, litres, litres, kilograms, kilograms, kilograms, kilograms,
+                   kilograms, kilograms, litres, litres, tins, kilograms, kilograms,
+                    medium, kilograms, medium, kilograms, kilograms]; 
 
 % Costs in pennies per 100g or 100ml of ingredient.
 % Frozen or tinned/dry. purchase, transport, storage.
