@@ -10,6 +10,25 @@ ingredients = {null,
 notIngredient = null;
 nothing = none;
 
+% How many 'portions' in 100g eg num eggs, num potatoes, etc.
+portionMultiplier = [0,
+            0.1, 0.1, 0.1, 0.1, 0.1, 1,
+            0.75, 0.1, 0.1, 0.1, 0.25, 0.75, 0.4, 0.33,
+            0.1, 0.01, 0.1, 0.01, 0.1, 2, 0.1,
+            0.1, 0.01, 0.1, 0.01, 0.1, 0.1, 0.1,
+            0.1, 0.1, 0.1, 0.1, 0.25, 0.1, 0.1,
+             1, 0.1, 0.75, 0.1, 0.1];
+             
+portionTypes = {kilograms_of, litres_of, medium, tins_of};
+ingredientTypes = [kilograms_of,
+                   kilograms_of, kilograms_of, kilograms_of, kilograms_of, kilograms_of, medium,
+                   tins_of, kilograms_of, kilograms_of, kilograms_of, tins_of, medium, tins_of, medium,
+                   kilograms_of, kilograms_of, kilograms_of, kilograms_of, litres_of, medium, kilograms_of,
+                   kilograms_of, kilograms_of, kilograms_of, kilograms_of, kilograms_of, kilograms_of, kilograms_of, kilograms_of,
+                   litres_of, litres_of, litres_of, kilograms_of, kilograms_of, kilograms_of, kilograms_of,
+                   kilograms_of, kilograms_of, litres_of, litres_of, tins_of, kilograms_of, kilograms_of,
+                    medium, kilograms_of, medium, kilograms_of, kilograms_of]; 
+
 % Costs in pennies per 100g or 100ml of ingredient.
 % Frozen or tinned/dry. purchase, transport, storage.
 % By sea (SDA from UK) or air (Twin Otter from South America or South Atlantic).

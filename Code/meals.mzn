@@ -9,6 +9,10 @@ ingredients: notIngredient;
 enum contains = {none, meat, milk, gluten, egg, nut, seed, sugars};
 contains: nothing;
 
+array[ingredients] of float: portionMultiplier;
+enum portionTypes;
+array[ingredients] of portionTypes: ingredientTypes;
+
 enum costSources = {purchase, transportCost, storageCost};
 array[ingredients, costSources] of int: costs;
 
