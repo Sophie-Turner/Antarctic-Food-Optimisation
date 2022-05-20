@@ -233,9 +233,18 @@ var int: dessertsEmissions = sum(day in weekdays, optionNum in 1..numDessertsOff
 
 %%%%%%%%%%%%%%%%%%%%%% GENERAL CONSTRAINTS %%%%%%%%%%%%%%%%%%%%%
 
-% Make sure everyone gets enough food energy.
-var int: totalCalsServed = mealsNutritionServed[calories] + sidesNutritionServed[calories] + dessertsNutritionServed[calories] * 2;
-constraint totalCalsServed >= weeklyCalsRequired;
+% Make sure everyone gets enough nutrition.
+array[nutrients] of var int: nutritionServed;
+constraint forall(nutrient in nutrients)
+                 (nutritionServed[nutrient]
+                 = mealsNutritionServed[nutrient] 
+                 + sidesNutritionServed[nutrient] 
+                 + dessertsNutritionServed[nutrient] * 2);
+
+constraint nutritionServed[calories] >= dailyNutrientsRequired[calories] * 7;                 
+                                                   
+%constraint forall(nutrient in nutrients)
+%                 (nutritionServed[nutrient] >= dailyNutrientsRequired[nutrient] * 7);
 
 array[ingredients] of var int: weeklyOrder;
 constraint forall(ingredient in ingredients)
@@ -257,3 +266,4 @@ output["The total cost per week will be \(totalCost)p including purchase, transp
 output["The total greenhouse gas emissions associated with this menu is around \(totalEmissions div 100) kg per week.\n"];
 output["The weekly order will be:\n"];
 output["\(weeklyOrder[i]) \(ingredientPortions[i]) of \(i)\n" | i in ingredients];
+output["The group requires \(dailyNutrientsRequired[nutrient] * 7) \(nutrient) per week, and \(nutritionServed[nutrient]) \(nutrient) will be served.\n" | nutrient in nutrients];
