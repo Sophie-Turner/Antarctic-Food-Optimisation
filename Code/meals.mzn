@@ -47,6 +47,15 @@ array[desserts, 1..maxContains] of contains: dessertContains;
 array[desserts, 1..maxIngredients] of int: dessertAmounts;
 int: numDessertsOffered;
 
+%%%%%%%%%%%%%%%%%%% BREAKFAST INPUTS %%%%%%%%%%%%%%%%%%%%%
+
+enum breakfasts;
+array[breakfasts] of int: breakfastCookingCosts;
+array[breakfasts, 1..maxIngredients] of ingredients: breakfastIngredients;
+array[breakfasts, 1..maxContains] of contains: breakfastContains;
+array[breakfasts, 1..maxIngredients] of int: breakfastAmounts;
+int: numBreakfastsOffered;
+
 %%%%%%%%%%%%%%%%%%%% NUTRITION INPUTS %%%%%%%%%%%%%%%%%%%%%%
 
 % Assumed that all meals contain enough vitamins and minerals apart from vitamin D which can be lacking in this environment. 
