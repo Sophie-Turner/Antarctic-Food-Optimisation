@@ -31,31 +31,6 @@ array[meals, 1..maxContains] of contains: mealContains;
 array[meals, 1..maxIngredients] of int: mealIngredientsAmounts;
 int: numOptions; % Number of different meal options offered at this meal.
 
-%%%%%%%%%%%%%%%% SIDES INPUTS %%%%%%%%%%%%%%%%%%
-
-enum sides;
-array[sides] of int: sideCookingCosts;
-array[sides] of ingredients: sideIngredients;
-int: numSidesOffered; 
-
-%%%%%%%%%%%%%%%% DESSERTS INPUTS %%%%%%%%%%%%%%%%%%
-
-enum desserts;
-array[desserts] of int: dessertCookingCosts;
-array[desserts, 1..maxIngredients] of ingredients: dessertIngredients;
-array[desserts, 1..maxContains] of contains: dessertContains;
-array[desserts, 1..maxIngredients] of int: dessertAmounts;
-int: numDessertsOffered;
-
-%%%%%%%%%%%%%%%%%%% BREAKFAST INPUTS %%%%%%%%%%%%%%%%%%%%%
-
-enum breakfasts;
-array[breakfasts] of int: breakfastCookingCosts;
-array[breakfasts, 1..maxIngredients] of ingredients: breakfastIngredients;
-array[breakfasts, 1..maxContains] of contains: breakfastContains;
-array[breakfasts, 1..maxIngredients] of int: breakfastAmounts;
-int: numBreakfastsOffered;
-
 %%%%%%%%%%%%%%%%%%%% NUTRITION INPUTS %%%%%%%%%%%%%%%%%%%%%%
 
 % Assumed that all meals contain enough vitamins and minerals apart from vitamin D which can be lacking in this environment. 

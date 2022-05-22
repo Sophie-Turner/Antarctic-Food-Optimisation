@@ -72,26 +72,16 @@ nutrition = [|0,0,0,0,0 |
 % storage space square cm taken by 100g of ingredients.
 %spaceTaken = [|0,0 | 10,0|];
 
-recipes = {vegChowMein, pepperoniPizza, chickenNoodles, mushroomSoup, kievs, mushroomRisotto, quornLasagne, jacketSpud, marghertia, moussaka,  
-  ratatouille, vegSpagBol, potatoCurry, sushi, paella, beanChilli, shepherdsPie, veganSausageCasserole, mushroomOmelette, fishAndChips,
-  veganPizza, quornChilli, chickenCurry, veganBangersMash, veganCanneloni, beefBurgers, roastPork, stuffedPeppers, stuffedAubergine, shakshuka,
-roastPotatoes, Rice, veganSausages, peas, chips, 
-veganMousse, veganFruitYoghurt, fruitSalad, walnutCake, chocolateCake, spongeCustard, jelly, cheeseBiscuits, veganPancakes, 
-porridge, veganPorridge, fullEnglish, veganFullEnglish, toast, yoghurt};
+numOptions = 3; % 3 choices of meal will be served at the buffet bar.
 
-maxIngredients = 5;
-maxContains = 3; 
-
-mealRecipeIndices = 1..30; % The first 30 recipes are main meals.
-numMealsOffered = 3; % 3 choices of meal will be served at the buffet bar.
-meals = {vegChowMein, pepperoniPizza, chickenNoodles, mushroomSoup, kievs, mushroomRisotto, quornLasagne, jacketSpud, marghertia, moussaka,  
-  ratatouille, vegSpagBol, potatoCurry, sushi, paella, beanChilli, shepherdsPie, veganSausageCasserole, mushroomOmelette, fishAndChips,
-  veganPizza, quornChilli, chickenCurry, veganBangersMash, veganCanneloni, beefBurgers, roastPork, stuffedPeppers, stuffedAubergine, shakshuka};
+meals = {vegChowMein, pepperoniPizza, chickenNoodles, mushroomSoup, kievs, mushroomRisotto, quornLasagne, jacketSpud, marghertia, moussaka, ratatouille, vegSpagBol, potatoCurry, sushi, paella, beanChilli, shepherdsPie, veganSausageCasserole, mushroomOmelette, fishAndChips,
+ veganPizza, quornChilli, chickenCurry, veganBangersMash, veganCanneloni, beefBurgers, roastPork, stuffedPeppers, stuffedAubergine, shakshuka};
 
 % Oven and grill cost 10p for 10 mins. Hob and microwave cost 6p for 10 mins. Several 100g portions of food fit in each.
 % Most oven energy is for preheating. It doesn't increase linearly with time.
 mealCookingCosts = [2, 4, 2, 4, 7, 12, 10, 12, 4, 10, 12, 10, 12, 3, 12, 12, 10, 12, 2, 7, 4, 12, 12, 7, 10, 1, 12, 6, 6, 8]; 
 
+maxIngredients = 5;
 mealIngredients = 
      [|noodlesDried, mushroomsTinned, peppersFrozen, broccoliFrozen, soySauce
      |flour, cheeseFrozen, pepperoniFrozen, tomatoesTinned, mushroomsTinned
@@ -125,14 +115,15 @@ mealIngredients =
      |tomatoesTinned, eggsFresh, peppersFrozen, spicesDried, cheeseFrozen|];
      
 % amount of ingredient in meal x 100g or 100ml.
-mealAmounts = 
+mealIngredientsAmounts = 
     [|2, 2, 1, 1, 0| 2, 2, 2, 2, 1| 2, 1, 2, 1, 1| 1, 1, 1, 1, 0| 2, 1, 1, 1, 1|
       2, 1, 1, 1, 1| 1, 2, 1, 2, 1| 2, 0, 1, 1, 1| 2, 1, 1, 1, 1| 1, 2, 2, 2, 0|
       2, 2, 1, 2, 1| 2, 2, 2, 1, 1| 3, 1, 1, 1, 2| 2, 2, 1, 1, 1| 3, 2, 1, 2, 1|
       2, 3, 2, 1, 1| 3, 1, 1, 1, 1| 2, 2, 1, 1, 2| 2, 1, 1, 1, 1| 3, 2, 1, 1, 1|
       2, 1, 1, 1, 1| 2, 2, 1, 1, 2| 1, 2, 1, 1, 1| 2, 2, 0, 0, 1| 2, 2, 1, 0, 2|
       1, 1, 1, 0, 1| 2, 1, 1, 0, 1| 2, 1, 1, 1, 1| 2, 1, 1, 1, 0| 2, 1, 2, 1, 1|];     
-         
+     
+maxContains = 3;     
 mealContains = [|gluten, egg, none| meat, milk, gluten| meat, gluten, egg| milk, none, none| meat, gluten, none|
                  none, none, none| gluten, milk, egg| none, none, none| gluten, milk, none| meat, none, none|
                  none, none, none| egg, gluten, milk| none, none, none| meat, none, none| meat, none, none|
@@ -141,27 +132,15 @@ mealContains = [|gluten, egg, none| meat, milk, gluten| meat, gluten, egg| milk,
                  gluten, meat, milk| meat, none, none| none, none, none| none, none, none| egg, milk, none|];
 
 % The sides can all be eaten by every diet type.
-sideRecipeIndices = 31..35; 
-numSidesOffered = 1;   
-sides = {roastPotatoes, Rice, veganSausages, peas, chips};                    
-sideCookingCosts = array1d(sides, [10, 3, 7, 2, 7]);          
-sideIngredients = array2d(sides, 1..maxIngredients, 
-                          [|potatoesFresh, oil, herbsDried, null, null| 
-                            rice, null, null, null, null|
-                            veganSausagesFrozen, null, null, null, null| 
-                            peasFrozen, null, null, null, null| 
-                            chipsFrozen, null, null, null, null|]); 
-sideAmounts = array2d(sides, 1..maxIngredients,
-              [| 1,0,0,0,0 | 1,0,0,0,0 | 1,0,0,0,0 | 1,0,0,0,0 | 1,0,0,0,0 |]);
-sideContains = array2d(sides, 1..maxContains,
-               [| none, none, none | none, none, none | none, none, none | none, none, none | none, none, none |]);
+numSidesOffered = 1;              
+sides = {roastPotatoes, Rice, veganSausages, peas, chips};                     
+sideCookingCosts = [10, 3, 7, 2, 7];          
+sideIngredients = [potatoesFresh, rice, veganSausagesFrozen, peasFrozen, chipsFrozen]; 
           
-dessertRecipeIndices = 36..44;          
 numDessertsOffered = 1;
 desserts = {veganMousse, veganFruitYoghurt, fruitSalad, walnutCake, chocolateCake, spongeCustard, jelly, cheeseBiscuits, veganPancakes};
-dessertCookingCosts = array1d(desserts, [0, 0, 0, 12, 12, 12, 0, 0, 1]); 
-dessertIngredients = array2d(desserts, 1..maxIngredients,
-                     [|darkChocolate, oil, sugar, null, null|
+dessertCookingCosts = [0, 0, 0, 12, 12, 12, 0, 0, 1]; 
+dessertIngredients = [|darkChocolate, oil, sugar, null, null|
                        veganYoghurtFrozen, fruitMixFrozen, null, null, null|
                        applesFresh, orangesFresh, grapesFresh, null, null|
                        flour, sugar, butterFrozen, eggsFresh, nuts|
@@ -169,28 +148,22 @@ dessertIngredients = array2d(desserts, 1..maxIngredients,
                        flour, sugar, butterFrozen, eggsFresh, custardTinned|
                        jellyPowder, fruitMixFrozen, null, null, null|
                        biscuits, cheeseFrozen, grapesFresh, null, null|
-                       oatMilk, flour, oil, sugar, fruitMixFrozen|]);                    
-dessertAmounts = array2d(desserts, 1..maxIngredients,
-                 [| 1,1,1,0,0 | 3,1,0,0,0 | 1,1,1,0,0 | 1,1,1,1,1 | 1,1,1,1,1 | 1,1,1,1,2 | 1,1,0,0,0 | 2,2,1,0,0 | 1,1,1,1,1 |]);          
-dessertContains = array2d(desserts, 1..maxContains,
-                  [| sugars, none, none | none, none, none | none, none, none | nut, egg, sugars |
-                     milk, egg, sugars | milk, egg, sugars | sugars, meat, none | milk, none, none | sugars, none, none |]);                    
+                       oatMilk, flour, oil, sugar, fruitMixFrozen|];                    
+dessertAmounts = [| 1,1,1,0,0 | 3,1,0,0,0 | 1,1,1,0,0 | 1,1,1,1,1 | 1,1,1,1,1 | 1,1,1,1,2 | 1,1,0,0,0 | 2,2,1,0,0 | 1,1,1,1,1 |];          
+dessertContains = [| sugars, none, none | none, none, none | none, none, none | nut, egg, sugars |
+                     milk, egg, sugars | milk, egg, sugars | sugars, meat, none | milk, none, none | sugars, none, none |];                    
                
-breakfastRecipeIndices = 45..50;              
-numBreakfastsOffered = 4;   
-breakfasts = {porridge, veganPorridge, fullEnglish, veganFullEnglish, toast, yoghurt};          
-breakfastCookingCosts = array1d(breakfasts, [2, 2, 7, 7, 1, 0]);
-breakfastIngredients = array2d(breakfasts, 1..maxIngredients,
-                       [| oats, milkPowder, fruitMixFrozen, null, null |
+numBreakfastsOffered = 4;             
+breakfasts = {porridge, veganPorridge, fullEnglish, veganFullEnglish, toast, yoghurt};
+breakfastCookingCosts = [2, 2, 7, 7, 1, 0];
+breakfastIngredients = [| oats, milkPowder, fruitMixFrozen, null, null |
                           oats, oatMilk, fruitMixFrozen, null, null |
                           beansTinned, sausagesFrozen, baconFrozen, eggsFresh, hashBrownsFrozen |
                           beansTinned, veganSausagesFrozen, hashBrownsFrozen, mushroomsTinned, tomatoesTinned |
                           breadRollsFrozen, butterFrozen, null, null, null |
-                          yoghurtFrozen, fruitMixFrozen, null, null, null |]);
-breakfastAmounts = array2d(breakfasts, 1..maxIngredients,
-                   [| 1,3,1,0,0 | 1,3,1,0,0 | 1,1,1,1,1 | 1,1,1,1,1 | 2,1,0,0,0 | 3,1,0,0,0 |]);
-breakfastContains = array2d(breakfasts, 1..maxContains,
-                    [| milk, none, none | none, none, none | meat, egg, none | none, none, none | gluten, milk, none | milk, none, none |]);
+                          yoghurtFrozen, fruitMixFrozen, null, null, null |];
+breakfastAmounts = [| 1,3,1,0,0 | 1,3,1,0,0 | 1,1,1,1,1 | 1,1,1,1,1 | 2,1,0,0,0 | 3,1,0,0,0 |];
+breakfastContains = [| milk, none, none | none, none, none | meat, egg, none | none, none, none | gluten, milk, none | milk, none, none |];
                               
 numPeople = 20; 
 % physical workers need +100% more nutrients per day.
