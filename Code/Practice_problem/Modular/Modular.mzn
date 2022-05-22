@@ -21,26 +21,33 @@ array[ingredients, emissionsSources] of int: emissions;
 int: maxIngredients;
 int: maxContains;
 
+enum recipes;
+
 %%%%%%%%%%%%%%%% MAIN MEALS INPUTS %%%%%%%%%%%%%%%%%%
 
-enum meals;
+set of int: mealRecipeIndices;
+set of recipes: meals;
 array[meals] of int: mealCookingCosts;
 array[meals, 1..maxIngredients] of ingredients: mealIngredients;
 array[meals, 1..maxContains] of contains: mealContains;
 % add amounts of igredient required per meal to calculate cost and how much ingredient required.
-array[meals, 1..maxIngredients] of int: mealIngredientsAmounts;
-int: numOptions; % Number of different meal options offered at this meal.
+array[meals, 1..maxIngredients] of int: mealAmounts;
+int: numMealsOffered; % Number of different meal options offered at this meal.
 
 %%%%%%%%%%%%%%%% SIDES INPUTS %%%%%%%%%%%%%%%%%%
 
-enum sides;
+set of int: sideRecipeIndices;
+set of recipes: sides;
 array[sides] of int: sideCookingCosts;
-array[sides] of ingredients: sideIngredients;
+array[sides, 1..maxIngredients] of ingredients: sideIngredients;
+array[sides, 1..maxContains] of contains: sideContains;
+array[sides, 1..maxIngredients] of int: sideAmounts;
 int: numSidesOffered; 
 
 %%%%%%%%%%%%%%%% DESSERTS INPUTS %%%%%%%%%%%%%%%%%%
 
-enum desserts;
+set of int: dessertRecipeIndices;
+set of recipes: desserts;
 array[desserts] of int: dessertCookingCosts;
 array[desserts, 1..maxIngredients] of ingredients: dessertIngredients;
 array[desserts, 1..maxContains] of contains: dessertContains;
@@ -49,7 +56,8 @@ int: numDessertsOffered;
 
 %%%%%%%%%%%%%%%%%%% BREAKFAST INPUTS %%%%%%%%%%%%%%%%%%%%%
 
-enum breakfasts;
+set of int: breakfastRecipeIndices;
+set of recipes: breakfasts;
 array[breakfasts] of int: breakfastCookingCosts;
 array[breakfasts, 1..maxIngredients] of ingredients: breakfastIngredients;
 array[breakfasts, 1..maxContains] of contains: breakfastContains;
@@ -93,31 +101,31 @@ constraint weeklyCalsRequired = dailyNutrientsRequired[calories] * 7;
 include "alldifferent.mzn"; 
 % All the options on each mealtime should be different, and each row of meals should be different, but the whole array doesn't need to be different. 
  
-array[weekdays, 1..numOptions] of var meals: mealsServed; 
-array[weekdays, 1..numOptions] of var int: numServed;
+array[weekdays, 1..numMealsOffered] of var meals: mealsServed; 
+array[weekdays, 1..numMealsOffered] of var int: numServed;
 
 % A variety of meals must be offered.
 constraint alldifferent(mealsServed);
-constraint forall(day in weekdays, optionNum in 1..numOptions)
+constraint forall(day in weekdays, optionNum in 1..numMealsOffered)
                  (numServed[day, optionNum] >= numPeople div 4);
 
 % The right number of meals must be offered.
 constraint forall(day in weekdays)
-                 (sum(optionNum in 1..numOptions)
+                 (sum(optionNum in 1..numMealsOffered)
                      (numServed[day, optionNum]) = numPeople);
                  
 % Make sure everyone can eat something and there are enough servings for each diet type.            
 constraint forall(day in weekdays, 
                   foodType in contains)
                      (numRefusals[foodType] <= 
-                      sum(optionNum in 1..numOptions)
+                      sum(optionNum in 1..numMealsOffered)
                          (forall(itemNum in 1..maxContains)
                                 (mealContains[mealsServed[day, optionNum], itemNum] != foodType) 
                                  * numServed[day, optionNum]));            
             
 % Make sure there is a vegan option.            
 constraint forall(day in weekdays)
-                 (exists(optionNum in 1..numOptions)
+                 (exists(optionNum in 1..numMealsOffered)
                         (forall(itemNum in 1..maxContains)
                                (mealContains[mealsServed[day, optionNum], itemNum] != meat
                                /\ mealContains[mealsServed[day, optionNum], itemNum] != egg
@@ -127,33 +135,33 @@ constraint forall(day in weekdays)
 array[nutrients] of var int: mealsNutritionServed;
 constraint forall(nutrient in nutrients)
            (mealsNutritionServed[nutrient] = 
-            sum(day in weekdays, optionNum in 1..numOptions, item in 1..maxIngredients)
+            sum(day in weekdays, optionNum in 1..numMealsOffered, item in 1..maxIngredients)
             (nutrition[mealIngredients[mealsServed[day, optionNum], item], nutrient]
-             * mealIngredientsAmounts[mealsServed[day, optionNum], item]
+             * mealAmounts[mealsServed[day, optionNum], item]
              * numServed[day, optionNum]));  
              
 % Build up a shopping list of what needs to be ordered.             
 array[ingredients] of var int: mealIngredientsOrder;
 constraint forall(ingredient in ingredients)
                  (mealIngredientsOrder[ingredient] = 
-                  sum(day in weekdays, optionNum in 1..numOptions, item in 1..maxIngredients)
+                  sum(day in weekdays, optionNum in 1..numMealsOffered, item in 1..maxIngredients)
                      (if mealIngredients[mealsServed[day, optionNum], item] = ingredient
-                      then mealIngredientsAmounts[mealsServed[day, optionNum], item]
+                      then mealAmounts[mealsServed[day, optionNum], item]
                            * numServed[day, optionNum]
                       else 0
                       endif));                                             
                  
-var int: mealsCost = sum(day in weekdays, optionNum in 1..numOptions, ingredientNum in 1..maxIngredients)
+var int: mealsCost = sum(day in weekdays, optionNum in 1..numMealsOffered, ingredientNum in 1..maxIngredients)
                         (sum(costSource in costSources)
                              (costs[mealIngredients[mealsServed[day, optionNum], ingredientNum], costSource])
-                          * mealIngredientsAmounts[mealsServed[day, optionNum], ingredientNum]
+                          * mealAmounts[mealsServed[day, optionNum], ingredientNum]
                           * numServed[day, optionNum]
                           + mealCookingCosts[mealsServed[day, optionNum]]);  
 
-var int: mealsEmissions = sum(day in weekdays, optionNum in 1..numOptions, ingredientNum in 1..maxIngredients)
+var int: mealsEmissions = sum(day in weekdays, optionNum in 1..numMealsOffered, ingredientNum in 1..maxIngredients)
                              (sum(emissionSource in emissionsSources)
                                  (emissions[mealIngredients[mealsServed[day, optionNum], ingredientNum], emissionSource])
-                              * mealIngredientsAmounts[mealsServed[day, optionNum], ingredientNum]
+                              * mealAmounts[mealsServed[day, optionNum], ingredientNum]
                               * numServed[day, optionNum]);
 
 %%%%%%%%%%%%%%%% SIDES PROCESSING %%%%%%%%%%%%%%%%%%%%%
@@ -169,30 +177,34 @@ constraint forall(day in weekdays, optionNum in 1..numSidesOffered)
 array[nutrients] of var int: sidesNutritionServed;
 constraint forall(nutrient in nutrients)
            (sidesNutritionServed[nutrient] = 
-            sum(day in weekdays, optionNum in 1..numSidesOffered)
-            (nutrition[sideIngredients[sidesServed[day, optionNum]], nutrient]
-             * numPeople));                 
-                 
+            sum(day in weekdays, optionNum in 1..numSidesOffered, item in 1..maxIngredients)
+            (nutrition[sideIngredients[sidesServed[day, optionNum], item], nutrient]
+             * sideAmounts[sidesServed[day, optionNum], item]
+             * numSidesServed[day, optionNum]));
+
 % Build up a shopping list of what needs to be ordered.             
 array[ingredients] of var int: sideIngredientsOrder;
 constraint forall(ingredient in ingredients)
                  (sideIngredientsOrder[ingredient] = 
-                  sum(day in weekdays, optionNum in 1..numSidesOffered)
-                     (if sideIngredients[sidesServed[day, optionNum]] = ingredient
-                      then numServed[day, optionNum]
+                  sum(day in weekdays, optionNum in 1..numSidesOffered, item in 1..maxIngredients)
+                     (if sideIngredients[sidesServed[day, optionNum], item] = ingredient
+                      then sideAmounts[sidesServed[day, optionNum], item]
+                           * numSidesServed[day, optionNum]
                       else 0
-                      endif));                  
-                 
-var int: sidesCost = sum(day in weekdays, optionNum in 1..numSidesOffered)
-                        (sum(costSource in costSources)
-                            (costs[sideIngredients[sidesServed[day, optionNum]], costSource])
-                         * numSidesServed[day, optionNum]
-                         + sideCookingCosts[sidesServed[day, optionNum]]);  
-                                  
-var int: sidesEmissions = sum(day in weekdays, optionNum in 1..numSidesOffered)
-                             (sum(emissionSource in emissionsSources)
-                                 (emissions[sideIngredients[sidesServed[day, optionNum]], emissionSource])
-                              * numSidesServed[day, optionNum]);               
+                      endif)); 
+
+var int: sidesCost = sum(day in weekdays, optionNum in 1..numSidesOffered, ingredientNum in 1..maxIngredients)
+                           (sum(costSource in costSources)
+                               (costs[sideIngredients[sidesServed[day, optionNum], ingredientNum], costSource])
+                            * numSidesServed[day, optionNum]
+                            * sideAmounts[sidesServed[day, optionNum], ingredientNum]
+                            + sideCookingCosts[sidesServed[day, optionNum]]);
+                                
+var int: sidesEmissions = sum(day in weekdays, optionNum in 1..numSidesOffered, ingredientNum in 1..maxIngredients)
+                                (sum(emissionSource in emissionsSources)
+                                    (emissions[sideIngredients[sidesServed[day, optionNum], ingredientNum], emissionSource])
+                                 * numSidesServed[day, optionNum]
+                                 * sideAmounts[sidesServed[day, optionNum], ingredientNum]);            
 
 %%%%%%%%%%%%%%%% DESSERTS PROCESSING %%%%%%%%%%%%%%%%%%%%%
 
@@ -206,12 +218,6 @@ constraint forall(day in weekdays,
                        (numDessertsServed[day, optionNum] = 
                         numPeople - max(itemNum in 1..maxContains)
                            (numRefusals[dessertContains[dessertsServed[day, optionNum], itemNum]]));                     
-
-% Work out the nurtition served per week from any meal course.
-% Parameters: numOffered - number of choices of course served each time.
-%             courseIngredients - ingredients of each recipe.
-
-
 
 % Work out the nutrition on offer.
 array[nutrients] of var int: dessertsNutritionServed;
@@ -266,6 +272,8 @@ constraint forall(ingredient in ingredients)
                  (weeklyOrder[ingredient] = 
                  (mealIngredientsOrder[ingredient] + sideIngredientsOrder[ingredient] + dessertIngredientsOrder[ingredient])
                   div 10);
+                  
+
 
 %%%%%%%%%%%%%%%%%%%%%% OBJECTIVE %%%%%%%%%%%%%%%%%%%%%%%%%%
 
