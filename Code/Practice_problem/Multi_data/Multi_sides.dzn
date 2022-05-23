@@ -66,6 +66,9 @@ nutrition = [|0,0,0,0,0 |
               400,100,0,0,0 | 548,33,38,13,12 | 105,0,9,0,3 | 66,8,2,1,7 | 96,15,3,0,3 | 296,66,0,0,6 | 37,5,0,4,0 |
                53,12,0,2,0 | 73,17,0,2,0 | 41,8,0,2,0 | 701,3,69,6,15 | 67,2,3,0,0 |];
 
+maxIngredients = 5;
+maxContains = 3;
+
 % storage space limits in square cm.
 %storageTypes = {dry, frozen};
 %storageLimits = [3000, 1000];
@@ -81,7 +84,6 @@ meals = {vegChowMein, pepperoniPizza, chickenNoodles, mushroomSoup, kievs, mushr
 % Most oven energy is for preheating. It doesn't increase linearly with time.
 mealCookingCosts = [2, 4, 2, 4, 7, 12, 10, 12, 4, 10, 12, 10, 12, 3, 12, 12, 10, 12, 2, 7, 4, 12, 12, 7, 10, 1, 12, 6, 6, 8]; 
 
-maxIngredients = 5;
 mealIngredients = 
      [|noodlesDried, mushroomsTinned, peppersFrozen, broccoliFrozen, soySauce
      |flour, cheeseFrozen, pepperoniFrozen, tomatoesTinned, mushroomsTinned

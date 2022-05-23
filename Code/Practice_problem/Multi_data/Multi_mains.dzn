@@ -66,6 +66,9 @@ nutrition = [|0,0,0,0,0 |
               400,100,0,0,0 | 548,33,38,13,12 | 105,0,9,0,3 | 66,8,2,1,7 | 96,15,3,0,3 | 296,66,0,0,6 | 37,5,0,4,0 |
                53,12,0,2,0 | 73,17,0,2,0 | 41,8,0,2,0 | 701,3,69,6,15 | 67,2,3,0,0 |];
 
+maxIngredients = 5;
+maxContains = 3;
+
 % storage space limits in square cm.
 %storageTypes = {dry, frozen};
 %storageLimits = [3000, 1000];
@@ -81,7 +84,6 @@ meals = {vegChowMein, pepperoniPizza, chickenNoodles, mushroomSoup, kievs, mushr
 % Most oven energy is for preheating. It doesn't increase linearly with time.
 mealCookingCosts = [2, 4, 2, 4, 7, 12, 10, 12, 4, 10, 12, 10, 12, 3, 12, 12, 10, 12, 2, 7, 4, 12, 12, 7, 10, 1, 12, 6, 6, 8]; 
 
-maxIngredients = 5;
 mealIngredients = 
      [|noodlesDried, mushroomsTinned, peppersFrozen, broccoliFrozen, soySauce
      |flour, cheeseFrozen, pepperoniFrozen, tomatoesTinned, mushroomsTinned
@@ -122,8 +124,7 @@ mealIngredientsAmounts =
       2, 3, 2, 1, 1| 3, 1, 1, 1, 1| 2, 2, 1, 1, 2| 2, 1, 1, 1, 1| 3, 2, 1, 1, 1|
       2, 1, 1, 1, 1| 2, 2, 1, 1, 2| 1, 2, 1, 1, 1| 2, 2, 0, 0, 1| 2, 2, 1, 0, 2|
       1, 1, 1, 0, 1| 2, 1, 1, 0, 1| 2, 1, 1, 1, 1| 2, 1, 1, 1, 0| 2, 1, 2, 1, 1|];     
-     
-maxContains = 3;     
+         
 mealContains = [|gluten, egg, none| meat, milk, gluten| meat, gluten, egg| milk, none, none| meat, gluten, none|
                  none, none, none| gluten, milk, egg| none, none, none| gluten, milk, none| meat, none, none|
                  none, none, none| egg, gluten, milk| none, none, none| meat, none, none| meat, none, none|
@@ -131,40 +132,6 @@ mealContains = [|gluten, egg, none| meat, milk, gluten| meat, gluten, egg| milk,
                  gluten, none, none| egg, none, none| meat, milk, none| none, none, none| gluten, none, none|
                  gluten, meat, milk| meat, none, none| none, none, none| none, none, none| egg, milk, none|];
 
-% The sides can all be eaten by every diet type.
-numSidesOffered = 1;              
-sides = {roastPotatoes, Rice, veganSausages, peas, chips};                     
-sideCookingCosts = [10, 3, 7, 2, 7];          
-sideIngredients = [potatoesFresh, rice, veganSausagesFrozen, peasFrozen, chipsFrozen]; 
-          
-numDessertsOffered = 1;
-desserts = {veganMousse, veganFruitYoghurt, fruitSalad, walnutCake, chocolateCake, spongeCustard, jelly, cheeseBiscuits, veganPancakes};
-dessertCookingCosts = [0, 0, 0, 12, 12, 12, 0, 0, 1]; 
-dessertIngredients = [|darkChocolate, oil, sugar, null, null|
-                       veganYoghurtFrozen, fruitMixFrozen, null, null, null|
-                       applesFresh, orangesFresh, grapesFresh, null, null|
-                       flour, sugar, butterFrozen, eggsFresh, nuts|
-                       flour, sugar, butterFrozen, eggsFresh, darkChocolate|
-                       flour, sugar, butterFrozen, eggsFresh, custardTinned|
-                       jellyPowder, fruitMixFrozen, null, null, null|
-                       biscuits, cheeseFrozen, grapesFresh, null, null|
-                       oatMilk, flour, oil, sugar, fruitMixFrozen|];                    
-dessertAmounts = [| 1,1,1,0,0 | 3,1,0,0,0 | 1,1,1,0,0 | 1,1,1,1,1 | 1,1,1,1,1 | 1,1,1,1,2 | 1,1,0,0,0 | 2,2,1,0,0 | 1,1,1,1,1 |];          
-dessertContains = [| sugars, none, none | none, none, none | none, none, none | nut, egg, sugars |
-                     milk, egg, sugars | milk, egg, sugars | sugars, meat, none | milk, none, none | sugars, none, none |];                    
-               
-numBreakfastsOffered = 4;             
-breakfasts = {porridge, veganPorridge, fullEnglish, veganFullEnglish, toast, yoghurt};
-breakfastCookingCosts = [2, 2, 7, 7, 1, 0];
-breakfastIngredients = [| oats, milkPowder, fruitMixFrozen, null, null |
-                          oats, oatMilk, fruitMixFrozen, null, null |
-                          beansTinned, sausagesFrozen, baconFrozen, eggsFresh, hashBrownsFrozen |
-                          beansTinned, veganSausagesFrozen, hashBrownsFrozen, mushroomsTinned, tomatoesTinned |
-                          breadRollsFrozen, butterFrozen, null, null, null |
-                          yoghurtFrozen, fruitMixFrozen, null, null, null |];
-breakfastAmounts = [| 1,3,1,0,0 | 1,3,1,0,0 | 1,1,1,1,1 | 1,1,1,1,1 | 2,1,0,0,0 | 3,1,0,0,0 |];
-breakfastContains = [| milk, none, none | none, none, none | meat, egg, none | none, none, none | gluten, milk, none | milk, none, none |];
-                              
 numPeople = 20; 
 % physical workers need +100% more nutrients per day.
 numPhysicalWorkers = 10;
