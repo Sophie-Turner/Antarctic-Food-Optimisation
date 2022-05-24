@@ -337,7 +337,7 @@ constraint forall(ingredient in ingredients)
 var int: totalCost = breakfastsCost + ((mealsCost + sidesCost + dessertsCost) * 2);
 var int: totalEmissions = breakfastsEmissions + ((mealsEmissions + sidesEmissions + dessertsEmissions) * 2);
 % Constrain cals to be >= required and then minimise, otherwise there will be food waste.
-solve minimize totalEmissions + totalCost + nutritionServed[calories]; 
+solve minimize totalEmissions * 100 + nutritionServed[calories]; 
 
 %%%%%%%%%%%%%%%%%%%%%%%% OUTPUT INFO %%%%%%%%%%%%%%%%%%%%%%%%%
 
