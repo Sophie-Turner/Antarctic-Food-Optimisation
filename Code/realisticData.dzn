@@ -72,7 +72,7 @@ nutrition = [|0,0,0,0,0 |
 % storage space square cm taken by 100g of ingredients.
 %spaceTaken = [|0,0 | 10,0|];
 
-numOptions = 3; % 3 choices of meal will be served at the buffet bar.
+numMealsOffered = 3; % 3 choices of meal will be served at the buffet bar.
 
 meals = {vegChowMein, pepperoniPizza, chickenNoodles, mushroomSoup, kievs, mushroomRisotto, quornLasagne, jacketSpud, marghertia, moussaka, ratatouille, vegSpagBol, potatoCurry, sushi, paella, beanChilli, shepherdsPie, veganSausageCasserole, mushroomOmelette, fishAndChips,
  veganPizza, quornChilli, chickenCurry, veganBangersMash, veganCanneloni, beefBurgers, roastPork, stuffedPeppers, stuffedAubergine, shakshuka};
@@ -115,7 +115,7 @@ mealIngredients =
      |tomatoesTinned, eggsFresh, peppersFrozen, spicesDried, cheeseFrozen|];
      
 % amount of ingredient in meal x 100g or 100ml.
-mealIngredientsAmounts = 
+mealAmounts = 
     [|2, 2, 1, 1, 0| 2, 2, 2, 2, 1| 2, 1, 2, 1, 1| 1, 1, 1, 1, 0| 2, 1, 1, 1, 1|
       2, 1, 1, 1, 1| 1, 2, 1, 2, 1| 2, 0, 1, 1, 1| 2, 1, 1, 1, 1| 1, 2, 2, 2, 0|
       2, 2, 1, 2, 1| 2, 2, 2, 1, 1| 3, 1, 1, 1, 2| 2, 2, 1, 1, 1| 3, 2, 1, 2, 1|
