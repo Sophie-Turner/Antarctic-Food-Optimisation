@@ -312,11 +312,12 @@ var int: breakfastsEmissions = sum(day in weekdays, optionNum in 1..numBreakfast
 array[nutrients] of var int: weeklyNutrition;
 constraint forall(nutrient in nutrients)
                  (weeklyNutrition[nutrient]
-                 = breakfastsNutritionServed[nutrient]
+                 = (breakfastsNutritionServed[nutrient]
                  + ((mealsNutritionServed[nutrient] 
                     + sidesNutritionServed[nutrient] 
                     + dessertsNutritionServed[nutrient])
-                    * 2)); % Muliply meals by 2 because there are lunch and tea.
+                    * 2)) % Muliply meals by 2 because there are lunch and tea.
+                 div 100); % Per 100g, not per gram
                                                          
 constraint forall(nutrient in nutrients)
                  (weeklyNutrition[nutrient] >= dailyNutrientsRequired[nutrient] * 7);

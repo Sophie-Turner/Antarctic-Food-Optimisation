@@ -74,29 +74,29 @@ nutrition = [|0,0,0,0,0 |
 
 numMealsOffered = 3; % 3 choices of meal will be served at the buffet bar.
 
-meals = {vegChowMein, pepperoniPizza, chickenNoodles, mushroomSoup, kievs, mushroomRisotto, quornLasagne, jacketSpud, marghertia, moussaka, ratatouille, vegSpagBol, potatoCurry, sushi, paella, beanChilli, shepherdsPie, veganSausageCasserole, mushroomOmelette, fishAndChips,
+meals = {vegChowMein, pepperoniPizza, chickenNoodles, mushroomSoup, kievs, mushroomRisotto, quornLasagne, jacketSpud, marghertia, lambMoussaka, ratatouille, vegSpagBol, potatoCurry, sushi, paella, beanChilli, shepherdsPie, veganSausageCasserole, mushroomOmelette, fishAndChips,
  veganPizza, quornChilli, chickenCurry, veganBangersMash, veganCanneloni, beefBurgers, roastPork, stuffedPeppers, stuffedAubergine, shakshuka};
 
-% Oven and grill cost 10p for 10 mins. Hob and microwave cost 6p for 10 mins. Several 100g portions of food fit in each.
+% Oven and grill cost 10p for 10 mins. Hob and microwave cost 6p for 10 mins. Assume 4 portions of food fit in each.
 % Most oven energy is for preheating. It doesn't increase linearly with time.
-mealCookingCosts = [2, 4, 2, 4, 7, 12, 10, 12, 4, 10, 12, 10, 12, 3, 12, 12, 10, 12, 2, 7, 4, 12, 12, 7, 10, 1, 12, 6, 6, 8]; 
+mealCookingCosts = [2, 3, 3, 4, 7, 12, 10, 12, 4, 12, 12, 3, 3, 7,% 12, 12, 10, 12, 2, 7, 4, 12, 12, 7, 10, 1, 12, 6, 6, 8]; 
 
 maxIngredients = 5;
 mealIngredients = 
-     [|noodlesDried, mushroomsTinned, peppersFrozen, broccoliFrozen, soySauce
-     |flour, cheeseFrozen, pepperoniFrozen, tomatoesTinned, mushroomsTinned
-     |noodlesDried, poultryMeatFrozen, peasFrozen, soySauce, broccoliFrozen
-     |mushroomsTinned, creamPowder, potatoesFresh, butterFrozen, herbsDried
-     |poultryMeatFrozen, flour, peasFrozen, broccoliFrozen, chipsFrozen
-     |rice, oil, wine, mushroomsTinned, tomatoesTinned
-     |pasta, tomatoesTinned, cheeseFrozen, quornFrozen, peppersFrozen
-     |potatoesFresh, oil, beansTinned, peasFrozen, mushroomsTinned
-     |flour, tomatoesTinned, cheeseFrozen, oil, herbsDried
-     |beefFrozen, potatoesFresh, tomatoesTinned, aubergineFresh, oil
-     |tomatoesTinned, peppersFrozen, oil, aubergineFresh, onionPowder
-     |pasta, quornFrozen, tomatoesTinned, herbsDried, cheeseFrozen
-     |potatoesFresh, spicesDried, onionPowder, oil, rice
-     |rice, fishFrozen, soySauce, herbsDried, spicesDried
+     [|noodlesDried, mushroomsTinned, peppersFrozen, broccoliFrozen, soySauce % 100, 80, 100, 112, 24
+     |flour, cheeseFrozen, pepperoniFrozen, tomatoesTinned, herbsDried % 150, 100, 100, 50, 5
+     |noodlesDried, poultryMeatFrozen, peasFrozen, soySauce, oil % 56, 56, 45, 50, 75 
+     |mushroomsTinned, creamPowder, oil, butterFrozen, herbsDried % 156, 31, 12, 12, 5
+     |poultryMeatFrozen, flour, peasFrozen, eggsFresh, butterFrozen % 174, 50, 90, 25, 40
+     |rice, oil, wine, mushroomsTinned, onionPowder % 63, 15, 200, 85, 25 
+     |pasta, tomatoesTinned, cheeseFrozen, quornFrozen, mushroomsTinned % 75, 92, 46, 75, 42
+     |potatoesFresh, oil, beansTinned, veganCheeseFrozen, tomatoesTinned % 200, 50, 120, 15, 100 
+     |flour, tomatoesTinned, cheeseFrozen, oil, herbsDried % 250, 200, 63, 31, 5
+     |lambFrozen, onionPowder, tomatoesTinned, aubergineFresh, oil % 113, 28, 133, 400, 13
+     |tomatoesTinned, peppersFrozen, oil, aubergineFresh, onionPowder % 400, 70, 18, 200, 85
+     |pasta, quornFrozen, tomatoesTinned, herbsDried, cheeseFrozen % 75, 75, 100, 5, 25
+     |potatoesFresh, spicesDried, onionPowder, peasFrozen, rice % 233, 5, 57, 33, 33 
+     |rice, fishFrozen, soySauce, herbsDried, spicesDried % 188, 113, 24, 5, 5 
      |rice, fishFrozen, wine, tomatoesTinned, onionPowder
      |rice, beansTinned, tomatoesTinned, wine, spicesDried
      |potatoesFresh, lambFrozen, peasFrozen, gravyPowder, onionPowder
@@ -114,14 +114,14 @@ mealIngredients =
      |aubergineFresh, rice, wine, veganCheeseFrozen, spicesDried
      |tomatoesTinned, eggsFresh, peppersFrozen, spicesDried, cheeseFrozen|];
      
-% amount of ingredient in meal x 100g or 100ml.
+% amount of ingredient in meal x g or ml.
 mealAmounts = 
-    [|2, 2, 1, 1, 0| 2, 2, 2, 2, 1| 2, 1, 2, 1, 1| 1, 1, 1, 1, 0| 2, 1, 1, 1, 1|
-      2, 1, 1, 1, 1| 1, 2, 1, 2, 1| 2, 0, 1, 1, 1| 2, 1, 1, 1, 1| 1, 2, 2, 2, 0|
-      2, 2, 1, 2, 1| 2, 2, 2, 1, 1| 3, 1, 1, 1, 2| 2, 2, 1, 1, 1| 3, 2, 1, 2, 1|
-      2, 3, 2, 1, 1| 3, 1, 1, 1, 1| 2, 2, 1, 1, 2| 2, 1, 1, 1, 1| 3, 2, 1, 1, 1|
-      2, 1, 1, 1, 1| 2, 2, 1, 1, 2| 1, 2, 1, 1, 1| 2, 2, 0, 0, 1| 2, 2, 1, 0, 2|
-      1, 1, 1, 0, 1| 2, 1, 1, 0, 1| 2, 1, 1, 1, 1| 2, 1, 1, 1, 0| 2, 1, 2, 1, 1|];     
+    [|100, 80, 100, 112, 24| 150, 100, 100, 50, 5| 56, 56, 45, 50, 75| 156, 31, 12, 12, 5| 174, 50, 90, 25, 40|
+      63, 15, 200, 85, 25| 75, 92, 46, 75, 42| 200, 50, 120, 15, 100| 250, 200, 63, 31, 5| 113, 28, 133, 400, 13|
+      400, 70, 18, 200, 85| 75, 75, 100, 5, 25| 233, 5, 57, 33, 33| 188, 113, 24, 5, 5| 300, 200, 100, 200, 100|
+      200, 300, 200, 100, 100| 300, 100, 100, 100, 100| 200, 200, 100, 100, 200| 200, 100, 100, 100, 100| 300, 200, 100, 100, 100|
+      200, 100, 100, 100, 100| 200, 200, 100, 100, 200| 100, 200, 100, 100, 100| 200, 200, 0, 0, 100| 200, 200, 100, 0, 200|
+      100, 100, 100, 0, 100| 200, 100, 100, 0, 100| 200, 100, 100, 100, 100| 200, 100, 100, 100, 0| 200, 100, 200, 100, 100|];     
      
 maxContains = 3;     
 mealContains = [|gluten, egg, none| meat, milk, gluten| meat, gluten, egg| milk, none, none| meat, gluten, none|
@@ -149,7 +149,8 @@ dessertIngredients = [|darkChocolate, oil, sugar, null, null|
                        jellyPowder, fruitMixFrozen, null, null, null|
                        biscuits, cheeseFrozen, grapesFresh, null, null|
                        oatMilk, flour, oil, sugar, fruitMixFrozen|];                    
-dessertAmounts = [| 1,1,1,0,0 | 3,1,0,0,0 | 1,1,1,0,0 | 1,1,1,1,1 | 1,1,1,1,1 | 1,1,1,1,2 | 1,1,0,0,0 | 2,2,1,0,0 | 1,1,1,1,1 |];          
+dessertAmounts = [| 100,100,100,0,0 | 300,100,0,0,0 | 100,100,100,0,0 | 100,100,100,100,100 | 100,100,100,100,100 |
+                    100,100,100,100,200 | 100,100,0,0,0 | 200,200,100,0,0 | 100,100,100,100,100 |];          
 dessertContains = [| sugars, none, none | none, none, none | none, none, none | nut, egg, sugars |
                      milk, egg, sugars | milk, egg, sugars | sugars, meat, none | milk, none, none | sugars, none, none |];                    
                
@@ -162,10 +163,10 @@ breakfastIngredients = [| oats, milkPowder, fruitMixFrozen, null, null |
                           beansTinned, veganSausagesFrozen, hashBrownsFrozen, mushroomsTinned, tomatoesTinned |
                           breadRollsFrozen, butterFrozen, null, null, null |
                           yoghurtFrozen, fruitMixFrozen, null, null, null |];
-breakfastAmounts = [| 1,3,1,0,0 | 1,3,1,0,0 | 1,1,1,1,1 | 1,1,1,1,1 | 2,1,0,0,0 | 3,1,0,0,0 |];
+breakfastAmounts = [| 100,300,100,0,0 | 100,300,100,0,0 | 100,100,100,100,100 | 100,100,100,100,100 | 200,100,0,0,0 | 300,100,0,0,0 |];
 breakfastContains = [| milk, none, none | none, none, none | meat, egg, none | none, none, none | gluten, milk, none | milk, none, none |];
                               
-numPeople = 20; 
+numPeople = 19; 
 % physical workers need +100% more nutrients per day.
 numPhysicalWorkers = 10;
 % males need +25% more nutrients per day.
