@@ -40,6 +40,7 @@ int: numMealsOffered; % Number of different meal options offered at this meal.
 enum sides;
 array[sides] of int: sideCookingCosts;
 array[sides] of ingredients: sideIngredients;
+array[sides] of int: sideAmounts;
 int: numSidesOffered; 
 
 %%%%%%%%%%%%%%%% DESSERTS INPUTS %%%%%%%%%%%%%%%%%%
@@ -69,7 +70,7 @@ array[ingredients, nutrients] of int: nutrition;
 
 int: numPeople;
 % The minimum grams of nutrients people require per day.
-array[nutrients] of int: minNutrients = [2000, 275, 60, 23, 45];
+array[nutrients] of int: minNutrients = [2000, 225, 44, 21, 45];
 % It is higer in the winter because of the colder climate.
 float: winterMultiplier = 0.25;
 % physical workers need +100% more nutrients per day.
@@ -175,7 +176,8 @@ constraint forall(nutrient in nutrients)
            (sidesNutritionServed[nutrient] = 
             sum(day in weekdays, optionNum in 1..numSidesOffered)
             (nutrition[sideIngredients[sidesServed[day, optionNum]], nutrient]
-             * numPeople));                 
+             * numPeople
+             * sideAmounts[sidesServed[day, optionNum]]));                 
                  
 % Build up a shopping list of what needs to be ordered.             
 array[ingredients] of var int: sideIngredientsOrder;
@@ -183,7 +185,8 @@ constraint forall(ingredient in ingredients)
                  (sideIngredientsOrder[ingredient] = 
                   sum(day in weekdays, optionNum in 1..numSidesOffered)
                      (if sideIngredients[sidesServed[day, optionNum]] = ingredient
-                      then numMealsServed[day, optionNum]
+                      then sideAmounts[sidesServed[day, optionNum]] 
+                           * numSidesServed[day, optionNum]
                       else 0
                       endif));                  
                  
@@ -191,12 +194,14 @@ var int: sidesCost = sum(day in weekdays, optionNum in 1..numSidesOffered)
                         (sum(costSource in costSources)
                             (costs[sideIngredients[sidesServed[day, optionNum]], costSource])
                          * numSidesServed[day, optionNum]
+                         * sideAmounts[sidesServed[day, optionNum]]
                          + sideCookingCosts[sidesServed[day, optionNum]]);  
                                   
 var int: sidesEmissions = sum(day in weekdays, optionNum in 1..numSidesOffered)
                              (sum(emissionSource in emissionsSources)
                                  (emissions[sideIngredients[sidesServed[day, optionNum]], emissionSource])
-                              * numSidesServed[day, optionNum]);               
+                              * numSidesServed[day, optionNum]
+                              * sideAmounts[sidesServed[day, optionNum]]);               
 
 %%%%%%%%%%%%%%%% DESSERTS PROCESSING %%%%%%%%%%%%%%%%%%%%%
 
@@ -312,11 +317,12 @@ var int: breakfastsEmissions = sum(day in weekdays, optionNum in 1..numBreakfast
 array[nutrients] of var int: weeklyNutrition;
 constraint forall(nutrient in nutrients)
                  (weeklyNutrition[nutrient]
-                 = breakfastsNutritionServed[nutrient]
+                 = (breakfastsNutritionServed[nutrient]
                  + ((mealsNutritionServed[nutrient] 
                     + sidesNutritionServed[nutrient] 
                     + dessertsNutritionServed[nutrient])
-                    * 2)); % Muliply meals by 2 because there are lunch and tea.
+                    * 2)) % Muliply meals by 2 because there are lunch and tea.
+                 div 100); % Per 100g, not per gram.
                                                          
 constraint forall(nutrient in nutrients)
                  (weeklyNutrition[nutrient] >= dailyNutrientsRequired[nutrient] * 7);
@@ -328,22 +334,26 @@ constraint forall(ingredient in ingredients)
                   + ((mealIngredientsOrder[ingredient] 
                      + sideIngredientsOrder[ingredient] 
                      + dessertIngredientsOrder[ingredient])
-                     *2)) % Muliply meals by 2 because there are lunch and tea.
-                  div 10); % Divide by 10 because we are ordering per kg but meal planning per 100g.
+                     *2))); % Muliply meals by 2 because there are lunch and tea.
 
 %%%%%%%%%%%%%%%%%%%%%% OBJECTIVE %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Multiply by 2 because each meal is served twice a day.
-var int: weeklyCost = breakfastsCost + ((mealsCost + sidesCost + dessertsCost) * 2);
-var int: weeklyEmissions = breakfastsEmissions + ((mealsEmissions + sidesEmissions + dessertsEmissions) * 2);
-% Constrain cals to be >= required and then minimise, otherwise there will be food waste.
-solve minimize weeklyEmissions + weeklyNutrition[calories] + weeklyCost; 
+var int: weeklyCost = breakfastsCost + ((mealsCost + sidesCost + dessertsCost) * 2); % divide output by 10000
+var int: weeklyEmissions = breakfastsEmissions + ((mealsEmissions + sidesEmissions + dessertsEmissions) * 2); % divide output by 10000 
+% Constrain cals to > minimum, then minimise to avoid food waste. Try not to give people too much fat.
+%solve minimize weeklyEmissions + weeklyCost + weeklyNutrition[calories] * 10 + weeklyNutrition[fat] * 100; 
+solve minimize weeklyEmissions;
 
 %%%%%%%%%%%%%%%%%%%%%%%% OUTPUT INFO %%%%%%%%%%%%%%%%%%%%%%%%%
 
 output["On \(day), for breakfast, \(numBreakfastsServed[day, 1]) servings of \(breakfastsServed[day, 1]), \(numBreakfastsServed[day, 2]) servings of \(breakfastsServed[day, 2]), \(numBreakfastsServed[day, 3]) servings of \(breakfastsServed[day, 3])\nand \(numBreakfastsServed[day, 4]) servings of \(breakfastsServed[day, 4]) will be provided.\nOn \(day), for both lunch and tea, \(numMealsServed[day, 1]) servings of \(mealsServed[day, 1]), \(numMealsServed[day, 2]) servings of \(mealsServed[day, 2]) and \(numMealsServed[day, 3]) servings of \(mealsServed[day, 3])\nwill be provided with \(numSidesServed[day, 1]) optional extra servings of \(sidesServed[day, 1]) and \(numDessertsServed[day, 1]) servings of \(dessertsServed[day, 1]) for dessert.\n" | day in weekdays];
-output["The total cost per week will be \(weeklyCost)p including purchase, transport, storage and cooking.\n"];
-output["The total greenhouse gas emissions associated with this menu is around \(weeklyEmissions div 100) kg per week.\n"];
+output["The total cost per week will be £\(weeklyCost div 10000) including purchase, transport, storage and cooking.\n"];
+output["The total greenhouse gas emissions associated with this menu is around \(weeklyEmissions div 10000) kg per week.\n"];
 output["The weekly order will be:\n"];
 output["\(weeklyOrder[i]) \(ingredientPortions[i]) of \(i)\n" | i in ingredients];
 output["The group requires \(dailyNutrientsRequired[nutrient] * 7) \(nutrient) per week, and \(weeklyNutrition[nutrient]) \(nutrient) will be served.\n" | nutrient in nutrients];
+% Check raw objective values.
+%output["weeklyEmissions: \(weeklyEmissions)\nweeklyCost: \(weeklyCost)\nweekly calories: \(weeklyNutrition[calories])\nweekly fat: \%(weeklyNutrition[fat])"];
+% Check solution values.
+output["\(weeklyCost div 10000)\n\(weeklyEmissions div 10000)\n\(weeklyNutrition[calories] - (dailyNutrientsRequired[calories] * 7))\n\(weeklyNutrition[carbohydrate] - (dailyNutrientsRequired[carbohydrate] * 7))\n\(weeklyNutrition[fat] - (dailyNutrientsRequired[fat] * 7))\n\(weeklyNutrition[fibre] - (dailyNutrientsRequired[fibre] * 7))\n\(weeklyNutrition[protein] - (dailyNutrientsRequired[protein] * 7))"];
