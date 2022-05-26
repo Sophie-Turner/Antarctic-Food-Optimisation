@@ -25,7 +25,7 @@ emissions of moving 100g food = 0.01896 kg CO2e
 considering only 1-way journey (not the return journey)
 
 
-TWIN OTTER for Falkands
+TWIN OTTER from Falkands
 
 distance from Stanley, Falklands to Rothera = 1873 km = 1164 mi
 
@@ -59,3 +59,4 @@ https://www.vikingair.com/sites/default/files/Viking-Twin-Otter-Series-400-Techn
 https://ansperformance.eu/acronym/nm/
 https://www.bas.ac.uk/polar-operations/sites-and-facilities/facility/twin-otter-aircraft/
 https://www.flightdeckfriend.com/ask-a-pilot/how-much-does-jet-fuel-cost/#:~:text=With%20a%20metric%20tonne%20being,or%20about%20%240.43%20per%20KG.
+https://contentzone.eurocontrol.int/aircraftperformance/details.aspx?ICAO=DHC6&ICAOFilter=dhc
