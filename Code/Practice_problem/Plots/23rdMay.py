@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-savePath = r"C:\Users\sophi\Antarctic-Food-Optimisation\Documentation\Benchmark_plot.png"
+savePath = r"C:\Users\sophi\Antarctic-Food-Optimisation\Documentation\Benchmark_23rd_May.png"
 
 minutes = (0, 1, 2, 5, 10)
 measures = ("cost", "emissions", "extra cals")

@@ -70,7 +70,7 @@ array[ingredients, nutrients] of int: nutrition;
 
 int: numPeople;
 % The minimum grams of nutrients people require per day.
-array[nutrients] of int: minNutrients = [2000, 275, 60, 23, 45];
+array[nutrients] of int: minNutrients = [2000, 225, 44, 21, 45];
 % It is higer in the winter because of the colder climate.
 float: winterMultiplier = 0.25;
 % physical workers need +100% more nutrients per day.
@@ -341,7 +341,9 @@ constraint forall(ingredient in ingredients)
 % Multiply by 2 because each meal is served twice a day.
 var int: weeklyCost = breakfastsCost + ((mealsCost + sidesCost + dessertsCost) * 2); % divide output by 10000
 var int: weeklyEmissions = breakfastsEmissions + ((mealsEmissions + sidesEmissions + dessertsEmissions) * 2); % divide output by 10000 
-solve minimize weeklyEmissions + weeklyCost; 
+% Constrain cals to > minimum, then minimise to avoid food waste. Try not to give people too much fat.
+%solve minimize weeklyEmissions + weeklyCost + weeklyNutrition[calories] * 10 + weeklyNutrition[fat] * 100; 
+solve minimize weeklyEmissions;
 
 %%%%%%%%%%%%%%%%%%%%%%%% OUTPUT INFO %%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -351,3 +353,7 @@ output["The total greenhouse gas emissions associated with this menu is around \
 output["The weekly order will be:\n"];
 output["\(weeklyOrder[i]) \(ingredientPortions[i]) of \(i)\n" | i in ingredients];
 output["The group requires \(dailyNutrientsRequired[nutrient] * 7) \(nutrient) per week, and \(weeklyNutrition[nutrient]) \(nutrient) will be served.\n" | nutrient in nutrients];
+% Check raw objective values.
+%output["weeklyEmissions: \(weeklyEmissions)\nweeklyCost: \(weeklyCost)\nweekly calories: \(weeklyNutrition[calories])\nweekly fat: \%(weeklyNutrition[fat])"];
+% Check solution values.
+output["\(weeklyCost div 10000)\n\(weeklyEmissions div 10000)\n\(weeklyNutrition[calories] - (dailyNutrientsRequired[calories] * 7))\n\(weeklyNutrition[carbohydrate] - (dailyNutrientsRequired[carbohydrate] * 7))\n\(weeklyNutrition[fat] - (dailyNutrientsRequired[fat] * 7))\n\(weeklyNutrition[fibre] - (dailyNutrientsRequired[fibre] * 7))\n\(weeklyNutrition[protein] - (dailyNutrientsRequired[protein] * 7))"];
