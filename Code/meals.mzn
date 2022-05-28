@@ -89,14 +89,11 @@ constraint forall(i in nutrients)
           (minNutrients[i] * numPeople) 
           + (minNutrients[i] * numPhysicalWorkers * physicalMultiplier)
           + (minNutrients[i] * numMen * menMultiplier)); 
-% Work out how much nutrition the group needs per week.
-var float: weeklyCalsRequired;
-constraint weeklyCalsRequired = dailyNutrientsRequired[calories] * 7;
  
 %%%%%%%%%%%%%%%%%%%%%%%%% MAIN MEALS PROCESSING %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
  
+% All the options on each mealtime should be different, and each row of meals should be different, but the whole array doesn't need to be different.  
 include "alldifferent.mzn"; 
-% All the options on each mealtime should be different, and each row of meals should be different, but the whole array doesn't need to be different. 
  
 array[weekdays, 1..numMealsOffered] of var meals: mealsServed; 
 array[weekdays, 1..numMealsOffered] of var int: numMealsServed;
@@ -319,13 +316,13 @@ constraint forall(nutrient in nutrients)
                  (weeklyNutrition[nutrient]
                  = (breakfastsNutritionServed[nutrient]
                  + ((mealsNutritionServed[nutrient] 
-                    + sidesNutritionServed[nutrient] 
+                    %+ sidesNutritionServed[nutrient] 
                     + dessertsNutritionServed[nutrient])
                     * 2)) % Muliply meals by 2 because there are lunch and tea.
                  div 100); % Per 100g, not per gram.
                                                          
-constraint forall(nutrient in nutrients)
-                 (weeklyNutrition[nutrient] >= dailyNutrientsRequired[nutrient] * 7);
+%constraint forall(nutrient in nutrients)
+%                 (weeklyNutrition[nutrient] >= dailyNutrientsRequired[nutrient] * 7);
 
 array[ingredients] of var int: weeklyOrder;
 constraint forall(ingredient in ingredients)
@@ -336,6 +333,29 @@ constraint forall(ingredient in ingredients)
                      + dessertIngredientsOrder[ingredient])
                      *2))); % Muliply meals by 2 because there are lunch and tea.
 
+%%%%%%%%%%%%%%%%%%%%%%%% TEST %%%%%%%%%%%%%%%%%%%%%%%
+
+% Work out the nutrition on offer.
+array[nutrients] of var int: nutritionServed;
+constraint forall(nutrient in nutrients)
+           (nutritionServed[nutrient] = 
+            sum(day in weekdays, item in 1..maxIngredients)
+               (sum(optionNum in 1..numBreakfastsOffered)
+                   (nutrition[breakfastIngredients[breakfastsServed[day, optionNum], item], nutrient]
+                    * breakfastAmounts[breakfastsServed[day, optionNum], item]
+                    * numBreakfastsServed[day, optionNum])
+                +
+                ((sum(optionNum in 1..numMealsOffered)
+                   (nutrition[mealIngredients[mealsServed[day, optionNum], item], nutrient]
+                    * mealAmounts[mealsServed[day, optionNum], item]
+                    * numMealsServed[day, optionNum]) 
+                 +
+                 sum(optionNum in 1..numDessertsOffered)
+                   (nutrition[dessertIngredients[dessertsServed[day, optionNum], item], nutrient]
+                    * dessertAmounts[dessertsServed[day, optionNum], item]
+                    * numDessertsServed[day, optionNum]))   
+                 * 2)));
+
 %%%%%%%%%%%%%%%%%%%%%% OBJECTIVE %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Multiply by 2 because each meal is served twice a day.
@@ -343,7 +363,8 @@ var int: weeklyCost = breakfastsCost + ((mealsCost + sidesCost + dessertsCost) *
 var int: weeklyEmissions = breakfastsEmissions + ((mealsEmissions + sidesEmissions + dessertsEmissions) * 2); % divide output by 10000 
 % Constrain cals to > minimum, then minimise to avoid food waste. Try not to give people too much fat.
 %solve minimize weeklyEmissions + weeklyCost + weeklyNutrition[calories] * 10 + weeklyNutrition[fat] * 100; 
-solve minimize weeklyEmissions;
+%solve minimize weeklyEmissions;
+solve satisfy;
 
 %%%%%%%%%%%%%%%%%%%%%%%% OUTPUT INFO %%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -356,4 +377,6 @@ output["The group requires \(dailyNutrientsRequired[nutrient] * 7) \(nutrient) p
 % Check raw objective values.
 %output["weeklyEmissions: \(weeklyEmissions)\nweeklyCost: \(weeklyCost)\nweekly calories: \(weeklyNutrition[calories])\nweekly fat: \%(weeklyNutrition[fat])"];
 % Check solution values.
-output["\(weeklyCost div 10000)\n\(weeklyEmissions div 10000)\n\(weeklyNutrition[calories] - (dailyNutrientsRequired[calories] * 7))\n\(weeklyNutrition[carbohydrate] - (dailyNutrientsRequired[carbohydrate] * 7))\n\(weeklyNutrition[fat] - (dailyNutrientsRequired[fat] * 7))\n\(weeklyNutrition[fibre] - (dailyNutrientsRequired[fibre] * 7))\n\(weeklyNutrition[protein] - (dailyNutrientsRequired[protein] * 7))"];
+output["\(weeklyCost div 10000)\n\(weeklyEmissions div 10000)\n\(weeklyNutrition[calories] - (dailyNutrientsRequired[calories] * 7))\n\(weeklyNutrition[carbohydrate] - (dailyNutrientsRequired[carbohydrate] * 7))\n\(weeklyNutrition[fat] - (dailyNutrientsRequired[fat] * 7))\n\(weeklyNutrition[fibre] - (dailyNutrientsRequired[fibre] * 7))\n\(weeklyNutrition[protein] - (dailyNutrientsRequired[protein] * 7))\n"];
+
+output["\(weeklyNutrition)\n\(nutritionServed)"];
