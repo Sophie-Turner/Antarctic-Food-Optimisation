@@ -68,19 +68,19 @@ enum nutrients = {calories, carbohydrate, fat, fibre, protein};
 % Amount of each nutrient in 100g of ingredient.
 array[ingredients, nutrients] of int: nutrition;
 
-int: numPeople;
+array[weekdays] of int: numPeople;
 % The minimum grams of nutrients people require per day.
 array[nutrients] of int: minNutrients = [2000, 225, 44, 21, 45];
 % It is higer in the winter because of the colder climate.
 float: winterMultiplier = 0.25;
 % physical workers need +100% more nutrients per day.
-int: numPhysicalWorkers;
+array[weekdays] of int: numPhysicalWorkers;
 int: physicalMultiplier = 1;
 % males need +25% more nutrients per day.
-int: numMen; 
+array[weekdays] of int: numMen; 
 float: menMultiplier = 0.25;
 % num people who do not eat categories.
-array[contains] of int: numRefusals;
+array[weekdays, contains] of int: numRefusals;
 
 % Work out how much nutrition the group needs per day.
 array[nutrients] of var float: dailyNutrientsRequired;
