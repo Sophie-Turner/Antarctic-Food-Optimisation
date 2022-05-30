@@ -147,10 +147,23 @@ mealContains = [|gluten, egg, none| meat, milk, gluten| meat, gluten, egg| milk,
 
 % The sides can all be eaten by every diet type.
 numSidesOffered = 1;              
-sides = {roastPotatoes, bakedPotato, Rice, veganSausages, peas, chips, broccoli, beans};                     
-sideCookingCosts = [10, 12, 3, 7, 2, 7, 10, 1];          
-sideIngredients = [potatoesFresh, potatoesFresh, rice, veganSausagesFrozen, peasFrozen, chipsFrozen, broccoliFrozen, beansTinned]; 
-sideAmounts = [200, 200, 100, 75, 80, 284, 45, 120];
+sides = {roastPotatoes, bakedPotato, Rice, veganSausages, peas, chips, broccoli, beans, breadRolls, yorkshirePuddings, eggFriedRice, boiledEggs, porkSausages, nutRoast};                     
+sideCookingCosts = [10, 12, 3, 7, 2, 7, 10, 1, 0, 3, 3, 1, 7, 10];          
+sideIngredients = [| potatoesFresh, oil, herbsDried, null, null |
+                     potatoesFresh, null, null, null, null | 
+                     rice, null, null, null, null |
+                     veganSausagesFrozen, null, null, null null |
+                     peasFrozen, null, null, null, null |
+                     chipsFrozen, null, null, null, null |
+                     broccoliFrozen, null, null, null, null |
+                     beansTinned, null, null, null, null |
+                     breadRollsFrozen, butterFrozen, null, null, null |
+                     flour, oil, eggPowder, milkPowder, null |
+                     rice, eggPowder, null, null, null |
+                     eggsFresh, null, null, null, null |
+                     sausagesFrozen, null, null, null, null |
+                     nuts, peanutButter, stockCube, carrotsFrozen, oatMilk |]; 
+sideAmounts = [|200,10,5,0,0|200,0,0,0,0| 100,| 75,| 80,| 284,| 45,| 120,| 100|];
           
 numDessertsOffered = 1;
 desserts = {chocolateMousse, veganFruitYoghurt, fruitSalad, walnutCake, chocolateCake, spongeCustard, jelly, cheeseBiscuits, veganPancakes, peanutCookies};
