@@ -1,0 +1,78 @@
+in 1 minute, minimise...
+
+varietylack:
+
+calories 572104
+cost 14721772
+emissions 13167580
+varietyLack 46
+0.0000000000001 * 
+calories * cost * emissions * varietyLack 510151148.7766789
+calories + cost + emissions + vaietyLack 28461502
+
+emissions:
+
+calories 546214
+cost 14234100
+emissions 12456526
+varietyLack 98
+0.0000000000001 * 
+calories * cost * emissions * varietyLack 949108481.6465232
+calories + cost + emissions + vaietyLack 27236938
+
+cost:
+
+calories:
+
+varietylack * 100000 + emissions:
+
+
+varietylack * emissions:
+
+
+varietylack * emissions * cost: 
+
+varietylack * emissions * cost * calories * 0.0000000000001:
+
+varietylack + emissions + cost + calories:
+
+varietylack * 1000000 + emissions + cost + calories * 100:
+
+
+
+
+
+
+
+
+
+
+
+I want the vars in the same magnitude 
+so that they have similar weight in 
+the objective function but multiplying 
+them all gives an int overflow.
+The language only works with linear eqns.
+Do you think it's better to 
+multiply them but scale it down:
+v * e * c1 * c2 * 0.00000000001
+or sum them after scaling each one:
+v * 100000 + e + c1 * 1000 + c2 * 10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -348,9 +348,8 @@ var int: varietyLack = sum(day in weekdays)
 % Multiply by 2 because each meal is served twice a day.
 var int: weeklyCost = breakfastsCost + ((mealsCost + sidesCost + dessertsCost) * 2); % divide output by 10000
 var int: weeklyEmissions = breakfastsEmissions + ((mealsEmissions + sidesEmissions + dessertsEmissions) * 2); % divide output by 10000 
-% Constrain cals to > minimum, then minimise to avoid food waste. Try not to give people too much fat.
-%solve minimize weeklyEmissions + weeklyCost + weeklyNutrition[calories] * 10 + weeklyNutrition[fat] * 100; 
-solve minimize varietyLack;
+% Constrain cals to > minimum, then minimise to avoid food waste. Try not to give people too much fat. 
+solve satisfy;
 
 %%%%%%%%%%%%%%%%%%%%%%%% OUTPUT INFO %%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -365,4 +364,9 @@ output["The total greenhouse gas emissions associated with this menu is around \
 % Check solution values for tests.
 %output["\(weeklyCost div 10000)\n\(weeklyEmissions div 10000)\n\(weeklyNutrition[calories] - (dailyNutrientsRequired[calories] * 7))\n\(weeklyNutrition[carbohydrate] - (dailyNutrientsRequired[carbohydrate] * 7))\n\(weeklyNutrition[fat] - (dailyNutrientsRequired[fat] * 7))\n\(weeklyNutrition[fibre] - (dailyNutrientsRequired[fibre] * 7))\n\(weeklyNutrition[protein] - (dailyNutrientsRequired[protein] * 7))\n"];
 
-output["variety lack \(varietyLack)"];
+output["\(weeklyNutrition[calories])\n"];
+output["\(weeklyCost)\n"];
+output["\(weeklyEmissions)\n"];
+output["\(varietyLack)\n"];
+output["\(0.0000000000001 * weeklyNutrition[calories] * weeklyCost * weeklyEmissions * varietyLack)\n"];
+output["\(weeklyNutrition[calories] + weeklyCost + weeklyEmissions + varietyLack)"];
