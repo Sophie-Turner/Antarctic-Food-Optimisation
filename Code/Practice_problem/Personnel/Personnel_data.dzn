@@ -146,13 +146,13 @@ mealContains = [|gluten, egg, none| meat, milk, gluten| meat, gluten, egg| milk,
                  meat, milk, gluten| none, none, none | gluten, nut, egg | meat, milk, gluten | none, none, none |];
 
 % The sides can all be eaten by every diet type.
-numSidesOffered = 1;              
+numSidesOffered = 2;              
 sides = {roastPotatoes, bakedPotato, Rice, veganSausages, peas, chips, broccoli, beans, breadRolls, yorkshirePuddings, eggFriedRice, boiledEggs, porkSausages, nutRoast};                     
 sideCookingCosts = [10, 12, 3, 7, 2, 7, 10, 1, 0, 3, 3, 1, 7, 10];          
 sideIngredients = [| potatoesFresh, oil, herbsDried, null, null |
                      potatoesFresh, null, null, null, null | 
                      rice, null, null, null, null |
-                     veganSausagesFrozen, null, null, null null |
+                     veganSausagesFrozen, null, null, null, null |
                      peasFrozen, null, null, null, null |
                      chipsFrozen, null, null, null, null |
                      broccoliFrozen, null, null, null, null |
@@ -163,7 +163,10 @@ sideIngredients = [| potatoesFresh, oil, herbsDried, null, null |
                      eggsFresh, null, null, null, null |
                      sausagesFrozen, null, null, null, null |
                      nuts, peanutButter, stockCube, carrotsFrozen, oatMilk |]; 
-sideAmounts = [|200,10,5,0,0|200,0,0,0,0| 100,| 75,| 80,| 284,| 45,| 120,| 100|];
+sideAmounts = [| 200,10,5,0,0 | 200,0,0,0,0 | 100,0,0,0,0 | 75,0,0,0,0 | 80,0,0,0,0 | 284,0,0,0,0 | 45,0,0,0,0 | 120,0,0,0,0 | 100,14,0,0,0 |
+                 23,6,33,33,0 | 100,50,0,0,0 | 50,0,0,0,0 | 75,0,0,0,0 | 80,13,6,25,13 |];
+sideContains = [|none,none,none|none,none,none|none,none,none|none,none,none|none,none,none|none,none,none|none,none,none|
+                 none,none,none|gluten,milk,none|gluten,egg,milk|egg,none,none|egg,none,none|meat,none,none|nut,none,none|];
           
 numDessertsOffered = 1;
 desserts = {chocolateMousse, veganFruitYoghurt, fruitSalad, walnutCake, chocolateCake, spongeCustard, jelly, cheeseBiscuits, veganPancakes, peanutCookies};
