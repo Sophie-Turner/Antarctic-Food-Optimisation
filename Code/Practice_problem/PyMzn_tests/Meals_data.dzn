@@ -146,27 +146,11 @@ mealContains = [|gluten, egg, none| meat, milk, gluten| meat, gluten, egg| milk,
                  meat, milk, gluten| none, none, none | gluten, nut, egg | meat, milk, gluten | none, none, none |];
 
 % The sides can all be eaten by every diet type.
-numSidesOffered = 2;              
-sides = {roastPotatoes, bakedPotato, Rice, veganSausages, peas, chips, broccoli, beans, breadRolls, yorkshirePuddings, eggFriedRice, boiledEggs, porkSausages, nutRoast};                     
-sideCookingCosts = [10, 12, 3, 7, 2, 7, 10, 1, 0, 3, 3, 1, 7, 10];          
-sideIngredients = [| potatoesFresh, oil, herbsDried, null, null |
-                     potatoesFresh, null, null, null, null | 
-                     rice, null, null, null, null |
-                     veganSausagesFrozen, null, null, null, null |
-                     peasFrozen, null, null, null, null |
-                     chipsFrozen, null, null, null, null |
-                     broccoliFrozen, null, null, null, null |
-                     beansTinned, null, null, null, null |
-                     breadRollsFrozen, butterFrozen, null, null, null |
-                     flour, oil, eggPowder, milkPowder, null |
-                     rice, eggPowder, null, null, null |
-                     eggsFresh, null, null, null, null |
-                     sausagesFrozen, null, null, null, null |
-                     nuts, peanutButter, stockCube, carrotsFrozen, oatMilk |]; 
-sideAmounts = [| 200,10,5,0,0 | 200,0,0,0,0 | 100,0,0,0,0 | 75,0,0,0,0 | 80,0,0,0,0 | 284,0,0,0,0 | 45,0,0,0,0 | 120,0,0,0,0 | 100,14,0,0,0 |
-                 23,6,33,33,0 | 100,50,0,0,0 | 50,0,0,0,0 | 75,0,0,0,0 | 80,13,6,25,13 |];
-sideContains = [|none,none,none|none,none,none|none,none,none|none,none,none|none,none,none|none,none,none|none,none,none|
-                 none,none,none|gluten,milk,none|gluten,egg,milk|egg,none,none|egg,none,none|meat,none,none|nut,none,none|];
+numSidesOffered = 1;              
+sides = {roastPotatoes, bakedPotato, Rice, veganSausages, peas, chips, broccoli, beans};                     
+sideCookingCosts = [10, 12, 3, 7, 2, 7, 10, 1];          
+sideIngredients = [potatoesFresh, potatoesFresh, rice, veganSausagesFrozen, peasFrozen, chipsFrozen, broccoliFrozen, beansTinned]; 
+sideAmounts = [200, 200, 100, 75, 80, 284, 45, 120];
           
 numDessertsOffered = 1;
 desserts = {chocolateMousse, veganFruitYoghurt, fruitSalad, walnutCake, chocolateCake, spongeCustard, jelly, cheeseBiscuits, veganPancakes, peanutCookies};
@@ -204,15 +188,15 @@ breakfastAmounts = [| 50, 250, 50, 0, 0 | 50, 250, 50, 0, 0 | 100, 114, 30, 100,
                       100, 30, 0, 0, 0 | 250, 50, 0, 0, 0 | 250, 50, 0, 0, 0 | 70, 40, 5, 15, 25 |];
 breakfastContains = [| milk, none, none | none, none, none | meat, egg, none | none, none, none | 
                        gluten, nut, none | milk, none, none | none, none, none | gluten, egg, sugars |];
-                 
-% For this week, how many people will be here.                                           
-numPeople = [20, 20, 19, 19, 19, 25, 25]; 
+                              
+numPeople = 19; 
 % physical workers need +100% more nutrients per day.
-numPhysicalWorkers = [10, 10, 9, 9, 9, 10, 10];
+numPhysicalWorkers = 10;
 % males need +25% more nutrients per day.
-numMen = [14, 14, 13, 13, 13, 16, 16]; 
+numMen = 14; 
 % num people who do not eat categories. None means they eat everything.     
 % contains = {none, meat, milk, gluten, egg, nut, seed, sugars};
-numRefusals = [| 0,6,0,1,1,0,0,1 | 0,6,0,1,1,0,0,1 | 0,6,0,1,0,0,0,1 | 0,6,0,1,0,0,0,1 |
-                 0,6,0,1,0,0,0,1 | 0,7,2,1,2,0,1,2 | 0,7,2,1,2,0,1,2 |];
+numRefusals = [0, 6, 3, 2, 2, 0, 0, 1];
+
+% Expand num people data to account for people arriving and leaving on different days. 
      

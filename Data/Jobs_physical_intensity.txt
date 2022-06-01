@@ -1,0 +1,21 @@
+job roles physical activity level
+
+0 (low):
+Communications Officer
+
+1 (moderate):
+Antarctic Atmospheric Scientist
+Boating Officer
+Chef
+Data Manager
+Electrical Power Generation Technicians
+Electronics Engineer
+
+2 (high):
+Carpenter
+Joiner
+Builder
+Field Dive Officer
+Field Guide
+anyone who will soon stay overnight on the field or has recently returned, regardless of job
+

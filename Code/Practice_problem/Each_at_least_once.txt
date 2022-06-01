@@ -1,5 +1,0 @@
-7 days, 5 sides. code for each one offered >= once.
-
-% Each side is offfered at least once.
-array[weekdays, 1..numSidesOffered] of var sides: sidesServed;
-constraint forall(option in sides)(exists (day in weekdays, j in 1..numSidesOffered)(sidesServed[day, j] = sides[option]));
