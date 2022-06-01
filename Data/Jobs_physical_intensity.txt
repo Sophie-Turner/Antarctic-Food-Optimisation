@@ -1,7 +1,27 @@
 job roles physical activity level
+pick out keywords and convert all inputs to lowercase
 
 0 (low):
 Communications Officer
+Radio Officer
+Doctor
+Mobile Plant Operator
+Vehicle Operator
+IT Engineer
+Network and Security Engineer
+Mariner
+Tower supervisor
+Station leader
+Station Logistics Manager
+Station Ops Manager
+Forecaster
+Captain
+Vehicles Manager
+Pax
+Admin Assistant
+Operations Director
+Student
+Project Manager
 
 1 (moderate):
 Antarctic Atmospheric Scientist
@@ -10,12 +30,36 @@ Chef
 Data Manager
 Electrical Power Generation Technicians
 Electronics Engineer
+Maintenance Technician
+Maintenance Technician
+Mobile Plant Mechanic
+Station Support Assistants
+Electrician
+Mechanic
+Genny Mech
+Air Mech
+Plumber
+Welder
+Scientist
 
 2 (high):
 Carpenter
 Joiner
+Construction
 Builder
 Field Dive Officer
 Field Guide
+Field Assistant
+General Assistant
+GA
+Marine Biologist
+Steel Erector
+Pilot
+Air unit
+Traverse
+Cladder
+Mast Erector
+Mooring Team
+Hut Install
 anyone who will soon stay overnight on the field or has recently returned, regardless of job
 
