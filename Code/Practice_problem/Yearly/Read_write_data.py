@@ -23,11 +23,18 @@ for i in range(len(posts)):
         post = post.lower()
         for job in highIntensityJobs:
             if job in post:
-                print(job)
                 jobsIntensity[i] = 0.5
         for job in vHighIntensityJobs:
             if job in post:
-                print(job)
                 jobsIntensity[i] = 1
 
 print(jobsIntensity)
+
+# How many people are on base each day.
+#numPeople = np.asarray(sheet.iloc[374, 13:376])
+#print(sheet.iloc[374, 13])
+#print(sheet.iloc[362, 7])
+print(sheet.iloc[374, 1:50])
+#print(sheet.iloc[374, 376])
+print(sheet.shape)
+
