@@ -41,8 +41,7 @@ types = sanitise(types, invalidIndices)
 startDates = sanitise(startDates, invalidIndices)
 endDates = sanitise(endDates, invalidIndices)
 
-totalPeople = len(posts)
-print(totalPeople)
+totalPeople = len(posts) # 368 people
 jobsIntensity = np.zeros(totalPeople)
 
 for i in range(totalPeople):
@@ -61,10 +60,10 @@ for i in range(totalPeople):
 
 firstDay = min(startDates) 
 lastDay = max(endDates)
+numDays = (lastDay - firstDay).days # 370 days
 
-print(firstDay, lastDay)
-
-numPeople = []
-for person in range(totalPeople):
-    pass
-
+numPeople = np.zeros(numDays)
+for i in range(totalPeople):
+    start = numDays - (lastDay - startDates[i]).days
+    end = numDays - (lastDay - endDates[i]).days 
+    print(start, "\n", end)
