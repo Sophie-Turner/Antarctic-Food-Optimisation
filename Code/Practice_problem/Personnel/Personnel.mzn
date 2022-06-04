@@ -168,11 +168,8 @@ array[weekdays, 1..numSidesOffered] of var int: numSidesServed;
 
 % The right number of sides must be offered.
 constraint forall(day in weekdays)
-                 ((sum(optionNum in 1..numSidesOffered)
-                     (numSidesServed[day, optionNum]) = numPeople[day])
-                  /\ 
-                  forall(optionNum in 1..numSidesOffered)
-                        (numSidesServed[day, optionNum] >= minServings[day]));
+                 (forall(optionNum in 1..numSidesOffered)
+                        (numSidesServed[day, optionNum] >= 0));
 
 % The sides options on each day must be the same but options can be repeated throughout the week.
 constraint forall(day in weekdays)
@@ -369,7 +366,7 @@ var int: varietyLack = sum(day in weekdays)
 var int: weeklyCost = breakfastsCost + ((mealsCost + sidesCost + dessertsCost) * 2); % divide output by 10000
 var int: weeklyEmissions = breakfastsEmissions + ((mealsEmissions + sidesEmissions + dessertsEmissions) * 2); % divide output by 10000 
 % Constrain cals to > minimum, then minimise to avoid food waste. Try not to give people too much fat. 
-solve satisfy;
+solve minimize (varietyLack * 1000000) + weeklyEmissions + weeklyCost + (weeklyNutrition[calories] * 100);
 
 %%%%%%%%%%%%%%%%%%%%%%%% OUTPUT INFO %%%%%%%%%%%%%%%%%%%%%%%%%
 
