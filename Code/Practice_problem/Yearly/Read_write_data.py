@@ -62,8 +62,13 @@ firstDay = min(startDates)
 lastDay = max(endDates)
 numDays = (lastDay - firstDay).days # 370 days
 
-numPeople = np.zeros(numDays)
+numPeople = np.zeros(numDays, dtype=np.uint8)
 for i in range(totalPeople):
     start = numDays - (lastDay - startDates[i]).days
     end = numDays - (lastDay - endDates[i]).days 
-    print(start, "\n", end)
+    currentDay = start 
+    while currentDay < end:
+        numPeople[currentDay] += 1
+        currentDay += 1
+print(numPeople)
+
