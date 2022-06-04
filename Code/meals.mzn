@@ -1,7 +1,29 @@
+%%%%%%%%%%%%%%%%%%%%%%%% DATE INPUTS %%%%%%%%%%%%%%%%%%%%%%%%%
+
+enum weekdays = {Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday};
+
+% When to start and end the plan.
+weekdays: startWeekday; 
+int: startDate;
+int: startMonth;
+int: endDate;
+int: endMonth;
+set of int: years;
+array[1..12] of var int: monthDays = [31, _, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+array[years, 1..12] of var int: allDates;
+constraint forall (year in years, month in 1..12)
+                  (if month = 2
+                   then if year mod 4 = 0
+                        then allDates[year, month] = 29
+                        else allDates[year, month] = 28
+                        endif
+                   else allDates[year, month] = monthDays[month]
+                   endif);   
+
+enum mealtimes = {breakfast, lunch, tea}; 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%% FIXED INPUTS %%%%%%%%%%%%%%%%%%%%%%%%%%
 
-enum weekdays = {Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday}; 
-enum mealtimes = {breakfast, lunch, tea}; 
 enum ingredients;
 % A null ingredient is needed for static 2d array placeholders.
 ingredients: notIngredient;
@@ -168,11 +190,8 @@ array[weekdays, 1..numSidesOffered] of var int: numSidesServed;
 
 % The right number of sides must be offered.
 constraint forall(day in weekdays)
-                 ((sum(optionNum in 1..numSidesOffered)
-                     (numSidesServed[day, optionNum]) = numPeople[day])
-                  /\ 
-                  forall(optionNum in 1..numSidesOffered)
-                        (numSidesServed[day, optionNum] >= minServings[day]));
+                 (forall(optionNum in 1..numSidesOffered)
+                        (numSidesServed[day, optionNum] >= 0));
 
 % The sides options on each day must be the same but options can be repeated throughout the week.
 constraint forall(day in weekdays)
@@ -368,7 +387,8 @@ var int: varietyLack = sum(day in weekdays)
 % Multiply by 2 because each meal is served twice a day.
 var int: weeklyCost = breakfastsCost + ((mealsCost + sidesCost + dessertsCost) * 2); % divide output by 10000
 var int: weeklyEmissions = breakfastsEmissions + ((mealsEmissions + sidesEmissions + dessertsEmissions) * 2); % divide output by 10000 
-% Constrain cals to > minimum, then minimise to avoid food waste. Try not to give people too much fat. 
+% Constrain cals to > minimum, then minimise to avoid food waste.
+%solve minimize (varietyLack * 1000000) + weeklyEmissions + weeklyCost + (weeklyNutrition[calories] * 100);
 solve satisfy;
 
 %%%%%%%%%%%%%%%%%%%%%%%% OUTPUT INFO %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -389,4 +409,6 @@ output["\(weeklyCost)\n"];
 output["\(weeklyEmissions)\n"];
 output["\(varietyLack)\n"];
 output["\(0.0000000000001 * weeklyNutrition[calories] * weeklyCost * weeklyEmissions * varietyLack)\n"];
-output["\(weeklyNutrition[calories] + weeklyCost + weeklyEmissions + varietyLack)"];
+output["\(weeklyNutrition[calories] + weeklyCost + weeklyEmissions + varietyLack)\n"];
+
+output["\(allDates)\n"];

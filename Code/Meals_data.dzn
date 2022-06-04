@@ -1,3 +1,10 @@
+years = {2023, 2024};
+startWeekday = Monday; 
+startDate = 1;
+startMonth = 9; % September
+endDate = 30;
+endMonth = 8; % August
+
 ingredients = {null, 
                oats, noodlesDried, flour, rice, pasta, chipsFrozen, hashBrownsFrozen, breadRollsFrozen,
                mushroomsTinned, peppersFrozen, broccoliFrozen, peasFrozen, tomatoesTinned, potatoesFresh, beansTinned, aubergineFresh,
