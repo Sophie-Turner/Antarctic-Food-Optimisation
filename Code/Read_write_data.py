@@ -50,6 +50,7 @@ posts = np.asarray(sheet.iloc[2:373, 8])
 types = np.asarray(sheet.iloc[2:373, 9])
 startDates = np.asarray(sheet.iloc[2:373, 1])
 endDates = np.asarray(sheet.iloc[2:373, 3])
+genders = np.asarray(sheet.iloc[2:373, 6])
 
 invalidIndices = findInvalidIndices(startDates)
 
@@ -57,6 +58,7 @@ posts = sanitise(posts, invalidIndices)
 types = sanitise(types, invalidIndices)
 startDates = sanitise(startDates, invalidIndices)
 endDates = sanitise(endDates, invalidIndices)
+genders = sanitise(genders, invalidIndices)
 
 totalPeople = len(posts) # 368 people
 jobsIntensity = np.zeros(totalPeople)
@@ -79,29 +81,49 @@ firstDay = min(startDates)
 lastDay = max(endDates)
 numDays = (lastDay - firstDay).days # 370 days
 
-# Count how many people will be present on each day.
-numPeople = np.zeros(numDays, dtype=np.uint8)
+# Count how many people will be present on each day. 
+numPeople = np.zeros(numDays, dtype=np.uint8) 
 for i in range(totalPeople):
     start = numDays - (lastDay - startDates[i]).days
     end = numDays - (lastDay - endDates[i]).days 
     currentDay = start 
     while currentDay < end:
         numPeople[currentDay] += 1
-        currentDay += 1   
+        currentDay += 1
 
-# Calculate how much extra food will be required per day.
+# Calculate how much extra food will be required per day by job demands.
+# Count number of men and women for dietary reasons.
 numPhysicalWorkers = np.zeros(numDays) 
+numMen = np.zeros(numDays, dtype=np.uint8)
 for i in range(numDays):
     for j in range(totalPeople):
         start = numDays - (lastDay - startDates[j]).days
         end = numDays - (lastDay - endDates[j]).days
         if i >= start and i <= end:
-            numPhysicalWorkers[i] += jobsIntensity[j] 
+            numPhysicalWorkers[i] += jobsIntensity[j]
+            if genders[j] != "F":
+                numMen[i] += 1
 
+# Generate some random dietary requirements for the group
+# because there are no data available for this.
+"""
+for i in range(numDays):
+    numGuests = numPeople[i]
+    strSection = "|"
+    for j in range(8):
+        refusal = np.random.normal(0, numPeople/4, (1, 0))
+        print(refusal)
+        print(type(refusal))
+        refusal = round(abs(refusal))
+        print(refusal)
+        if j < 7:
+            strSection = strSection + str(refusal) + ","
+"""
 
 peopleString = formatString("numPeople", numPeople) 
 physicalString = formatString("numPhysicalWorkers", numPhysicalWorkers)
-strToWrite = (peopleString + physicalString)
+menString = formatString("numMen", numMen)
+strToWrite = (peopleString + physicalString + menString)
 
 with open(writeTxtPath, 'w') as txtFile:
     txtFile.write(strToWrite)
