@@ -106,19 +106,38 @@ for i in range(numDays):
 
 # Generate some random dietary requirements for the group
 # because there are no data available for this.
-
+"""
 refusalsString = "numRefusals = ["
 for i in range(numDays):
     numGuests = numPeople[i]
     refusalsString += "| "
     for j in range(8):
-        refusal = np.random.normal(0, numGuests/4, 1)[0]
+        refusal = np.random.normal(0, numGuests/10, 1)[0]
         refusal = int(round(abs(refusal)))
         if j < 7:
             separator = ","
         else:
             separator = " "
         refusalsString += str(refusal) + separator
+refusalsString += "|];\n\n"
+"""
+
+refusalsString = "numRefusals = ["
+for i in range(numDays):
+    numGuests = numPeople[i]
+    refusalsString += "| "
+    if i==0 or (i>0 and numPeople[i] != numPeople[i-1]):
+        refusals = np.random.normal(0, numGuests/10, 8)
+        stringSection = ""
+        for i in range(8):
+            refusal = refusals[i]
+            val = int(round(abs(refusal)))
+            if i == 7:
+                separator = " "
+            else:
+                separator = ","
+            stringSection += str(val) + separator
+    refusalsString += stringSection
 refusalsString += "|];\n\n"
 
 peopleString = formatString("numPeople", numPeople) 
