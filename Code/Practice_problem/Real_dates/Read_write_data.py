@@ -42,15 +42,25 @@ def formatString(strName, dataArray):
     # Remove the first whitespace so others can be turned into commas.
     if newStr[1] == " ":
         newStr = newStr.replace(" ", "", 1)
+    if newStr[0] == "," or newStr[1] == ",":
+        newStr = newStr.replace(",", "", 1)
     # Check for end whitespace too and remove it.
     if newStr[-2] == " ":
         newStr = newStr[:-2] + newStr[-1]
-    newStr = newStr.replace("  ", ",") 
-    newStr = newStr.replace(" ", ",")
-    newStr = newStr.replace(".,", ".0,")
-    newStr = newStr.replace(".\n,", ".0,\n")
-    newStr = newStr.replace(".,", ".0,")
-    newStr = newStr.replace(".]", ".0]")
+    # Remove series info.
+    if "Freq" in newStr:
+        newStr = newStr[:newStr.index("Freq")]
+    whitespaces = ["   ", "  ", " "]
+    afterDots = [",", "\n,", "]"]
+    for space in whitespaces:
+        newStr = newStr.replace(space, ",")
+    for afterDot in afterDots:
+        replacee = ".{}".format(afterDot)
+        replacer = ".0{}".format(afterDot)
+        newStr = newStr.replace(replacee, replacer)
+    newStr.replace("'", "")
+    if newStr[-1] != "]":
+        newStr = "[{}]".format(newStr)
     newStr = "{} = {};\n\n".format(strName, newStr)
     return newStr
 
@@ -70,9 +80,15 @@ startDates = sanitise(startDates, invalidIndices)
 endDates = sanitise(endDates, invalidIndices)
 genders = sanitise(genders, invalidIndices)
 
+firstDay = min(startDates)
+lastDay = max(endDates)
+calendar = pd.date_range(start=firstDay, end=lastDay).to_series()
+dates = np.asarray(calendar)
+daysOfWeek = np.asarray(calendar.dt.dayofweek)
+numDays = (lastDay - firstDay).days # 370 days
 totalPeople = len(posts) # 368 people
-jobsIntensity = np.zeros(totalPeople)
 
+jobsIntensity = np.zeros(totalPeople)
 for i in range(totalPeople):
     post = posts[i]
     # If it contains a value it will be a string.
@@ -86,10 +102,6 @@ for i in range(totalPeople):
         for job in vHighIntensityJobs:
             if job in post:
                 jobsIntensity[i] = 1
-
-firstDay = min(startDates) 
-lastDay = max(endDates)
-numDays = (lastDay - firstDay).days # 370 days
 
 # Count how many people will be present on each day. 
 numPeople = np.zeros(numDays, dtype=np.uint8) 
@@ -134,10 +146,24 @@ for i in range(numDays):
     refusalsString += stringSection
 refusalsString += "|];\n\n"
 
+strToWrite = "numDays = {};\n\n".format(str(numDays))
+
+daysString = ""
+days = [",Monday", ",Tuesday", ",Wednesday", ",Thursday", ",Friday", ",Saturday", ",Sunday"]
+for day in daysOfWeek:
+    daysString += (days[day]) 
+
+datesString = ""
+for date in dates:
+    strSection = str(date)[:10]
+    datesString += "," + strSection 
+    
+datesString = formatString("dates", datesString) 
+daysString = formatString("daysOfWeek", daysString)
 peopleString = formatString("numPeople", numPeople) 
 physicalString = formatString("numPhysicalWorkers", numPhysicalWorkers)
 menString = formatString("numMen", numMen)
-strToWrite = (peopleInfo + peopleString + physicalInfo + physicalString + menInfo + menString + refusalsInfo + refusalsString)
+strToWrite += (datesString + daysString + peopleInfo + peopleString + physicalInfo + physicalString + menInfo + menString + refusalsInfo + refusalsString)
 
 with open(writeTxtPath, 'w') as txtFile:
     txtFile.write(strToWrite)
