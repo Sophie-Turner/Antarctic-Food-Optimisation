@@ -41,7 +41,7 @@ def formatString(strName, dataArray):
         newStr = newStr[:-2] + newStr[-1]
     newStr = newStr.replace("  ", ",") 
     newStr = newStr.replace(" ", ",")
-    newStr = "{} = {}\n".format(strName, newStr)
+    newStr = "{} = {};\n\n".format(strName, newStr)
     return newStr
 
 
@@ -106,24 +106,25 @@ for i in range(numDays):
 
 # Generate some random dietary requirements for the group
 # because there are no data available for this.
-"""
+
+refusalsString = "numRefusals = ["
 for i in range(numDays):
     numGuests = numPeople[i]
-    strSection = "|"
+    refusalsString += "| "
     for j in range(8):
-        refusal = np.random.normal(0, numPeople/4, (1, 0))
-        print(refusal)
-        print(type(refusal))
-        refusal = round(abs(refusal))
-        print(refusal)
+        refusal = np.random.normal(0, numGuests/4, 1)[0]
+        refusal = int(round(abs(refusal)))
         if j < 7:
-            strSection = strSection + str(refusal) + ","
-"""
+            separator = ","
+        else:
+            separator = " "
+        refusalsString += str(refusal) + separator
+refusalsString += "|];\n\n"
 
 peopleString = formatString("numPeople", numPeople) 
 physicalString = formatString("numPhysicalWorkers", numPhysicalWorkers)
 menString = formatString("numMen", numMen)
-strToWrite = (peopleString + physicalString + menString)
+strToWrite = (peopleString + physicalString + menString + refusalsString)
 
 with open(writeTxtPath, 'w') as txtFile:
     txtFile.write(strToWrite)
