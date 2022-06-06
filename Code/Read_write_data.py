@@ -9,7 +9,7 @@ vHighIntensityJobs = ["carpenter", "builder", "joiner", "construction", "field",
 # File path of master pax sheet.
 paxPath = r"C:\Users\sophi\Antarctic-Food-Optimisation\Data\MasterPAX.xlsx"
 currentPath = os.getcwd()
-writeTxtPath = r"{}\People_data.txt".format(currentPath)
+writeTxtPath = r"{}\People_data.dzn".format(currentPath)
 
 
 def findInvalidIndices(dates):
@@ -41,6 +41,10 @@ def formatString(strName, dataArray):
         newStr = newStr[:-2] + newStr[-1]
     newStr = newStr.replace("  ", ",") 
     newStr = newStr.replace(" ", ",")
+    newStr = newStr.replace(".,", ".0,")
+    newStr = newStr.replace(".\n,", ".0,\n")
+    newStr = newStr.replace(".,", ".0,")
+    newStr = newStr.replace(".]", ".0]")
     newStr = "{} = {};\n\n".format(strName, newStr)
     return newStr
 
@@ -106,22 +110,6 @@ for i in range(numDays):
 
 # Generate some random dietary requirements for the group
 # because there are no data available for this.
-"""
-refusalsString = "numRefusals = ["
-for i in range(numDays):
-    numGuests = numPeople[i]
-    refusalsString += "| "
-    for j in range(8):
-        refusal = np.random.normal(0, numGuests/10, 1)[0]
-        refusal = int(round(abs(refusal)))
-        if j < 7:
-            separator = ","
-        else:
-            separator = " "
-        refusalsString += str(refusal) + separator
-refusalsString += "|];\n\n"
-"""
-
 refusalsString = "numRefusals = ["
 for i in range(numDays):
     numGuests = numPeople[i]

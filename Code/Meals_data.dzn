@@ -213,13 +213,13 @@ breakfastContains = [| milk, none, none | none, none, none | meat, egg, none | n
                        gluten, nut, none | milk, none, none | none, none, none | gluten, egg, sugars |];
                  
 % For this week, how many people will be here.                                           
-numPeople = [20, 20, 19, 19, 19, 25, 25]; 
+%numPeople = [20, 20, 19, 19, 19, 25, 25]; 
 % physical workers need +100% more nutrients per day.
-numPhysicalWorkers = [10.5, 10, 9, 9, 9, 10, 10];
+%numPhysicalWorkers = [10.5, 10, 9, 9, 9, 10, 10];
 % males need +25% more nutrients per day.
-numMen = [14, 14, 13, 13, 13, 16, 16]; 
+%numMen = [14, 14, 13, 13, 13, 16, 16]; 
 % num people who do not eat categories. None means they eat everything.     
 % contains = {none, meat, milk, gluten, egg, nut, seed, sugars};
-numRefusals = [| 0,6,0,1,1,0,0,1 | 0,6,0,1,1,0,0,1 | 0,6,0,1,0,0,0,1 | 0,6,0,1,0,0,0,1 |
-                 0,6,0,1,0,0,0,1 | 0,7,2,1,2,0,1,2 | 0,7,2,1,2,0,1,2 |];
+%numRefusals = [| 0,6,0,1,1,0,0,1 | 0,6,0,1,1,0,0,1 | 0,6,0,1,0,0,0,1 | 0,6,0,1,0,0,0,1 |
+%                 0,6,0,1,0,0,0,1 | 0,7,2,1,2,0,1,2 | 0,7,2,1,2,0,1,2 |];
      
