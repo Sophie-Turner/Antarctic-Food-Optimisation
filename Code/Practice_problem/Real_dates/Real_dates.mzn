@@ -1,27 +1,20 @@
 %%%%%%%%%%%%%%%%%%%%%%%% DATE INPUTS %%%%%%%%%%%%%%%%%%%%%%%%%
 
 enum weekdays = {Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday};
-% When to start and end the plan.
-weekdays: startWeekday; 
-int: startDate;
-int: startMonth;
-int: endDate;
-int: endMonth;
-set of int: years;
-array[1..12] of var int: monthDays = [31, _, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-array[years, 1..12] of var int: allDates;
-constraint forall (year in years, month in 1..12)
-                  (if month = 2
-                   then if year mod 4 = 0
-                        then allDates[year, month] = 29
-                        else allDates[year, month] = 28
-                        endif
-                   else allDates[year, month] = monthDays[month]
-                   endif);   
-
 enum mealtimes = {breakfast, lunch, tea}; 
+int: numDays;
+array[1..numDays] of string: dates;
+array[1..numDays] of string: daysOfWeek;
 
+%%%%%%%%%%%%%%%%%%%%%%% PERSONNEL INPUTS %%%%%%%%%%%%%%%%%%%%%%%
 
+array[1..numDays] of int: numPeople;
+% physical workers need +50 to 100 % more nutrients per day.
+array[1..numDays] of float: numPhysicalWorkers;
+% males need +25% more nutrients per day.
+array[1..numDays] of int: numMen; 
+% num people who do not eat categories.
+array[1..numDays, contains] of int: numRefusals;
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% FIXED INPUTS %%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -92,21 +85,12 @@ int: numBreakfastsOffered;
 enum nutrients = {calories, carbohydrate, fat, fibre, protein};
 % Amount of each nutrient in 100g of ingredient.
 array[ingredients, nutrients] of int: nutrition;
-
-array[weekdays] of int: numPeople;
 % The minimum grams of nutrients people require per day.
 array[nutrients] of int: minNutrients = [2000, 225, 44, 21, 45];
 % It is higer in the winter because of the colder climate.
 float: winterMultiplier = 0.25;
-% physical workers need +100% more nutrients per day.
-array[weekdays] of float: numPhysicalWorkers;
 int: physicalMultiplier = 1;
-% males need +25% more nutrients per day.
-array[weekdays] of int: numMen; 
 float: menMultiplier = 0.25;
-% num people who do not eat categories.
-array[weekdays, contains] of int: numRefusals;
-
 % Work out how much nutrition the group needs per day.
 array[weekdays, nutrients] of var float: dailyNutrientsRequired;
 constraint forall(day in weekdays, nutrient in nutrients)
@@ -411,5 +395,3 @@ output["\(weeklyEmissions)\n"];
 output["\(varietyLack)\n"];
 output["\(0.0000000000001 * weeklyNutrition[calories] * weeklyCost * weeklyEmissions * varietyLack)\n"];
 output["\(weeklyNutrition[calories] + weeklyCost + weeklyEmissions + varietyLack)\n"];
-
-output["\(allDates)\n"];

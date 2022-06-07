@@ -388,27 +388,13 @@ var int: varietyLack = sum(day in weekdays)
 var int: weeklyCost = breakfastsCost + ((mealsCost + sidesCost + dessertsCost) * 2); % divide output by 10000
 var int: weeklyEmissions = breakfastsEmissions + ((mealsEmissions + sidesEmissions + dessertsEmissions) * 2); % divide output by 10000 
 % Constrain cals to > minimum, then minimise to avoid food waste.
-%solve minimize (varietyLack * 1000000) + weeklyEmissions + weeklyCost + (weeklyNutrition[calories] * 100);
-solve satisfy;
+solve minimize (varietyLack * 1000000) + weeklyEmissions + weeklyCost + (weeklyNutrition[calories] * 100);
 
 %%%%%%%%%%%%%%%%%%%%%%%% OUTPUT INFO %%%%%%%%%%%%%%%%%%%%%%%%%
 
 output["On \(day), for breakfast, \(numBreakfastsServed[day, 1]) servings of \(breakfastsServed[day, 1]), \(numBreakfastsServed[day, 2]) servings of \(breakfastsServed[day, 2]), \(numBreakfastsServed[day, 3]) servings of \(breakfastsServed[day, 3])\nand \(numBreakfastsServed[day, 4]) servings of \(breakfastsServed[day, 4]) will be provided.\nOn \(day), for both lunch and tea, \(numMealsServed[day, 1]) servings of \(mealsServed[day, 1]), \(numMealsServed[day, 2]) servings of \(mealsServed[day, 2]) and \(numMealsServed[day, 3]) servings of \(mealsServed[day, 3])\nwill be provided with \(numSidesServed[day, 1]) optional extra servings of \(sidesServed[day, 1]), \(numSidesServed[day, 2]) optional extra servings of \(sidesServed[day, 2]) and \(numDessertsServed[day, 1]) servings of \(dessertsServed[day, 1]) for dessert.\n" | day in weekdays];
 output["The total cost per week will be £\(weeklyCost div 10000) including purchase, transport, storage and cooking.\n"];
 output["The total greenhouse gas emissions associated with this menu is around \(weeklyEmissions div 10000) kg per week.\n"];
-%output["The weekly order will be:\n"];
-%output["\(weeklyOrder[i]) \(ingredientPortions[i]) of \(i)\n" | i in ingredients];
+output["The weekly order will be:\n"];
+output["\(weeklyOrder[i]) \(ingredientPortions[i]) of \(i)\n" | i in ingredients];
 
-% Check raw objective values.
-%output["weeklyEmissions: \(weeklyEmissions)\nweeklyCost: \(weeklyCost)\nweekly calories: \(weeklyNutrition[calories])\nweekly fat: \%(weeklyNutrition[fat])"];
-% Check solution values for tests.
-%output["\(weeklyCost div 10000)\n\(weeklyEmissions div 10000)\n\(weeklyNutrition[calories] - (dailyNutrientsRequired[calories] * 7))\n\(weeklyNutrition[carbohydrate] - (dailyNutrientsRequired[carbohydrate] * 7))\n\(weeklyNutrition[fat] - (dailyNutrientsRequired[fat] * 7))\n\(weeklyNutrition[fibre] - (dailyNutrientsRequired[fibre] * 7))\n\(weeklyNutrition[protein] - (dailyNutrientsRequired[protein] * 7))\n"];
-
-output["\(weeklyNutrition[calories])\n"];
-output["\(weeklyCost)\n"];
-output["\(weeklyEmissions)\n"];
-output["\(varietyLack)\n"];
-output["\(0.0000000000001 * weeklyNutrition[calories] * weeklyCost * weeklyEmissions * varietyLack)\n"];
-output["\(weeklyNutrition[calories] + weeklyCost + weeklyEmissions + varietyLack)\n"];
-
-output["\(allDates)\n"];
