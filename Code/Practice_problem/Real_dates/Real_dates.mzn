@@ -3,8 +3,8 @@
 enum weekdays = {Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday};
 enum mealtimes = {breakfast, lunch, tea}; 
 int: numDays;
-array[1..numDays] of string: dates;
-array[1..numDays] of string: daysOfWeek;
+array[1..numDays] of int: dates;
+array[1..numDays] of weekdays: daysOfWeek;
 
 %%%%%%%%%%%%%%%%%%%%%%% PERSONNEL INPUTS %%%%%%%%%%%%%%%%%%%%%%%
 

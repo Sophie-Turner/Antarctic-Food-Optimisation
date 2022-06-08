@@ -9,13 +9,13 @@ vHighIntensityJobs = ["carpenter", "builder", "joiner", "construction", "field",
 # File path of master pax sheet.
 paxPath = r"C:\Users\sophi\Antarctic-Food-Optimisation\Data\MasterPAX.xlsx"
 currentPath = os.getcwd()
-writeTxtPath = r"{}\People_data.dzn".format(currentPath)
+writeTxtPath = r"{}\Occupancy_data.dzn".format(currentPath)
 
 # Strings to display as comments in data file.
 peopleInfo = "% For this week, how many people will be here.\n"
 physicalInfo = "% Physical workers need 50 to 100 % more nutrients per day.\n"
 menInfo = "% Males need +25% more nutrients per day.\n"
-refusalsInfo = "% Num people who do not eat categories. None means they eat everything.\n% contains = {none, meat, milk, gluten, egg, nut, seed, sugars}\n"
+refusalsInfo = "% Num people who do not eat categories. contains = {none, meat, milk, gluten, egg, nut, seed, sugars}\n"
 
 
 def findInvalidIndices(dates):
@@ -150,11 +150,13 @@ strToWrite = "numDays = {};\n\n".format(str(numDays))
 
 daysString = ""
 days = [",Monday", ",Tuesday", ",Wednesday", ",Thursday", ",Friday", ",Saturday", ",Sunday"]
+daysOfWeek = daysOfWeek[1:]
 for day in daysOfWeek:
     daysString += (days[day]) 
 
 datesString = ""
-for date in dates:
+for i in range(1, len(dates)):
+    date = dates[i]
     strSection = str(date)[:10]
     datesString += "," + strSection 
     
