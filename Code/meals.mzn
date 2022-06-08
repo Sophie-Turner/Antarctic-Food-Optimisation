@@ -1,25 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%% DATE INPUTS %%%%%%%%%%%%%%%%%%%%%%%%%
 
-enum weekdays = {Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday};
-
-% When to start and end the plan.
-weekdays: startWeekday; 
-int: startDate;
-int: startMonth;
-int: endDate;
-int: endMonth;
-set of int: years;
-array[1..12] of var int: monthDays = [31, _, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-array[years, 1..12] of var int: allDates;
-constraint forall (year in years, month in 1..12)
-                  (if month = 2
-                   then if year mod 4 = 0
-                        then allDates[year, month] = 29
-                        else allDates[year, month] = 28
-                        endif
-                   else allDates[year, month] = monthDays[month]
-                   endif);   
-
+enum weekdays = {Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday}; 
 enum mealtimes = {breakfast, lunch, tea}; 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% FIXED INPUTS %%%%%%%%%%%%%%%%%%%%%%%%%%

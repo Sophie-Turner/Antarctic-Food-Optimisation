@@ -58,7 +58,7 @@ def formatString(strName, dataArray):
         replacee = ".{}".format(afterDot)
         replacer = ".0{}".format(afterDot)
         newStr = newStr.replace(replacee, replacer)
-    newStr.replace("'", "")
+    #newStr.replace("'", "")
     if newStr[-1] != "]":
         newStr = "[{}]".format(newStr)
     newStr = "{} = {};\n\n".format(strName, newStr)
@@ -134,10 +134,13 @@ for i in range(numDays):
     refusalsString += "| "
     if i==0 or (i>0 and numPeople[i] != numPeople[i-1]):
         refusals = np.random.normal(0, numGuests/10, 8)
+        refusals[0] = 0
         stringSection = ""
         for i in range(8):
             refusal = refusals[i]
-            val = int(round(abs(refusal)))
+            val = int(round(refusal))
+            if val < 0:
+                val = 0
             if i == 7:
                 separator = " "
             else:
@@ -146,7 +149,8 @@ for i in range(numDays):
     refusalsString += stringSection
 refusalsString += "|];\n\n"
 
-strToWrite = "numDays = {};\n\n".format(str(numDays))
+#strToWrite = "numDays = {};\n\n".format(str(numDays))
+strToWrite = ""
 
 daysString = ""
 days = [",Monday", ",Tuesday", ",Wednesday", ",Thursday", ",Friday", ",Saturday", ",Sunday"]
@@ -157,10 +161,12 @@ for day in daysOfWeek:
 datesString = ""
 for i in range(1, len(dates)):
     date = dates[i]
-    strSection = str(date)[:10]
+    strSection = "'{}'".format(str(date)[:10])
     datesString += "," + strSection 
-    
-datesString = formatString("dates", datesString) 
+
+datesString = formatString("dates", datesString)
+datesString = datesString.replace("[", "{")
+datesString = datesString.replace("]", "}")
 daysString = formatString("daysOfWeek", daysString)
 peopleString = formatString("numPeople", numPeople) 
 physicalString = formatString("numPhysicalWorkers", numPhysicalWorkers)

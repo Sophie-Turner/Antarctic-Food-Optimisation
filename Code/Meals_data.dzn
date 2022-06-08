@@ -205,4 +205,11 @@ breakfastAmounts = [| 50, 250, 50, 0, 0 | 50, 250, 50, 0, 0 | 100, 114, 30, 100,
 breakfastContains = [| milk, none, none | none, none, none | meat, egg, none | none, none, none | 
                        gluten, nut, none | milk, none, none | none, none, none | gluten, egg, sugars |];
                 
-     
+numPeople = [20, 20, 19, 19, 19, 25, 25]; 
+
+numPhysicalWorkers = [10.5, 10, 9, 9, 9, 10, 10];
+
+numMen = [14, 14, 13, 13, 13, 16, 16]; 
+
+numRefusals = [| 0,6,0,1,1,0,0,1 | 0,6,0,1,1,0,0,1 | 0,6,0,1,0,0,0,1 | 0,6,0,1,0,0,0,1 |
+                 0,6,0,1,0,0,0,1 | 0,7,2,1,2,0,1,2 | 0,7,2,1,2,0,1,2 |];   
