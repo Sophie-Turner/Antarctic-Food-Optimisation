@@ -99,6 +99,36 @@ constraint forall(date in dates, nutrient in nutrients)
           + (minNutrients[nutrient] * numPhysicalWorkers[date] * physicalMultiplier)
           + (minNutrients[nutrient] * numMen[date] * menMultiplier)); 
 
+%%%%%%%%%%%%%%%%%%% BREAKFASTS PROCESSING %%%%%%%%%%%%%%%%%%
+
+array[dates, 1..numBreakfastsOffered] of var breakfasts: breakfastsServed;
+
+% The breakfast options on each day must be the same but options can be repeated throughout the week.
+constraint forall(date in dates, optionNumI in 2..numBreakfastsOffered)
+                 (forall(optionNumJ in 1..optionNumI-1)
+                        (breakfastsServed[date, optionNumI] != breakfastsServed[date, optionNumJ]));
+
+% Breakfast is an essential meal so enure that everyone can eat it.
+array[dates, 1..numBreakfastsOffered] of var int: numBreakfastsServed;
+
+% There must be a variety of breakfasts on offer.
+constraint forall(date in dates, optionNum in 1..numBreakfastsOffered)
+                 (numBreakfastsServed[date, optionNum] >= minServings[date]);
+                 
+% The right number of breakfasts must be offered.
+constraint forall(date in dates)
+                 (sum(optionNum in 1..numBreakfastsOffered)
+                     (numBreakfastsServed[date, optionNum]) = numPeople[date]);
+                     
+% Make sure everyone can eat something and there are enough servings for each diet type.            
+constraint forall(date in dates, 
+                  foodType in contains)
+                     (numRefusals[date, foodType] <= 
+                      sum(optionNum in 1..numBreakfastsOffered)
+                         (forall(itemNum in 1..maxContains)
+                                (breakfastContains[breakfastsServed[date, optionNum], itemNum] != foodType) 
+                                 * numBreakfastsServed[date, optionNum]));                                                       
+
 %%%%%%%%%%%%%%%%%%%%%%%%% MAIN MEALS PROCESSING %%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
  
 array[dates, 1..numMealsOffered] of var meals: mealsServed;
@@ -129,9 +159,7 @@ constraint forall(date in dates)
                         (forall(itemNum in 1..maxContains)
                                (mealContains[mealsServed[date, optionNum], itemNum] != meat
                                /\ mealContains[mealsServed[date, optionNum], itemNum] != egg
-                               /\ mealContains[mealsServed[date, optionNum], itemNum] != milk))); 
-                               
-                                                                                                 
+                               /\ mealContains[mealsServed[date, optionNum], itemNum] != milk)));                                                                                                  
 
 %%%%%%%%%%%%%%%% SIDES PROCESSING %%%%%%%%%%%%%%%%%%%%%
 
@@ -168,37 +196,18 @@ constraint forall(date in dates,
                        (numDessertsServed[date, optionNum] = 
                         numPeople[date] - max(itemNum in 1..maxContains)
                            (numRefusals[date, dessertContains[dessertsServed[date, optionNum], itemNum]]));
+                           
+% Build up a shopping list of what needs to be ordered.             
+array[ingredients] of var int: dessertIngredientsOrder;
+constraint forall(ingredient in ingredients)
+                 (dessertIngredientsOrder[ingredient] = 
+                  sum(date in dates, optionNum in 1..numDessertsOffered, item in 1..maxIngredients)
+                     (if dessertIngredients[dessertsServed[date, optionNum], item] = ingredient
+                      then dessertAmounts[dessertsServed[date, optionNum], item]
+                           * numDessertsServed[date, optionNum]
+                      else 0
+                      endif));                           
                                  
-%%%%%%%%%%%%%%%%%%% BREAKFASTS PROCESSING %%%%%%%%%%%%%%%%%%
-
-array[dates, 1..numBreakfastsOffered] of var breakfasts: breakfastsServed;
-
-% The breakfast options on each day must be the same but options can be repeated throughout the week.
-constraint forall(date in dates, optionNumI in 2..numBreakfastsOffered)
-                 (forall(optionNumJ in 1..optionNumI-1)
-                        (breakfastsServed[date, optionNumI] != breakfastsServed[date, optionNumJ]));
-
-% Breakfast is an essential meal so enure that everyone can eat it.
-array[dates, 1..numBreakfastsOffered] of var int: numBreakfastsServed;
-
-% There must be a variety of breakfasts on offer.
-constraint forall(date in dates, optionNum in 1..numBreakfastsOffered)
-                 (numBreakfastsServed[date, optionNum] >= minServings[date]);
-                 
-% The right number of breakfasts must be offered.
-constraint forall(date in dates)
-                 (sum(optionNum in 1..numBreakfastsOffered)
-                     (numBreakfastsServed[date, optionNum]) = numPeople[date]);
-                     
-% Make sure everyone can eat something and there are enough servings for each diet type.            
-constraint forall(date in dates, 
-                  foodType in contains)
-                     (numRefusals[date, foodType] <= 
-                      sum(optionNum in 1..numBreakfastsOffered)
-                         (forall(itemNum in 1..maxContains)
-                                (breakfastContains[breakfastsServed[date, optionNum], itemNum] != foodType) 
-                                 * numBreakfastsServed[date, optionNum]));                                                       
-
 %%%%%%%%%%%%%%%%%%%%%% MEASUREMENTS %%%%%%%%%%%%%%%%%%%%%%%
 
 % Work out the nutrition on offer.
@@ -223,70 +232,65 @@ constraint forall(date in dates, nutrient in nutrients)
                   sum(optionNum in 1..numDessertsOffered, item in 1..maxIngredients)
                      (nutrition[dessertIngredients[dessertsServed[date, optionNum], item], nutrient]
                       * dessertAmounts[dessertsServed[date, optionNum], item]
-                      * numDessertsServed[date, optionNum])); 
+                      * numDessertsServed[date, optionNum])
+                  * 2); 
                      
 constraint forall(date in dates, nutrient in nutrients)
                  (nutritionServed[date, nutrient] >= dailyNutrientsRequired[date, nutrient]);
-
-% Build up a shopping list of what needs to be ordered.             
-array[ingredients] of var int: ingredientsOrder;
-constraint forall(ingredient in ingredients)
-                 (ingredientsOrder[ingredient] = 
-                  sum(date in dates, optionNum in 1..numBreakfastsOffered, item in 1..maxIngredients)
-                     (if breakfastIngredients[breakfastsServed[date, optionNum], item] = ingredient
-                      then breakfastAmounts[breakfastsServed[date, optionNum], item]
-                           * numBreakfastsServed[date, optionNum]
-                      else 0
-                      endif) 
-                  +
-                  sum(date in dates, optionNum in 1..numMealsOffered, item in 1..maxIngredients)
-                     (if mealIngredients[mealsServed[date, optionNum], item] = ingredient
-                      then mealAmounts[mealsServed[date, optionNum], item]
-                           * numMealsServed[date, optionNum]
-                      else 0
-                      endif)
-                  * 2 +
-                  sum(date in dates, optionNum in 1..numSidesOffered, item in 1..maxIngredients)
-                     (if sideIngredients[sidesServed[date, optionNum], item] = ingredient
-                      then sideAmounts[sidesServed[date, optionNum], item]
-                           * numSidesServed[date, optionNum]
-                      else 0
-                      endif)
-                  * 2 +
-                  sum(date in dates, optionNum in 1..numDessertsOffered, item in 1..maxIngredients)
-                     (if dessertIngredients[dessertsServed[date, optionNum], item] = ingredient
-                      then dessertAmounts[dessertsServed[date, optionNum], item]
-                           * numDessertsServed[date, optionNum]
-                      else 0
-                      endif)); 
                       
-var int: cost = sum(date in dates, optionNum in 1..numBreakfastsOffered, ingredientNum in 1..maxIngredients)
+var int: totalCost = sum(date in dates, optionNum in 1..numBreakfastsOffered, ingredientNum in 1..maxIngredients)
                         (sum(costSource in costSources)
                              (costs[breakfastIngredients[breakfastsServed[date, optionNum], ingredientNum], costSource])
                           * breakfastAmounts[breakfastsServed[date, optionNum], ingredientNum]
                           * numBreakfastsServed[date, optionNum]
                           + breakfastCookingCosts[breakfastsServed[date, optionNum]])
                 +
-                sum(date in dates, optionNum in 1..numMealsOffered, ingredientNum in 1..maxIngredients)
+                ((sum(date in dates, optionNum in 1..numMealsOffered, ingredientNum in 1..maxIngredients)
                         (sum(costSource in costSources)
                              (costs[mealIngredients[mealsServed[date, optionNum], ingredientNum], costSource])
                           * mealAmounts[mealsServed[date, optionNum], ingredientNum]
                           * numMealsServed[date, optionNum]
                           + mealCookingCosts[mealsServed[date, optionNum]])
-                * 2 +
+                +
                 sum(date in dates, optionNum in 1..numSidesOffered, ingredientNum in 1..maxIngredients)
                         (sum(costSource in costSources)
                              (costs[sideIngredients[sidesServed[date, optionNum], ingredientNum], costSource])
                           * sideAmounts[sidesServed[date, optionNum], ingredientNum]
                           * numSidesServed[date, optionNum]
                           + sideCookingCosts[sidesServed[date, optionNum]])
-                * 2 +
+                +
                 sum(date in dates, optionNum in 1..numDessertsOffered, ingredientNum in 1..maxIngredients)
                         (sum(costSource in costSources)
                              (costs[dessertIngredients[dessertsServed[date, optionNum], ingredientNum], costSource])
                           * dessertAmounts[dessertsServed[date, optionNum], ingredientNum]
                           * numDessertsServed[date, optionNum]
-                          + dessertCookingCosts[dessertsServed[date, optionNum]]);
+                          + dessertCookingCosts[dessertsServed[date, optionNum]]))
+                * 2);
+                
+var int: totalEmissions = sum(date in dates, optionNum in 1..numBreakfastsOffered, ingredientNum in 1..maxIngredients)
+                             (sum(emissionSource in emissionsSources)
+                                 (emissions[breakfastIngredients[breakfastsServed[date, optionNum], ingredientNum], emissionSource])
+                              * breakfastAmounts[breakfastsServed[date, optionNum], ingredientNum]
+                              * numBreakfastsServed[date, optionNum])  
+                          +
+                          ((sum(date in dates, optionNum in 1..numMealsOffered, ingredientNum in 1..maxIngredients)
+                             (sum(emissionSource in emissionsSources)
+                                 (emissions[mealIngredients[mealsServed[date, optionNum], ingredientNum], emissionSource])
+                              * mealAmounts[mealsServed[date, optionNum], ingredientNum]
+                              * numMealsServed[date, optionNum])     
+                          +
+                          sum(date in dates, optionNum in 1..numSidesOffered, ingredientNum in 1..maxIngredients)
+                             (sum(emissionSource in emissionsSources)
+                                 (emissions[sideIngredients[sidesServed[date, optionNum], ingredientNum], emissionSource])
+                              * sideAmounts[sidesServed[date, optionNum], ingredientNum]
+                              * numSidesServed[date, optionNum])
+                          +
+                          sum(date in dates, optionNum in 1..numDessertsOffered, ingredientNum in 1..maxIngredients)
+                             (sum(emissionSource in emissionsSources)
+                                 (emissions[dessertIngredients[dessertsServed[date, optionNum], ingredientNum], emissionSource])
+                              * dessertAmounts[dessertsServed[date, optionNum], ingredientNum]
+                              * numDessertsServed[date, optionNum])) 
+                          * 2 );        
 
 % A measure of how easy it will be for people to choose enough variety at mealtimes.
 % Larger number -> fewer options for the majority of people.
@@ -303,5 +307,6 @@ solve satisfy;
 
 %%%%%%%%%%%%%%%%%%%%%%%% OUTPUT INFO %%%%%%%%%%%%%%%%%%%%%%%%%
 
-output["\n\(day):\nbreakfast options: \(numBreakfastsServed[day, 1]) \(breakfastsServed[day, 1]), \(numBreakfastsServed[day, 2]) \(breakfastsServed[day, 2]), \(numBreakfastsServed[day, 3]) \(breakfastsServed[day, 3]), \(numBreakfastsServed[day, 4]) \(breakfastsServed[day, 4]).\nlunch and tea options: \(numMealsServed[day, 1]) \(mealsServed[day, 1]), \(numMealsServed[day, 2]) \(mealsServed[day, 2]), \(numMealsServed[day, 3]) \(mealsServed[day, 3]).\noptional extras: \(numSidesServed[day, 1]) \(sidesServed[day, 1]), \(numMealsServed[day, 2]) \(sidesServed[day, 2]).\ndessert: \(numDessertsServed[day, 1]) \(dessertsServed[day, 1]).\nnumPeople: \(numPeople[day])\n" | day in dates ];
+%output["\n\(day):\nbreakfast options: \(numBreakfastsServed[day, 1]) \(breakfastsServed[day, 1]), \(numBreakfastsServed[day, 2]) \(breakfastsServed[day, 2]), \(numBreakfastsServed[day, 3]) \(breakfastsServed[day, 3]), \(numBreakfastsServed[day, 4]) \(breakfastsServed[day, 4]).\nlunch and tea options: \(numMealsServed[day, 1]) \(mealsServed[day, 1]), \(numMealsServed[day, 2]) \(mealsServed[day, 2]), \(numMealsServed[day, 3]) \(mealsServed[day, 3]).\noptional extras: \(numSidesServed[day, 1]) \(sidesServed[day, 1]), \(numMealsServed[day, 2]) \(sidesServed[day, 2]).\ndessert: \(numDessertsServed[day, 1]) \(dessertsServed[day, 1]).\nnumPeople: \(numPeople[day])\n" | day in dates ];
 
+%output["\ntotal cost: £\(totalCost)\ntotal emissions: \(totalEmissions) kg CO2e\n"];
