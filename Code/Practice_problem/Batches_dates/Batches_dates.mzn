@@ -3,6 +3,7 @@
 enum weekdays = {Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday};
 enum mealtimes = {breakfast, lunch, tea}; 
 enum dates; % The calendar of dates for this period.
+int: numDays = length(dates);
 array[dates] of weekdays: daysOfWeek;
 
 %%%%%%%%%%%%%%%%%%%%%%% PERSONNEL INPUTS %%%%%%%%%%%%%%%%%%%%%%%
@@ -171,9 +172,10 @@ array[dates, 1..numMealsOffered] of var int: numMealsServed;
 % All the meal options at each meal time must be different.
 constraint forall(date in dates, optionNumI in 1..numMealsOffered-1, optionNumJ in optionNumI+1..numMealsOffered)
                  (mealsServed[date, optionNumI] != mealsServed[date, optionNumJ]);
-% Don't serve the same meal again for 7 days after it's served.
-constraint forall(dateNumI in 1..length(dates)-7, optionNumI in 1..numMealsOffered)
-                 (forall(dateNumJ in dateNumI+1..dateNumI+7, optionNumJ in 1..numMealsOffered)
+% Don't serve the same dessert again for a week after it's served.
+constraint forall(dateNumI in 1..numDays-1, optionNumI in 1..numMealsOffered)
+                 (forall(dateNumJ in dateNumI+1..numDays, optionNumJ in 1..numMealsOffered
+                         where dateNumJ <= dateNumI + 7)
                         (mealsServed[dates[dateNumI], optionNumI] != mealsServed[dates[dateNumJ], optionNumJ]));
 
 constraint forall(date in dates, optionNum in 1..numMealsOffered)
@@ -293,12 +295,12 @@ var int: sidesEmissions = sum(date in dates, optionNum in 1..numSidesOffered, in
 %%%%%%%%%%%%%%%% DESSERTS PROCESSING %%%%%%%%%%%%%%%%%%%%%
 
 array[dates, 1..numDessertsOffered] of var desserts: dessertsServed;
-%constraint alldifferent(dessertsServed);
 array[dates, 1..numDessertsOffered] of var int: numDessertsServed;
 
-% Don't serve the same dessert again for 7 days after it's served.
-constraint forall(dateNumI in 1..length(dates)-3, optionNumI in 1..numDessertsOffered)
-                 (forall(dateNumJ in dateNumI+1..dateNumI+3, optionNumJ in 1..numDessertsOffered)
+% Don't serve the same dessert again for a week after it's served.
+constraint forall(dateNumI in 1..numDays-1, optionNumI in 1..numDessertsOffered)
+                 (forall(dateNumJ in dateNumI+1..numDays, optionNumJ in 1..numDessertsOffered
+                         where dateNumJ <= dateNumI + 7)
                         (dessertsServed[dates[dateNumI], optionNumI] != dessertsServed[dates[dateNumJ], optionNumJ]));
 
 % Don't offer more desserts than people can eat. Desserts are not important so don't bother much with diet types.
