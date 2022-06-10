@@ -382,15 +382,20 @@ constraint forall(ingredient in ingredients)
 % Multiply by 2 because each meal is served twice a day.
 var int: totalCost = breakfastsCost + ((mealsCost + sidesCost + dessertsCost) * 2); % divide output by 10000 to get £.
 var int: totalEmissions = breakfastsEmissions + ((mealsEmissions + sidesEmissions + dessertsEmissions) * 2); % divide output by 10000 to get kg.
-var int: totalCals = sum(date in dates, nutrient in nutrients 
+var int: totalCalsServed = sum(date in dates, nutrient in nutrients 
                          where nutrient = calories)
                         (dailyNutrition[date, nutrient]); 
+var float: totalCalsRequired = sum(date in dates, nutrient in nutrients 
+                         where nutrient = calories)
+                        (dailyNutrientsRequired[date, nutrient]);
+
 % Constrain cals to > minimum, then minimise to avoid food waste.
-%solve minimize (varietyLack * 1000000) + totalEmissions + totalCost + totalCals;
-solve satisfy;
+solve minimize varietyLack + totalEmissions + totalCost + totalCalsServed;
 
 %%%%%%%%%%%%%%%%%%%%%%%% OUTPUT INFO %%%%%%%%%%%%%%%%%%%%%%%%%
 
-output["\n\(daysOfWeek[day]) \(day):\nbreakfast options: \(numBreakfastsServed[day, 1]) \(breakfastsServed[day, 1]), \(numBreakfastsServed[day, 2]) \(breakfastsServed[day, 2]), \(numBreakfastsServed[day, 3]) \(breakfastsServed[day, 3]), \(numBreakfastsServed[day, 4]) \(breakfastsServed[day, 4]).\nlunch and tea options: \(numMealsServed[day, 1]) \(mealsServed[day, 1]), \(numMealsServed[day, 2]) \(mealsServed[day, 2]), \(numMealsServed[day, 3]) \(mealsServed[day, 3]).\noptional extras: \(numSidesServed[day, 1]) \(sidesServed[day, 1]), \(numMealsServed[day, 2]) \(sidesServed[day, 2]).\ndessert: \(numDessertsServed[day, 1]) \(dessertsServed[day, 1]).\nnumPeople: \(numPeople[day])\n" | day in dates];
+output["\n\(daysOfWeek[day]) \(day):\nbreakfast options: \(numBreakfastsServed[day, 1]) \(breakfastsServed[day, 1]), \(numBreakfastsServed[day, 2]) \(breakfastsServed[day, 2]), \(numBreakfastsServed[day, 3]) \(breakfastsServed[day, 3]), \(numBreakfastsServed[day, 4]) \(breakfastsServed[day, 4]).\nlunch and tea options: \(numMealsServed[day, 1]) \(mealsServed[day, 1]), \(numMealsServed[day, 2]) \(mealsServed[day, 2]), \(numMealsServed[day, 3]) \(mealsServed[day, 3]).\noptional extras: \(numSidesServed[day, 1]) \(sidesServed[day, 1]), \(numMealsServed[day, 2]) \(sidesServed[day, 2]).\ndessert: \(numDessertsServed[day, 1]) \(dessertsServed[day, 1]).\nnumPeople: \(numPeople[day])\n" | day in dates[1..1]];
 
-output[("\nTotal cost: £\(totalCost div 10000).\nTotal emissions: \(totalEmissions div 10000)kg CO2e.\n")];
+output[("\nTotal cost: £\(totalCost div 10000).\nTotal emissions: \(totalEmissions div 10000)kg CO2e.\nFood waste: \( totalCalsServed - totalCalsRequired)\nVariety lack: \(varietyLack)\n---------------------\n")];
+
+output[("\n\(totalCost div 10000).\n\(totalEmissions div 10000)\n\( totalCalsServed - totalCalsRequired)\n\(varietyLack)\n---------------------\n")];
