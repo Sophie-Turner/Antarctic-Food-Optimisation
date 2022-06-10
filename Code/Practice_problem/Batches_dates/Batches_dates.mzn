@@ -168,7 +168,13 @@ array[dates, 1..numMealsOffered] of var meals: mealsServed;
 array[dates, 1..numMealsOffered] of var int: numMealsServed;
 
 % A variety of meals must be offered.
+% All the meal options at each meal time must be different.
+constraint forall(date in dates, optionNumI in 1..numMealsOffered-1, optionNumJ in optionNumI+1..numMealsOffered)
+                 (mealsServed[date, optionNumI] != mealsServed[date, optionNumJ]);
 % Don't serve the same meal again for 7 days after it's served.
+constraint forall(dateNumI in 1..length(dates)-7, optionNumI in 1..numMealsOffered)
+                 (forall(dateNumJ in dateNumI+1..dateNumI+7, optionNumJ in 1..numMealsOffered)
+                        (mealsServed[dates[dateNumI], optionNumI] != mealsServed[dates[dateNumJ], optionNumJ]));
 
 constraint forall(date in dates, optionNum in 1..numMealsOffered)
                  (numMealsServed[date, optionNum] >= minServings[date]);
@@ -193,8 +199,8 @@ constraint forall(date in dates)
                         (forall(itemNum in 1..maxContains)
                                (mealContains[mealsServed[date, optionNum], itemNum] != meat
                                /\ mealContains[mealsServed[date, optionNum], itemNum] != egg
-                               /\ mealContains[mealsServed[date, optionNum], itemNum] != milk)));                                                                                                  
-                               
+                               /\ mealContains[mealsServed[date, optionNum], itemNum] != milk)));                                                                                                                                 
+                                                                                 
 % Work out the nutrition on offer.
 array[dates, nutrients] of var int: mealsNutrition;
 constraint forall(date in dates, nutrient in nutrients)
@@ -290,6 +296,11 @@ array[dates, 1..numDessertsOffered] of var desserts: dessertsServed;
 %constraint alldifferent(dessertsServed);
 array[dates, 1..numDessertsOffered] of var int: numDessertsServed;
 
+% Don't serve the same dessert again for 7 days after it's served.
+constraint forall(dateNumI in 1..length(dates)-3, optionNumI in 1..numDessertsOffered)
+                 (forall(dateNumJ in dateNumI+1..dateNumI+3, optionNumJ in 1..numDessertsOffered)
+                        (dessertsServed[dates[dateNumI], optionNumI] != dessertsServed[dates[dateNumJ], optionNumJ]));
+
 % Don't offer more desserts than people can eat. Desserts are not important so don't bother much with diet types.
 constraint forall(date in dates, 
                   optionNum in 1..numDessertsOffered)
@@ -328,8 +339,8 @@ var int: dessertsEmissions = sum(date in dates, optionNum in 1..numDessertsOffer
                                 (sum(emissionSource in emissionsSources)
                                     (emissions[dessertIngredients[dessertsServed[date, optionNum], ingredientNum], emissionSource])
                                  * numDessertsServed[date, optionNum]
-                                 * dessertAmounts[dessertsServed[date, optionNum], ingredientNum]);
-                                 
+                                 * dessertAmounts[dessertsServed[date, optionNum], ingredientNum]);                           
+                                                                                                   
 %%%%%%%%%%%%%%%%%%%% MEASUREMENTS %%%%%%%%%%%%%%%%%%%%%%%
 
 % A measure of how easy it will be for people to choose enough variety at mealtimes.

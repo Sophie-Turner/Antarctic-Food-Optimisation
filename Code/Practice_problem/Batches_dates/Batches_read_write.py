@@ -10,7 +10,6 @@ vHighIntensityJobs = ["carpenter", "builder", "joiner", "construction", "field",
 # File path of master pax sheet.
 paxPath = r"C:\Users\sophi\Antarctic-Food-Optimisation\Data\MasterPAX.xlsx"
 currentPath = os.getcwd()
-writeTxtPath = r"{}\Occupancy_data.dzn".format(currentPath)
 
 # Strings to display as comments in data file.
 peopleInfo = "% For this week, how many people will be here.\n"
@@ -19,7 +18,7 @@ menInfo = "% Males need +25% more nutrients per day.\n"
 refusalsInfo = "% Num people who do not eat categories. contains = {none, meat, milk, gluten, egg, nut, seed, sugars}\n"
 
 # Maximum num elements in data arrays that can be used at once in Mzn.
-maxData = 200
+maxData = 60
 
 def findInvalidIndices(dates):
     # Detect string dates. They are things like year 20211. 
@@ -66,6 +65,7 @@ def formatString(strName, dataArray):
     newStr = "{} = {};\n\n".format(strName, newStr)
     return newStr
 
+
 sheet = pd.read_excel(paxPath, na_filter = False)
 posts = np.asarray(sheet.iloc[2:373, 8])
 types = np.asarray(sheet.iloc[2:373, 9])
@@ -89,12 +89,7 @@ daysOfWeek = np.asarray(calendar.dt.dayofweek)
 numDays = (lastDay - firstDay).days # 370 days
 totalPeople = len(posts) # 368 people
 
-batches = int(math.ceil(numDays / maxData))
-for batch in range(batches):
-    batchStart = batch * maxData 
-    batchEnd = batchStart + maxData
-    if batchEnd > numDays:
-        batchEnd = numDays
+days = [",Monday", ",Tuesday", ",Wednesday", ",Thursday", ",Friday", ",Saturday", ",Sunday"]
 
 jobsIntensity = np.zeros(totalPeople)
 for i in range(totalPeople):
@@ -134,52 +129,62 @@ for i in range(numDays):
             if genders[j] != "F":
                 numMen[i] += 1
 
-# Generate some random dietary requirements for the group
-# because there are no data available for this.
-refusalsString = "numRefusals = ["
-for i in range(numDays):
-    numGuests = numPeople[i]
-    refusalsString += "| "
-    if i==0 or (i>0 and numPeople[i] != numPeople[i-1]):
-        refusals = np.random.normal(0, numGuests/10, 8)
-        refusals[0] = 0
-        stringSection = ""
-        for i in range(8):
-            refusal = refusals[i]
-            val = int(round(refusal))
-            if val < 0:
-                val = 0
-            if i == 7:
-                separator = " "
-            else:
-                separator = ","
-            stringSection += str(val) + separator
-    refusalsString += stringSection
-refusalsString += "|];\n\n"
+batches = int(math.ceil(numDays / maxData))
+for batch in range(batches):
+    batchStart = batch * maxData # 0, 200
+    batchEnd = batchStart + maxData # 200, 370
+    if batchEnd > numDays:
+        batchEnd = numDays
+    batchSize = batchEnd - batchStart # 200, 170
+    batchFirstDay = min(startDates[batchStart:batchEnd])
+    batchLastDay = max(endDates[batchStart:batchEnd])
 
-strToWrite = ""
+    # Generate some random dietary requirements for the group
+    # because there are no data available for this.
+    refusalsString = "numRefusals = ["
+    for i in range(batchStart, batchEnd):
+        numGuests = numPeople[i]
+        refusalsString += "| "
+        if i==0 or numPeople[i] != numPeople[i-1]:
+            refusals = np.random.normal(0, numGuests/10, 8)
+            refusals[0] = 0
+            stringSection = ""
+            for i in range(8):
+                refusal = refusals[i]
+                val = int(round(refusal))
+                if val < 0:
+                    val = 0
+                if i == 7:
+                    separator = " "
+                else:
+                    separator = ","
+                stringSection += str(val) + separator
+        refusalsString += stringSection
+    refusalsString += "|];\n\n"
 
-daysString = ""
-days = [",Monday", ",Tuesday", ",Wednesday", ",Thursday", ",Friday", ",Saturday", ",Sunday"]
-daysOfWeek = daysOfWeek[1:]
-for day in daysOfWeek:
-    daysString += (days[day]) 
+    strToWrite = ""
 
-datesString = ""
-for i in range(1, len(dates)):
-    date = dates[i]
-    strSection = "'{}'".format(str(date)[:10])
-    datesString += "," + strSection 
+    daysString = ""
+    batchDaysOfWeek = daysOfWeek[batchStart:batchEnd]
+    for day in batchDaysOfWeek:
+        daysString += (days[day]) 
 
-datesString = formatString("dates", datesString)
-datesString = datesString.replace("[", "{")
-datesString = datesString.replace("]", "}")
-daysString = formatString("daysOfWeek", daysString)
-peopleString = formatString("numPeople", numPeople) 
-physicalString = formatString("numPhysicalWorkers", numPhysicalWorkers)
-menString = formatString("numMen", numMen)
-strToWrite += (datesString + daysString + peopleInfo + peopleString + physicalInfo + physicalString + menInfo + menString + refusalsInfo + refusalsString)
+    datesString = ""
+    for i in range(batchStart, batchEnd):
+        date = dates[i]
+        strSection = "'{}'".format(str(date)[:10])
+        datesString += "," + strSection 
 
-with open(writeTxtPath, 'w') as txtFile:
-    txtFile.write(strToWrite)
+    datesString = formatString("dates", datesString)
+    datesString = datesString.replace("[", "{")
+    datesString = datesString.replace("]", "}")
+    daysString = formatString("daysOfWeek", daysString)
+    peopleString = formatString("numPeople", numPeople[batchStart:batchEnd]) 
+    physicalString = formatString("numPhysicalWorkers", numPhysicalWorkers[batchStart:batchEnd])
+    menString = formatString("numMen", numMen[batchStart:batchEnd])
+    strToWrite += (datesString + daysString + peopleInfo + peopleString + physicalInfo + physicalString + menInfo + menString + refusalsInfo + refusalsString)
+
+    writeTxtPath = r"{}\Batch_{}_occupancy_data.dzn".format(currentPath, batch+1)
+    with open(writeTxtPath, 'w') as txtFile:
+        txtFile.write(strToWrite)
 

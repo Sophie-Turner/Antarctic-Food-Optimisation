@@ -165,7 +165,6 @@ var int: mealsEmissions = sum(day in weekdays, optionNum in 1..numMealsOffered, 
 
 %%%%%%%%%%%%%%%% SIDES PROCESSING %%%%%%%%%%%%%%%%%%%%%
 
-% Each side is offfered at least once.
 array[weekdays, 1..numSidesOffered] of var sides: sidesServed;
 array[weekdays, 1..numSidesOffered] of var int: numSidesServed;
 
