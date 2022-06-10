@@ -1,25 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%% DATE INPUTS %%%%%%%%%%%%%%%%%%%%%%%%%
 
-enum weekdays = {Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday};
-
-% When to start and end the plan.
-weekdays: startWeekday; 
-int: startDate;
-int: startMonth;
-int: endDate;
-int: endMonth;
-set of int: years;
-array[1..12] of var int: monthDays = [31, _, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-array[years, 1..12] of var int: allDates;
-constraint forall (year in years, month in 1..12)
-                  (if month = 2
-                   then if year mod 4 = 0
-                        then allDates[year, month] = 29
-                        else allDates[year, month] = 28
-                        endif
-                   else allDates[year, month] = monthDays[month]
-                   endif);   
-
+enum weekdays = {Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday}; 
 enum mealtimes = {breakfast, lunch, tea}; 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%% FIXED INPUTS %%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -98,7 +79,7 @@ array[nutrients] of int: minNutrients = [2000, 225, 44, 21, 45];
 % It is higer in the winter because of the colder climate.
 float: winterMultiplier = 0.25;
 % physical workers need +100% more nutrients per day.
-array[weekdays] of int: numPhysicalWorkers;
+array[weekdays] of float: numPhysicalWorkers;
 int: physicalMultiplier = 1;
 % males need +25% more nutrients per day.
 array[weekdays] of int: numMen; 
@@ -184,7 +165,6 @@ var int: mealsEmissions = sum(day in weekdays, optionNum in 1..numMealsOffered, 
 
 %%%%%%%%%%%%%%%% SIDES PROCESSING %%%%%%%%%%%%%%%%%%%%%
 
-% Each side is offfered at least once.
 array[weekdays, 1..numSidesOffered] of var sides: sidesServed;
 array[weekdays, 1..numSidesOffered] of var int: numSidesServed;
 
@@ -388,27 +368,13 @@ var int: varietyLack = sum(day in weekdays)
 var int: weeklyCost = breakfastsCost + ((mealsCost + sidesCost + dessertsCost) * 2); % divide output by 10000
 var int: weeklyEmissions = breakfastsEmissions + ((mealsEmissions + sidesEmissions + dessertsEmissions) * 2); % divide output by 10000 
 % Constrain cals to > minimum, then minimise to avoid food waste.
-%solve minimize (varietyLack * 1000000) + weeklyEmissions + weeklyCost + (weeklyNutrition[calories] * 100);
-solve satisfy;
+solve minimize (varietyLack * 1000000) + weeklyEmissions + weeklyCost + (weeklyNutrition[calories] * 100);
 
 %%%%%%%%%%%%%%%%%%%%%%%% OUTPUT INFO %%%%%%%%%%%%%%%%%%%%%%%%%
 
 output["On \(day), for breakfast, \(numBreakfastsServed[day, 1]) servings of \(breakfastsServed[day, 1]), \(numBreakfastsServed[day, 2]) servings of \(breakfastsServed[day, 2]), \(numBreakfastsServed[day, 3]) servings of \(breakfastsServed[day, 3])\nand \(numBreakfastsServed[day, 4]) servings of \(breakfastsServed[day, 4]) will be provided.\nOn \(day), for both lunch and tea, \(numMealsServed[day, 1]) servings of \(mealsServed[day, 1]), \(numMealsServed[day, 2]) servings of \(mealsServed[day, 2]) and \(numMealsServed[day, 3]) servings of \(mealsServed[day, 3])\nwill be provided with \(numSidesServed[day, 1]) optional extra servings of \(sidesServed[day, 1]), \(numSidesServed[day, 2]) optional extra servings of \(sidesServed[day, 2]) and \(numDessertsServed[day, 1]) servings of \(dessertsServed[day, 1]) for dessert.\n" | day in weekdays];
 output["The total cost per week will be £\(weeklyCost div 10000) including purchase, transport, storage and cooking.\n"];
 output["The total greenhouse gas emissions associated with this menu is around \(weeklyEmissions div 10000) kg per week.\n"];
-%output["The weekly order will be:\n"];
-%output["\(weeklyOrder[i]) \(ingredientPortions[i]) of \(i)\n" | i in ingredients];
+output["The weekly order will be:\n"];
+output["\(weeklyOrder[i]) \(ingredientPortions[i]) of \(i)\n" | i in ingredients];
 
-% Check raw objective values.
-%output["weeklyEmissions: \(weeklyEmissions)\nweeklyCost: \(weeklyCost)\nweekly calories: \(weeklyNutrition[calories])\nweekly fat: \%(weeklyNutrition[fat])"];
-% Check solution values for tests.
-%output["\(weeklyCost div 10000)\n\(weeklyEmissions div 10000)\n\(weeklyNutrition[calories] - (dailyNutrientsRequired[calories] * 7))\n\(weeklyNutrition[carbohydrate] - (dailyNutrientsRequired[carbohydrate] * 7))\n\(weeklyNutrition[fat] - (dailyNutrientsRequired[fat] * 7))\n\(weeklyNutrition[fibre] - (dailyNutrientsRequired[fibre] * 7))\n\(weeklyNutrition[protein] - (dailyNutrientsRequired[protein] * 7))\n"];
-
-output["\(weeklyNutrition[calories])\n"];
-output["\(weeklyCost)\n"];
-output["\(weeklyEmissions)\n"];
-output["\(varietyLack)\n"];
-output["\(0.0000000000001 * weeklyNutrition[calories] * weeklyCost * weeklyEmissions * varietyLack)\n"];
-output["\(weeklyNutrition[calories] + weeklyCost + weeklyEmissions + varietyLack)\n"];
-
-output["\(allDates)\n"];
