@@ -5,7 +5,7 @@ ingredients = {null,
                cheeseFrozen, creamPowder, butterFrozen, milkPowder, oatMilk, eggsFresh, eggPowder, veganCheeseFrozen,
                baconFrozen, pepperoniFrozen, poultryMeatFrozen, fishFrozen, quornFrozen, porkFrozen, beefFrozen, lambFrozen, 
                 veganSausagesFrozen, sausagesFrozen,
-               oil, soySauce, wine, gravyPowder, onionPowder, spicesDried, herbsDried, stockCube,
+               oil, soySauce, beerCanned, wine, gravyPowder, onionPowder, spicesDried, herbsDried, stockCube,
                sugar, darkChocolate, yoghurtFrozen, veganYoghurtFrozen, custardTinned, jellyPowder, fruitMixFrozen,
                 applesFresh, grapesFresh, orangesFresh, nuts, biscuits, peanutButter};
 
@@ -20,9 +20,21 @@ ingredientPortions = [grams,
                       grams, millilitres_equivalent, grams, millilitres_equivalent, millilitres, grams, grams, grams,
                       grams, grams, grams, grams, grams, grams, grams, grams, 
                        grams, grams,
-                      millilitres, millilitres, millilitres, millilitres_equivalent, grams, grams, grams, grams,
+                      millilitres, millilitres, millilitres, millilitres, millilitres_equivalent, grams, grams, grams, grams,
                       grams, grams, millilitres, millilitres, grams, grams, grams,
                        grams, grams, grams, grams, grams, grams]; 
+
+%portionTypes = {kg, litres, litres_equivalent};
+%ingredientPortions = [kg,
+%                      kg, kg, kg, kg, kg, kg, kg, kg,
+%                      kg, kg, kg, kg, kg, kg, kg, kg,
+%                       kg, kg,
+%                      kg, litres_equivalent, kg, litres_equivalent, litres, kg, kg, kg,
+%                      kg, kg, kg, kg, kg, kg, kg, kg, 
+%                       kg, kg,
+%                      litres, litres, litres, litres, litres_equivalent, kg, kg, kg, kg,
+%                      kg, kg, litres, litres, kg, kg, kg,
+%                       kg, kg, kg, kg, kg, kg]; 
 
 % Costs in pennies per 100g or 100ml of ingredient.
 % Frozen or tinned/dry. purchase, transport, storage.
@@ -34,7 +46,7 @@ costs = [|0,0,0 |
           60,9,2 | 40,9,1 | 70,9,2 | 89,9,1 | 19,9,1 | 36,7,2 | 36,9,1 | 115,9,2 |
           58,9,2 | 70,9,2 | 90,9,2 | 70,9,2 | 59,9,2 | 57,9,2 | 40,9,2 | 80,9,2 | 
            128,9,2 | 69,9,2 |
-          13,9,1 | 100,7,1 | 80,7,1 | 77,9,1 | 160,9,1 | 590,9,1 | 330,9,1 | 205,9,1 |
+          13,9,1 | 100,7,1 | 271,9,1 | 80,9,1 | 77,9,1 | 160,9,1 | 590,9,1 | 330,9,1 | 205,9,1 |
           16,9,1 | 135,9,1 | 17,9,2 | 35,9,2 | 25,9,1 | 52,9,1 | 44,9,2 | 
            27,7,1 | 40,7,1 | 30,7,1 | 125,9,1 | 12,9,1 | 89,9,1 |];
 
@@ -51,7 +63,7 @@ emissions = [| 0,0,0 |
              97,19,2 | 44,19,1 | 76,19,2 | 14,19,1 | 5,19,1 | 33,37,2 | 33,19,1 | 22,19,2 |
              60,19,2 | 60,19,2 | 42,19,2 | 44,19,2 | 40,19,2 | 60,19,2 | 242,19,2 | 258,19,2 | 
               7,19,2 | 60,19,2 |
-             16,19,1 | 22,37,1 | 12,37,1 | 28,19,1 | 28,19,1 | 28,19,1 | 28,19,1 | 28,19,1 |
+             16,19,1 | 22,37,1 | 6,19,1 | 12,19,1 | 28,19,1 | 28,19,1 | 28,19,1 | 28,19,1 | 28,19,1 |
              6,19,1 | 42,19,1 | 97,19,2 | 22,19,2 | 97,19,1 | 8,19,1 | 10,19,2 |
               5,37,1 | 5,37,1 | 5,37,1 | 14,19,1 | 18,19,1 | 16,19,1 |];
 
@@ -67,7 +79,7 @@ nutrition = [|0,0,0,0,0 |
               402,1,33,0,25 | 196,4,19,0,3 | 717,0,81,0,1 | 44,5,1,0,3 | 57,7,3,1,1 | 155,1,11,0,13 | 155,1,11,0,13 | 270,21,21,0,0 |
               494,0,44,0,23 | 494,0,44,0,23 | 239,0,14,0,27 | 206,0,12,0,22 | 99,2,2,6,14 | 242,0,14,0,27 | 250,0,15,0,26 | 294,0,21,0,25 |
                216,10,15,4,11 | 308,3,25,1,16 |
-              812,0,95,0,0 | 53,5,1,1,8 | 81,3,0,0,0 | 79,5,6,0,2 | 40,9,0,2,1 | 40,9,0,2,0 | 22,3,0,2,0 | 271,49,5,1,8 |
+              812,0,95,0,0 | 53,5,1,1,8 | 44,4,0,0,0 | 81,3,0,0,0 | 79,5,6,0,2 | 40,9,0,2,1 | 40,9,0,2,0 | 22,3,0,2,0 | 271,49,5,1,8 |
               400,100,0,0,0 | 548,33,38,13,12 | 105,0,9,0,3 | 66,8,2,1,7 | 96,15,3,0,3 | 296,66,0,0,6 | 37,5,0,4,0 |
                53,12,0,2,0 | 73,17,0,2,0 | 41,8,0,2,0 | 701,3,69,6,15 | 67,2,3,0,0 | 596,12,46,9,30 |];
 
@@ -76,6 +88,22 @@ nutrition = [|0,0,0,0,0 |
 %storageLimits = [3000, 1000];
 % storage space square cm taken by 100g of ingredients.
 %spaceTaken = [|0,0 | 10,0|];
+
+numBreakfastsOffered = 4;             
+breakfasts = {porridge, veganPorridge, fullEnglish, veganFullEnglish, toast, yoghurt, veganYoghurt, pancakes};
+breakfastCookingCosts = [3, 3, 7, 7, 1, 0, 0, 1];
+breakfastIngredients = [| oats, milkPowder, fruitMixFrozen, null, null | % 50, 250, 50, 0, 0
+                          oats, oatMilk, fruitMixFrozen, null, null | % 50, 250, 50, 0, 0
+                          beansTinned, sausagesFrozen, baconFrozen, eggsFresh, hashBrownsFrozen | % 100, 114, 30, 100, 130
+                          beansTinned, veganSausagesFrozen, hashBrownsFrozen, mushroomsTinned, tomatoesTinned | % 100, 114, 130, 78, 100
+                          breadRollsFrozen, peanutButter, null, null, null | % 100, 30, 0, 0, 0
+                          yoghurtFrozen, fruitMixFrozen, null, null, null | % 250, 50, 0, 0, 0
+                          veganYoghurtFrozen, fruitMixFrozen, null, null, null |
+                          oatMilk, flour, eggPowder, sugar, fruitMixFrozen|]; % 70, 40, 5, 15, 25
+breakfastAmounts = [| 50, 250, 50, 0, 0 | 50, 250, 50, 0, 0 | 100, 114, 30, 100, 130 | 100, 114, 130, 78, 100 |
+                      100, 30, 0, 0, 0 | 250, 50, 0, 0, 0 | 250, 50, 0, 0, 0 | 70, 40, 5, 15, 25 |];
+breakfastContains = [| milk, none, none | none, none, none | meat, egg, none | none, none, none | 
+                       gluten, nut, none | milk, none, none | none, none, none | gluten, egg, sugars |];
 
 numMealsOffered = 3; % 3 choices of meal will be served at the buffet bar.
 
@@ -180,29 +208,18 @@ dessertIngredients = [|darkChocolate, eggsFresh, sugar, oil, null| % 25, 33, 8, 
                        jellyPowder, fruitMixFrozen, null, null, null| % 34, 50, 0, 0, 0
                        biscuits, cheeseFrozen, grapesFresh, null, null| % 48, 150, 100, 0, 0
                        oatMilk, flour, oil, sugar, fruitMixFrozen| % 70, 40, 5, 15, 25
-                       peanutButter, eggPowder, sugar, null, null|]; % 56, 13, 25, 0, 0
-                                         
+                       peanutButter, eggPowder, sugar, null, null|]; % 56, 13, 25, 0, 0                                       
 dessertAmounts = [| 25, 33, 8, 17, 0 | 250, 50, 0, 0, 0 | 100, 120, 100, 0, 0 | 17, 33, 23, 17, 17 |
                     17, 33, 23, 17, 24 | 17, 33, 23, 17, 200 | 34, 50, 0, 0, 0 | 48, 150, 100, 0, 0 |
                     70, 40, 5, 15, 25 | 56, 13, 25, 0, 0 |];          
 dessertContains = [| sugars, egg, none | none, none, none | none, none, none | nut, egg, sugars |
                      milk, egg, sugars | milk, egg, sugars | sugars, meat, none | milk, none, none | 
                      sugars, none, none | egg, nut, sugars |];                    
-               
-numBreakfastsOffered = 4;             
-breakfasts = {porridge, veganPorridge, fullEnglish, veganFullEnglish, toast, yoghurt, veganYoghurt, pancakes};
-breakfastCookingCosts = [3, 3, 7, 7, 1, 0, 0, 1];
-breakfastIngredients = [| oats, milkPowder, fruitMixFrozen, null, null | % 50, 250, 50, 0, 0
-                          oats, oatMilk, fruitMixFrozen, null, null | % 50, 250, 50, 0, 0
-                          beansTinned, sausagesFrozen, baconFrozen, eggsFresh, hashBrownsFrozen | % 100, 114, 30, 100, 130
-                          beansTinned, veganSausagesFrozen, hashBrownsFrozen, mushroomsTinned, tomatoesTinned | % 100, 114, 130, 78, 100
-                          breadRollsFrozen, peanutButter, null, null, null | % 100, 30, 0, 0, 0
-                          yoghurtFrozen, fruitMixFrozen, null, null, null | % 250, 50, 0, 0, 0
-                          veganYoghurtFrozen, fruitMixFrozen, null, null, null |
-                          oatMilk, flour, eggPowder, sugar, fruitMixFrozen|]; % 70, 40, 5, 15, 25
-breakfastAmounts = [| 50, 250, 50, 0, 0 | 50, 250, 50, 0, 0 | 100, 114, 30, 100, 130 | 100, 114, 130, 78, 100 |
-                      100, 30, 0, 0, 0 | 250, 50, 0, 0, 0 | 250, 50, 0, 0, 0 | 70, 40, 5, 15, 25 |];
-breakfastContains = [| milk, none, none | none, none, none | meat, egg, none | none, none, none | 
-                       gluten, nut, none | milk, none, none | none, none, none | gluten, egg, sugars |];
+                       
+treatDrinks = {wineGlass, beerCan};
+treatIngredients = [wine, beerCanned];
+treatAmounts = [150, 354];
+treatFrequency = 7; % Serve a treat every 7 days.
+                        
                  
      
