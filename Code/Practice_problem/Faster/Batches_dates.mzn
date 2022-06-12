@@ -455,3 +455,5 @@ output["\(order[ingredient])\n" | ingredient in ingredients];
 output["\(ingredientPortions[ingredient])\n" | ingredient in ingredients];
 
 output["\n\n\n\(numDays)\n\(totalCost div 10000)\n\(totalEmissions div 10000)\n\(totalCalsServed - totalCalsRequired)\n\n"];
+
+% Make a weekly menu and after the first week just vary numServings, not recipes served.
