@@ -18,7 +18,7 @@ menInfo = "% Males need +25% more nutrients per day.\n"
 refusalsInfo = "% Num people who do not eat categories. contains = {none, meat, milk, gluten, egg, nut, seed, sugars}\n"
 
 # Maximum num elements in data arrays that can be used at once in Mzn.
-maxData = 30
+maxData = 10
 
 def findInvalidIndices(dates):
     # Detect string dates. They are things like year 20211. 
@@ -148,7 +148,7 @@ for batch in range(batches):
         numGuests = numPeople[i]
         refusalsString += "| "
         if i==0 or numPeople[i] != numPeople[i-1]:
-            refusals = np.random.normal(0, numGuests/10, 8)
+            refusals = np.random.normal(0, numGuests/20, 8)
             refusals[0] = 0
             stringSection = ""
             for i in range(8):

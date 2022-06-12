@@ -1,0 +1,16 @@
+dates = {'2021-12-04','2021-12-05','2021-12-06','2021-12-07','2021-12-08','2021-12-09','2021-12-10','2021-12-11','2021-12-12','2021-12-13'};
+
+daysOfWeek = [Saturday,Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday,Monday];
+
+% For this week, how many people will be here.
+numPeople = [125,125,125,125,125,124,124,124,124,119];
+
+% Physical workers need 50 to 100 % more nutrients per day.
+numPhysicalWorkers = [46.5,46.5,46.5,46.5,46.5,46.5,45.5,45.5,45.5,45.5];
+
+% Males need +25% more nutrients per day.
+numMen = [96,96,96,96,96,96,95,95,95,100];
+
+% Num people who do not eat categories. contains = {none, meat, milk, gluten, egg, nut, seed, sugars}
+numRefusals = [| 0,8,0,9,6,0,1,4 | 0,8,0,9,6,0,1,4 | 0,8,0,9,6,0,1,4 | 0,8,0,9,6,0,1,4 | 0,8,0,9,6,0,1,4 | 0,2,0,0,0,8,0,0 | 0,2,0,0,0,8,0,0 | 0,2,0,0,0,8,0,0 | 0,2,0,0,0,8,0,0 | 0,1,2,6,0,0,0,0 |];
+
