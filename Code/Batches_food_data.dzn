@@ -12,29 +12,29 @@ ingredients = {null,
 notIngredient = null;
 nothing = none;
 
-portionTypes = {grams, millilitres, millilitres_equivalent};
-ingredientPortions = [grams,
-                      grams, grams, grams, grams, grams, grams, grams, grams,
-                      grams, grams, grams, grams, grams, grams, grams, grams,
-                       grams, grams,
-                      grams, millilitres_equivalent, grams, millilitres_equivalent, millilitres, grams, grams, grams,
-                      grams, grams, grams, grams, grams, grams, grams, grams, 
-                       grams, grams,
-                      millilitres, millilitres, millilitres, millilitres, millilitres_equivalent, grams, grams, grams, grams,
-                      grams, grams, millilitres, millilitres, grams, grams, grams,
-                       grams, grams, grams, grams, grams, grams, grams]; 
+%portionTypes = {grams, millilitres, millilitres_equivalent};
+%ingredientPortions = [grams,
+%                      grams, grams, grams, grams, grams, grams, grams, grams,
+%                      grams, grams, grams, grams, grams, grams, grams, grams,
+%                       grams, grams,
+%                      grams, millilitres_equivalent, grams, millilitres_equivalent, millilitres, grams, grams, grams,
+%                      grams, grams, grams, grams, grams, grams, grams, grams, 
+%                       grams, grams,
+%                      millilitres, millilitres, millilitres, millilitres, millilitres_equivalent, grams, grams, grams, grams,
+%                      grams, grams, millilitres, millilitres, grams, grams, grams,
+%                       grams, grams, grams, grams, grams, grams, grams]; 
 
-%portionTypes = {kg, litres, litres_equivalent};
-%ingredientPortions = [kg,
-%                      kg, kg, kg, kg, kg, kg, kg, kg,
-%                      kg, kg, kg, kg, kg, kg, kg, kg,
-%                       kg, kg,
-%                      kg, litres_equivalent, kg, litres_equivalent, litres, kg, kg, kg,
-%                      kg, kg, kg, kg, kg, kg, kg, kg, 
-%                       kg, kg,
-%                      litres, litres, litres, litres, litres_equivalent, kg, kg, kg, kg,
-%                      kg, kg, litres, litres, kg, kg, kg,
-%                       kg, kg, kg, kg, kg, kg]; 
+portionTypes = {kg, litres, litres_equivalent};
+ingredientPortions = [kg,
+                      kg, kg, kg, kg, kg, kg, kg, kg,
+                      kg, kg, kg, kg, kg, kg, kg, kg,
+                       kg, kg,
+                      kg, litres_equivalent, kg, litres_equivalent, litres, kg, kg, kg,
+                      kg, kg, kg, kg, kg, kg, kg, kg, 
+                       kg, kg,
+                      litres, litres, litres, litres, litres_equivalent, kg, kg, kg, kg,
+                      kg, kg, litres, litres, kg, kg, kg,
+                       kg, kg, kg, kg, kg, kg, kg]; 
 
 % Costs in pennies per 100g or 100ml of ingredient.
 % Frozen or tinned/dry. purchase, transport, storage.

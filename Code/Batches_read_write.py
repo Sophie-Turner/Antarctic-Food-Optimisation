@@ -18,7 +18,7 @@ menInfo = "% Males need +25% more nutrients per day.\n"
 refusalsInfo = "% Num people who do not eat categories. contains = {none, meat, milk, gluten, egg, nut, seed, sugars}\n"
 
 # Maximum num elements in data arrays that can be used at once in Mzn.
-maxData = 10
+maxData = 30
 
 def findInvalidIndices(dates):
     # Detect string dates. They are things like year 20211. 
