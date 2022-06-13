@@ -40,7 +40,7 @@ int: maxContains;
 % Minimum num servings of each meal option. 
 % Has to be forced to prevent the program from outputting restrictive options.
 array[dates] of var int: minServings;
-constraint forall(date in dates)(minServings[date] = numPeople[date] div 4);
+constraint forall(date in dates)(minServings[date] = numPeople[date] div 5);
 
 %%%%%%%%%%%%%%%% MAIN MEALS INPUTS %%%%%%%%%%%%%%%%%%
 
@@ -120,8 +120,8 @@ constraint forall(day in weekdays, optionNumI in 2..numBreakfastsOffered)
 array[dates, 1..numBreakfastsOffered] of var int: numBreakfastsServed;
 
 % There must be a variety of breakfasts on offer.
-constraint forall(date in dates, optionNum in 1..numBreakfastsOffered)
-                 (numBreakfastsServed[date, optionNum] >= minServings[date]);            
+constraint forall(date in dates, optionNum in 2..numBreakfastsOffered)
+                 (numBreakfastsServed[date, optionNum] >= 0);                             
                  
 % The right number of breakfasts must be offered.
 constraint forall(date in dates)
@@ -289,8 +289,12 @@ var int: sidesEmissions = sum(date in dates, optionNum in 1..numSidesOffered, in
 array[weekdays, 1..numDessertsOffered] of var desserts: dessertsServed;
 array[dates, 1..numDessertsOffered] of var int: numDessertsServed;
 
+% Don't serve the null dessert.
+constraint forall(dessert in dessertsServed)
+                 (dessert != desserts[1]); 
+
 % Don't serve the same dessert again for a week after it's served.
-constraint alldifferent(dessertsServed);
+constraint alldifferent(dessertsServed);                 
                   
 % Don't offer more desserts than people can eat. Desserts are not important so don't bother much with diet types.
 constraint forall(date in dates, 
@@ -431,7 +435,7 @@ var float: totalCalsRequired = sum(date in dates)
                         (dailyNutrientsRequired[date, calories]);
 
 % Constrain cals to > minimum, then minimise to avoid food waste.
-solve minimize totalEmissions + totalCost + totalCalsServed;
+solve minimize sum(dailyNutrition) + totalCost + totalEmissions;
 
 %%%%%%%%%%%%%%%%%%%%%%%% OUTPUT INFO %%%%%%%%%%%%%%%%%%%%%%%%%
 
