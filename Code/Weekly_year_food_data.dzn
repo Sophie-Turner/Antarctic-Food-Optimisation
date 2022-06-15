@@ -1,6 +1,6 @@
 ingredients = {null, 
                oats, noodlesDried, flour, rice, pasta, chipsFrozen, hashBrownsFrozen, breadRollsFrozen,
-               mushroomsTinned, peppersFrozen, broccoliFrozen, peasFrozen, tomatoesTinned, potatoesFresh, beansTinned, aubergineFresh,
+               mushroomsTinned, peppersFrozen, broccoliFrozen, peasFrozen, tomatoesTinned, potatoesFrozen, beansTinned, aubergineFrozen,
                 squashFrozen, carrotsFrozen,  
                cheeseFrozen, creamPowder, butterFrozen, milkPowder, oatMilk, eggsFresh, eggPowder, veganCheeseFrozen,
                baconFrozen, pepperoniFrozen, poultryMeatFrozen, fishFrozen, quornFrozen, porkFrozen, beefFrozen, lambFrozen, 
@@ -8,7 +8,7 @@ ingredients = {null,
                oil, soySauce, beerCanned, wine, gravyPowder, onionPowder, spicesDried, herbsDried, stockCube,
                sugar, darkChocolate, yoghurtFrozen, veganYoghurtFrozen, custardTinned, jellyPowder, fruitMixFrozen,
                 bananaFresh, applesFresh, grapesFresh, orangesFresh, nuts, biscuits, peanutButter};
-
+freshFoods = [eggsFresh, bananaFresh, applesFresh, grapesFresh, orangesFresh];
 notIngredient = null;
 nothing = none;
 
@@ -41,12 +41,12 @@ ingredientPortions = [kg,
 % By sea (SDA from UK) or air (Twin Otter from South America or South Atlantic).
 costs = [|0,0,0 | 
           8,9,1 | 40,9,1 | 10,9,1 | 20,9,1 | 14,9,1 | 17,9,2 | 17,9,2 | 23,9,2 |
-          30,9,1 | 30,9,2 | 10,9,2 | 30,9,2 | 20,9,1 | 10,7,1 | 8,9,1 | 11,7,2 | 
+          30,9,1 | 30,9,2 | 10,9,2 | 30,9,2 | 20,9,1 | 10,9,1 | 8,9,1 | 11,9,2 | 
            13,9,2 | 4,9,2 |
           60,9,2 | 40,9,1 | 70,9,2 | 89,9,1 | 19,9,1 | 36,7,2 | 36,9,1 | 115,9,2 |
           58,9,2 | 70,9,2 | 90,9,2 | 70,9,2 | 59,9,2 | 57,9,2 | 40,9,2 | 80,9,2 | 
            128,9,2 | 69,9,2 |
-          13,9,1 | 100,7,1 | 271,9,1 | 80,9,1 | 77,9,1 | 160,9,1 | 590,9,1 | 330,9,1 | 205,9,1 |
+          13,9,1 | 100,9,1 | 271,9,1 | 80,9,1 | 77,9,1 | 160,9,1 | 590,9,1 | 330,9,1 | 205,9,1 |
           16,9,1 | 135,9,1 | 17,9,2 | 35,9,2 | 25,9,1 | 52,9,1 | 44,9,2 | 
            8,7,1 | 27,7,1 | 40,7,1 | 30,7,1 | 125,9,1 | 12,9,1 | 89,9,1 |];
 
@@ -58,12 +58,12 @@ costs = [|0,0,0 |
 %include the transportation from the proudction source.
 emissions = [| 0,0,0 |
              7,19,1 | 18,19,1 | 7,19,1 | 15,19,1 | 18,19,1 | 20,19,2 | 20,19,2 | 6,19,2 |
-             24,19,1 | 10,19,2 | 7,19,2 | 10,19,2 | 5,19,1 | 7,37,1 | 10,19,1 | 10,37,2 |
+             24,19,1 | 10,19,2 | 7,19,2 | 10,19,2 | 5,19,1 | 7,19,1 | 10,19,1 | 10,19,2 |
               10,19,2 | 7,19,2 | 
              97,19,2 | 44,19,1 | 76,19,2 | 14,19,1 | 5,19,1 | 33,37,2 | 33,19,1 | 22,19,2 |
              60,19,2 | 60,19,2 | 42,19,2 | 44,19,2 | 40,19,2 | 60,19,2 | 242,19,2 | 258,19,2 | 
               7,19,2 | 60,19,2 |
-             16,19,1 | 22,37,1 | 6,19,1 | 12,19,1 | 28,19,1 | 28,19,1 | 28,19,1 | 28,19,1 | 28,19,1 |
+             16,19,1 | 22,19,1 | 6,19,1 | 12,19,1 | 28,19,1 | 28,19,1 | 28,19,1 | 28,19,1 | 28,19,1 |
              6,19,1 | 42,19,1 | 97,19,2 | 22,19,2 | 97,19,1 | 8,19,1 | 10,19,2 |
               10,37,1 | 5,37,1 | 5,37,1 | 5,37,1 | 14,19,1 | 18,19,1 | 16,19,1 |];
 
@@ -124,28 +124,28 @@ mealIngredients =
      |poultryMeatFrozen, flour, peasFrozen, eggPowder, butterFrozen % 174, 50, 90, 25, 40
      |rice, oil, wine, mushroomsTinned, onionPowder % 63, 15, 200, 85, 25 
      |pasta, tomatoesTinned, cheeseFrozen, quornFrozen, mushroomsTinned % 75, 92, 46, 75, 42
-     |potatoesFresh, oil, beansTinned, veganCheeseFrozen, tomatoesTinned % 200, 50, 120, 15, 100 
+     |potatoesFrozen, oil, beansTinned, veganCheeseFrozen, tomatoesTinned % 200, 50, 120, 15, 100 
      |flour, tomatoesTinned, cheeseFrozen, oil, herbsDried % 250, 200, 63, 31, 15
-     |lambFrozen, onionPowder, tomatoesTinned, aubergineFresh, oil % 113, 28, 133, 400, 13
-     |tomatoesTinned, peppersFrozen, oil, aubergineFresh, onionPowder % 400, 70, 18, 200, 85
+     |lambFrozen, onionPowder, tomatoesTinned, aubergineFrozen, oil % 113, 28, 133, 400, 13
+     |tomatoesTinned, peppersFrozen, oil, aubergineFrozen, onionPowder % 400, 70, 18, 200, 85
      |pasta, quornFrozen, tomatoesTinned, herbsDried, cheeseFrozen % 75, 75, 100, 15, 25
-     |potatoesFresh, spicesDried, onionPowder, peasFrozen, rice % 233, 15, 57, 33, 33 
+     |potatoesFrozen, spicesDried, onionPowder, peasFrozen, rice % 233, 15, 57, 33, 33 
      |rice, fishFrozen, soySauce, herbsDried, spicesDried % 188, 113, 24, 15, 15 
      |rice, fishFrozen, wine, tomatoesTinned, onionPowder % 67, 185, 29, 67, 28
      |rice, beansTinned, tomatoesTinned, onionPowder, spicesDried % 100, 200, 200, 85, 8 
-     |potatoesFresh, lambFrozen, tomatoesTinned, stockCube, onionPowder % 175, 125, 100, 6, 44 
+     |potatoesFrozen, lambFrozen, tomatoesTinned, stockCube, onionPowder % 175, 125, 100, 6, 44 
      |veganSausagesFrozen, beansTinned, onionPowder, stockCube, wine % 114, 200, 43, 6, 25    
      |eggsFresh, mushroomsTinned, herbsDried, oil, onionPowder % 200, 156, 15, 15, 85
      |fishFrozen, chipsFrozen, peasFrozen, eggPowder, oil % 150, 150, 80, 30, 3  
      |flour, veganCheeseFrozen, tomatoesTinned, mushroomsTinned, peppersFrozen % 150, 100, 50, 80, 80
      |rice, quornFrozen, beansTinned, spicesDried, tomatoesTinned % 50, 63, 200, 15, 100 
-     |poultryMeatFrozen, rice, potatoesFresh, spicesDried, stockCube % 338, 100, 100, 20, 6  
-     |veganSausagesFrozen, potatoesFresh, onionPowder, gravyPowder, peasFrozen % 114, 250, 85, 15, 80
+     |poultryMeatFrozen, rice, potatoesFrozen, spicesDried, stockCube % 338, 100, 100, 20, 6  
+     |veganSausagesFrozen, potatoesFrozen, onionPowder, gravyPowder, peasFrozen % 114, 250, 85, 15, 80
      |pasta, veganCheeseFrozen, herbsDried, onionPowder, tomatoesTinned % 100, 288, 15, 43, 200
      |breadRollsFrozen, beefFrozen, cheeseFrozen, onionPowder, chipsFrozen % 100, 114, 20, 43, 284
      |porkFrozen, herbsDried, onionPowder, gravyPowder, applesFresh % 375, 15, 85, 15, 75 
      |peppersFrozen, rice, veganCheeseFrozen, herbsDried, beansTinned % 120, 50, 25, 15, 100
-     |aubergineFresh, rice, wine, veganCheeseFrozen, spicesDried % 600, 50, 50, 25, 15
+     |aubergineFrozen, rice, wine, veganCheeseFrozen, spicesDried % 600, 50, 50, 25, 15
      |tomatoesTinned, eggsFresh, peppersFrozen, spicesDried, cheeseFrozen % 200, 100, 120, 15, 51
      |fishFrozen, broccoliFrozen, pasta, cheeseFrozen, milkPowder % 46, 63, 50, 19, 150
      |squashFrozen, carrotsFrozen, tomatoesTinned, onionPowder, stockCube % 200, 75, 100, 85, 6
@@ -180,8 +180,8 @@ mealContains = [|gluten, egg, none| meat, milk, gluten| meat, gluten, egg| milk,
 numSidesOffered = 2;              
 sides = {roastPotatoes, bakedPotato, Rice, veganSausages, peas, chips, broccoli, beans, breadRolls, yorkshirePuddings, eggFriedRice, boiledEggs, porkSausages, nutBake, carrots, roastSquash, potatoSalad};                     
 sideCookingCosts = [10, 12, 3, 7, 2, 7, 10, 1, 0, 3, 3, 1, 7, 10, 10, 10, 0];          
-sideIngredients = [| potatoesFresh, oil, herbsDried, null, null |
-                     potatoesFresh, null, null, null, null | 
+sideIngredients = [| potatoesFrozen, oil, herbsDried, null, null |
+                     potatoesFrozen, null, null, null, null | 
                      rice, null, null, null, null |
                      veganSausagesFrozen, null, null, null, null |
                      peasFrozen, null, null, null, null |
@@ -196,7 +196,7 @@ sideIngredients = [| potatoesFresh, oil, herbsDried, null, null |
                      nuts, peanutButter, stockCube, carrotsFrozen, oatMilk |
                      carrotsFrozen, null, null, null, null |
                      squashFrozen, null, null, null, null |
-                     potatoesFresh, peppersFrozen, carrotsFrozen, peasFrozen, onionPowder |]; 
+                     potatoesFrozen, peppersFrozen, carrotsFrozen, peasFrozen, onionPowder |]; 
 sideAmounts = [| 200,10,5,0,0 | 200,0,0,0,0 | 100,0,0,0,0 | 75,0,0,0,0 | 80,0,0,0,0 | 284,0,0,0,0 | 45,0,0,0,0 | 120,0,0,0,0 | 100,14,0,0,0 |
                  23,6,33,33,0 | 100,50,0,0,0 | 50,0,0,0,0 | 75,0,0,0,0 | 80,13,6,25,13 | 55,0,0,0,0 | 100,0,0,0,0 | 40,40,40,40,5 |];
 sideContains = [|none,none,none|none,none,none|none,none,none|none,none,none|none,none,none|none,none,none|none,none,none|

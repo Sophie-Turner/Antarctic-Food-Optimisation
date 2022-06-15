@@ -5,6 +5,8 @@ enum mealtimes = {breakfast, lunch, tea};
 enum dates; % The calendar of dates for this period.
 int: numDays = length(dates);
 array[dates] of weekdays: daysOfWeek;
+bool: winter; % Do we need to offer the winter or summer menu? 
+%There are no flights in winter so no fresh food. Field campers need more calories in winter.
 
 %%%%%%%%%%%%%%%%%%%%%%% PERSONNEL INPUTS %%%%%%%%%%%%%%%%%%%%%%%
 
@@ -19,6 +21,7 @@ array[dates, contains] of int: numRefusals;
 %%%%%%%%%%%%%%%%%%%%%%%%%% FIXED INPUTS %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 enum ingredients;
+array[int] of ingredients: freshFoods;
 % A null ingredient is needed for static 2d array placeholders.
 ingredients: notIngredient;
 
@@ -148,6 +151,12 @@ constraint forall(date in dates, nutrient in nutrients)
              * breakfastAmounts[breakfastsServed[daysOfWeek[date], optionNum], item]
              * numBreakfastsServed[date, optionNum]));
 
+% Fresh ingredients can't be brought in winter.
+constraint if winter
+           then forall(freshFood in freshFoods, breakfastServed in breakfastsServed, item in 1..maxIngredients)
+                      (breakfastIngredients[breakfastServed, item] != freshFood)
+           endif;
+
 % Build up a shopping list of what needs to be ordered.         
 array[ingredients] of var int: breakfastsOrder;
 constraint forall(ingredient in ingredients)
@@ -207,7 +216,13 @@ constraint forall(date in dates, nutrient in nutrients)
             (nutrition[mealIngredients[mealsServed[daysOfWeek[date], optionNum], item], nutrient]
              * mealAmounts[mealsServed[daysOfWeek[date], optionNum], item]
              * numMealsServed[date, optionNum]));     
-             
+
+% Fresh ingredients can't be brought in winter.
+constraint if winter
+           then forall(freshFood in freshFoods, mealServed in mealsServed, item in 1..maxIngredients)
+                      (mealIngredients[mealServed, item] != freshFood)
+           endif;             
+                                       
 % Build up a shopping list of what needs to be ordered.             
 array[ingredients] of var int: mealsOrder;
 constraint forall(ingredient in ingredients)
@@ -252,7 +267,13 @@ constraint forall(date in dates,
                          (forall(itemNum in 1..maxContains)
                                 (sideContains[sidesServed[daysOfWeek[date], optionNum], itemNum] != foodType) 
                                  * numSidesServed[date, optionNum])); 
-                                 
+
+% Fresh ingredients can't be brought in winter.
+constraint if winter
+           then forall(freshFood in freshFoods, sideServed in sidesServed, item in 1..maxIngredients)
+                      (sideIngredients[sideServed, item] != freshFood)
+           endif;                                 
+                                                                                                   
 % Work out the nutrition on offer.
 array[dates, nutrients] of var int: sidesNutrition;
 constraint forall(date in dates, nutrient in nutrients)
@@ -298,6 +319,12 @@ constraint forall(date in dates,
                        (numDessertsServed[date, optionNum] = 
                         numPeople[date] - max(itemNum in 1..maxContains)
                            (numRefusals[date, dessertContains[dessertsServed[daysOfWeek[date], optionNum], itemNum]]));                              
+                          
+% Fresh ingredients can't be brought in winter.
+constraint if winter
+           then forall(freshFood in freshFoods, dessertServed in dessertsServed, item in 1..maxIngredients)
+                      (dessertIngredients[dessertServed, item] != freshFood)
+           endif;                          
                           
 % Work out the nutrition on offer.
 array[dates, nutrients] of var int: dessertsNutrition;
@@ -351,6 +378,12 @@ constraint forall(treatNum in 1..numTreats)
                   = numPeople[dates[numTreats*treatFrequency]] 
                   - max(itemNum in 1..maxContains)
                        (numRefusals[dates[numTreats*treatFrequency], dessertContains[treatFoodsServed[treatNum], itemNum]])); 
+
+% Fresh ingredients can't be brought in winter.
+constraint if winter
+           then forall(freshFood in freshFoods, treatServed in treatFoodsServed, item in 1..maxIngredients)
+                      (dessertIngredients[treatServed, item] != freshFood)
+           endif;
 
 % Occasional treats do not contribute to daily nutrition.
 
@@ -423,8 +456,8 @@ constraint forall(ingredient in ingredients)
 %%%%%%%%%%%%%%%%%%%%%% OBJECTIVE %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Multiply by 2 because each meal is served twice a day.
-var int: totalCost = breakfastsCost + treatFoodsCost + treatDrinksCost + ((mealsCost + sidesCost + dessertsCost) * 2); % divide output by 10000 to get £.
-var int: totalEmissions = breakfastsEmissions + treatFoodsEmissions + treatDrinksEmissions + ((mealsEmissions + sidesEmissions + dessertsEmissions) * 2); % divide output by 10000 to get kg.
+var int: totalCost = breakfastsCost + ((mealsCost + sidesCost + dessertsCost) * 2); %+ treatFoodsCost + treatDrinksCost   divide output by 10000 to get £.
+var int: totalEmissions = breakfastsEmissions + ((mealsEmissions + sidesEmissions + dessertsEmissions) * 2); %+ treatFoodsEmissions + treatDrinksEmissions  divide output by 10000 to get kg.
 var int: totalCalsServed = sum(date in dates)
                         (dailyNutrition[date, calories]); 
 var float: totalCalsRequired = sum(date in dates)
@@ -457,6 +490,6 @@ output["\(order[ingredient])\n" | ingredient in ingredients];
 %output["\n"];
 %output["\(ingredientPortions[ingredient])\n" | ingredient in ingredients];
 
-output["\n\n\n\(numDays)\n\(totalCost div 10000)\n\(totalEmissions div 10000)\n\(totalCalsServed - totalCalsRequired)\n\(varietyLack)\n"];
+output["\n\n\n\(numDays)\n\(totalCost div 10000)\n\(totalEmissions div 10000)\n\(totalCalsServed - totalCalsRequired)\n"];
 
 % Make a weekly menu and after the first week just vary numServings, not recipes.

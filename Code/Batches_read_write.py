@@ -18,7 +18,7 @@ menInfo = "% Males need +25% more nutrients per day.\n"
 refusalsInfo = "% Num people who do not eat categories. contains = {none, meat, milk, gluten, egg, nut, seed, sugars}\n"
 
 # Maximum num elements in data arrays that can be used at once in Mzn.
-maxData = 7
+batchSizes = [7, 8, 9, 10, 12, 15, 21, 25, 28, 30, 35, 40, 42]
 
 def findInvalidIndices(dates):
     # Detect string dates. They are things like year 20211. 
@@ -85,6 +85,7 @@ firstDay = min(startDates)
 lastDay = max(endDates)
 calendar = pd.date_range(start=firstDay, end=lastDay).to_series()
 dates = np.asarray(calendar)
+months = np.asarray(calendar.dt.month)
 daysOfWeek = np.asarray(calendar.dt.dayofweek)
 numDays = (lastDay - firstDay).days # 370 days
 totalPeople = len(posts) # 368 people
@@ -129,15 +130,15 @@ for i in range(numDays):
             if genders[j] != "F":
                 numMen[i] += 1
 
-batches = int(math.ceil(numDays / maxData))
-for batch in range(batches):
-    batchStart = batch * maxData # 0, 200
-    batchEnd = batchStart + maxData # 200, 370
+# batchSizes = [7, 8, 9, 10, 12, 15, 21, 25, 28]
+numBatches = len(batchSizes)
+batchStart = 0
+for batchNum in range(numBatches):
+    # 0, 7    7, 7+8     7+8, 7+8+9     7+8+9, 7+8+9+10
+    batchSize = batchSizes[batchNum]
+    batchEnd = batchStart + batchSize 
     if batchEnd > numDays:
         batchEnd = numDays
-    batchSize = batchEnd - batchStart # 200, 170
-    if batchSize < 3:
-        break
     batchFirstDay = min(startDates[batchStart:batchEnd])
     batchLastDay = max(endDates[batchStart:batchEnd])
 
@@ -162,20 +163,25 @@ for batch in range(batches):
                     separator = ","
                 stringSection += str(val) + separator
         refusalsString += stringSection
-    refusalsString += "|];\n\n"
-
-    strToWrite = ""
-
-    daysString = ""
-    batchDaysOfWeek = daysOfWeek[batchStart:batchEnd]
-    for day in batchDaysOfWeek:
-        daysString += (days[day]) 
+    refusalsString += "|];\n\n" 
 
     datesString = ""
     for i in range(batchStart, batchEnd):
         date = dates[i]
         strSection = "'{}'".format(str(date)[:10])
         datesString += "," + strSection 
+
+    daysString = ""
+    batchDaysOfWeek = daysOfWeek[batchStart:batchEnd]
+    for day in batchDaysOfWeek:
+        daysString += (days[day])
+
+    winter = "false"
+    batchMonths = months[batchStart:batchEnd]
+    for month in batchMonths:
+        if month >= 5 and month <= 9:
+            winter = "true"
+    winterString = "winter = {};\n\n".format(winter)
 
     datesString = formatString("dates", datesString)
     datesString = datesString.replace("[", "{")
@@ -184,9 +190,15 @@ for batch in range(batches):
     peopleString = formatString("numPeople", numPeople[batchStart:batchEnd]) 
     physicalString = formatString("numPhysicalWorkers", numPhysicalWorkers[batchStart:batchEnd])
     menString = formatString("numMen", numMen[batchStart:batchEnd])
-    strToWrite += (datesString + daysString + peopleInfo + peopleString + physicalInfo + physicalString + menInfo + menString + refusalsInfo + refusalsString)
+    strToWrite = (datesString + daysString + winterString + peopleInfo + peopleString + physicalInfo + physicalString + menInfo + menString + refusalsInfo + refusalsString)
 
-    writeTxtPath = r"{}\Batch_{}_occupancy_data.dzn".format(currentPath, batch+1)
+    writeTxtPath = r"{}\{}_days.dzn".format(currentPath, batchSize)
     with open(writeTxtPath, 'w') as txtFile:
         txtFile.write(strToWrite)
+
+    maxPeople = max(numPeople[batchStart:batchEnd])
+    print("batch {} contains {} days and {} people.\n Max matrix size is {}."
+          .format(batchNum, batchSize, maxPeople, batchSize * maxPeople))
+
+    batchStart = batchEnd
 
