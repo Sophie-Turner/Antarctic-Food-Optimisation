@@ -18,7 +18,7 @@ menInfo = "% Males need +25% more nutrients per day.\n"
 refusalsInfo = "% Num people who do not eat categories. contains = {none, meat, milk, gluten, egg, nut, seed, sugars}\n"
 
 # Maximum num elements in data arrays that can be used at once in Mzn.
-batchSizes = [7, 8, 9, 10, 12, 15, 21, 25, 28, 30, 35, 40, 42]
+maxMatrixSize = 3000
 
 def findInvalidIndices(dates):
     # Detect string dates. They are things like year 20211. 
@@ -130,15 +130,22 @@ for i in range(numDays):
             if genders[j] != "F":
                 numMen[i] += 1
 
-# batchSizes = [7, 8, 9, 10, 12, 15, 21, 25, 28]
-numBatches = len(batchSizes)
-batchStart = 0
-for batchNum in range(numBatches):
-    # 0, 7    7, 7+8     7+8, 7+8+9     7+8+9, 7+8+9+10
-    batchSize = batchSizes[batchNum]
-    batchEnd = batchStart + batchSize 
-    if batchEnd > numDays:
-        batchEnd = numDays
+# matrixSizes = [500, 1000, 1500, 2000, 2500, 3000, 3500]
+continueLoop = True
+dateIndex, matrixSize, batchNum = 0, 0, 0
+while continueLoop:
+    batchNum += 1
+    matrixSize, batchNumDays = 0, 0
+    batchStart = dateIndex
+    while matrixSize < maxMatrixSize: 
+        dateIndex += 1
+        if dateIndex >= numDays:
+            batchEnd = numDays
+            continueLoop = False
+            break
+        batchNumDays += 1
+        matrixSize += numPeople[dateIndex]      
+    batchEnd = dateIndex
     batchFirstDay = min(startDates[batchStart:batchEnd])
     batchLastDay = max(endDates[batchStart:batchEnd])
 
@@ -192,13 +199,11 @@ for batchNum in range(numBatches):
     menString = formatString("numMen", numMen[batchStart:batchEnd])
     strToWrite = (datesString + daysString + winterString + peopleInfo + peopleString + physicalInfo + physicalString + menInfo + menString + refusalsInfo + refusalsString)
 
-    writeTxtPath = r"{}\{}_days.dzn".format(currentPath, batchSize)
+    writeTxtPath = r"{}\batch{}.dzn".format(currentPath, batchNum)
     with open(writeTxtPath, 'w') as txtFile:
         txtFile.write(strToWrite)
 
     maxPeople = max(numPeople[batchStart:batchEnd])
-    print("batch {} contains {} days and {} people.\n Max matrix size is {}."
-          .format(batchNum, batchSize, maxPeople, batchSize * maxPeople))
-
-    batchStart = batchEnd
+    print("batch {} contains {} days and {} people.\n Matrix size is {}."
+          .format(batchNum, batchNumDays, maxPeople, matrixSize))
 
