@@ -102,7 +102,6 @@ float: winterMultiplier = 0.25;
 int: physicalMultiplier = 1;
 float: menMultiplier = 0.25;
 % Work out how much nutrition the group needs per day.
-% Work out how much nutrition the group needs per day.
 array[dates, nutrients] of var float: dailyNutrientsRequired;
 constraint forall(date in dates, nutrient in nutrients)
           (dailyNutrientsRequired[date, nutrient] = 
@@ -126,12 +125,13 @@ array[dates, 1..numBreakfastsOffered] of var int: numBreakfastsServed;
                  
 % The right number of breakfasts must be offered.
 constraint forall(date in dates)
-                 (numBreakfastsServed[date, 1] >=0);
-constraint forall(date in dates, optionNum in 2..numBreakfastsOffered)
-                 (numBreakfastsServed[date, optionNum] >= minServings[date]);
-constraint forall(date in dates)
+                 (numBreakfastsServed[date, 1] >=0
+                 /\
                  (sum(optionNum in 1..numBreakfastsOffered)
-                     (numBreakfastsServed[date, optionNum]) = numPeople[date]);
+                     (numBreakfastsServed[date, optionNum]) = numPeople[date])
+                 /\
+                 forall(optionNum in 1..numBreakfastsOffered)
+                       (numBreakfastsServed[date, optionNum] >= minServings[date]));       
                      
 % Make sure everyone can eat something and there are enough servings for each diet type.            
 constraint forall(date in dates, 
@@ -150,12 +150,6 @@ constraint forall(date in dates, nutrient in nutrients)
             (nutrition[breakfastIngredients[breakfastsServed[daysOfWeek[date], optionNum], item], nutrient]
              * breakfastAmounts[breakfastsServed[daysOfWeek[date], optionNum], item]
              * numBreakfastsServed[date, optionNum]));
-
-% Fresh ingredients can't be brought in winter.
-constraint if winter
-           then forall(freshFood in freshFoods, breakfastServed in breakfastsServed, item in 1..maxIngredients)
-                      (breakfastIngredients[breakfastServed, item] != freshFood)
-           endif;
 
 % Build up a shopping list of what needs to be ordered.         
 array[ingredients] of var int: breakfastsOrder;
@@ -192,12 +186,13 @@ constraint alldifferent(mealsServed);
                  
 % The right number of meals must be offered.
 constraint forall(date in dates)
-                 (numMealsServed[date, 1] >=0);
-constraint forall(date in dates, optionNum in 2..numMealsOffered)
-                 (numMealsServed[date, optionNum] >= minServings[date]);
-constraint forall(date in dates)
-                 (sum(optionNum in 1..numMealsOffered)
-                     (numMealsServed[date, optionNum]) = numPeople[date]);                 
+                 (numMealsServed[date, 1] >=0
+                 /\ 
+                 forall(optionNum in 2..numMealsOffered)
+                       (numMealsServed[date, optionNum] >= minServings[date])
+                 /\
+                 sum(optionNum in 1..numMealsOffered)
+                    (numMealsServed[date, optionNum]) = numPeople[date]);                 
          
 % Make sure everyone can eat something and there are enough servings for each diet type.            
 constraint forall(date in dates, 
@@ -215,13 +210,7 @@ constraint forall(date in dates, nutrient in nutrients)
             sum(optionNum in 1..numMealsOffered, item in 1..maxIngredients)
             (nutrition[mealIngredients[mealsServed[daysOfWeek[date], optionNum], item], nutrient]
              * mealAmounts[mealsServed[daysOfWeek[date], optionNum], item]
-             * numMealsServed[date, optionNum]));     
-
-% Fresh ingredients can't be brought in winter.
-constraint if winter
-           then forall(freshFood in freshFoods, mealServed in mealsServed, item in 1..maxIngredients)
-                      (mealIngredients[mealServed, item] != freshFood)
-           endif;             
+             * numMealsServed[date, optionNum]));                  
                                        
 % Build up a shopping list of what needs to be ordered.             
 array[ingredients] of var int: mealsOrder;
@@ -254,7 +243,8 @@ array[dates, 1..numSidesOffered] of var int: numSidesServed;
 constraint forall(date in dates)
                  (forall(optionNum in 1..numSidesOffered)
                         (numSidesServed[date, optionNum] >= 0
-                        /\ numSidesServed[date, optionNum] <= numPeople[date]));
+                         /\ 
+                         numSidesServed[date, optionNum] <= numPeople[date]));
                         
 % The sides options on each day must not be the same but options can be repeated throughout the week.
 constraint alldifferent(sidesServed);
@@ -266,13 +256,7 @@ constraint forall(date in dates,
                       sum(optionNum in 1..numSidesOffered)
                          (forall(itemNum in 1..maxContains)
                                 (sideContains[sidesServed[daysOfWeek[date], optionNum], itemNum] != foodType) 
-                                 * numSidesServed[date, optionNum])); 
-
-% Fresh ingredients can't be brought in winter.
-constraint if winter
-           then forall(freshFood in freshFoods, sideServed in sidesServed, item in 1..maxIngredients)
-                      (sideIngredients[sideServed, item] != freshFood)
-           endif;                                 
+                                 * numSidesServed[date, optionNum]));                                 
                                                                                                    
 % Work out the nutrition on offer.
 array[dates, nutrients] of var int: sidesNutrition;
@@ -318,13 +302,7 @@ constraint forall(date in dates,
                   optionNum in 1..numDessertsOffered)
                        (numDessertsServed[date, optionNum] = 
                         numPeople[date] - max(itemNum in 1..maxContains)
-                           (numRefusals[date, dessertContains[dessertsServed[daysOfWeek[date], optionNum], itemNum]]));                              
-                          
-% Fresh ingredients can't be brought in winter.
-constraint if winter
-           then forall(freshFood in freshFoods, dessertServed in dessertsServed, item in 1..maxIngredients)
-                      (dessertIngredients[dessertServed, item] != freshFood)
-           endif;                          
+                           (numRefusals[date, dessertContains[dessertsServed[daysOfWeek[date], optionNum], itemNum]]));                                                      
                           
 % Work out the nutrition on offer.
 array[dates, nutrients] of var int: dessertsNutrition;
@@ -367,9 +345,9 @@ array[1..numTreats] of var treatDrinks: treatDrinksServed;
 constraint if numTreats > 1
            then
             forall(treatNum in 1..numTreats-1)
-                 (treatFoodsServed[treatNum] != treatFoodsServed[treatNum+1]
-                  /\
-                  treatDrinksServed[treatNum] != treatDrinksServed[treatNum+1])
+                  (treatFoodsServed[treatNum] != treatFoodsServed[treatNum+1]
+                   /\
+                   treatDrinksServed[treatNum] != treatDrinksServed[treatNum+1])
            endif;
 
 % The right number of treats should be offered.
@@ -379,52 +357,60 @@ constraint forall(treatNum in 1..numTreats)
                   - max(itemNum in 1..maxContains)
                        (numRefusals[dates[numTreats*treatFrequency], dessertContains[treatFoodsServed[treatNum], itemNum]])); 
 
-% Fresh ingredients can't be brought in winter.
-constraint if winter
-           then forall(freshFood in freshFoods, treatServed in treatFoodsServed, item in 1..maxIngredients)
-                      (dessertIngredients[treatServed, item] != freshFood)
-           endif;
-
 % Occasional treats do not contribute to daily nutrition.
 
 % Build up a shopping list of what needs to be ordered.             
-array[ingredients] of var int: treatFoodsOrder;
+array[ingredients] of var int: treatsOrder;
 constraint forall(ingredient in ingredients)
-                 (treatFoodsOrder[ingredient] = 
+                 (treatsOrder[ingredient] = 
                   sum(treatNum in 1..numTreats, item in 1..maxIngredients
                       where dessertIngredients[treatFoodsServed[treatNum], item] = ingredient)
                       (dessertAmounts[treatFoodsServed[treatNum], item]
-                       * numTreatFoodsServed[treatNum]));
-array[ingredients] of var int: treatDrinksOrder;
-constraint forall(ingredient in ingredients)
-                 (treatDrinksOrder[ingredient] = 
+                       * numTreatFoodsServed[treatNum])
+                  +
                   sum(treatNum in 1..numTreats
                       where treatIngredients[treatDrinksServed[treatNum]] = ingredient)
                       (treatAmounts[treatDrinksServed[treatNum]] 
                        * numPeople[dates[treatNum * treatFrequency]]));
 
-var int: treatFoodsCost = sum(treatNum in 1..numTreats, ingredientNum in 1..maxIngredients)
-                         (sum(costSource in costSources)
-                             (costs[dessertIngredients[treatFoodsServed[treatNum], ingredientNum], costSource])
-                            * numTreatFoodsServed[treatNum]
-                            * dessertAmounts[treatFoodsServed[treatNum], ingredientNum]
-                            + dessertCookingCosts[treatFoodsServed[treatNum]]);                     
-var int: treatDrinksCost = sum(treatNum in 1..numTreats)
-                         (sum(costSource in costSources)
-                             (costs[treatIngredients[treatDrinksServed[treatNum]], costSource])
-                            * numPeople[dates[treatNum * treatFrequency]]
-                            * treatAmounts[treatDrinksServed[treatNum]]);
+
+var int: treatsCost = sum(treatNum in 1..numTreats, costSource in costSources)
+                         (costs[treatIngredients[treatDrinksServed[treatNum]], costSource]
+                          * numPeople[dates[treatNum * treatFrequency]]
+                          * treatAmounts[treatDrinksServed[treatNum]]
+                          + sum(ingredientNum in 1..maxIngredients)
+                               (costs[dessertIngredients[treatFoodsServed[treatNum], ingredientNum], costSource]
+                               * numTreatFoodsServed[treatNum]
+                               * dessertAmounts[treatFoodsServed[treatNum], ingredientNum]
+                               + dessertCookingCosts[treatFoodsServed[treatNum]]));                                        
                                 
-var int: treatFoodsEmissions = sum(treatNum in 1..numTreats, ingredientNum in 1..maxIngredients)
-                              (sum(emissionSource in emissionsSources)
-                                  (emissions[dessertIngredients[treatFoodsServed[treatNum], ingredientNum], emissionSource])
-                                 * numTreatFoodsServed[treatNum]
-                                 * dessertAmounts[treatFoodsServed[treatNum], ingredientNum]);
-var int: treatDrinksEmissions = sum(treatNum in 1..numTreats)
-                               (sum(emissionSource in emissionsSources)
-                                   (emissions[treatIngredients[treatDrinksServed[treatNum]], emissionSource])
-                                   * numPeople[dates[treatNum * treatFrequency]]
-                                   * treatAmounts[treatDrinksServed[treatNum]]);
+var int: treatDrinksEmissions = sum(treatNum in 1..numTreats, emissionSource in emissionsSources)
+                                   (emissions[treatIngredients[treatDrinksServed[treatNum]], emissionSource]
+                                    * numPeople[dates[treatNum * treatFrequency]]
+                                    * treatAmounts[treatDrinksServed[treatNum]]
+                                    + sum(ingredientNum in 1..maxIngredients)
+                                         (emissions[dessertIngredients[treatFoodsServed[treatNum], ingredientNum], emissionSource]
+                                          * numTreatFoodsServed[treatNum]
+                                          * dessertAmounts[treatFoodsServed[treatNum], ingredientNum]));
+                                                                                                                                                                                                                                                                                                         %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% GENERAL CONSTRAINTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                                                                                                                                                                                                                                                                                                         % Fresh ingredients can't be brought in winter.
+constraint if winter
+           then forall(freshFood in freshFoods, item in 1..maxIngredients)
+                      (forall(breakfastServed in breakfastsServed)
+                             (breakfastIngredients[breakfastServed, item] != freshFood)
+                       /\
+                       forall(mealServed in mealsServed)
+                             (mealIngredients[mealServed, item] != freshFood)
+                       /\
+                       forall(sideServed in sidesServed)
+                             (sideIngredients[sideServed, item] != freshFood)
+                       /\
+                       forall(dessertServed in dessertsServed)
+                             (dessertIngredients[dessertServed, item] != freshFood)
+                       /\ 
+                       forall(treatServed in treatFoodsServed)
+                             (dessertIngredients[treatServed, item] != freshFood))                      
+           endif;
                                                                                                                                                                                                                                                                                                          
 %%%%%%%%%%%%%%%%%%%% MEASUREMENTS %%%%%%%%%%%%%%%%%%%%%%%
 
@@ -446,8 +432,7 @@ array[ingredients] of var int: order;
 constraint forall(ingredient in ingredients)
                  (order[ingredient]  
                   = (breakfastsOrder[ingredient] 
-                  + treatFoodsOrder[ingredient]
-                  + treatDrinksOrder[ingredient]
+                  + treatsOrder[ingredient]
                   + ((mealsOrder[ingredient] 
                      + sidesOrder[ingredient]
                      + dessertsOrder[ingredient])
@@ -456,8 +441,10 @@ constraint forall(ingredient in ingredients)
 %%%%%%%%%%%%%%%%%%%%%% OBJECTIVE %%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Multiply by 2 because each meal is served twice a day.
-var int: totalCost = breakfastsCost + ((mealsCost + sidesCost + dessertsCost) * 2); %+ treatFoodsCost + treatDrinksCost   divide output by 10000 to get £.
-var int: totalEmissions = breakfastsEmissions + ((mealsEmissions + sidesEmissions + dessertsEmissions) * 2); %+ treatFoodsEmissions + treatDrinksEmissions  divide output by 10000 to get kg.
+var int: totalCost = breakfastsCost + ((mealsCost + sidesCost + dessertsCost) * 2) + treatFoodsCost + treatDrinksCost;  
+% divide output by 10000 to get £.
+var int: totalEmissions = breakfastsEmissions + ((mealsEmissions + sidesEmissions + dessertsEmissions) * 2) + treatFoodsEmissions + treatDrinksEmissions; 
+% divide output by 10000 to get kg.
 var int: totalCalsServed = sum(date in dates)
                         (dailyNutrition[date, calories]); 
 var float: totalCalsRequired = sum(date in dates)
