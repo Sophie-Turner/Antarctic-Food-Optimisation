@@ -43,14 +43,37 @@ Twin Otter can carry max 12600 x 100g portions of food
 
 requires = 1873km / 1.27km per kg = 1475 kg of fuel
 which costs 1475kg x 61p = 89975p = £899.75
-and causes ghg emissions of 1475kg x 3.15 = 4646 kg CO2eq
+and causes ghg emissions of 1475kg x 3.15 = 4646 kg CO2e
 
 cost of moving 100g food = 89975p / 12600 = 7p
-emissions of moving 100g food = 4646 kg / 12600 = 0.369 kg CO2eq
+emissions of moving 100g food = 4646 kg / 12600 = 0.369 kg CO2e
 considering only 1-way journey (not the return journey)
 but probably more due to takeoff
 
+DASH 7 FROM FALKLANDS
 
+distance from Stanley, Falklands to Rothera = 1873 km = 1164 mi
+can't fully load the plane or it would not be able to travel this far.
+for this journey it can carry 16 passengers or 2,000kg of cargo
+number of people travelling on scheduled Dash 7 trips: 7,7,1,9,8,2,2,5,3,3,3,5,2,4,3 avg = 4.26 
+Average British man in clothes and shoes weighs 84 kg
+84kg x 4.26 = 358.4 kg
+2000 - 358.4 = 1641.6 kg capacity left for cargo
+total number of 100g cargo capacity portions = 16416
+equipment is bulky so allocate 1/4 of that to food = 410.4 kg 
+number of 100g portions of food which can be moved = 4104
+
+maximum useable fuel = 4501.904 kg. Assume this much is required for 1 way journey.
+including takeoff
+aviation fuel currently costs 61p per kg
+cost of fuel = 0.61 £/kg x 4501.904 kg = £2746
+
+cost of fuel per 100g cargo capacity = £2746 / 16416 = 17p
+emissions of moving 1 kg cargo = (3.15 x 4501.904 kg) / 1641.6 kg = 8.64 kg CO2e
+emissions of moving 100g cargo = 0.846 kg CO2e
+considering only 1-way journey (not the return journey)
+
+https://www.bas.ac.uk/polar-operations/sites-and-facilities/facility/dash-7-aircraft/
 https://www.statista.com/statistics/1233482/carbon-footprint-of-cargo-ships-by-type-uk/
 https://www.bas.ac.uk/polar-operations/sites-and-facilities/facility/rrs-sir-david-attenborough/
 https://en.wikipedia.org/wiki/De_Havilland_Canada_DHC-6_Twin_Otter#Specifications

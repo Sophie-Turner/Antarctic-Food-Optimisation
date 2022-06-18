@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import os
-import math
 
 # Moderate increase in food required for these people. + 50%
 highIntensityJobs = ["scien", "boat", "chef", "tech", "mech", "elec", "plumb", "weld"] 
@@ -18,7 +17,7 @@ menInfo = "% Males need +25% more nutrients per day.\n"
 refusalsInfo = "% Num people who do not eat categories. contains = {none, meat, milk, gluten, egg, nut, seed, sugars}\n"
 
 # Maximum num elements in data arrays that can be used at once in Mzn.
-maxData = 7
+maxMatrixSize = 3000
 
 def findInvalidIndices(dates):
     # Detect string dates. They are things like year 20211. 
@@ -66,7 +65,26 @@ def formatString(strName, dataArray):
     return newStr
 
 
+def findListIndices(rowOrColList, startOrEnd, startIndex=1, endIndex=380):
+    # Binary search for indices of row or col. Pass in the whole row or col as a 1d array.
+    mid = round((endIndex + startIndex) / 2)
+    print(mid)
+    midValue = rowOrColList[mid]
+    if (type(midValue) == int and startOrEnd == "end") or (type(midValue) != int and startOrEnd == "start"):
+        startIndex = mid 
+    else:
+        endIndex = mid
+    if endIndex - startIndex == 1:
+        return mid
+    return findListIndices(rowOrColList, startOrEnd, startIndex, endIndex) 
+
+
 sheet = pd.read_excel(paxPath, na_filter = False)
+
+field = sheet.iloc[386, :]
+fieldStart, fieldEnd = findListIndices(field, "start"), findListIndices(field, "end")+1
+fieldCampers = np.asarray(sheet.iloc[386, fieldStart:fieldEnd])
+
 posts = np.asarray(sheet.iloc[2:373, 8])
 types = np.asarray(sheet.iloc[2:373, 9])
 startDates = np.asarray(sheet.iloc[2:373, 1])
@@ -80,11 +98,13 @@ types = sanitise(types, invalidIndices)
 startDates = sanitise(startDates, invalidIndices)
 endDates = sanitise(endDates, invalidIndices)
 genders = sanitise(genders, invalidIndices)
+fieldCampers = sanitise(fieldCampers, invalidIndices)
 
 firstDay = min(startDates)
 lastDay = max(endDates)
 calendar = pd.date_range(start=firstDay, end=lastDay).to_series()
 dates = np.asarray(calendar)
+months = np.asarray(calendar.dt.month)
 daysOfWeek = np.asarray(calendar.dt.dayofweek)
 numDays = (lastDay - firstDay).days # 370 days
 totalPeople = len(posts) # 368 people
@@ -129,15 +149,22 @@ for i in range(numDays):
             if genders[j] != "F":
                 numMen[i] += 1
 
-batches = int(math.ceil(numDays / maxData))
-for batch in range(batches):
-    batchStart = batch * maxData # 0, 200
-    batchEnd = batchStart + maxData # 200, 370
-    if batchEnd > numDays:
-        batchEnd = numDays
-    batchSize = batchEnd - batchStart # 200, 170
-    if batchSize < 3:
-        break
+# matrixSizes = [500, 1000, 1500, 2000, 2500, 3000, 3500]
+continueLoop = True
+dateIndex, matrixSize, batchNum = 0, 0, 0
+while continueLoop:
+    batchNum += 1
+    matrixSize, batchNumDays = 0, 0
+    batchStart = dateIndex
+    while matrixSize < maxMatrixSize: 
+        dateIndex += 1
+        if dateIndex >= numDays:
+            batchEnd = numDays
+            continueLoop = False
+            break
+        batchNumDays += 1
+        matrixSize += numPeople[dateIndex]      
+    batchEnd = dateIndex
     batchFirstDay = min(startDates[batchStart:batchEnd])
     batchLastDay = max(endDates[batchStart:batchEnd])
 
@@ -162,20 +189,25 @@ for batch in range(batches):
                     separator = ","
                 stringSection += str(val) + separator
         refusalsString += stringSection
-    refusalsString += "|];\n\n"
-
-    strToWrite = ""
-
-    daysString = ""
-    batchDaysOfWeek = daysOfWeek[batchStart:batchEnd]
-    for day in batchDaysOfWeek:
-        daysString += (days[day]) 
+    refusalsString += "|];\n\n" 
 
     datesString = ""
     for i in range(batchStart, batchEnd):
         date = dates[i]
         strSection = "'{}'".format(str(date)[:10])
         datesString += "," + strSection 
+
+    daysString = ""
+    batchDaysOfWeek = daysOfWeek[batchStart:batchEnd]
+    for day in batchDaysOfWeek:
+        daysString += (days[day])
+
+    winter = "false"
+    batchMonths = months[batchStart:batchEnd]
+    for month in batchMonths:
+        if month >= 5 and month <= 9:
+            winter = "true"
+    winterString = "winter = {};\n\n".format(winter)
 
     datesString = formatString("dates", datesString)
     datesString = datesString.replace("[", "{")
@@ -184,9 +216,13 @@ for batch in range(batches):
     peopleString = formatString("numPeople", numPeople[batchStart:batchEnd]) 
     physicalString = formatString("numPhysicalWorkers", numPhysicalWorkers[batchStart:batchEnd])
     menString = formatString("numMen", numMen[batchStart:batchEnd])
-    strToWrite += (datesString + daysString + peopleInfo + peopleString + physicalInfo + physicalString + menInfo + menString + refusalsInfo + refusalsString)
+    strToWrite = (datesString + daysString + winterString + peopleInfo + peopleString + physicalInfo + physicalString + menInfo + menString + refusalsInfo + refusalsString)
 
-    writeTxtPath = r"{}\Batch_{}_occupancy_data.dzn".format(currentPath, batch+1)
+    writeTxtPath = r"{}\batch{}.dzn".format(currentPath, batchNum)
     with open(writeTxtPath, 'w') as txtFile:
-        txtFile.write(strToWrite)
+       txtFile.write(strToWrite)
+
+    maxPeople = max(numPeople[batchStart:batchEnd])
+    print("batch {} contains {} days and {} people.\n Matrix size is {}."
+          .format(batchNum, batchNumDays, maxPeople, matrixSize))
 
