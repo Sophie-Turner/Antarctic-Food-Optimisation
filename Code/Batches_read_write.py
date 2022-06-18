@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import os
-import math
 
 # Moderate increase in food required for these people. + 50%
 highIntensityJobs = ["scien", "boat", "chef", "tech", "mech", "elec", "plumb", "weld"] 
@@ -66,7 +65,26 @@ def formatString(strName, dataArray):
     return newStr
 
 
+def findListIndices(rowOrColList, startOrEnd, startIndex=1, endIndex=380):
+    # Binary search for indices of row or col. Pass in the whole row or col as a 1d array.
+    mid = round((endIndex + startIndex) / 2)
+    print(mid)
+    midValue = rowOrColList[mid]
+    if (type(midValue) == int and startOrEnd == "end") or (type(midValue) != int and startOrEnd == "start"):
+        startIndex = mid 
+    else:
+        endIndex = mid
+    if endIndex - startIndex == 1:
+        return mid
+    return findListIndices(rowOrColList, startOrEnd, startIndex, endIndex) 
+
+
 sheet = pd.read_excel(paxPath, na_filter = False)
+
+field = sheet.iloc[386, :]
+fieldStart, fieldEnd = findListIndices(field, "start"), findListIndices(field, "end")+1
+fieldCampers = np.asarray(sheet.iloc[386, fieldStart:fieldEnd])
+
 posts = np.asarray(sheet.iloc[2:373, 8])
 types = np.asarray(sheet.iloc[2:373, 9])
 startDates = np.asarray(sheet.iloc[2:373, 1])
@@ -80,6 +98,7 @@ types = sanitise(types, invalidIndices)
 startDates = sanitise(startDates, invalidIndices)
 endDates = sanitise(endDates, invalidIndices)
 genders = sanitise(genders, invalidIndices)
+fieldCampers = sanitise(fieldCampers, invalidIndices)
 
 firstDay = min(startDates)
 lastDay = max(endDates)
