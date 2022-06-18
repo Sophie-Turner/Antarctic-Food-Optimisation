@@ -108,8 +108,8 @@ breakfastContains = [| milk, none, none | none, none, none | meat, egg, none | n
 
 numMealsOffered = 3; % 3 choices of meal will be served at the buffet bar.
 
-meals = {vegChowMein, pepperoniPizza, chickenNoodles, mushroomSoup, kievs, mushroomRisotto, quornLasagne, jacketSpud, marghertia, lambMoussaka, ratatouille, vegSpagBol, potatoCurry, sushi, fishPaella, beanChilli, shepherdsPie, veganSausageCasserole, mushroomOmelette, fishAndChips,
- veganPizza, quornChilli, chickenCurry, veganBangersMash, veganCanneloni, beefBurgers, roastPork, stuffedPeppers, stuffedAubergine, shakshuka, tunaPastaBake, vegHotPot, nutNoodles, eggBaconPie, squashRisotto, nutRoast};
+meals = {vegChowMein, pepperoniPizza, chickenNoodles, mushroomSoup, kievs, mushroomRisotto, quornLasagne, jacketSpud, marghertia, vegMoussaka, ratatouille, vegSpagBol, potatoCurry, sushi, fishPaella, beanChilli, vegPie, veganSausageCasserole, mushroomOmelette, fishAndChips,
+ veganPizza, quornChilli, chickenCurry, veganBangersMash, veganCanneloni, chickenBurgers, roastPork, stuffedPeppers, stuffedAubergine, shakshuka, tunaPastaBake, vegHotPot, nutNoodles, eggBaconPie, squashRisotto, nutRoast};
 
 % Oven and grill cost 10p for 10 mins. Hob and microwave cost 6p for 10 mins. Assume 4 portions of food fit in each.
 % Most oven energy is for preheating. It doesn't increase linearly with time.
@@ -126,14 +126,14 @@ mealIngredients =
      |pasta, tomatoesTinned, cheeseFrozen, quornFrozen, mushroomsTinned % 75, 92, 46, 75, 42
      |potatoesFrozen, oil, beansTinned, veganCheeseFrozen, tomatoesTinned % 200, 50, 120, 15, 100 
      |flour, tomatoesTinned, cheeseFrozen, oil, herbsDried % 250, 200, 63, 31, 15
-     |lambFrozen, onionPowder, tomatoesTinned, aubergineFrozen, oil % 113, 28, 133, 400, 13
+     |quornFrozen, onionPowder, tomatoesTinned, aubergineFrozen, oil % 113, 28, 133, 400, 13
      |tomatoesTinned, peppersFrozen, oil, aubergineFrozen, onionPowder % 400, 70, 18, 200, 85
      |pasta, quornFrozen, tomatoesTinned, herbsDried, cheeseFrozen % 75, 75, 100, 15, 25
      |potatoesFrozen, spicesDried, onionPowder, peasFrozen, rice % 233, 15, 57, 33, 33 
      |rice, fishFrozen, soySauce, herbsDried, spicesDried % 188, 113, 24, 15, 15 
      |rice, fishFrozen, wine, tomatoesTinned, onionPowder % 67, 185, 29, 67, 28
      |rice, beansTinned, tomatoesTinned, onionPowder, spicesDried % 100, 200, 200, 85, 8 
-     |potatoesFrozen, lambFrozen, tomatoesTinned, stockCube, onionPowder % 175, 125, 100, 6, 44 
+     |potatoesFrozen, quornFrozen, tomatoesTinned, stockCube, onionPowder % 175, 125, 100, 6, 44 
      |veganSausagesFrozen, beansTinned, onionPowder, stockCube, wine % 114, 200, 43, 6, 25    
      |eggsFresh, mushroomsTinned, herbsDried, oil, onionPowder % 200, 156, 15, 15, 85
      |fishFrozen, chipsFrozen, peasFrozen, eggPowder, oil % 150, 150, 80, 30, 3  
@@ -142,7 +142,7 @@ mealIngredients =
      |poultryMeatFrozen, rice, potatoesFrozen, spicesDried, stockCube % 338, 100, 100, 20, 6  
      |veganSausagesFrozen, potatoesFrozen, onionPowder, gravyPowder, peasFrozen % 114, 250, 85, 15, 80
      |pasta, veganCheeseFrozen, herbsDried, onionPowder, tomatoesTinned % 100, 288, 15, 43, 200
-     |breadRollsFrozen, beefFrozen, cheeseFrozen, onionPowder, chipsFrozen % 100, 114, 20, 43, 284
+     |breadRollsFrozen, poultryMeatFrozen, cheeseFrozen, onionPowder, chipsFrozen % 100, 114, 20, 43, 284
      |porkFrozen, herbsDried, onionPowder, gravyPowder, applesFresh % 375, 15, 85, 15, 75 
      |peppersFrozen, rice, veganCheeseFrozen, herbsDried, beansTinned % 120, 50, 25, 15, 100
      |aubergineFrozen, rice, wine, veganCheeseFrozen, spicesDried % 600, 50, 50, 25, 15
@@ -168,9 +168,9 @@ mealAmounts =
      
 maxContains = 3;     
 mealContains = [|gluten, egg, none| meat, milk, gluten| meat, gluten, egg| milk, none, none| meat, gluten, none|
-                 none, none, none| gluten, milk, egg| none, none, none| gluten, milk, none| meat, none, none|
+                 none, none, none| gluten, milk, egg| none, none, none| gluten, milk, none| egg, none, none|
                  none, none, none| egg, gluten, milk| none, none, none| meat, none, none| meat, none, none|
-                 none, none, none| meat, none, none| none, none, none| egg, none, none| meat, none, none|
+                 none, none, none| egg, none, none| none, none, none| egg, none, none| meat, none, none|
                  gluten, none, none| egg, none, none| meat, milk, none| none, none, none| gluten, none, none|
                  gluten, meat, milk| meat, none, none| none, none, none| none, none, none| egg, milk, none|
                  meat, milk, gluten| none, none, none | gluten, nut, egg | meat, milk, gluten | none, none, none |

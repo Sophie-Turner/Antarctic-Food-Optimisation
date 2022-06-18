@@ -220,7 +220,7 @@ while continueLoop:
 
     writeTxtPath = r"{}\batch{}.dzn".format(currentPath, batchNum)
     with open(writeTxtPath, 'w') as txtFile:
-        txtFile.write(strToWrite)
+       txtFile.write(strToWrite)
 
     maxPeople = max(numPeople[batchStart:batchEnd])
     print("batch {} contains {} days and {} people.\n Matrix size is {}."
