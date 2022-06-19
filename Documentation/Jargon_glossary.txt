@@ -1,8 +1,0 @@
-base - rothera reseach station
-bentham container - a shipping container at Rothera, used as storage for science equipment.
-fire pumps - ?
-gals - women
-NBH - new bransfield house
-new bransfield house - a building containing the kitchen
-old bransfield house - ?
-rothera - the Antarctic research station
