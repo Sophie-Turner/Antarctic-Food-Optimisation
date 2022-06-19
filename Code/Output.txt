@@ -1,0 +1,15560 @@
+2021-10-05
+Tuesday
+26
+18 veganPorridge
+4 veganFullEnglish
+4 veganYoghurt
+18 veganSausageCasserole
+4 fishAndChips
+4 beanChilli
+2 porkSausages
+26 yorkshirePuddings
+24 chocolateMousse
+18 veganSausageCasserole
+4 fishAndChips
+4 beanChilli
+2 porkSausages
+26 yorkshirePuddings
+24 chocolateMousse
+0 peanutCookies
+0 glassOfWine
+92500.0
+?
+93960
+1460.0
+10406.25
+?
+10444
+37.75
+2035.0
+?
+3423
+1388.0
+971.25
+?
+2173
+1201.75
+2081.25
+?
+3935
+1853.75
+2021-10-06
+Wednesday
+26
+18 veganYoghurt
+4 fullEnglish
+4 toast
+18 quornChilli
+4 vegSpagBol
+4 ratatouille
+26 eggFriedRice
+16 breadRolls
+24 peanutCookies
+18 quornChilli
+4 vegSpagBol
+4 ratatouille
+26 eggFriedRice
+16 breadRolls
+24 peanutCookies
+0 peanutCookies
+0 glassOfWine
+92500.0
+?
+92553
+53.0
+10406.25
+?
+11840
+1433.75
+2035.0
+?
+2766
+731.0
+971.25
+?
+2003
+1031.75
+2081.25
+?
+4563
+2481.75
+2021-10-07
+Thursday
+26
+18 pancakes
+4 yoghurt
+4 veganFullEnglish
+18 veganPizza
+4 lambMoussaka
+4 marghertia
+4 beans
+21 broccoli
+26 cheeseBiscuits
+18 veganPizza
+4 lambMoussaka
+4 marghertia
+4 beans
+21 broccoli
+26 cheeseBiscuits
+0 peanutCookies
+0 glassOfWine
+92500.0
+?
+99691
+7191.0
+10406.25
+?
+10411
+4.75
+2035.0
+?
+4474
+2439.0
+971.25
+?
+1003
+31.75
+2081.25
+?
+3833
+1751.75
+2021-10-08
+Friday
+26
+18 toast
+4 pancakes
+4 fullEnglish
+18 jacketSpud
+4 quornLasagne
+4 kievs
+0 chips
+5 peas
+24 spongeCustard
+18 jacketSpud
+4 quornLasagne
+4 kievs
+0 chips
+5 peas
+24 spongeCustard
+0 peanutCookies
+0 glassOfWine
+92500.0
+?
+92993
+493.0
+10406.25
+?
+10421
+14.75
+2035.0
+?
+4337
+2302.0
+971.25
+?
+1227
+255.75
+2081.25
+?
+2972
+890.75
+2021-10-09
+Saturday
+26
+18 yoghurt
+4 veganYoghurt
+4 veganPorridge
+18 beefBurgers
+4 mushroomSoup
+4 chickenNoodles
+11 veganSausages
+0 Rice
+24 chocolateCake
+18 beefBurgers
+4 mushroomSoup
+4 chickenNoodles
+11 veganSausages
+0 Rice
+24 chocolateCake
+0 peanutCookies
+0 glassOfWine
+92500.0
+?
+123741
+31241.0
+10406.25
+?
+10883
+476.75
+2035.0
+?
+5424
+3389.0
+971.25
+?
+975
+3.75
+2081.25
+?
+3358
+1276.75
+2021-10-10
+Sunday
+30
+20 fullEnglish
+5 veganPorridge
+5 yoghurt
+20 mushroomRisotto
+5 pepperoniPizza
+5 vegChowMein
+30 bakedPotato
+16 roastPotatoes
+26 berryCrumble
+20 mushroomRisotto
+5 pepperoniPizza
+5 vegChowMein
+30 bakedPotato
+16 roastPotatoes
+26 berryCrumble
+0 peanutCookies
+0 glassOfWine
+102500.0
+?
+106630
+4130.0
+11531.25
+?
+11545
+13.75
+2255.0
+?
+4154
+1899.0
+1076.25
+?
+1196
+119.75
+2306.25
+?
+3049
+742.75
+2021-10-11
+Monday
+30
+20 veganFullEnglish
+5 toast
+5 pancakes
+20 veganCanneloni
+5 sushi
+5 potatoCurry
+10 nutBake
+12 boiledEggs
+29 walnutCake
+20 veganCanneloni
+5 sushi
+5 potatoCurry
+10 nutBake
+12 boiledEggs
+29 walnutCake
+30 peanutCookies
+30 glassOfWine
+102500.0
+?
+121128
+18628.0
+11531.25
+?
+11532
+0.75
+2255.0
+?
+6687
+4432.0
+1076.25
+?
+1089
+12.75
+2306.25
+?
+2625
+318.75
+2021-10-12
+Tuesday
+30
+20 veganPorridge
+5 veganFullEnglish
+5 veganYoghurt
+20 veganSausageCasserole
+5 fishAndChips
+5 beanChilli
+4 porkSausages
+15 yorkshirePuddings
+29 chocolateMousse
+20 veganSausageCasserole
+5 fishAndChips
+5 beanChilli
+4 porkSausages
+15 yorkshirePuddings
+29 chocolateMousse
+0 peanutCookies
+0 glassOfWine
+102500.0
+?
+104621
+2121.0
+11531.25
+?
+11536
+4.75
+2255.0
+?
+3810
+1555.0
+1076.25
+?
+2484
+1407.75
+2306.25
+?
+4384
+2077.75
+2021-10-13
+Wednesday
+30
+20 veganYoghurt
+5 fullEnglish
+5 toast
+20 quornChilli
+5 vegSpagBol
+5 ratatouille
+4 eggFriedRice
+26 breadRolls
+29 peanutCookies
+20 quornChilli
+5 vegSpagBol
+5 ratatouille
+4 eggFriedRice
+26 breadRolls
+29 peanutCookies
+0 peanutCookies
+0 glassOfWine
+102500.0
+?
+102877
+377.0
+11531.25
+?
+13007
+1475.75
+2255.0
+?
+3209
+954.0
+1076.25
+?
+2321
+1244.75
+2306.25
+?
+4949
+2642.75
+2021-10-14
+Thursday
+26
+18 pancakes
+4 yoghurt
+4 veganFullEnglish
+18 veganPizza
+4 lambMoussaka
+4 marghertia
+6 beans
+15 broccoli
+25 cheeseBiscuits
+18 veganPizza
+4 lambMoussaka
+4 marghertia
+6 beans
+15 broccoli
+25 cheeseBiscuits
+0 peanutCookies
+0 glassOfWine
+94500.0
+?
+99772
+5272.0
+10631.25
+?
+10637
+5.75
+2079.0
+?
+4377
+2298.0
+992.25
+?
+1059
+66.75
+2126.25
+?
+3843
+1716.75
+2021-10-15
+Friday
+29
+21 toast
+4 pancakes
+4 fullEnglish
+21 jacketSpud
+4 quornLasagne
+4 kievs
+0 chips
+1 peas
+29 spongeCustard
+21 jacketSpud
+4 quornLasagne
+4 kievs
+0 chips
+1 peas
+29 spongeCustard
+0 peanutCookies
+0 glassOfWine
+103500.0
+?
+105872
+2372.0
+11643.75
+?
+11975
+331.25
+2277.0
+?
+4959
+2682.0
+1086.75
+?
+1359
+272.25
+2328.75
+?
+3283
+954.25
+2021-10-16
+Saturday
+29
+21 yoghurt
+4 veganYoghurt
+4 veganPorridge
+21 beefBurgers
+4 mushroomSoup
+4 chickenNoodles
+6 veganSausages
+0 Rice
+29 chocolateCake
+21 beefBurgers
+4 mushroomSoup
+4 chickenNoodles
+6 veganSausages
+0 Rice
+29 chocolateCake
+0 peanutCookies
+0 glassOfWine
+103500.0
+?
+141276
+37776.0
+11643.75
+?
+12625
+981.25
+2277.0
+?
+6081
+3804.0
+1086.75
+?
+1090
+3.25
+2328.75
+?
+3764
+1435.25
+2021-10-17
+Sunday
+29
+21 fullEnglish
+4 veganPorridge
+4 yoghurt
+21 mushroomRisotto
+4 pepperoniPizza
+4 vegChowMein
+29 bakedPotato
+17 roastPotatoes
+29 berryCrumble
+21 mushroomRisotto
+4 pepperoniPizza
+4 vegChowMein
+29 bakedPotato
+17 roastPotatoes
+29 berryCrumble
+0 peanutCookies
+0 glassOfWine
+103500.0
+?
+107547
+4047.0
+11643.75
+?
+11691
+47.25
+2277.0
+?
+4179
+1902.0
+1086.75
+?
+1197
+110.25
+2328.75
+?
+2989
+660.25
+2021-10-18
+Monday
+29
+21 veganFullEnglish
+4 toast
+4 pancakes
+21 veganCanneloni
+4 sushi
+4 potatoCurry
+15 nutBake
+24 boiledEggs
+29 walnutCake
+21 veganCanneloni
+4 sushi
+4 potatoCurry
+15 nutBake
+24 boiledEggs
+29 walnutCake
+29 bananaIceCream
+29 canOfBeer
+103500.0
+?
+130687
+27187.0
+11643.75
+?
+11644
+0.25
+2277.0
+?
+7552
+5275.0
+1086.75
+?
+1168
+81.25
+2328.75
+?
+2904
+575.25
+2021-10-19
+Tuesday
+32
+22 veganPorridge
+5 veganFullEnglish
+5 veganYoghurt
+22 veganSausageCasserole
+5 fishAndChips
+5 beanChilli
+25 porkSausages
+28 yorkshirePuddings
+32 chocolateMousse
+22 veganSausageCasserole
+5 fishAndChips
+5 beanChilli
+25 porkSausages
+28 yorkshirePuddings
+32 chocolateMousse
+0 bananaIceCream
+0 canOfBeer
+114500.0
+?
+126321
+11821.0
+12881.25
+?
+12886
+4.75
+2519.0
+?
+5127
+2608.0
+1202.25
+?
+2716
+1513.75
+2576.25
+?
+5361
+2784.75
+2021-10-20
+Wednesday
+32
+22 veganYoghurt
+5 fullEnglish
+5 toast
+22 quornChilli
+5 vegSpagBol
+5 ratatouille
+6 eggFriedRice
+32 breadRolls
+32 peanutCookies
+22 quornChilli
+5 vegSpagBol
+5 ratatouille
+6 eggFriedRice
+32 breadRolls
+32 peanutCookies
+0 bananaIceCream
+0 canOfBeer
+114500.0
+?
+114840
+340.0
+12881.25
+?
+14627
+1745.75
+2519.0
+?
+3565
+1046.0
+1202.25
+?
+2533
+1330.75
+2576.25
+?
+5480
+2903.75
+2021-10-21
+Thursday
+46
+32 pancakes
+7 yoghurt
+7 veganFullEnglish
+32 veganPizza
+7 lambMoussaka
+7 marghertia
+3 beans
+38 broccoli
+45 cheeseBiscuits
+32 veganPizza
+7 lambMoussaka
+7 marghertia
+3 beans
+38 broccoli
+45 cheeseBiscuits
+0 bananaIceCream
+0 canOfBeer
+153500.0
+?
+171436
+17936.0
+17268.75
+?
+17775
+506.25
+3377.0
+?
+7793
+4416.0
+1611.75
+?
+1614
+2.25
+3453.75
+?
+6494
+3040.25
+2021-10-22
+Friday
+35
+25 toast
+5 pancakes
+5 fullEnglish
+25 jacketSpud
+5 quornLasagne
+5 kievs
+1 chips
+34 peas
+32 spongeCustard
+25 jacketSpud
+5 quornLasagne
+5 kievs
+1 chips
+34 peas
+32 spongeCustard
+0 bananaIceCream
+0 canOfBeer
+131500.0
+?
+131546
+46.0
+14793.75
+?
+14989
+195.25
+2893.0
+?
+5910
+3017.0
+1380.75
+?
+1919
+538.25
+2958.75
+?
+4219
+1260.25
+2021-10-23
+Saturday
+35
+25 yoghurt
+5 veganYoghurt
+5 veganPorridge
+25 beefBurgers
+5 mushroomSoup
+5 chickenNoodles
+14 veganSausages
+0 Rice
+32 chocolateCake
+25 beefBurgers
+5 mushroomSoup
+5 chickenNoodles
+14 veganSausages
+0 Rice
+32 chocolateCake
+0 bananaIceCream
+0 canOfBeer
+126000.0
+?
+168481
+42481.0
+14175.0
+?
+14887
+712.0
+2772.0
+?
+7298
+4526.0
+1323.0
+?
+1326
+3.0
+2835.0
+?
+4579
+1744.0
+2021-10-24
+Sunday
+41
+29 fullEnglish
+6 veganPorridge
+6 yoghurt
+29 mushroomRisotto
+6 pepperoniPizza
+6 vegChowMein
+41 bakedPotato
+18 roastPotatoes
+39 berryCrumble
+29 mushroomRisotto
+6 pepperoniPizza
+6 vegChowMein
+41 bakedPotato
+18 roastPotatoes
+39 berryCrumble
+0 bananaIceCream
+0 canOfBeer
+141000.0
+?
+147341
+6341.0
+15862.5
+?
+15898
+35.5
+3102.0
+?
+5725
+2623.0
+1480.5
+?
+1630
+149.5
+3172.5
+?
+4161
+988.5
+2021-10-25
+Monday
+42
+28 veganFullEnglish
+7 toast
+7 pancakes
+28 veganCanneloni
+7 sushi
+7 potatoCurry
+30 nutBake
+39 boiledEggs
+40 walnutCake
+28 veganCanneloni
+7 sushi
+7 potatoCurry
+30 nutBake
+39 boiledEggs
+40 walnutCake
+42 peanutCookies
+42 glassOfWine
+146000.0
+?
+193926
+47926.0
+16425.0
+?
+16425
+0.0
+3212.0
+?
+11547
+8335.0
+1533.0
+?
+1735
+202.0
+3285.0
+?
+4492
+1207.0
+2021-10-26
+Tuesday
+42
+28 veganPorridge
+7 veganFullEnglish
+7 veganYoghurt
+28 veganSausageCasserole
+7 fishAndChips
+7 beanChilli
+2 porkSausages
+21 yorkshirePuddings
+40 chocolateMousse
+28 veganSausageCasserole
+7 fishAndChips
+7 beanChilli
+2 porkSausages
+21 yorkshirePuddings
+40 chocolateMousse
+0 peanutCookies
+0 glassOfWine
+143000.0
+?
+144376
+1376.0
+16087.5
+?
+16114
+26.5
+3146.0
+?
+5164
+2018.0
+1501.5
+?
+3469
+1967.5
+3217.5
+?
+6042
+2824.5
+2021-10-27
+Wednesday
+44
+30 veganYoghurt
+7 fullEnglish
+7 toast
+30 quornChilli
+7 vegSpagBol
+7 ratatouille
+2 eggFriedRice
+43 breadRolls
+40 peanutCookies
+30 quornChilli
+7 vegSpagBol
+7 ratatouille
+2 eggFriedRice
+43 breadRolls
+40 peanutCookies
+0 peanutCookies
+0 glassOfWine
+150500.0
+?
+150862
+362.0
+16931.25
+?
+19350
+2418.75
+3311.0
+?
+4606
+1295.0
+1580.25
+?
+3428
+1847.75
+3386.25
+?
+7233
+3846.75
+2021-10-28
+Thursday
+35
+25 pancakes
+5 yoghurt
+5 veganFullEnglish
+25 veganPizza
+5 lambMoussaka
+5 marghertia
+9 beans
+31 broccoli
+34 cheeseBiscuits
+25 veganPizza
+5 lambMoussaka
+5 marghertia
+9 beans
+31 broccoli
+34 cheeseBiscuits
+0 peanutCookies
+0 glassOfWine
+129500.0
+?
+135273
+5773.0
+14568.75
+?
+14569
+0.25
+2849.0
+?
+5875
+3026.0
+1359.75
+?
+1478
+118.25
+2913.75
+?
+5229
+2315.25
+2021-10-29
+Friday
+35
+25 toast
+5 pancakes
+5 fullEnglish
+25 jacketSpud
+5 quornLasagne
+5 kievs
+0 chips
+1 peas
+34 spongeCustard
+25 jacketSpud
+5 quornLasagne
+5 kievs
+0 chips
+1 peas
+34 spongeCustard
+0 peanutCookies
+0 glassOfWine
+126000.0
+?
+126533
+533.0
+14175.0
+?
+14253
+78.0
+2772.0
+?
+5931
+3159.0
+1323.0
+?
+1628
+305.0
+2835.0
+?
+3956
+1121.0
+2021-10-30
+Saturday
+35
+25 yoghurt
+5 veganYoghurt
+5 veganPorridge
+25 beefBurgers
+5 mushroomSoup
+5 chickenNoodles
+12 veganSausages
+0 Rice
+34 chocolateCake
+25 beefBurgers
+5 mushroomSoup
+5 chickenNoodles
+12 veganSausages
+0 Rice
+34 chocolateCake
+0 peanutCookies
+0 glassOfWine
+126000.0
+?
+169899
+43899.0
+14175.0
+?
+15073
+898.0
+2772.0
+?
+7372
+4600.0
+1323.0
+?
+1328
+5.0
+2835.0
+?
+4574
+1739.0
+2021-10-31
+Sunday
+35
+25 fullEnglish
+5 veganPorridge
+5 yoghurt
+25 mushroomRisotto
+5 pepperoniPizza
+5 vegChowMein
+35 bakedPotato
+24 roastPotatoes
+34 berryCrumble
+25 mushroomRisotto
+5 pepperoniPizza
+5 vegChowMein
+35 bakedPotato
+24 roastPotatoes
+34 berryCrumble
+0 peanutCookies
+0 glassOfWine
+126000.0
+?
+130516
+4516.0
+14175.0
+?
+14239
+64.0
+2772.0
+?
+5075
+2303.0
+1323.0
+?
+1467
+144.0
+2835.0
+?
+3627
+792.0
+2021-11-01
+Monday
+41
+29 veganFullEnglish
+6 toast
+6 pancakes
+29 veganCanneloni
+6 sushi
+6 potatoCurry
+11 nutBake
+34 boiledEggs
+38 walnutCake
+29 veganCanneloni
+6 sushi
+6 potatoCurry
+11 nutBake
+34 boiledEggs
+38 walnutCake
+41 bananaIceCream
+41 canOfBeer
+141000.0
+?
+166567
+25567.0
+15862.5
+?
+15863
+0.5
+3102.0
+?
+9126
+6024.0
+1480.5
+?
+1489
+8.5
+3172.5
+?
+3719
+546.5
+2021-11-02
+Tuesday
+38
+26 veganPorridge
+6 veganFullEnglish
+6 veganYoghurt
+26 veganSausageCasserole
+6 fishAndChips
+6 beanChilli
+37 porkSausages
+32 yorkshirePuddings
+35 chocolateMousse
+26 veganSausageCasserole
+6 fishAndChips
+6 beanChilli
+37 porkSausages
+32 yorkshirePuddings
+35 chocolateMousse
+0 bananaIceCream
+0 canOfBeer
+135000.0
+?
+150810
+15810.0
+15187.5
+?
+15189
+1.5
+2970.0
+?
+6165
+3195.0
+1417.5
+?
+3213
+1795.5
+3037.5
+?
+6481
+3443.5
+2021-11-03
+Wednesday
+52
+36 veganYoghurt
+8 fullEnglish
+8 toast
+36 quornChilli
+8 vegSpagBol
+8 ratatouille
+4 eggFriedRice
+35 breadRolls
+49 peanutCookies
+36 quornChilli
+8 vegSpagBol
+8 ratatouille
+4 eggFriedRice
+35 breadRolls
+49 peanutCookies
+0 bananaIceCream
+0 canOfBeer
+168000.0
+?
+168413
+413.0
+18900.0
+?
+21350
+2450.0
+3696.0
+?
+5132
+1436.0
+1764.0
+?
+4029
+2265.0
+3780.0
+?
+8318
+4538.0
+2021-11-04
+Thursday
+52
+36 pancakes
+8 yoghurt
+8 veganFullEnglish
+36 veganPizza
+8 lambMoussaka
+8 marghertia
+2 beans
+44 broccoli
+48 cheeseBiscuits
+36 veganPizza
+8 lambMoussaka
+8 marghertia
+2 beans
+44 broccoli
+48 cheeseBiscuits
+0 bananaIceCream
+0 canOfBeer
+168000.0
+?
+188739
+20739.0
+18900.0
+?
+19772
+872.0
+3696.0
+?
+8526
+4830.0
+1764.0
+?
+1765
+1.0
+3780.0
+?
+7069
+3289.0
+2021-11-05
+Friday
+59
+41 toast
+9 pancakes
+9 fullEnglish
+41 jacketSpud
+9 quornLasagne
+9 kievs
+0 chips
+4 peas
+59 spongeCustard
+41 jacketSpud
+9 quornLasagne
+9 kievs
+0 chips
+4 peas
+59 spongeCustard
+0 bananaIceCream
+0 canOfBeer
+190000.0
+?
+215338
+25338.0
+21375.0
+?
+24194
+2819.0
+4180.0
+?
+10085
+5905.0
+1995.0
+?
+2734
+739.0
+4275.0
+?
+6772
+2497.0
+2021-11-06
+Saturday
+44
+30 yoghurt
+7 veganYoghurt
+7 veganPorridge
+30 beefBurgers
+7 mushroomSoup
+7 chickenNoodles
+24 veganSausages
+0 Rice
+42 chocolateCake
+30 beefBurgers
+7 mushroomSoup
+7 chickenNoodles
+24 veganSausages
+0 Rice
+42 chocolateCake
+0 bananaIceCream
+0 canOfBeer
+160000.0
+?
+211092
+51092.0
+18000.0
+?
+18478
+478.0
+3520.0
+?
+9364
+5844.0
+1680.0
+?
+1681
+1.0
+3600.0
+?
+5747
+2147.0
+2021-11-07
+Sunday
+44
+30 fullEnglish
+7 veganPorridge
+7 yoghurt
+30 mushroomRisotto
+7 pepperoniPizza
+7 vegChowMein
+44 bakedPotato
+19 roastPotatoes
+42 berryCrumble
+30 mushroomRisotto
+7 pepperoniPizza
+7 vegChowMein
+44 bakedPotato
+19 roastPotatoes
+42 berryCrumble
+0 bananaIceCream
+0 canOfBeer
+151000.0
+?
+157552
+6552.0
+16987.5
+?
+17042
+54.5
+3322.0
+?
+6137
+2815.0
+1585.5
+?
+1739
+153.5
+3397.5
+?
+4473
+1075.5
+2021-11-08
+Monday
+54
+36 veganFullEnglish
+9 toast
+9 pancakes
+36 veganCanneloni
+9 sushi
+9 potatoCurry
+27 nutBake
+50 boiledEggs
+53 walnutCake
+36 veganCanneloni
+9 sushi
+9 potatoCurry
+27 nutBake
+50 boiledEggs
+53 walnutCake
+54 peanutCookies
+54 glassOfWine
+187000.0
+?
+235340
+48340.0
+21037.5
+?
+21038
+0.5
+4114.0
+?
+13514
+9400.0
+1963.5
+?
+2082
+118.5
+4207.5
+?
+5407
+1199.5
+2021-11-09
+Tuesday
+51
+35 veganPorridge
+8 veganFullEnglish
+8 veganYoghurt
+35 veganSausageCasserole
+8 fishAndChips
+8 beanChilli
+48 porkSausages
+32 yorkshirePuddings
+51 chocolateMousse
+35 veganSausageCasserole
+8 fishAndChips
+8 beanChilli
+48 porkSausages
+32 yorkshirePuddings
+51 chocolateMousse
+0 peanutCookies
+0 glassOfWine
+178500.0
+?
+200125
+21625.0
+20081.25
+?
+20083
+1.75
+3927.0
+?
+8229
+4302.0
+1874.25
+?
+4323
+2448.75
+4016.25
+?
+8550
+4533.75
+2021-11-10
+Wednesday
+51
+35 veganYoghurt
+8 fullEnglish
+8 toast
+35 quornChilli
+8 vegSpagBol
+8 ratatouille
+3 eggFriedRice
+47 breadRolls
+51 peanutCookies
+35 quornChilli
+8 vegSpagBol
+8 ratatouille
+3 eggFriedRice
+47 breadRolls
+51 peanutCookies
+0 peanutCookies
+0 glassOfWine
+177000.0
+?
+177200
+200.0
+19912.5
+?
+22473
+2560.5
+3894.0
+?
+5515
+1621.0
+1858.5
+?
+4018
+2159.5
+3982.5
+?
+8516
+4533.5
+2021-11-11
+Thursday
+51
+35 pancakes
+8 yoghurt
+8 veganFullEnglish
+35 veganPizza
+8 lambMoussaka
+8 marghertia
+5 beans
+50 broccoli
+48 cheeseBiscuits
+35 veganPizza
+8 lambMoussaka
+8 marghertia
+5 beans
+50 broccoli
+48 cheeseBiscuits
+0 peanutCookies
+0 glassOfWine
+177000.0
+?
+189431
+12431.0
+19912.5
+?
+19919
+6.5
+3894.0
+?
+8485
+4591.0
+1858.5
+?
+1876
+17.5
+3982.5
+?
+7192
+3209.5
+2021-11-12
+Friday
+51
+35 toast
+8 pancakes
+8 fullEnglish
+35 jacketSpud
+8 quornLasagne
+8 kievs
+0 chips
+3 peas
+48 spongeCustard
+35 jacketSpud
+8 quornLasagne
+8 kievs
+0 chips
+3 peas
+48 spongeCustard
+0 peanutCookies
+0 glassOfWine
+177000.0
+?
+182538
+5538.0
+19912.5
+?
+20392
+479.5
+3894.0
+?
+8556
+4662.0
+1858.5
+?
+2345
+486.5
+3982.5
+?
+5809
+1826.5
+2021-11-13
+Saturday
+51
+35 yoghurt
+8 veganYoghurt
+8 veganPorridge
+35 beefBurgers
+8 mushroomSoup
+8 chickenNoodles
+13 veganSausages
+0 Rice
+48 chocolateCake
+35 beefBurgers
+8 mushroomSoup
+8 chickenNoodles
+13 veganSausages
+0 Rice
+48 chocolateCake
+0 peanutCookies
+0 glassOfWine
+177000.0
+?
+239904
+62904.0
+19912.5
+?
+21205
+1292.5
+3894.0
+?
+10490
+6596.0
+1858.5
+?
+1861
+2.5
+3982.5
+?
+6429
+2446.5
+2021-11-14
+Sunday
+54
+36 fullEnglish
+9 veganPorridge
+9 yoghurt
+36 mushroomRisotto
+9 pepperoniPizza
+9 vegChowMein
+54 bakedPotato
+19 roastPotatoes
+53 berryCrumble
+36 mushroomRisotto
+9 pepperoniPizza
+9 vegChowMein
+54 bakedPotato
+19 roastPotatoes
+53 berryCrumble
+0 peanutCookies
+0 glassOfWine
+184000.0
+?
+192043
+8043.0
+20700.0
+?
+20764
+64.0
+4048.0
+?
+7493
+3445.0
+1932.0
+?
+2099
+167.0
+4140.0
+?
+5477
+1337.0
+2021-11-15
+Monday
+65
+45 veganFullEnglish
+10 toast
+10 pancakes
+45 veganCanneloni
+10 sushi
+10 potatoCurry
+23 nutBake
+54 boiledEggs
+56 walnutCake
+45 veganCanneloni
+10 sushi
+10 potatoCurry
+23 nutBake
+54 boiledEggs
+56 walnutCake
+65 bananaIceCream
+65 canOfBeer
+219500.0
+?
+265215
+45715.0
+24693.75
+?
+24694
+0.25
+4829.0
+?
+14748
+9919.0
+2304.75
+?
+2397
+92.25
+4938.75
+?
+6019
+1080.25
+2021-11-16
+Tuesday
+62
+42 veganPorridge
+10 veganFullEnglish
+10 veganYoghurt
+42 veganSausageCasserole
+10 fishAndChips
+10 beanChilli
+62 porkSausages
+28 yorkshirePuddings
+62 chocolateMousse
+42 veganSausageCasserole
+10 fishAndChips
+10 beanChilli
+62 porkSausages
+28 yorkshirePuddings
+62 chocolateMousse
+0 bananaIceCream
+0 canOfBeer
+213500.0
+?
+240961
+27461.0
+24018.75
+?
+24020
+1.25
+4697.0
+?
+9937
+5240.0
+2241.75
+?
+5236
+2994.25
+4803.75
+?
+10325
+5521.25
+2021-11-17
+Wednesday
+74
+50 veganYoghurt
+12 fullEnglish
+12 toast
+50 quornChilli
+12 vegSpagBol
+12 ratatouille
+1 eggFriedRice
+65 breadRolls
+70 peanutCookies
+50 quornChilli
+12 vegSpagBol
+12 ratatouille
+1 eggFriedRice
+65 breadRolls
+70 peanutCookies
+0 bananaIceCream
+0 canOfBeer
+249000.0
+?
+249481
+481.0
+28012.5
+?
+31680
+3667.5
+5478.0
+?
+7716
+2238.0
+2614.5
+?
+5743
+3128.5
+5602.5
+?
+12035
+6432.5
+2021-11-18
+Thursday
+83
+57 pancakes
+13 yoghurt
+13 veganFullEnglish
+57 veganPizza
+13 lambMoussaka
+13 marghertia
+8 beans
+0 broccoli
+83 cheeseBiscuits
+57 veganPizza
+13 lambMoussaka
+13 marghertia
+8 beans
+0 broccoli
+83 cheeseBiscuits
+0 bananaIceCream
+0 canOfBeer
+271000.0
+?
+312568
+41568.0
+30487.5
+?
+32075
+1587.5
+5962.0
+?
+14304
+8342.0
+2845.5
+?
+2847
+1.5
+6097.5
+?
+11843
+5745.5
+2021-11-19
+Friday
+93
+63 toast
+15 pancakes
+15 fullEnglish
+63 jacketSpud
+15 quornLasagne
+15 kievs
+0 chips
+2 peas
+91 spongeCustard
+63 jacketSpud
+15 quornLasagne
+15 kievs
+0 chips
+2 peas
+91 spongeCustard
+0 bananaIceCream
+0 canOfBeer
+297500.0
+?
+336272
+38772.0
+33468.75
+?
+37535
+4066.25
+6545.0
+?
+15786
+9241.0
+3123.75
+?
+4229
+1105.25
+6693.75
+?
+10672
+3978.25
+2021-11-20
+Saturday
+84
+56 yoghurt
+14 veganYoghurt
+14 veganPorridge
+56 beefBurgers
+14 mushroomSoup
+14 chickenNoodles
+2 veganSausages
+2 Rice
+80 chocolateCake
+56 beefBurgers
+14 mushroomSoup
+14 chickenNoodles
+2 veganSausages
+2 Rice
+80 chocolateCake
+0 bananaIceCream
+0 canOfBeer
+277500.0
+?
+385016
+107516.0
+31218.75
+?
+34243
+3024.25
+6105.0
+?
+16828
+10723.0
+2913.75
+?
+2914
+0.25
+6243.75
+?
+10133
+3889.25
+2021-11-21
+Sunday
+88
+60 fullEnglish
+14 veganPorridge
+14 yoghurt
+60 mushroomRisotto
+14 pepperoniPizza
+14 vegChowMein
+88 bakedPotato
+5 roastPotatoes
+84 berryCrumble
+60 mushroomRisotto
+14 pepperoniPizza
+14 vegChowMein
+88 bakedPotato
+5 roastPotatoes
+84 berryCrumble
+0 bananaIceCream
+0 canOfBeer
+282500.0
+?
+299509
+17009.0
+31781.25
+?
+31831
+49.75
+6215.0
+?
+11647
+5432.0
+2966.25
+?
+3208
+241.75
+6356.25
+?
+8682
+2325.75
+2021-11-22
+Monday
+85
+57 veganFullEnglish
+14 toast
+14 pancakes
+57 veganCanneloni
+14 sushi
+14 potatoCurry
+16 nutBake
+7 boiledEggs
+78 walnutCake
+57 veganCanneloni
+14 sushi
+14 potatoCurry
+16 nutBake
+7 boiledEggs
+78 walnutCake
+85 peanutCookies
+85 glassOfWine
+276500.0
+?
+318935
+42435.0
+31106.25
+?
+32076
+969.75
+6083.0
+?
+16899
+10816.0
+2903.25
+?
+2916
+12.75
+6221.25
+?
+6621
+399.75
+2021-11-23
+Tuesday
+95
+65 veganPorridge
+15 veganFullEnglish
+15 veganYoghurt
+65 veganSausageCasserole
+15 fishAndChips
+15 beanChilli
+8 porkSausages
+3 yorkshirePuddings
+92 chocolateMousse
+65 veganSausageCasserole
+15 fishAndChips
+15 beanChilli
+8 porkSausages
+3 yorkshirePuddings
+92 chocolateMousse
+0 peanutCookies
+0 glassOfWine
+306000.0
+?
+310701
+4701.0
+34425.0
+?
+34746
+321.0
+6732.0
+?
+10984
+4252.0
+3213.0
+?
+7829
+4616.0
+6885.0
+?
+13074
+6189.0
+2021-11-24
+Wednesday
+95
+65 veganYoghurt
+15 fullEnglish
+15 toast
+65 quornChilli
+15 vegSpagBol
+15 ratatouille
+8 eggFriedRice
+59 breadRolls
+92 peanutCookies
+65 quornChilli
+15 vegSpagBol
+15 ratatouille
+8 eggFriedRice
+59 breadRolls
+92 peanutCookies
+0 peanutCookies
+0 glassOfWine
+306000.0
+?
+306260
+260.0
+34425.0
+?
+38525
+4100.0
+6732.0
+?
+9443
+2711.0
+3213.0
+?
+7332
+4119.0
+6885.0
+?
+15153
+8268.0
+2021-11-25
+Thursday
+105
+71 pancakes
+17 yoghurt
+17 veganFullEnglish
+71 veganPizza
+17 lambMoussaka
+17 marghertia
+8 beans
+1 broccoli
+96 cheeseBiscuits
+71 veganPizza
+17 lambMoussaka
+17 marghertia
+8 beans
+1 broccoli
+96 cheeseBiscuits
+0 peanutCookies
+0 glassOfWine
+332500.0
+?
+381829
+49329.0
+37406.25
+?
+39870
+2463.75
+7315.0
+?
+17252
+9937.0
+3491.25
+?
+3507
+15.75
+7481.25
+?
+14268
+6786.75
+2021-11-26
+Friday
+105
+71 toast
+17 pancakes
+17 fullEnglish
+71 jacketSpud
+17 quornLasagne
+17 kievs
+0 chips
+9 peas
+96 spongeCustard
+71 jacketSpud
+17 quornLasagne
+17 kievs
+0 chips
+9 peas
+96 spongeCustard
+0 peanutCookies
+0 glassOfWine
+332500.0
+?
+372730
+40230.0
+37406.25
+?
+41487
+4080.75
+7315.0
+?
+17463
+10148.0
+3491.25
+?
+4819
+1327.75
+7481.25
+?
+11972
+4490.75
+2021-11-27
+Saturday
+108
+72 yoghurt
+18 veganYoghurt
+18 veganPorridge
+72 beefBurgers
+18 mushroomSoup
+18 chickenNoodles
+0 veganSausages
+11 Rice
+99 chocolateCake
+72 beefBurgers
+18 mushroomSoup
+18 chickenNoodles
+0 veganSausages
+11 Rice
+99 chocolateCake
+0 peanutCookies
+0 glassOfWine
+340000.0
+?
+492394
+152394.0
+38250.0
+?
+44044
+5794.0
+7480.0
+?
+21348
+13868.0
+3570.0
+?
+3703
+133.0
+7650.0
+?
+12983
+5333.0
+2021-11-28
+Sunday
+108
+72 fullEnglish
+18 veganPorridge
+18 yoghurt
+72 mushroomRisotto
+18 pepperoniPizza
+18 vegChowMein
+108 bakedPotato
+1 roastPotatoes
+99 berryCrumble
+72 mushroomRisotto
+18 pepperoniPizza
+18 vegChowMein
+108 bakedPotato
+1 roastPotatoes
+99 berryCrumble
+0 peanutCookies
+0 glassOfWine
+340000.0
+?
+361249
+21249.0
+38250.0
+?
+38266
+16.0
+7480.0
+?
+14055
+6575.0
+3570.0
+?
+3866
+296.0
+7650.0
+?
+10582
+2932.0
+2021-11-29
+Monday
+108
+72 veganFullEnglish
+18 toast
+18 pancakes
+72 veganCanneloni
+18 sushi
+18 potatoCurry
+12 nutBake
+11 boiledEggs
+97 walnutCake
+72 veganCanneloni
+18 sushi
+18 potatoCurry
+12 nutBake
+11 boiledEggs
+97 walnutCake
+108 bananaIceCream
+108 canOfBeer
+340000.0
+?
+391343
+51343.0
+38250.0
+?
+40324
+2074.0
+7480.0
+?
+20269
+12789.0
+3570.0
+?
+3578
+8.0
+7650.0
+?
+8130
+480.0
+2021-11-30
+Tuesday
+105
+71 veganPorridge
+17 veganFullEnglish
+17 veganYoghurt
+71 veganSausageCasserole
+17 shepherdsPie
+17 beanChilli
+3 boiledEggs
+35 yorkshirePuddings
+102 berryCrumble
+71 veganSausageCasserole
+17 shepherdsPie
+17 beanChilli
+3 boiledEggs
+35 yorkshirePuddings
+102 berryCrumble
+0 bananaIceCream
+0 canOfBeer
+334000.0
+?
+334318
+318.0
+37575.0
+?
+45255
+7680.0
+7348.0
+?
+9178
+1830.0
+3507.0
+?
+8231
+4724.0
+7515.0
+?
+13892
+6377.0
+2021-12-01
+Wednesday
+105
+53 veganYoghurt
+35 fullEnglish
+17 toast
+17 fishPaella
+17 sushi
+71 potatoCurry
+3 eggFriedRice
+104 breadRolls
+105 chocolateCake
+17 fishPaella
+17 sushi
+71 potatoCurry
+3 eggFriedRice
+104 breadRolls
+105 chocolateCake
+0 bananaIceCream
+0 canOfBeer
+332500.0
+?
+341211
+8711.0
+37406.25
+?
+41611
+4204.75
+7315.0
+?
+13158
+5843.0
+3491.25
+?
+3494
+2.75
+7481.25
+?
+11208
+3726.75
+2021-12-02
+Thursday
+105
+19 pancakes
+17 yoghurt
+69 veganFullEnglish
+71 vegSpagBol
+17 ratatouille
+17 lambMoussaka
+105 beans
+104 broccoli
+105 chocolateMousse
+71 vegSpagBol
+17 ratatouille
+17 lambMoussaka
+105 beans
+104 broccoli
+105 chocolateMousse
+0 bananaIceCream
+0 canOfBeer
+332500.0
+?
+340507
+8007.0
+37406.25
+?
+37412
+5.75
+7315.0
+?
+12734
+5419.0
+3491.25
+?
+8969
+5477.75
+7481.25
+?
+14990
+7508.75
+2021-12-03
+Friday
+115
+77 toast
+19 pancakes
+19 fullEnglish
+77 marghertia
+19 quornLasagne
+19 mushroomRisotto
+1 chips
+11 peas
+115 bananaIceCream
+77 marghertia
+19 quornLasagne
+19 mushroomRisotto
+1 chips
+11 peas
+115 bananaIceCream
+0 bananaIceCream
+0 canOfBeer
+363000.0
+?
+387013
+24013.0
+40837.5
+?
+48823
+7985.5
+7986.0
+?
+14184
+6198.0
+3811.5
+?
+3812
+0.5
+8167.5
+?
+11850
+3682.5
+2021-12-04
+Saturday
+125
+85 yoghurt
+20 veganYoghurt
+20 veganPorridge
+85 jacketSpud
+20 kievs
+20 chickenNoodles
+123 veganSausages
+115 Rice
+124 walnutCake
+85 jacketSpud
+20 kievs
+20 chickenNoodles
+123 veganSausages
+115 Rice
+124 walnutCake
+0 bananaIceCream
+0 canOfBeer
+391000.0
+?
+481076
+90076.0
+43987.5
+?
+43997
+9.5
+8602.0
+?
+27448
+18846.0
+4105.5
+?
+5993
+1887.5
+8797.5
+?
+13982
+5184.5
+2021-12-05
+Sunday
+125
+85 fullEnglish
+20 veganPorridge
+20 yoghurt
+85 mushroomSoup
+20 pepperoniPizza
+20 vegChowMein
+125 bakedPotato
+113 roastPotatoes
+124 peanutCookies
+85 mushroomSoup
+20 pepperoniPizza
+20 vegChowMein
+125 bakedPotato
+113 roastPotatoes
+124 peanutCookies
+0 bananaIceCream
+0 canOfBeer
+391000.0
+?
+477612
+86612.0
+43987.5
+?
+44052
+64.5
+8602.0
+?
+23573
+14971.0
+4105.5
+?
+6260
+2154.5
+8797.5
+?
+16651
+7853.5
+2021-12-06
+Monday
+125
+85 veganFullEnglish
+20 toast
+20 pancakes
+85 veganPizza
+20 fishAndChips
+20 mushroomOmelette
+2 nutBake
+28 porkSausages
+123 jelly
+85 veganPizza
+20 fishAndChips
+20 mushroomOmelette
+2 nutBake
+28 porkSausages
+123 jelly
+125 bananaIceCream
+125 canOfBeer
+391000.0
+?
+391141
+141.0
+43987.5
+?
+50417
+6429.5
+8602.0
+?
+11991
+3389.0
+4105.5
+?
+5296
+1190.5
+8797.5
+?
+12288
+3490.5
+2021-12-07
+Tuesday
+125
+85 veganPorridge
+20 veganFullEnglish
+20 veganYoghurt
+85 veganSausageCasserole
+20 shepherdsPie
+20 beanChilli
+7 boiledEggs
+30 yorkshirePuddings
+118 berryCrumble
+85 veganSausageCasserole
+20 shepherdsPie
+20 beanChilli
+7 boiledEggs
+30 yorkshirePuddings
+118 berryCrumble
+0 bananaIceCream
+0 canOfBeer
+391000.0
+?
+391351
+351.0
+43987.5
+?
+53078
+9090.5
+8602.0
+?
+10621
+2019.0
+4105.5
+?
+9779
+5673.5
+8797.5
+?
+16369
+7571.5
+2021-12-08
+Wednesday
+125
+66 veganYoghurt
+39 fullEnglish
+20 toast
+20 fishPaella
+20 sushi
+85 potatoCurry
+7 eggFriedRice
+124 breadRolls
+124 chocolateCake
+20 fishPaella
+20 sushi
+85 potatoCurry
+7 eggFriedRice
+124 breadRolls
+124 chocolateCake
+0 bananaIceCream
+0 canOfBeer
+391000.0
+?
+402408
+11408.0
+43987.5
+?
+49353
+5365.5
+8602.0
+?
+15446
+6844.0
+4105.5
+?
+4109
+3.5
+8797.5
+?
+13234
+4436.5
+2021-12-09
+Thursday
+124
+23 pancakes
+20 yoghurt
+81 veganFullEnglish
+84 vegSpagBol
+20 ratatouille
+20 lambMoussaka
+124 beans
+122 broccoli
+113 chocolateMousse
+84 vegSpagBol
+20 ratatouille
+20 lambMoussaka
+124 beans
+122 broccoli
+113 chocolateMousse
+0 bananaIceCream
+0 canOfBeer
+389000.0
+?
+393651
+4651.0
+43762.5
+?
+43765
+2.5
+8558.0
+?
+14371
+5813.0
+4084.5
+?
+10504
+6419.5
+8752.5
+?
+17520
+8767.5
+2021-12-10
+Friday
+124
+84 toast
+20 pancakes
+20 fullEnglish
+84 marghertia
+20 quornLasagne
+20 mushroomRisotto
+0 chips
+11 peas
+124 bananaIceCream
+84 marghertia
+20 quornLasagne
+20 mushroomRisotto
+0 chips
+11 peas
+124 bananaIceCream
+0 bananaIceCream
+0 canOfBeer
+386500.0
+?
+415478
+28978.0
+43481.25
+?
+52603
+9121.75
+8503.0
+?
+15251
+6748.0
+4058.25
+?
+4076
+17.75
+8696.25
+?
+12763
+4066.75
+2021-12-11
+Saturday
+124
+77 yoghurt
+20 veganYoghurt
+27 veganPorridge
+84 jacketSpud
+20 kievs
+20 chickenNoodles
+124 veganSausages
+124 Rice
+113 walnutCake
+84 jacketSpud
+20 kievs
+20 chickenNoodles
+124 veganSausages
+124 Rice
+113 walnutCake
+0 bananaIceCream
+0 canOfBeer
+386500.0
+?
+470763
+84263.0
+43481.25
+?
+43483
+1.75
+8503.0
+?
+26541
+18038.0
+4058.25
+?
+5947
+1888.75
+8696.25
+?
+13823
+5126.75
+2021-12-12
+Sunday
+124
+84 fullEnglish
+20 veganPorridge
+20 yoghurt
+84 mushroomSoup
+20 pepperoniPizza
+20 vegChowMein
+124 bakedPotato
+119 roastPotatoes
+113 peanutCookies
+84 mushroomSoup
+20 pepperoniPizza
+20 vegChowMein
+124 bakedPotato
+119 roastPotatoes
+113 peanutCookies
+0 bananaIceCream
+0 canOfBeer
+386500.0
+?
+467889
+81389.0
+43481.25
+?
+43544
+62.75
+8503.0
+?
+22962
+14459.0
+4058.25
+?
+6163
+2104.75
+8696.25
+?
+16204
+7507.75
+2021-12-13
+Monday
+119
+81 veganFullEnglish
+19 toast
+19 pancakes
+81 veganPizza
+19 fishAndChips
+19 mushroomOmelette
+1 nutBake
+44 porkSausages
+118 jelly
+81 veganPizza
+19 fishAndChips
+19 mushroomOmelette
+1 nutBake
+44 porkSausages
+118 jelly
+119 peanutCookies
+119 glassOfWine
+379000.0
+?
+379456
+456.0
+42637.5
+?
+48124
+5486.5
+8338.0
+?
+11953
+3615.0
+3979.5
+?
+5062
+1082.5
+8527.5
+?
+12087
+3559.5
+2021-12-14
+Tuesday
+119
+81 veganPorridge
+19 veganFullEnglish
+19 veganYoghurt
+81 veganSausageCasserole
+19 shepherdsPie
+19 beanChilli
+4 boiledEggs
+24 yorkshirePuddings
+115 berryCrumble
+81 veganSausageCasserole
+19 shepherdsPie
+19 beanChilli
+4 boiledEggs
+24 yorkshirePuddings
+115 berryCrumble
+0 peanutCookies
+0 glassOfWine
+372000.0
+?
+372393
+393.0
+41850.0
+?
+50632
+8782.0
+8184.0
+?
+10078
+1894.0
+3906.0
+?
+9317
+5411.0
+8370.0
+?
+15508
+7138.0
+2021-12-15
+Wednesday
+127
+66 veganYoghurt
+40 fullEnglish
+21 toast
+21 fishPaella
+21 sushi
+85 potatoCurry
+6 eggFriedRice
+125 breadRolls
+121 chocolateCake
+21 fishPaella
+21 sushi
+85 potatoCurry
+6 eggFriedRice
+125 breadRolls
+121 chocolateCake
+0 peanutCookies
+0 glassOfWine
+392500.0
+?
+403860
+11360.0
+44156.25
+?
+49444
+5287.75
+8635.0
+?
+15440
+6805.0
+4121.25
+?
+4124
+2.75
+8831.25
+?
+13435
+4603.75
+2021-12-16
+Thursday
+135
+50 pancakes
+22 yoghurt
+63 veganFullEnglish
+26 vegSpagBol
+22 ratatouille
+87 lambMoussaka
+135 beans
+135 broccoli
+131 chocolateMousse
+26 vegSpagBol
+22 ratatouille
+87 lambMoussaka
+135 beans
+135 broccoli
+131 chocolateMousse
+0 peanutCookies
+0 glassOfWine
+412000.0
+?
+443879
+31879.0
+46350.0
+?
+46352
+2.0
+9064.0
+?
+18587
+9523.0
+4326.0
+?
+11801
+7475.0
+9270.0
+?
+19780
+10510.0
+2021-12-17
+Friday
+154
+104 toast
+25 pancakes
+25 fullEnglish
+104 marghertia
+25 quornLasagne
+25 mushroomRisotto
+0 chips
+18 peas
+154 bananaIceCream
+104 marghertia
+25 quornLasagne
+25 mushroomRisotto
+0 chips
+18 peas
+154 bananaIceCream
+0 peanutCookies
+0 glassOfWine
+478000.0
+?
+516039
+38039.0
+53775.0
+?
+65326
+11551.0
+10516.0
+?
+18925
+8409.0
+5019.0
+?
+5096
+77.0
+10755.0
+?
+15874
+5119.0
+2021-12-18
+Saturday
+154
+100 yoghurt
+25 veganYoghurt
+29 veganPorridge
+104 jacketSpud
+25 kievs
+25 chickenNoodles
+154 veganSausages
+154 Rice
+140 walnutCake
+104 jacketSpud
+25 kievs
+25 chickenNoodles
+154 veganSausages
+154 Rice
+140 walnutCake
+0 peanutCookies
+0 glassOfWine
+478000.0
+?
+583928
+105928.0
+53775.0
+?
+53776
+1.0
+10516.0
+?
+33008
+22492.0
+5019.0
+?
+7352
+2333.0
+10755.0
+?
+17181
+6426.0
+2021-12-19
+Sunday
+154
+104 fullEnglish
+25 veganPorridge
+25 yoghurt
+104 mushroomSoup
+25 pepperoniPizza
+25 vegChowMein
+154 bakedPotato
+144 roastPotatoes
+140 peanutCookies
+104 mushroomSoup
+25 pepperoniPizza
+25 vegChowMein
+154 bakedPotato
+144 roastPotatoes
+140 peanutCookies
+0 peanutCookies
+0 glassOfWine
+478000.0
+?
+578909
+100909.0
+53775.0
+?
+53809
+34.0
+10516.0
+?
+28417
+17901.0
+5019.0
+?
+7616
+2597.0
+10755.0
+?
+20084
+9329.0
+2021-12-20
+Monday
+146
+98 veganFullEnglish
+24 toast
+24 pancakes
+98 veganPizza
+24 fishAndChips
+24 mushroomOmelette
+0 nutBake
+55 porkSausages
+141 jelly
+98 veganPizza
+24 fishAndChips
+24 mushroomOmelette
+0 nutBake
+55 porkSausages
+141 jelly
+146 bananaIceCream
+146 canOfBeer
+462000.0
+?
+462147
+147.0
+51975.0
+?
+58449
+6474.0
+10164.0
+?
+14564
+4400.0
+4851.0
+?
+6142
+1291.0
+10395.0
+?
+14812
+4417.0
+2021-12-21
+Tuesday
+146
+98 veganPorridge
+24 veganFullEnglish
+24 veganYoghurt
+98 veganSausageCasserole
+24 shepherdsPie
+24 beanChilli
+4 boiledEggs
+33 yorkshirePuddings
+142 berryCrumble
+98 veganSausageCasserole
+24 shepherdsPie
+24 beanChilli
+4 boiledEggs
+33 yorkshirePuddings
+142 berryCrumble
+0 bananaIceCream
+0 canOfBeer
+458500.0
+?
+458661
+161.0
+51581.25
+?
+62315
+10733.75
+10087.0
+?
+12457
+2370.0
+4814.25
+?
+11407
+6592.75
+10316.25
+?
+19079
+8762.75
+2021-12-22
+Wednesday
+144
+72 veganYoghurt
+48 fullEnglish
+24 toast
+24 fishPaella
+24 sushi
+96 potatoCurry
+5 eggFriedRice
+143 breadRolls
+144 chocolateCake
+24 fishPaella
+24 sushi
+96 potatoCurry
+5 eggFriedRice
+143 breadRolls
+144 chocolateCake
+0 bananaIceCream
+0 canOfBeer
+454500.0
+?
+469423
+14923.0
+51131.25
+?
+57132
+6000.75
+9999.0
+?
+18120
+8121.0
+4772.25
+?
+4776
+3.75
+10226.25
+?
+15481
+5254.75
+2021-12-23
+Thursday
+153
+41 pancakes
+25 yoghurt
+87 veganFullEnglish
+28 vegSpagBol
+25 ratatouille
+100 lambMoussaka
+153 beans
+153 broccoli
+153 chocolateMousse
+28 vegSpagBol
+25 ratatouille
+100 lambMoussaka
+153 beans
+153 broccoli
+153 chocolateMousse
+0 bananaIceCream
+0 canOfBeer
+482000.0
+?
+523721
+41721.0
+54225.0
+?
+54230
+5.0
+10604.0
+?
+21944
+11340.0
+5061.0
+?
+13830
+8769.0
+10845.0
+?
+23150
+12305.0
+2021-12-24
+Friday
+152
+102 toast
+25 pancakes
+25 fullEnglish
+102 jacketSpud
+25 quornLasagne
+25 mushroomRisotto
+12 chips
+3 peas
+139 walnutCake
+102 jacketSpud
+25 quornLasagne
+25 mushroomRisotto
+12 chips
+3 peas
+139 walnutCake
+0 bananaIceCream
+0 canOfBeer
+480000.0
+?
+524355
+44355.0
+54000.0
+?
+54035
+35.0
+10560.0
+?
+25606
+15046.0
+5040.0
+?
+7266
+2226.0
+10800.0
+?
+14032
+3232.0
+2021-12-25
+Saturday
+152
+102 yoghurt
+25 veganYoghurt
+25 veganPorridge
+102 beanChilli
+25 kievs
+25 chickenNoodles
+136 veganSausages
+152 Rice
+152 bananaIceCream
+102 beanChilli
+25 kievs
+25 chickenNoodles
+136 veganSausages
+152 Rice
+152 bananaIceCream
+0 bananaIceCream
+0 canOfBeer
+477500.0
+?
+477713
+213.0
+53718.75
+?
+60364
+6645.25
+10505.0
+?
+16049
+5544.0
+5013.75
+?
+10422
+5408.25
+10743.75
+?
+19743
+8999.25
+2021-12-26
+Sunday
+152
+102 fullEnglish
+25 veganPorridge
+25 yoghurt
+102 mushroomSoup
+25 pepperoniPizza
+25 vegChowMein
+152 bakedPotato
+150 roastPotatoes
+139 peanutCookies
+102 mushroomSoup
+25 pepperoniPizza
+25 vegChowMein
+152 bakedPotato
+150 roastPotatoes
+139 peanutCookies
+0 bananaIceCream
+0 canOfBeer
+477500.0
+?
+575691
+98191.0
+53718.75
+?
+53721
+2.25
+10505.0
+?
+28222
+17717.0
+5013.75
+?
+7585
+2571.25
+10743.75
+?
+19919
+9175.25
+2021-12-27
+Monday
+152
+102 veganFullEnglish
+25 toast
+25 pancakes
+102 veganPizza
+25 fishAndChips
+25 mushroomOmelette
+0 nutBake
+15 boiledEggs
+152 veganFruitYoghurt
+102 veganPizza
+25 fishAndChips
+25 mushroomOmelette
+0 nutBake
+15 boiledEggs
+152 veganFruitYoghurt
+0 bananaIceCream
+0 canOfBeer
+477500.0
+?
+477790
+290.0
+53718.75
+?
+60118
+6399.25
+10505.0
+?
+14701
+4196.0
+5013.75
+?
+7088
+2074.25
+10743.75
+?
+18963
+8219.25
+2021-12-28
+Tuesday
+161
+93 veganPorridge
+42 veganFullEnglish
+26 veganYoghurt
+109 veganSausageCasserole
+26 shepherdsPie
+26 fishPaella
+159 porkSausages
+159 yorkshirePuddings
+151 chocolateMousse
+109 veganSausageCasserole
+26 shepherdsPie
+26 fishPaella
+159 porkSausages
+159 yorkshirePuddings
+151 chocolateMousse
+0 bananaIceCream
+0 canOfBeer
+507000.0
+?
+611222
+104222.0
+57037.5
+?
+57042
+4.5
+11154.0
+?
+27306
+16152.0
+5323.5
+?
+11889
+6565.5
+11407.5
+?
+27590
+16182.5
+2021-12-29
+Wednesday
+161
+64 veganYoghurt
+26 fullEnglish
+71 toast
+102 sushi
+26 potatoCurry
+33 vegSpagBol
+161 eggFriedRice
+161 breadRolls
+161 fruitSalad
+102 sushi
+26 potatoCurry
+33 vegSpagBol
+161 eggFriedRice
+161 breadRolls
+161 fruitSalad
+0 bananaIceCream
+0 canOfBeer
+506500.0
+?
+506522
+22.0
+56981.25
+?
+72960
+15978.75
+11143.0
+?
+12526
+1383.0
+5318.25
+?
+5327
+8.75
+11396.25
+?
+19782
+8385.75
+2021-12-30
+Thursday
+164
+110 pancakes
+27 yoghurt
+27 veganFullEnglish
+110 ratatouille
+27 lambMoussaka
+27 marghertia
+118 beans
+162 broccoli
+150 chocolateCake
+110 ratatouille
+27 lambMoussaka
+27 marghertia
+118 beans
+162 broccoli
+150 chocolateCake
+164 bananaIceCream
+164 canOfBeer
+513500.0
+?
+513502
+2.0
+57768.75
+?
+66547
+8778.25
+11297.0
+?
+19736
+8439.0
+5391.75
+?
+11678
+6286.25
+11553.75
+?
+16475
+4921.25
+2021-12-31
+Friday
+164
+110 toast
+27 pancakes
+27 fullEnglish
+110 jacketSpud
+27 quornLasagne
+27 mushroomRisotto
+12 chips
+2 peas
+150 walnutCake
+110 jacketSpud
+27 quornLasagne
+27 mushroomRisotto
+12 chips
+2 peas
+150 walnutCake
+0 bananaIceCream
+0 canOfBeer
+513500.0
+?
+562693
+49193.0
+57768.75
+?
+57982
+213.25
+11297.0
+?
+27546
+16249.0
+5391.75
+?
+7802
+2410.25
+11553.75
+?
+15092
+3538.25
+2022-01-01
+Saturday
+164
+110 yoghurt
+27 veganYoghurt
+27 veganPorridge
+110 beanChilli
+27 kievs
+27 chickenNoodles
+141 veganSausages
+164 Rice
+164 bananaIceCream
+110 beanChilli
+27 kievs
+27 chickenNoodles
+141 veganSausages
+164 Rice
+164 bananaIceCream
+0 bananaIceCream
+0 canOfBeer
+513500.0
+?
+513571
+71.0
+57768.75
+?
+65031
+7262.25
+11297.0
+?
+17193
+5896.0
+5391.75
+?
+11207
+5815.25
+11553.75
+?
+21206
+9652.25
+2022-01-02
+Sunday
+164
+110 fullEnglish
+27 veganPorridge
+27 yoghurt
+110 mushroomSoup
+27 pepperoniPizza
+27 vegChowMein
+164 bakedPotato
+159 roastPotatoes
+150 peanutCookies
+110 mushroomSoup
+27 pepperoniPizza
+27 vegChowMein
+164 bakedPotato
+159 roastPotatoes
+150 peanutCookies
+0 bananaIceCream
+0 canOfBeer
+513500.0
+?
+619808
+106308.0
+57768.75
+?
+57771
+2.25
+11297.0
+?
+30396
+19099.0
+5391.75
+?
+8160
+2768.25
+11553.75
+?
+21470
+9916.25
+2022-01-03
+Monday
+164
+110 veganFullEnglish
+27 toast
+27 pancakes
+110 veganPizza
+27 fishAndChips
+27 mushroomOmelette
+14 nutBake
+9 boiledEggs
+164 veganFruitYoghurt
+110 veganPizza
+27 fishAndChips
+27 mushroomOmelette
+14 nutBake
+9 boiledEggs
+164 veganFruitYoghurt
+0 bananaIceCream
+0 canOfBeer
+513500.0
+?
+533168
+19668.0
+57768.75
+?
+65117
+7348.25
+11297.0
+?
+17515
+6218.0
+5391.75
+?
+7833
+2441.25
+11553.75
+?
+20836
+9282.25
+2022-01-04
+Tuesday
+164
+94 veganPorridge
+43 veganFullEnglish
+27 veganYoghurt
+110 veganSausageCasserole
+27 shepherdsPie
+27 fishPaella
+163 porkSausages
+162 yorkshirePuddings
+150 chocolateMousse
+110 veganSausageCasserole
+27 shepherdsPie
+27 fishPaella
+163 porkSausages
+162 yorkshirePuddings
+150 chocolateMousse
+0 bananaIceCream
+0 canOfBeer
+513500.0
+?
+619541
+106041.0
+57768.75
+?
+57771
+2.25
+11297.0
+?
+27646
+16349.0
+5391.75
+?
+12021
+6629.25
+11553.75
+?
+28058
+16504.25
+2022-01-05
+Wednesday
+164
+80 veganYoghurt
+27 fullEnglish
+57 toast
+107 sushi
+27 potatoCurry
+30 vegSpagBol
+164 eggFriedRice
+164 breadRolls
+164 fruitSalad
+107 sushi
+27 potatoCurry
+30 vegSpagBol
+164 eggFriedRice
+164 breadRolls
+164 fruitSalad
+0 bananaIceCream
+0 canOfBeer
+513500.0
+?
+513685
+185.0
+57768.75
+?
+74021
+16252.25
+11297.0
+?
+12654
+1357.0
+5391.75
+?
+5399
+7.25
+11553.75
+?
+20192
+8638.25
+2022-01-06
+Thursday
+164
+110 pancakes
+27 yoghurt
+27 veganFullEnglish
+110 ratatouille
+27 lambMoussaka
+27 marghertia
+118 beans
+162 broccoli
+150 chocolateCake
+110 ratatouille
+27 lambMoussaka
+27 marghertia
+118 beans
+162 broccoli
+150 chocolateCake
+164 peanutCookies
+164 glassOfWine
+513500.0
+?
+513502
+2.0
+57768.75
+?
+66547
+8778.25
+11297.0
+?
+19736
+8439.0
+5391.75
+?
+11678
+6286.25
+11553.75
+?
+16475
+4921.25
+2022-01-07
+Friday
+164
+110 toast
+27 pancakes
+27 fullEnglish
+110 jacketSpud
+27 quornLasagne
+27 mushroomRisotto
+12 chips
+2 peas
+150 walnutCake
+110 jacketSpud
+27 quornLasagne
+27 mushroomRisotto
+12 chips
+2 peas
+150 walnutCake
+0 peanutCookies
+0 glassOfWine
+513500.0
+?
+562693
+49193.0
+57768.75
+?
+57982
+213.25
+11297.0
+?
+27546
+16249.0
+5391.75
+?
+7802
+2410.25
+11553.75
+?
+15092
+3538.25
+2022-01-08
+Saturday
+165
+111 yoghurt
+27 veganYoghurt
+27 veganPorridge
+111 beanChilli
+27 kievs
+27 chickenNoodles
+140 veganSausages
+165 Rice
+165 bananaIceCream
+111 beanChilli
+27 kievs
+27 chickenNoodles
+140 veganSausages
+165 Rice
+165 bananaIceCream
+0 peanutCookies
+0 glassOfWine
+516000.0
+?
+516081
+81.0
+58050.0
+?
+65479
+7429.0
+11352.0
+?
+17216
+5864.0
+5418.0
+?
+11284
+5866.0
+11610.0
+?
+21307
+9697.0
+2022-01-09
+Sunday
+165
+111 fullEnglish
+27 veganPorridge
+27 yoghurt
+111 mushroomSoup
+27 pepperoniPizza
+27 vegChowMein
+165 bakedPotato
+157 roastPotatoes
+154 peanutCookies
+111 mushroomSoup
+27 pepperoniPizza
+27 vegChowMein
+165 bakedPotato
+157 roastPotatoes
+154 peanutCookies
+0 peanutCookies
+0 glassOfWine
+516000.0
+?
+625067
+109067.0
+58050.0
+?
+58107
+57.0
+11352.0
+?
+30702
+19350.0
+5418.0
+?
+8219
+2801.0
+11610.0
+?
+21690
+10080.0
+2022-01-10
+Monday
+154
+104 veganFullEnglish
+25 toast
+25 pancakes
+104 veganPizza
+25 fishAndChips
+25 mushroomOmelette
+19 nutBake
+5 boiledEggs
+154 veganFruitYoghurt
+104 veganPizza
+25 fishAndChips
+25 mushroomOmelette
+19 nutBake
+5 boiledEggs
+154 veganFruitYoghurt
+0 peanutCookies
+0 glassOfWine
+494000.0
+?
+508672
+14672.0
+55575.0
+?
+61457
+5882.0
+10868.0
+?
+17127
+6259.0
+5187.0
+?
+7453
+2266.0
+11115.0
+?
+19710
+8595.0
+2022-01-11
+Tuesday
+154
+89 veganPorridge
+40 veganFullEnglish
+25 veganYoghurt
+104 veganSausageCasserole
+25 shepherdsPie
+25 fishPaella
+153 porkSausages
+152 yorkshirePuddings
+135 chocolateMousse
+104 veganSausageCasserole
+25 shepherdsPie
+25 fishPaella
+153 porkSausages
+152 yorkshirePuddings
+135 chocolateMousse
+0 peanutCookies
+0 glassOfWine
+481500.0
+?
+577841
+96341.0
+54168.75
+?
+54169
+0.25
+10593.0
+?
+25596
+15003.0
+5055.75
+?
+11290
+6234.25
+10833.75
+?
+26260
+15426.25
+2021-12-24
+Friday
+152
+102 toast
+25 pancakes
+25 fullEnglish
+102 jacketSpud
+25 quornLasagne
+25 mushroomRisotto
+12 chips
+3 peas
+139 walnutCake
+102 jacketSpud
+25 quornLasagne
+25 mushroomRisotto
+12 chips
+3 peas
+139 walnutCake
+0 bananaIceCream
+0 canOfBeer
+480000.0
+?
+524355
+44355.0
+54000.0
+?
+54035
+35.0
+10560.0
+?
+25606
+15046.0
+5040.0
+?
+7266
+2226.0
+10800.0
+?
+14032
+3232.0
+2021-12-25
+Saturday
+152
+102 yoghurt
+25 veganYoghurt
+25 veganPorridge
+102 beanChilli
+25 kievs
+25 chickenNoodles
+136 veganSausages
+152 Rice
+152 bananaIceCream
+102 beanChilli
+25 kievs
+25 chickenNoodles
+136 veganSausages
+152 Rice
+152 bananaIceCream
+0 bananaIceCream
+0 canOfBeer
+477500.0
+?
+477713
+213.0
+53718.75
+?
+60364
+6645.25
+10505.0
+?
+16049
+5544.0
+5013.75
+?
+10422
+5408.25
+10743.75
+?
+19743
+8999.25
+2021-12-26
+Sunday
+152
+102 fullEnglish
+25 veganPorridge
+25 yoghurt
+102 mushroomSoup
+25 pepperoniPizza
+25 vegChowMein
+152 bakedPotato
+150 roastPotatoes
+139 peanutCookies
+102 mushroomSoup
+25 pepperoniPizza
+25 vegChowMein
+152 bakedPotato
+150 roastPotatoes
+139 peanutCookies
+0 bananaIceCream
+0 canOfBeer
+477500.0
+?
+575691
+98191.0
+53718.75
+?
+53721
+2.25
+10505.0
+?
+28222
+17717.0
+5013.75
+?
+7585
+2571.25
+10743.75
+?
+19919
+9175.25
+2021-12-27
+Monday
+152
+102 veganFullEnglish
+25 toast
+25 pancakes
+102 veganPizza
+25 fishAndChips
+25 mushroomOmelette
+0 nutBake
+15 boiledEggs
+152 veganFruitYoghurt
+102 veganPizza
+25 fishAndChips
+25 mushroomOmelette
+0 nutBake
+15 boiledEggs
+152 veganFruitYoghurt
+0 bananaIceCream
+0 canOfBeer
+477500.0
+?
+477790
+290.0
+53718.75
+?
+60118
+6399.25
+10505.0
+?
+14701
+4196.0
+5013.75
+?
+7088
+2074.25
+10743.75
+?
+18963
+8219.25
+2021-12-28
+Tuesday
+161
+93 veganPorridge
+42 veganFullEnglish
+26 veganYoghurt
+109 veganSausageCasserole
+26 shepherdsPie
+26 fishPaella
+159 porkSausages
+159 yorkshirePuddings
+151 chocolateMousse
+109 veganSausageCasserole
+26 shepherdsPie
+26 fishPaella
+159 porkSausages
+159 yorkshirePuddings
+151 chocolateMousse
+0 bananaIceCream
+0 canOfBeer
+507000.0
+?
+611222
+104222.0
+57037.5
+?
+57042
+4.5
+11154.0
+?
+27306
+16152.0
+5323.5
+?
+11889
+6565.5
+11407.5
+?
+27590
+16182.5
+2021-12-29
+Wednesday
+161
+64 veganYoghurt
+26 fullEnglish
+71 toast
+102 sushi
+26 potatoCurry
+33 vegSpagBol
+161 eggFriedRice
+161 breadRolls
+161 fruitSalad
+102 sushi
+26 potatoCurry
+33 vegSpagBol
+161 eggFriedRice
+161 breadRolls
+161 fruitSalad
+0 bananaIceCream
+0 canOfBeer
+506500.0
+?
+506522
+22.0
+56981.25
+?
+72960
+15978.75
+11143.0
+?
+12526
+1383.0
+5318.25
+?
+5327
+8.75
+11396.25
+?
+19782
+8385.75
+2021-12-30
+Thursday
+164
+110 pancakes
+27 yoghurt
+27 veganFullEnglish
+110 ratatouille
+27 lambMoussaka
+27 marghertia
+118 beans
+162 broccoli
+150 chocolateCake
+110 ratatouille
+27 lambMoussaka
+27 marghertia
+118 beans
+162 broccoli
+150 chocolateCake
+164 bananaIceCream
+164 canOfBeer
+513500.0
+?
+513502
+2.0
+57768.75
+?
+66547
+8778.25
+11297.0
+?
+19736
+8439.0
+5391.75
+?
+11678
+6286.25
+11553.75
+?
+16475
+4921.25
+2021-12-31
+Friday
+164
+110 toast
+27 pancakes
+27 fullEnglish
+110 jacketSpud
+27 quornLasagne
+27 mushroomRisotto
+12 chips
+2 peas
+150 walnutCake
+110 jacketSpud
+27 quornLasagne
+27 mushroomRisotto
+12 chips
+2 peas
+150 walnutCake
+0 bananaIceCream
+0 canOfBeer
+513500.0
+?
+562693
+49193.0
+57768.75
+?
+57982
+213.25
+11297.0
+?
+27546
+16249.0
+5391.75
+?
+7802
+2410.25
+11553.75
+?
+15092
+3538.25
+2022-01-01
+Saturday
+164
+110 yoghurt
+27 veganYoghurt
+27 veganPorridge
+110 beanChilli
+27 kievs
+27 chickenNoodles
+141 veganSausages
+164 Rice
+164 bananaIceCream
+110 beanChilli
+27 kievs
+27 chickenNoodles
+141 veganSausages
+164 Rice
+164 bananaIceCream
+0 bananaIceCream
+0 canOfBeer
+513500.0
+?
+513571
+71.0
+57768.75
+?
+65031
+7262.25
+11297.0
+?
+17193
+5896.0
+5391.75
+?
+11207
+5815.25
+11553.75
+?
+21206
+9652.25
+2022-01-02
+Sunday
+164
+110 fullEnglish
+27 veganPorridge
+27 yoghurt
+110 mushroomSoup
+27 pepperoniPizza
+27 vegChowMein
+164 bakedPotato
+159 roastPotatoes
+150 peanutCookies
+110 mushroomSoup
+27 pepperoniPizza
+27 vegChowMein
+164 bakedPotato
+159 roastPotatoes
+150 peanutCookies
+0 bananaIceCream
+0 canOfBeer
+513500.0
+?
+619808
+106308.0
+57768.75
+?
+57771
+2.25
+11297.0
+?
+30396
+19099.0
+5391.75
+?
+8160
+2768.25
+11553.75
+?
+21470
+9916.25
+2022-01-03
+Monday
+164
+110 veganFullEnglish
+27 toast
+27 pancakes
+110 veganPizza
+27 fishAndChips
+27 mushroomOmelette
+14 nutBake
+9 boiledEggs
+164 veganFruitYoghurt
+110 veganPizza
+27 fishAndChips
+27 mushroomOmelette
+14 nutBake
+9 boiledEggs
+164 veganFruitYoghurt
+0 bananaIceCream
+0 canOfBeer
+513500.0
+?
+533168
+19668.0
+57768.75
+?
+65117
+7348.25
+11297.0
+?
+17515
+6218.0
+5391.75
+?
+7833
+2441.25
+11553.75
+?
+20836
+9282.25
+2022-01-04
+Tuesday
+164
+94 veganPorridge
+43 veganFullEnglish
+27 veganYoghurt
+110 veganSausageCasserole
+27 shepherdsPie
+27 fishPaella
+163 porkSausages
+162 yorkshirePuddings
+150 chocolateMousse
+110 veganSausageCasserole
+27 shepherdsPie
+27 fishPaella
+163 porkSausages
+162 yorkshirePuddings
+150 chocolateMousse
+0 bananaIceCream
+0 canOfBeer
+513500.0
+?
+619541
+106041.0
+57768.75
+?
+57771
+2.25
+11297.0
+?
+27646
+16349.0
+5391.75
+?
+12021
+6629.25
+11553.75
+?
+28058
+16504.25
+2022-01-05
+Wednesday
+164
+80 veganYoghurt
+27 fullEnglish
+57 toast
+107 sushi
+27 potatoCurry
+30 vegSpagBol
+164 eggFriedRice
+164 breadRolls
+164 fruitSalad
+107 sushi
+27 potatoCurry
+30 vegSpagBol
+164 eggFriedRice
+164 breadRolls
+164 fruitSalad
+0 bananaIceCream
+0 canOfBeer
+513500.0
+?
+513685
+185.0
+57768.75
+?
+74021
+16252.25
+11297.0
+?
+12654
+1357.0
+5391.75
+?
+5399
+7.25
+11553.75
+?
+20192
+8638.25
+2022-01-06
+Thursday
+164
+110 pancakes
+27 yoghurt
+27 veganFullEnglish
+110 ratatouille
+27 lambMoussaka
+27 marghertia
+118 beans
+162 broccoli
+150 chocolateCake
+110 ratatouille
+27 lambMoussaka
+27 marghertia
+118 beans
+162 broccoli
+150 chocolateCake
+164 peanutCookies
+164 glassOfWine
+513500.0
+?
+513502
+2.0
+57768.75
+?
+66547
+8778.25
+11297.0
+?
+19736
+8439.0
+5391.75
+?
+11678
+6286.25
+11553.75
+?
+16475
+4921.25
+2022-01-07
+Friday
+164
+110 toast
+27 pancakes
+27 fullEnglish
+110 jacketSpud
+27 quornLasagne
+27 mushroomRisotto
+12 chips
+2 peas
+150 walnutCake
+110 jacketSpud
+27 quornLasagne
+27 mushroomRisotto
+12 chips
+2 peas
+150 walnutCake
+0 peanutCookies
+0 glassOfWine
+513500.0
+?
+562693
+49193.0
+57768.75
+?
+57982
+213.25
+11297.0
+?
+27546
+16249.0
+5391.75
+?
+7802
+2410.25
+11553.75
+?
+15092
+3538.25
+2022-01-08
+Saturday
+165
+111 yoghurt
+27 veganYoghurt
+27 veganPorridge
+111 beanChilli
+27 kievs
+27 chickenNoodles
+140 veganSausages
+165 Rice
+165 bananaIceCream
+111 beanChilli
+27 kievs
+27 chickenNoodles
+140 veganSausages
+165 Rice
+165 bananaIceCream
+0 peanutCookies
+0 glassOfWine
+516000.0
+?
+516081
+81.0
+58050.0
+?
+65479
+7429.0
+11352.0
+?
+17216
+5864.0
+5418.0
+?
+11284
+5866.0
+11610.0
+?
+21307
+9697.0
+2022-01-09
+Sunday
+165
+111 fullEnglish
+27 veganPorridge
+27 yoghurt
+111 mushroomSoup
+27 pepperoniPizza
+27 vegChowMein
+165 bakedPotato
+157 roastPotatoes
+154 peanutCookies
+111 mushroomSoup
+27 pepperoniPizza
+27 vegChowMein
+165 bakedPotato
+157 roastPotatoes
+154 peanutCookies
+0 peanutCookies
+0 glassOfWine
+516000.0
+?
+625067
+109067.0
+58050.0
+?
+58107
+57.0
+11352.0
+?
+30702
+19350.0
+5418.0
+?
+8219
+2801.0
+11610.0
+?
+21690
+10080.0
+2022-01-10
+Monday
+154
+104 veganFullEnglish
+25 toast
+25 pancakes
+104 veganPizza
+25 fishAndChips
+25 mushroomOmelette
+19 nutBake
+5 boiledEggs
+154 veganFruitYoghurt
+104 veganPizza
+25 fishAndChips
+25 mushroomOmelette
+19 nutBake
+5 boiledEggs
+154 veganFruitYoghurt
+0 peanutCookies
+0 glassOfWine
+494000.0
+?
+508672
+14672.0
+55575.0
+?
+61457
+5882.0
+10868.0
+?
+17127
+6259.0
+5187.0
+?
+7453
+2266.0
+11115.0
+?
+19710
+8595.0
+2022-01-11
+Tuesday
+154
+89 veganPorridge
+40 veganFullEnglish
+25 veganYoghurt
+104 veganSausageCasserole
+25 shepherdsPie
+25 fishPaella
+153 porkSausages
+152 yorkshirePuddings
+135 chocolateMousse
+104 veganSausageCasserole
+25 shepherdsPie
+25 fishPaella
+153 porkSausages
+152 yorkshirePuddings
+135 chocolateMousse
+0 peanutCookies
+0 glassOfWine
+481500.0
+?
+577841
+96341.0
+54168.75
+?
+54169
+0.25
+10593.0
+?
+25596
+15003.0
+5055.75
+?
+11290
+6234.25
+10833.75
+?
+26260
+15426.25
+2022-01-12
+Wednesday
+162
+71 veganYoghurt
+64 fullEnglish
+27 toast
+38 sushi
+27 potatoCurry
+97 vegSpagBol
+162 eggFriedRice
+162 breadRolls
+147 chocolateMousse
+38 sushi
+27 potatoCurry
+97 vegSpagBol
+162 eggFriedRice
+162 breadRolls
+147 chocolateMousse
+0 bananaIceCream
+0 canOfBeer
+505000.0
+?
+542211
+37211.0
+56812.5
+?
+56840
+27.5
+11110.0
+?
+22913
+11803.0
+5302.5
+?
+5315
+12.5
+11362.5
+?
+22040
+10677.5
+2022-01-13
+Thursday
+162
+108 pancakes
+27 yoghurt
+27 veganFullEnglish
+108 ratatouille
+27 lambMoussaka
+27 marghertia
+120 beans
+0 broccoli
+147 chocolateCake
+108 ratatouille
+27 lambMoussaka
+27 marghertia
+120 beans
+0 broccoli
+147 chocolateCake
+0 bananaIceCream
+0 canOfBeer
+505000.0
+?
+505279
+279.0
+56812.5
+?
+65234
+8421.5
+11110.0
+?
+19488
+8378.0
+5302.5
+?
+11232
+5929.5
+11362.5
+?
+16052
+4689.5
+2022-01-14
+Friday
+162
+108 toast
+27 pancakes
+27 fullEnglish
+108 jacketSpud
+27 quornLasagne
+27 mushroomRisotto
+11 chips
+4 peas
+147 walnutCake
+108 jacketSpud
+27 quornLasagne
+27 mushroomRisotto
+11 chips
+4 peas
+147 walnutCake
+0 bananaIceCream
+0 canOfBeer
+505000.0
+?
+551798
+46798.0
+56812.5
+?
+56858
+45.5
+11110.0
+?
+27030
+15920.0
+5302.5
+?
+7674
+2371.5
+11362.5
+?
+14867
+3504.5
+2022-01-15
+Saturday
+162
+108 yoghurt
+27 veganYoghurt
+27 veganPorridge
+108 beanChilli
+27 kievs
+27 chickenNoodles
+133 veganSausages
+161 Rice
+162 bananaIceCream
+108 beanChilli
+27 kievs
+27 chickenNoodles
+133 veganSausages
+161 Rice
+162 bananaIceCream
+0 bananaIceCream
+0 canOfBeer
+505000.0
+?
+505052
+52.0
+56812.5
+?
+63929
+7116.5
+11110.0
+?
+16922
+5812.0
+5302.5
+?
+10994
+5691.5
+11362.5
+?
+20833
+9470.5
+2022-01-16
+Sunday
+162
+108 fullEnglish
+27 veganPorridge
+27 yoghurt
+108 mushroomSoup
+27 pepperoniPizza
+27 vegChowMein
+162 bakedPotato
+155 roastPotatoes
+147 peanutCookies
+108 mushroomSoup
+27 pepperoniPizza
+27 vegChowMein
+162 bakedPotato
+155 roastPotatoes
+147 peanutCookies
+0 bananaIceCream
+0 canOfBeer
+505000.0
+?
+610049
+105049.0
+56812.5
+?
+56873
+60.5
+11110.0
+?
+29902
+18792.0
+5302.5
+?
+8026
+2723.5
+11362.5
+?
+21152
+9789.5
+2022-01-17
+Monday
+162
+108 veganFullEnglish
+27 toast
+27 pancakes
+108 veganPizza
+27 fishAndChips
+27 mushroomOmelette
+15 nutBake
+0 boiledEggs
+162 fruitSalad
+108 veganPizza
+27 fishAndChips
+27 mushroomOmelette
+15 nutBake
+0 boiledEggs
+162 fruitSalad
+0 bananaIceCream
+0 canOfBeer
+505000.0
+?
+557948
+52948.0
+56812.5
+?
+77015
+20202.5
+11110.0
+?
+15735
+4625.0
+5302.5
+?
+8732
+3429.5
+11362.5
+?
+15225
+3862.5
+2022-01-18
+Tuesday
+162
+108 veganPorridge
+27 veganFullEnglish
+27 veganYoghurt
+108 veganSausageCasserole
+27 shepherdsPie
+27 fishPaella
+161 porkSausages
+142 yorkshirePuddings
+162 veganFruitYoghurt
+108 veganSausageCasserole
+27 shepherdsPie
+27 fishPaella
+161 porkSausages
+142 yorkshirePuddings
+162 veganFruitYoghurt
+162 bananaIceCream
+162 canOfBeer
+505000.0
+?
+542325
+37325.0
+56812.5
+?
+56816
+3.5
+11110.0
+?
+19465
+8355.0
+5302.5
+?
+11953
+6650.5
+11362.5
+?
+30309
+18946.5
+2022-01-19
+Wednesday
+162
+71 veganYoghurt
+64 fullEnglish
+27 toast
+38 sushi
+27 potatoCurry
+97 vegSpagBol
+162 eggFriedRice
+162 breadRolls
+147 chocolateMousse
+38 sushi
+27 potatoCurry
+97 vegSpagBol
+162 eggFriedRice
+162 breadRolls
+147 chocolateMousse
+0 bananaIceCream
+0 canOfBeer
+505000.0
+?
+542211
+37211.0
+56812.5
+?
+56840
+27.5
+11110.0
+?
+22913
+11803.0
+5302.5
+?
+5315
+12.5
+11362.5
+?
+22040
+10677.5
+2022-01-20
+Thursday
+162
+108 pancakes
+27 yoghurt
+27 veganFullEnglish
+108 ratatouille
+27 lambMoussaka
+27 marghertia
+120 beans
+0 broccoli
+147 chocolateCake
+108 ratatouille
+27 lambMoussaka
+27 marghertia
+120 beans
+0 broccoli
+147 chocolateCake
+0 bananaIceCream
+0 canOfBeer
+505000.0
+?
+505279
+279.0
+56812.5
+?
+65234
+8421.5
+11110.0
+?
+19488
+8378.0
+5302.5
+?
+11232
+5929.5
+11362.5
+?
+16052
+4689.5
+2022-01-21
+Friday
+163
+109 toast
+27 pancakes
+27 fullEnglish
+109 jacketSpud
+27 quornLasagne
+27 mushroomRisotto
+9 chips
+0 peas
+157 walnutCake
+109 jacketSpud
+27 quornLasagne
+27 mushroomRisotto
+9 chips
+0 peas
+157 walnutCake
+0 bananaIceCream
+0 canOfBeer
+508500.0
+?
+557819
+49319.0
+57206.25
+?
+57393
+186.75
+11187.0
+?
+27626
+16439.0
+5339.25
+?
+7669
+2329.75
+11441.25
+?
+14970
+3528.75
+2022-01-22
+Saturday
+162
+108 yoghurt
+27 veganYoghurt
+27 veganPorridge
+108 beanChilli
+27 kievs
+27 chickenNoodles
+162 veganSausages
+131 Rice
+162 bananaIceCream
+108 beanChilli
+27 kievs
+27 chickenNoodles
+162 veganSausages
+131 Rice
+162 bananaIceCream
+0 bananaIceCream
+0 canOfBeer
+506500.0
+?
+506648
+148.0
+56981.25
+?
+62684
+5702.75
+11143.0
+?
+17575
+6432.0
+5318.25
+?
+11168
+5849.75
+11396.25
+?
+21132
+9735.75
+2022-01-23
+Sunday
+162
+108 fullEnglish
+27 veganPorridge
+27 yoghurt
+108 mushroomSoup
+27 pepperoniPizza
+27 vegChowMein
+162 bakedPotato
+152 roastPotatoes
+150 peanutCookies
+108 mushroomSoup
+27 pepperoniPizza
+27 vegChowMein
+162 bakedPotato
+152 roastPotatoes
+150 peanutCookies
+0 bananaIceCream
+0 canOfBeer
+505000.0
+?
+611354
+106354.0
+56812.5
+?
+56859
+46.5
+11110.0
+?
+30008
+18898.0
+5302.5
+?
+8032
+2729.5
+11362.5
+?
+21239
+9876.5
+2022-01-24
+Monday
+162
+108 veganFullEnglish
+27 toast
+27 pancakes
+108 veganPizza
+27 fishAndChips
+27 mushroomOmelette
+12 nutBake
+0 boiledEggs
+162 fruitSalad
+108 veganPizza
+27 fishAndChips
+27 mushroomOmelette
+12 nutBake
+0 boiledEggs
+162 fruitSalad
+0 bananaIceCream
+0 canOfBeer
+505000.0
+?
+553915
+48915.0
+56812.5
+?
+76956
+20143.5
+11110.0
+?
+15364
+4254.0
+5302.5
+?
+8692
+3389.5
+11362.5
+?
+15125
+3762.5
+2022-01-25
+Tuesday
+167
+113 veganPorridge
+27 veganFullEnglish
+27 veganYoghurt
+113 veganSausageCasserole
+27 shepherdsPie
+27 fishPaella
+160 porkSausages
+135 yorkshirePuddings
+167 veganFruitYoghurt
+113 veganSausageCasserole
+27 shepherdsPie
+27 fishPaella
+160 porkSausages
+135 yorkshirePuddings
+167 veganFruitYoghurt
+167 peanutCookies
+167 glassOfWine
+519000.0
+?
+552669
+33669.0
+58387.5
+?
+58388
+0.5
+11418.0
+?
+19580
+8162.0
+5449.5
+?
+12394
+6944.5
+11677.5
+?
+30936
+19258.5
+2022-01-26
+Wednesday
+164
+67 veganYoghurt
+70 fullEnglish
+27 toast
+27 sushi
+27 potatoCurry
+110 vegSpagBol
+163 eggFriedRice
+164 breadRolls
+161 chocolateMousse
+27 sushi
+27 potatoCurry
+110 vegSpagBol
+163 eggFriedRice
+164 breadRolls
+161 chocolateMousse
+0 peanutCookies
+0 glassOfWine
+513000.0
+?
+560343
+47343.0
+57712.5
+?
+57742
+29.5
+11286.0
+?
+24182
+12896.0
+5386.5
+?
+5690
+303.5
+11542.5
+?
+22493
+10950.5
+2022-01-27
+Thursday
+167
+113 pancakes
+27 yoghurt
+27 veganFullEnglish
+113 ratatouille
+27 lambMoussaka
+27 marghertia
+114 beans
+0 broccoli
+161 chocolateCake
+113 ratatouille
+27 lambMoussaka
+27 marghertia
+114 beans
+0 broccoli
+161 chocolateCake
+0 peanutCookies
+0 glassOfWine
+519000.0
+?
+519320
+320.0
+58387.5
+?
+66516
+8128.5
+11418.0
+?
+20494
+9076.0
+5449.5
+?
+11263
+5813.5
+11677.5
+?
+16055
+4377.5
+2022-01-28
+Friday
+164
+110 toast
+27 pancakes
+27 fullEnglish
+110 jacketSpud
+27 quornLasagne
+27 mushroomRisotto
+17 chips
+0 peas
+164 walnutCake
+110 jacketSpud
+27 quornLasagne
+27 mushroomRisotto
+17 chips
+0 peas
+164 walnutCake
+0 peanutCookies
+0 glassOfWine
+513000.0
+?
+591777
+78777.0
+57712.5
+?
+60748
+3035.5
+11286.0
+?
+28880
+17594.0
+5386.5
+?
+7970
+2583.5
+11542.5
+?
+15462
+3919.5
+2022-01-29
+Saturday
+164
+110 yoghurt
+27 veganYoghurt
+27 veganPorridge
+110 beanChilli
+27 kievs
+27 chickenNoodles
+135 veganSausages
+164 Rice
+164 bananaIceCream
+110 beanChilli
+27 kievs
+27 chickenNoodles
+135 veganSausages
+164 Rice
+164 bananaIceCream
+0 peanutCookies
+0 glassOfWine
+511500.0
+?
+511627
+127.0
+57543.75
+?
+64941
+7397.25
+11253.0
+?
+17058
+5805.0
+5370.75
+?
+11171
+5800.25
+11508.75
+?
+21107
+9598.25
+2022-01-30
+Sunday
+164
+110 fullEnglish
+27 veganPorridge
+27 yoghurt
+110 mushroomSoup
+27 pepperoniPizza
+27 vegChowMein
+164 bakedPotato
+143 roastPotatoes
+164 peanutCookies
+110 mushroomSoup
+27 pepperoniPizza
+27 vegChowMein
+164 bakedPotato
+143 roastPotatoes
+164 peanutCookies
+0 peanutCookies
+0 glassOfWine
+511500.0
+?
+624956
+113456.0
+57543.75
+?
+57570
+26.25
+11253.0
+?
+30853
+19600.0
+5370.75
+?
+8170
+2799.25
+11508.75
+?
+21860
+10351.25
+2022-01-31
+Monday
+158
+106 veganFullEnglish
+26 toast
+26 pancakes
+106 veganPizza
+26 fishAndChips
+26 mushroomOmelette
+0 nutBake
+12 boiledEggs
+158 chocolateMousse
+106 veganPizza
+26 fishAndChips
+26 mushroomOmelette
+0 nutBake
+12 boiledEggs
+158 chocolateMousse
+0 bananaIceCream
+0 canOfBeer
+499500.0
+?
+551270
+51770.0
+56193.75
+?
+60610
+4416.25
+10989.0
+?
+22914
+11925.0
+5244.75
+?
+6972
+1727.25
+11238.75
+?
+16438
+5199.25
+2022-02-01
+Tuesday
+160
+108 veganPorridge
+26 veganFullEnglish
+26 veganYoghurt
+108 veganSausageCasserole
+26 shepherdsPie
+26 beanChilli
+2 porkSausages
+118 yorkshirePuddings
+160 bananaIceCream
+108 veganSausageCasserole
+26 shepherdsPie
+26 beanChilli
+2 porkSausages
+118 yorkshirePuddings
+160 bananaIceCream
+0 bananaIceCream
+0 canOfBeer
+494000.0
+?
+494267
+267.0
+55575.0
+?
+65333
+9758.0
+10868.0
+?
+13257
+2389.0
+5187.0
+?
+13395
+8208.0
+11115.0
+?
+21791
+10676.0
+2022-02-02
+Wednesday
+160
+106 veganYoghurt
+28 fullEnglish
+26 toast
+26 fishPaella
+26 sushi
+108 potatoCurry
+108 eggFriedRice
+156 breadRolls
+151 peanutCookies
+26 fishPaella
+26 sushi
+108 potatoCurry
+108 eggFriedRice
+156 breadRolls
+151 peanutCookies
+0 bananaIceCream
+0 canOfBeer
+494000.0
+?
+494367
+367.0
+55575.0
+?
+58469
+2894.0
+10868.0
+?
+18085
+7217.0
+5187.0
+?
+5188
+1.0
+11115.0
+?
+21053
+9938.0
+2022-02-03
+Thursday
+155
+85 pancakes
+25 yoghurt
+45 veganFullEnglish
+105 vegSpagBol
+25 ratatouille
+25 lambMoussaka
+154 beans
+151 broccoli
+149 chocolateCake
+105 vegSpagBol
+25 ratatouille
+25 lambMoussaka
+154 beans
+151 broccoli
+149 chocolateCake
+0 bananaIceCream
+0 canOfBeer
+484000.0
+?
+484008
+8.0
+54450.0
+?
+60442
+5992.0
+10648.0
+?
+16624
+5976.0
+5082.0
+?
+11792
+6710.0
+10890.0
+?
+19593
+8703.0
+2022-02-04
+Friday
+158
+106 toast
+26 pancakes
+26 fullEnglish
+106 marghertia
+26 quornLasagne
+26 mushroomRisotto
+0 chips
+7 peas
+158 veganFruitYoghurt
+106 marghertia
+26 quornLasagne
+26 mushroomRisotto
+0 chips
+7 peas
+158 veganFruitYoghurt
+0 bananaIceCream
+0 canOfBeer
+488000.0
+?
+507959
+19959.0
+54900.0
+?
+63593
+8693.0
+10736.0
+?
+17959
+7223.0
+5124.0
+?
+5156
+32.0
+10980.0
+?
+20378
+9398.0
+2022-02-05
+Saturday
+158
+106 yoghurt
+26 veganYoghurt
+26 veganPorridge
+106 jacketSpud
+26 kievs
+26 chickenNoodles
+0 veganSausages
+145 Rice
+158 fruitSalad
+106 jacketSpud
+26 kievs
+26 chickenNoodles
+0 veganSausages
+145 Rice
+158 fruitSalad
+0 bananaIceCream
+0 canOfBeer
+488000.0
+?
+488143
+143.0
+54900.0
+?
+58116
+3216.0
+10736.0
+?
+21071
+10335.0
+5124.0
+?
+8507
+3383.0
+10980.0
+?
+13421
+2441.0
+2022-02-06
+Sunday
+158
+106 fullEnglish
+26 veganPorridge
+26 yoghurt
+106 mushroomSoup
+26 pepperoniPizza
+26 vegChowMein
+158 bakedPotato
+36 roastPotatoes
+157 berryCrumble
+106 mushroomSoup
+26 pepperoniPizza
+26 vegChowMein
+158 bakedPotato
+36 roastPotatoes
+157 berryCrumble
+158 bananaIceCream
+158 canOfBeer
+488000.0
+?
+530574
+42574.0
+54900.0
+?
+54949
+49.0
+10736.0
+?
+24324
+13588.0
+5124.0
+?
+6104
+980.0
+10980.0
+?
+16105
+5125.0
+2022-02-07
+Monday
+154
+104 veganFullEnglish
+25 toast
+25 pancakes
+104 veganPizza
+25 fishAndChips
+25 mushroomOmelette
+3 nutBake
+4 boiledEggs
+147 chocolateMousse
+104 veganPizza
+25 fishAndChips
+25 mushroomOmelette
+3 nutBake
+4 boiledEggs
+147 chocolateMousse
+0 bananaIceCream
+0 canOfBeer
+480000.0
+?
+535797
+55797.0
+54000.0
+?
+59086
+5086.0
+10560.0
+?
+22205
+11645.0
+5040.0
+?
+6809
+1769.0
+10800.0
+?
+15913
+5113.0
+2022-02-08
+Tuesday
+156
+104 veganPorridge
+26 veganFullEnglish
+26 veganYoghurt
+104 veganSausageCasserole
+26 shepherdsPie
+26 beanChilli
+11 porkSausages
+98 yorkshirePuddings
+156 bananaIceCream
+104 veganSausageCasserole
+26 shepherdsPie
+26 beanChilli
+11 porkSausages
+98 yorkshirePuddings
+156 bananaIceCream
+0 bananaIceCream
+0 canOfBeer
+479000.0
+?
+479159
+159.0
+53887.5
+?
+63041
+9153.5
+10538.0
+?
+12930
+2392.0
+5029.5
+?
+13020
+7990.5
+10777.5
+?
+21204
+10426.5
+2022-02-09
+Wednesday
+156
+102 veganYoghurt
+28 fullEnglish
+26 toast
+27 fishPaella
+26 sushi
+103 potatoCurry
+92 eggFriedRice
+155 breadRolls
+145 peanutCookies
+27 fishPaella
+26 sushi
+103 potatoCurry
+92 eggFriedRice
+155 breadRolls
+145 peanutCookies
+0 bananaIceCream
+0 canOfBeer
+479000.0
+?
+479025
+25.0
+53887.5
+?
+56421
+2533.5
+10538.0
+?
+17583
+7045.0
+5029.5
+?
+5031
+1.5
+10777.5
+?
+20443
+9665.5
+2022-02-10
+Thursday
+156
+88 pancakes
+26 yoghurt
+42 veganFullEnglish
+104 vegSpagBol
+26 ratatouille
+26 lambMoussaka
+155 beans
+151 broccoli
+145 chocolateCake
+104 vegSpagBol
+26 ratatouille
+26 lambMoussaka
+155 beans
+151 broccoli
+145 chocolateCake
+0 bananaIceCream
+0 canOfBeer
+479000.0
+?
+479016
+16.0
+53887.5
+?
+59967
+6079.5
+10538.0
+?
+16393
+5855.0
+5029.5
+?
+11769
+6739.5
+10777.5
+?
+19514
+8736.5
+2022-02-11
+Friday
+156
+104 toast
+26 pancakes
+26 fullEnglish
+104 marghertia
+26 quornLasagne
+26 mushroomRisotto
+0 chips
+11 peas
+156 veganFruitYoghurt
+104 marghertia
+26 quornLasagne
+26 mushroomRisotto
+0 chips
+11 peas
+156 veganFruitYoghurt
+0 bananaIceCream
+0 canOfBeer
+479000.0
+?
+500997
+21997.0
+53887.5
+?
+62676
+8788.5
+10538.0
+?
+17698
+7160.0
+5029.5
+?
+5122
+92.5
+10777.5
+?
+20129
+9351.5
+2022-02-12
+Saturday
+156
+104 yoghurt
+26 veganYoghurt
+26 veganPorridge
+104 jacketSpud
+26 kievs
+26 chickenNoodles
+0 veganSausages
+133 Rice
+156 fruitSalad
+104 jacketSpud
+26 kievs
+26 chickenNoodles
+0 veganSausages
+133 Rice
+156 fruitSalad
+0 bananaIceCream
+0 canOfBeer
+479000.0
+?
+479181
+181.0
+53887.5
+?
+56723
+2835.5
+10538.0
+?
+20819
+10281.0
+5029.5
+?
+8376
+3346.5
+10777.5
+?
+13209
+2431.5
+2022-02-13
+Sunday
+156
+104 fullEnglish
+26 veganPorridge
+26 yoghurt
+104 mushroomSoup
+26 pepperoniPizza
+26 vegChowMein
+156 bakedPotato
+46 roastPotatoes
+145 berryCrumble
+104 mushroomSoup
+26 pepperoniPizza
+26 vegChowMein
+156 bakedPotato
+46 roastPotatoes
+145 berryCrumble
+156 peanutCookies
+156 glassOfWine
+479000.0
+?
+520982
+41982.0
+53887.5
+?
+53936
+48.5
+10538.0
+?
+23868
+13330.0
+5029.5
+?
+6065
+1035.5
+10777.5
+?
+15879
+5101.5
+2022-02-14
+Monday
+156
+104 veganFullEnglish
+26 toast
+26 pancakes
+104 veganPizza
+26 fishAndChips
+26 mushroomOmelette
+11 nutBake
+0 boiledEggs
+145 chocolateMousse
+104 veganPizza
+26 fishAndChips
+26 mushroomOmelette
+11 nutBake
+0 boiledEggs
+145 chocolateMousse
+0 peanutCookies
+0 glassOfWine
+488000.0
+?
+548731
+60731.0
+54900.0
+?
+59497
+4597.0
+10736.0
+?
+23217
+12481.0
+5124.0
+?
+6941
+1817.0
+10980.0
+?
+16292
+5312.0
+2022-02-15
+Tuesday
+163
+109 veganPorridge
+27 veganFullEnglish
+27 veganYoghurt
+109 veganSausageCasserole
+27 shepherdsPie
+27 beanChilli
+4 porkSausages
+95 yorkshirePuddings
+163 bananaIceCream
+109 veganSausageCasserole
+27 shepherdsPie
+27 beanChilli
+4 porkSausages
+95 yorkshirePuddings
+163 bananaIceCream
+0 peanutCookies
+0 glassOfWine
+494000.0
+?
+494312
+312.0
+55575.0
+?
+65557
+9982.0
+10868.0
+?
+13082
+2214.0
+5187.0
+?
+13590
+8403.0
+11115.0
+?
+21864
+10749.0
+2022-02-16
+Wednesday
+163
+74 veganYoghurt
+27 fullEnglish
+62 toast
+34 fishPaella
+27 sushi
+102 potatoCurry
+50 eggFriedRice
+163 breadRolls
+155 peanutCookies
+34 fishPaella
+27 sushi
+102 potatoCurry
+50 eggFriedRice
+163 breadRolls
+155 peanutCookies
+0 peanutCookies
+0 glassOfWine
+494000.0
+?
+494401
+401.0
+55575.0
+?
+57331
+1756.0
+10868.0
+?
+18520
+7652.0
+5187.0
+?
+5187
+0.0
+11115.0
+?
+21016
+9901.0
+2022-02-17
+Thursday
+163
+102 pancakes
+27 yoghurt
+34 veganFullEnglish
+109 vegSpagBol
+27 ratatouille
+27 lambMoussaka
+163 beans
+147 broccoli
+155 chocolateCake
+109 vegSpagBol
+27 ratatouille
+27 lambMoussaka
+163 beans
+147 broccoli
+155 chocolateCake
+0 peanutCookies
+0 glassOfWine
+494000.0
+?
+494027
+27.0
+55575.0
+?
+62157
+6582.0
+10868.0
+?
+16983
+6115.0
+5187.0
+?
+12072
+6885.0
+11115.0
+?
+20060
+8945.0
+2022-02-18
+Friday
+162
+108 toast
+27 pancakes
+27 fullEnglish
+108 marghertia
+27 quornLasagne
+27 mushroomRisotto
+0 chips
+15 peas
+162 veganFruitYoghurt
+108 marghertia
+27 quornLasagne
+27 mushroomRisotto
+0 chips
+15 peas
+162 veganFruitYoghurt
+0 peanutCookies
+0 glassOfWine
+492000.0
+?
+520730
+28730.0
+55350.0
+?
+65166
+9816.0
+10824.0
+?
+18379
+7555.0
+5166.0
+?
+5347
+181.0
+11070.0
+?
+20932
+9862.0
+2022-02-19
+Saturday
+147
+99 yoghurt
+24 veganYoghurt
+24 veganPorridge
+99 jacketSpud
+24 kievs
+24 chickenNoodles
+19 veganSausages
+145 Rice
+147 fruitSalad
+99 jacketSpud
+24 kievs
+24 chickenNoodles
+19 veganSausages
+145 Rice
+147 fruitSalad
+0 peanutCookies
+0 glassOfWine
+463000.0
+?
+463019
+19.0
+52087.5
+?
+54971
+2883.5
+10186.0
+?
+20023
+9837.0
+4861.5
+?
+8043
+3181.5
+10417.5
+?
+12850
+2432.5
+2022-02-20
+Sunday
+161
+109 fullEnglish
+26 veganPorridge
+26 yoghurt
+109 mushroomSoup
+26 pepperoniPizza
+26 vegChowMein
+161 bakedPotato
+155 roastPotatoes
+156 jelly
+109 mushroomSoup
+26 pepperoniPizza
+26 vegChowMein
+161 bakedPotato
+155 roastPotatoes
+156 jelly
+0 bananaIceCream
+0 canOfBeer
+488500.0
+?
+511696
+23196.0
+54956.25
+?
+55008
+51.75
+10747.0
+?
+21842
+11095.0
+5129.25
+?
+7150
+2020.75
+10991.25
+?
+16255
+5263.75
+2022-02-21
+Monday
+157
+105 veganFullEnglish
+26 toast
+26 pancakes
+105 veganPizza
+26 fishAndChips
+26 mushroomOmelette
+0 nutBake
+11 boiledEggs
+157 bananaIceCream
+105 veganPizza
+26 fishAndChips
+26 mushroomOmelette
+0 nutBake
+11 boiledEggs
+157 bananaIceCream
+0 bananaIceCream
+0 canOfBeer
+474500.0
+?
+511214
+36714.0
+53381.25
+?
+64927
+11545.75
+10439.0
+?
+16551
+6112.0
+4982.25
+?
+7289
+2306.75
+10676.25
+?
+15349
+4672.75
+2022-02-22
+Tuesday
+157
+105 veganPorridge
+26 veganFullEnglish
+26 veganYoghurt
+105 veganSausageCasserole
+26 shepherdsPie
+26 beanChilli
+1 porkSausages
+11 yorkshirePuddings
+148 peanutCookies
+105 veganSausageCasserole
+26 shepherdsPie
+26 beanChilli
+1 porkSausages
+11 yorkshirePuddings
+148 peanutCookies
+0 bananaIceCream
+0 canOfBeer
+472500.0
+?
+500896
+28396.0
+53156.25
+?
+59425
+6268.75
+10395.0
+?
+15967
+5572.0
+4961.25
+?
+13076
+8114.75
+10631.25
+?
+23931
+13299.75
+2022-02-23
+Wednesday
+157
+81 veganYoghurt
+50 fullEnglish
+26 toast
+26 fishPaella
+26 sushi
+105 potatoCurry
+65 eggFriedRice
+157 breadRolls
+148 chocolateMousse
+26 fishPaella
+26 sushi
+105 potatoCurry
+65 eggFriedRice
+157 breadRolls
+148 chocolateMousse
+0 bananaIceCream
+0 canOfBeer
+475500.0
+?
+477409
+1909.0
+53493.75
+?
+53498
+4.25
+10461.0
+?
+19578
+9117.0
+4992.75
+?
+4993
+0.25
+10698.75
+?
+17849
+7150.25
+2022-02-24
+Thursday
+148
+24 pancakes
+24 yoghurt
+100 veganFullEnglish
+58 vegSpagBol
+24 ratatouille
+66 lambMoussaka
+148 beans
+144 broccoli
+148 veganFruitYoghurt
+58 vegSpagBol
+24 ratatouille
+66 lambMoussaka
+148 beans
+144 broccoli
+148 veganFruitYoghurt
+0 bananaIceCream
+0 canOfBeer
+454500.0
+?
+454518
+18.0
+51131.25
+?
+55317
+4185.75
+9999.0
+?
+13009
+3010.0
+4772.25
+?
+13694
+8921.75
+10226.25
+?
+25293
+15066.75
+2022-02-25
+Friday
+162
+108 toast
+27 pancakes
+27 fullEnglish
+108 marghertia
+27 quornLasagne
+27 mushroomRisotto
+1 chips
+15 peas
+160 chocolateCake
+108 marghertia
+27 quornLasagne
+27 mushroomRisotto
+1 chips
+15 peas
+160 chocolateCake
+0 bananaIceCream
+0 canOfBeer
+483500.0
+?
+629651
+146151.0
+54393.75
+?
+75461
+21067.25
+10637.0
+?
+26377
+15740.0
+5076.75
+?
+5079
+2.25
+10878.75
+?
+17548
+6669.25
+2022-02-26
+Saturday
+148
+100 yoghurt
+24 veganYoghurt
+24 veganPorridge
+100 jacketSpud
+24 kievs
+24 chickenNoodles
+146 veganSausages
+89 Rice
+148 berryCrumble
+100 jacketSpud
+24 kievs
+24 chickenNoodles
+146 veganSausages
+89 Rice
+148 berryCrumble
+148 bananaIceCream
+148 canOfBeer
+455500.0
+?
+522362
+66862.0
+51243.75
+?
+51244
+0.25
+10021.0
+?
+27838
+17817.0
+4782.75
+?
+7248
+2465.25
+10248.75
+?
+15935
+5686.25
+2022-02-27
+Sunday
+148
+100 fullEnglish
+24 veganPorridge
+24 yoghurt
+99 mushroomSoup
+24 pepperoniPizza
+25 vegChowMein
+148 bakedPotato
+148 roastPotatoes
+132 jelly
+99 mushroomSoup
+24 pepperoniPizza
+25 vegChowMein
+148 bakedPotato
+148 roastPotatoes
+132 jelly
+0 bananaIceCream
+0 canOfBeer
+448500.0
+?
+470148
+21648.0
+50456.25
+?
+50459
+2.75
+9867.0
+?
+20127
+10260.0
+4709.25
+?
+6586
+1876.75
+10091.25
+?
+14959
+4867.75
+2022-02-28
+Monday
+135
+91 veganFullEnglish
+22 toast
+22 pancakes
+91 veganPizza
+22 fishAndChips
+22 mushroomOmelette
+0 nutBake
+6 boiledEggs
+135 bananaIceCream
+91 veganPizza
+22 fishAndChips
+22 mushroomOmelette
+0 nutBake
+6 boiledEggs
+135 bananaIceCream
+0 bananaIceCream
+0 canOfBeer
+422500.0
+?
+439729
+17229.0
+47531.25
+?
+56026
+8494.75
+9295.0
+?
+14187
+4892.0
+4436.25
+?
+6288
+1851.75
+9506.25
+?
+13146
+3639.75
+2022-03-01
+Tuesday
+139
+93 veganPorridge
+23 veganFullEnglish
+23 veganYoghurt
+93 veganSausageCasserole
+23 shepherdsPie
+23 beanChilli
+7 porkSausages
+9 yorkshirePuddings
+124 peanutCookies
+93 veganSausageCasserole
+23 shepherdsPie
+23 beanChilli
+7 porkSausages
+9 yorkshirePuddings
+124 peanutCookies
+0 bananaIceCream
+0 canOfBeer
+418000.0
+?
+439622
+21622.0
+47025.0
+?
+52164
+5139.0
+9196.0
+?
+13968
+4772.0
+4389.0
+?
+11515
+7126.0
+9405.0
+?
+21063
+11658.0
+2022-03-02
+Wednesday
+136
+72 veganYoghurt
+42 fullEnglish
+22 toast
+22 fishPaella
+22 sushi
+92 potatoCurry
+63 eggFriedRice
+133 breadRolls
+132 chocolateMousse
+22 fishPaella
+22 sushi
+92 potatoCurry
+63 eggFriedRice
+133 breadRolls
+132 chocolateMousse
+0 bananaIceCream
+0 canOfBeer
+412000.0
+?
+414114
+2114.0
+46350.0
+?
+46380
+30.0
+9064.0
+?
+17049
+7985.0
+4326.0
+?
+4327
+1.0
+9270.0
+?
+15446
+6176.0
+2022-03-03
+Thursday
+125
+20 pancakes
+20 yoghurt
+85 veganFullEnglish
+52 vegSpagBol
+20 ratatouille
+53 lambMoussaka
+125 beans
+109 broccoli
+125 veganFruitYoghurt
+52 vegSpagBol
+20 ratatouille
+53 lambMoussaka
+125 beans
+109 broccoli
+125 veganFruitYoghurt
+0 bananaIceCream
+0 canOfBeer
+382500.0
+?
+382520
+20.0
+43031.25
+?
+46660
+3628.75
+8415.0
+?
+10857
+2442.0
+4016.25
+?
+11502
+7485.75
+8606.25
+?
+21289
+12682.75
+2022-03-04
+Friday
+125
+85 toast
+20 pancakes
+20 fullEnglish
+85 marghertia
+20 quornLasagne
+20 mushroomRisotto
+1 chips
+7 peas
+118 chocolateCake
+85 marghertia
+20 quornLasagne
+20 mushroomRisotto
+1 chips
+7 peas
+118 chocolateCake
+0 bananaIceCream
+0 canOfBeer
+367000.0
+?
+482996
+115996.0
+41287.5
+?
+58120
+16832.5
+8074.0
+?
+20131
+12057.0
+3853.5
+?
+3854
+0.5
+8257.5
+?
+13496
+5238.5
+2022-03-05
+Saturday
+125
+85 yoghurt
+20 veganYoghurt
+20 veganPorridge
+85 jacketSpud
+20 kievs
+20 chickenNoodles
+0 veganSausages
+72 Rice
+125 berryCrumble
+85 jacketSpud
+20 kievs
+20 chickenNoodles
+0 veganSausages
+72 Rice
+125 berryCrumble
+125 peanutCookies
+125 glassOfWine
+367000.0
+?
+400522
+33522.0
+41287.5
+?
+41325
+37.5
+8074.0
+?
+20725
+12651.0
+3853.5
+?
+5401
+1547.5
+8257.5
+?
+11390
+3132.5
+2022-03-06
+Sunday
+125
+85 fullEnglish
+20 veganPorridge
+20 yoghurt
+85 mushroomSoup
+20 pepperoniPizza
+20 vegChowMein
+125 bakedPotato
+102 roastPotatoes
+118 jelly
+85 mushroomSoup
+20 pepperoniPizza
+20 vegChowMein
+125 bakedPotato
+102 roastPotatoes
+118 jelly
+0 peanutCookies
+0 glassOfWine
+367000.0
+?
+387961
+20961.0
+41287.5
+?
+41288
+0.5
+8074.0
+?
+16621
+8547.0
+3853.5
+?
+5392
+1538.5
+8257.5
+?
+12459
+4201.5
+2022-03-07
+Monday
+117
+79 veganFullEnglish
+19 toast
+19 pancakes
+79 veganPizza
+19 fishAndChips
+19 mushroomOmelette
+0 nutBake
+6 boiledEggs
+117 bananaIceCream
+79 veganPizza
+19 fishAndChips
+19 mushroomOmelette
+0 nutBake
+6 boiledEggs
+117 bananaIceCream
+0 peanutCookies
+0 glassOfWine
+351000.0
+?
+381351
+30351.0
+39487.5
+?
+48594
+9106.5
+7722.0
+?
+12303
+4581.0
+3685.5
+?
+5453
+1767.5
+7897.5
+?
+11402
+3504.5
+2022-03-08
+Tuesday
+122
+82 veganPorridge
+20 veganFullEnglish
+20 veganYoghurt
+82 veganSausageCasserole
+20 shepherdsPie
+20 beanChilli
+3 porkSausages
+1 yorkshirePuddings
+118 peanutCookies
+82 veganSausageCasserole
+20 shepherdsPie
+20 beanChilli
+3 porkSausages
+1 yorkshirePuddings
+118 peanutCookies
+0 peanutCookies
+0 glassOfWine
+358000.0
+?
+390041
+32041.0
+40275.0
+?
+46096
+5821.0
+7876.0
+?
+12503
+4627.0
+3759.0
+?
+10193
+6434.0
+8055.0
+?
+18646
+10591.0
+2022-03-09
+Wednesday
+121
+70 veganYoghurt
+31 fullEnglish
+20 toast
+20 fishPaella
+20 sushi
+81 potatoCurry
+47 eggFriedRice
+118 breadRolls
+121 chocolateMousse
+20 fishPaella
+20 sushi
+81 potatoCurry
+47 eggFriedRice
+118 breadRolls
+121 chocolateMousse
+0 peanutCookies
+0 glassOfWine
+356000.0
+?
+357824
+1824.0
+40050.0
+?
+40086
+36.0
+7832.0
+?
+14870
+7038.0
+3738.0
+?
+3738
+0.0
+8010.0
+?
+13344
+5334.0
+2022-03-10
+Thursday
+109
+18 pancakes
+18 yoghurt
+73 veganFullEnglish
+50 vegSpagBol
+18 ratatouille
+41 lambMoussaka
+109 beans
+95 broccoli
+109 veganFruitYoghurt
+50 vegSpagBol
+18 ratatouille
+41 lambMoussaka
+109 beans
+95 broccoli
+109 veganFruitYoghurt
+0 peanutCookies
+0 glassOfWine
+329500.0
+?
+329506
+6.0
+37068.75
+?
+40497
+3428.25
+7249.0
+?
+9180
+1931.0
+3459.75
+?
+9932
+6472.25
+7413.75
+?
+18376
+10962.25
+2022-03-11
+Friday
+109
+73 toast
+18 pancakes
+18 fullEnglish
+73 marghertia
+18 quornLasagne
+18 mushroomRisotto
+0 chips
+6 peas
+109 chocolateCake
+73 marghertia
+18 quornLasagne
+18 mushroomRisotto
+0 chips
+6 peas
+109 chocolateCake
+0 peanutCookies
+0 glassOfWine
+319000.0
+?
+423004
+104004.0
+35887.5
+?
+50727
+14839.5
+7018.0
+?
+17787
+10769.0
+3349.5
+?
+3376
+26.5
+7177.5
+?
+11778
+4600.5
+2022-03-12
+Saturday
+109
+73 yoghurt
+18 veganYoghurt
+18 veganPorridge
+73 jacketSpud
+18 kievs
+18 chickenNoodles
+107 veganSausages
+40 Rice
+106 berryCrumble
+73 jacketSpud
+18 kievs
+18 chickenNoodles
+107 veganSausages
+40 Rice
+106 berryCrumble
+109 bananaIceCream
+109 canOfBeer
+319000.0
+?
+375468
+56468.0
+35887.5
+?
+35900
+12.5
+7018.0
+?
+20406
+13388.0
+3349.5
+?
+5299
+1949.5
+7177.5
+?
+11560
+4382.5
+2022-03-13
+Sunday
+109
+73 fullEnglish
+18 veganPorridge
+18 yoghurt
+73 mushroomSoup
+18 pepperoniPizza
+18 vegChowMein
+109 bakedPotato
+87 roastPotatoes
+103 jelly
+73 mushroomSoup
+18 pepperoniPizza
+18 vegChowMein
+109 bakedPotato
+87 roastPotatoes
+103 jelly
+0 bananaIceCream
+0 canOfBeer
+319000.0
+?
+337129
+18129.0
+35887.5
+?
+35912
+24.5
+7018.0
+?
+14422
+7404.0
+3349.5
+?
+4676
+1326.5
+7177.5
+?
+10854
+3676.5
+2022-03-14
+Monday
+98
+66 veganFullEnglish
+16 toast
+16 pancakes
+66 veganPizza
+16 fishAndChips
+16 mushroomOmelette
+8 nutBake
+0 boiledEggs
+98 bananaIceCream
+66 veganPizza
+16 fishAndChips
+16 mushroomOmelette
+8 nutBake
+0 boiledEggs
+98 bananaIceCream
+0 bananaIceCream
+0 canOfBeer
+297000.0
+?
+329234
+32234.0
+33412.5
+?
+40807
+7394.5
+6534.0
+?
+11241
+4707.0
+3118.5
+?
+4669
+1550.5
+6682.5
+?
+9755
+3072.5
+2022-03-15
+Tuesday
+98
+66 veganPorridge
+16 veganFullEnglish
+16 veganYoghurt
+66 veganSausageCasserole
+16 shepherdsPie
+16 beanChilli
+8 porkSausages
+3 yorkshirePuddings
+90 peanutCookies
+66 veganSausageCasserole
+16 shepherdsPie
+16 beanChilli
+8 porkSausages
+3 yorkshirePuddings
+90 peanutCookies
+0 bananaIceCream
+0 canOfBeer
+292000.0
+?
+312436
+20436.0
+32850.0
+?
+36837
+3987.0
+6424.0
+?
+10036
+3612.0
+3066.0
+?
+8154
+5088.0
+6570.0
+?
+14968
+8398.0
+2022-03-16
+Wednesday
+98
+39 veganYoghurt
+16 fullEnglish
+43 toast
+22 fishPaella
+16 sushi
+60 potatoCurry
+20 eggFriedRice
+98 breadRolls
+90 peanutCookies
+22 fishPaella
+16 sushi
+60 potatoCurry
+20 eggFriedRice
+98 breadRolls
+90 peanutCookies
+0 peanutCookies
+0 glassOfWine
+292000.0
+?
+292068
+68.0
+32850.0
+?
+33776
+926.0
+6424.0
+?
+10953
+4529.0
+3066.0
+?
+3066
+0.0
+6570.0
+?
+12428
+5858.0
+2022-03-17
+Thursday
+89
+14 pancakes
+14 yoghurt
+61 veganFullEnglish
+53 vegSpagBol
+14 ratatouille
+22 lambMoussaka
+83 beans
+0 broccoli
+89 fruitSalad
+53 vegSpagBol
+14 ratatouille
+22 lambMoussaka
+83 beans
+0 broccoli
+89 fruitSalad
+0 peanutCookies
+0 glassOfWine
+274000.0
+?
+274087
+87.0
+30825.0
+?
+38726
+7901.0
+6028.0
+?
+6029
+1.0
+2877.0
+?
+8075
+5198.0
+6165.0
+?
+11377
+5212.0
+2022-03-18
+Friday
+89
+61 toast
+14 pancakes
+14 fullEnglish
+61 jacketSpud
+14 quornLasagne
+14 mushroomRisotto
+10 chips
+0 peas
+89 veganFruitYoghurt
+61 jacketSpud
+14 quornLasagne
+14 mushroomRisotto
+10 chips
+0 peas
+89 veganFruitYoghurt
+0 peanutCookies
+0 glassOfWine
+257500.0
+?
+267421
+9921.0
+28968.75
+?
+29100
+131.25
+5665.0
+?
+10925
+5260.0
+2703.75
+?
+4917
+2213.25
+5793.75
+?
+10360
+4566.25
+2022-03-19
+Saturday
+89
+61 yoghurt
+14 veganYoghurt
+14 veganPorridge
+61 marghertia
+14 kievs
+14 mushroomSoup
+77 veganSausages
+0 Rice
+85 chocolateMousse
+61 marghertia
+14 kievs
+14 mushroomSoup
+77 veganSausages
+0 Rice
+85 chocolateMousse
+0 peanutCookies
+0 glassOfWine
+257500.0
+?
+323647
+66147.0
+28968.75
+?
+30821
+1852.25
+5665.0
+?
+17156
+11491.0
+2703.75
+?
+2706
+2.25
+5793.75
+?
+10348
+4554.25
+2022-03-20
+Sunday
+89
+61 fullEnglish
+14 veganPorridge
+14 yoghurt
+61 chickenNoodles
+14 pepperoniPizza
+14 vegChowMein
+89 bakedPotato
+16 roastPotatoes
+89 bananaIceCream
+61 chickenNoodles
+14 pepperoniPizza
+14 vegChowMein
+89 bakedPotato
+16 roastPotatoes
+89 bananaIceCream
+0 peanutCookies
+0 glassOfWine
+257500.0
+?
+346205
+88705.0
+28968.75
+?
+28997
+28.25
+5665.0
+?
+19015
+13350.0
+2703.75
+?
+4008
+1304.25
+5793.75
+?
+11066
+5272.25
+2022-03-21
+Monday
+89
+61 veganFullEnglish
+14 toast
+14 pancakes
+61 veganPizza
+14 fishAndChips
+14 mushroomOmelette
+9 nutBake
+0 porkSausages
+85 chocolateCake
+61 veganPizza
+14 fishAndChips
+14 mushroomOmelette
+9 nutBake
+0 porkSausages
+85 chocolateCake
+0 peanutCookies
+0 glassOfWine
+257500.0
+?
+346893
+89393.0
+28968.75
+?
+40904
+11935.25
+5665.0
+?
+13787
+8122.0
+2703.75
+?
+4122
+1418.25
+5793.75
+?
+9355
+3561.25
+2022-03-22
+Tuesday
+89
+61 veganPorridge
+14 veganFullEnglish
+14 veganYoghurt
+61 veganSausageCasserole
+14 shepherdsPie
+14 beanChilli
+3 boiledEggs
+6 yorkshirePuddings
+85 walnutCake
+61 veganSausageCasserole
+14 shepherdsPie
+14 beanChilli
+3 boiledEggs
+6 yorkshirePuddings
+85 walnutCake
+89 peanutCookies
+89 glassOfWine
+257500.0
+?
+293826
+36326.0
+28968.75
+?
+36297
+7328.25
+5665.0
+?
+10001
+4336.0
+2703.75
+?
+6860
+4156.25
+5793.75
+?
+11622
+5828.25
+2022-03-23
+Wednesday
+89
+61 veganYoghurt
+14 fullEnglish
+14 toast
+28 fishPaella
+14 sushi
+47 potatoCurry
+13 eggFriedRice
+89 breadRolls
+85 peanutCookies
+28 fishPaella
+14 sushi
+47 potatoCurry
+13 eggFriedRice
+89 breadRolls
+85 peanutCookies
+0 peanutCookies
+0 glassOfWine
+257500.0
+?
+261783
+4283.0
+28968.75
+?
+29014
+45.25
+5665.0
+?
+10128
+4463.0
+2703.75
+?
+2704
+0.25
+5793.75
+?
+11768
+5974.25
+2022-03-24
+Thursday
+89
+14 pancakes
+14 yoghurt
+61 veganFullEnglish
+60 vegSpagBol
+14 ratatouille
+15 lambMoussaka
+81 beans
+0 broccoli
+89 fruitSalad
+60 vegSpagBol
+14 ratatouille
+15 lambMoussaka
+81 beans
+0 broccoli
+89 fruitSalad
+0 peanutCookies
+0 glassOfWine
+257500.0
+?
+268506
+11006.0
+28968.75
+?
+38328
+9359.25
+5665.0
+?
+5666
+1.0
+2703.75
+?
+7896
+5192.25
+5793.75
+?
+11103
+5309.25
+2022-03-25
+Friday
+89
+61 toast
+14 pancakes
+14 fullEnglish
+61 jacketSpud
+14 quornLasagne
+14 mushroomRisotto
+10 chips
+0 peas
+89 veganFruitYoghurt
+61 jacketSpud
+14 quornLasagne
+14 mushroomRisotto
+10 chips
+0 peas
+89 veganFruitYoghurt
+0 peanutCookies
+0 glassOfWine
+257500.0
+?
+267421
+9921.0
+28968.75
+?
+29100
+131.25
+5665.0
+?
+10925
+5260.0
+2703.75
+?
+4917
+2213.25
+5793.75
+?
+10360
+4566.25
+2022-03-26
+Saturday
+89
+61 yoghurt
+14 veganYoghurt
+14 veganPorridge
+61 marghertia
+14 kievs
+14 mushroomSoup
+77 veganSausages
+0 Rice
+85 chocolateMousse
+61 marghertia
+14 kievs
+14 mushroomSoup
+77 veganSausages
+0 Rice
+85 chocolateMousse
+0 peanutCookies
+0 glassOfWine
+257500.0
+?
+323647
+66147.0
+28968.75
+?
+30821
+1852.25
+5665.0
+?
+17156
+11491.0
+2703.75
+?
+2706
+2.25
+5793.75
+?
+10348
+4554.25
+2022-03-27
+Sunday
+89
+61 fullEnglish
+14 veganPorridge
+14 yoghurt
+61 chickenNoodles
+14 pepperoniPizza
+14 vegChowMein
+89 bakedPotato
+16 roastPotatoes
+89 bananaIceCream
+61 chickenNoodles
+14 pepperoniPizza
+14 vegChowMein
+89 bakedPotato
+16 roastPotatoes
+89 bananaIceCream
+0 peanutCookies
+0 glassOfWine
+257500.0
+?
+346205
+88705.0
+28968.75
+?
+28997
+28.25
+5665.0
+?
+19015
+13350.0
+2703.75
+?
+4008
+1304.25
+5793.75
+?
+11066
+5272.25
+2022-03-28
+Monday
+89
+61 veganFullEnglish
+14 toast
+14 pancakes
+61 veganPizza
+14 fishAndChips
+14 mushroomOmelette
+9 nutBake
+0 porkSausages
+85 chocolateCake
+61 veganPizza
+14 fishAndChips
+14 mushroomOmelette
+9 nutBake
+0 porkSausages
+85 chocolateCake
+0 peanutCookies
+0 glassOfWine
+257500.0
+?
+346893
+89393.0
+28968.75
+?
+40904
+11935.25
+5665.0
+?
+13787
+8122.0
+2703.75
+?
+4122
+1418.25
+5793.75
+?
+9355
+3561.25
+2022-03-29
+Tuesday
+89
+61 veganPorridge
+14 veganFullEnglish
+14 veganYoghurt
+61 veganSausageCasserole
+14 shepherdsPie
+14 beanChilli
+3 boiledEggs
+6 yorkshirePuddings
+85 walnutCake
+61 veganSausageCasserole
+14 shepherdsPie
+14 beanChilli
+3 boiledEggs
+6 yorkshirePuddings
+85 walnutCake
+89 bananaIceCream
+89 canOfBeer
+257500.0
+?
+293826
+36326.0
+28968.75
+?
+36297
+7328.25
+5665.0
+?
+10001
+4336.0
+2703.75
+?
+6860
+4156.25
+5793.75
+?
+11622
+5828.25
+2022-03-30
+Wednesday
+89
+61 veganYoghurt
+14 fullEnglish
+14 toast
+28 fishPaella
+14 sushi
+47 potatoCurry
+13 eggFriedRice
+89 breadRolls
+85 peanutCookies
+28 fishPaella
+14 sushi
+47 potatoCurry
+13 eggFriedRice
+89 breadRolls
+85 peanutCookies
+0 bananaIceCream
+0 canOfBeer
+257500.0
+?
+261783
+4283.0
+28968.75
+?
+29014
+45.25
+5665.0
+?
+10128
+4463.0
+2703.75
+?
+2704
+0.25
+5793.75
+?
+11768
+5974.25
+2022-03-31
+Thursday
+89
+14 pancakes
+14 yoghurt
+61 veganFullEnglish
+60 vegSpagBol
+14 ratatouille
+15 lambMoussaka
+81 beans
+0 broccoli
+89 fruitSalad
+60 vegSpagBol
+14 ratatouille
+15 lambMoussaka
+81 beans
+0 broccoli
+89 fruitSalad
+0 bananaIceCream
+0 canOfBeer
+257500.0
+?
+268506
+11006.0
+28968.75
+?
+38328
+9359.25
+5665.0
+?
+5666
+1.0
+2703.75
+?
+7896
+5192.25
+5793.75
+?
+11103
+5309.25
+2022-04-01
+Friday
+89
+61 toast
+14 pancakes
+14 fullEnglish
+61 jacketSpud
+14 quornLasagne
+14 mushroomRisotto
+10 chips
+0 peas
+89 veganFruitYoghurt
+61 jacketSpud
+14 quornLasagne
+14 mushroomRisotto
+10 chips
+0 peas
+89 veganFruitYoghurt
+0 bananaIceCream
+0 canOfBeer
+257500.0
+?
+267421
+9921.0
+28968.75
+?
+29100
+131.25
+5665.0
+?
+10925
+5260.0
+2703.75
+?
+4917
+2213.25
+5793.75
+?
+10360
+4566.25
+2022-04-02
+Saturday
+89
+61 yoghurt
+14 veganYoghurt
+14 veganPorridge
+61 marghertia
+14 kievs
+14 mushroomSoup
+77 veganSausages
+0 Rice
+85 chocolateMousse
+61 marghertia
+14 kievs
+14 mushroomSoup
+77 veganSausages
+0 Rice
+85 chocolateMousse
+0 bananaIceCream
+0 canOfBeer
+257500.0
+?
+323647
+66147.0
+28968.75
+?
+30821
+1852.25
+5665.0
+?
+17156
+11491.0
+2703.75
+?
+2706
+2.25
+5793.75
+?
+10348
+4554.25
+2022-04-03
+Sunday
+89
+61 fullEnglish
+14 veganPorridge
+14 yoghurt
+61 chickenNoodles
+14 pepperoniPizza
+14 vegChowMein
+89 bakedPotato
+16 roastPotatoes
+89 bananaIceCream
+61 chickenNoodles
+14 pepperoniPizza
+14 vegChowMein
+89 bakedPotato
+16 roastPotatoes
+89 bananaIceCream
+0 bananaIceCream
+0 canOfBeer
+257500.0
+?
+346205
+88705.0
+28968.75
+?
+28997
+28.25
+5665.0
+?
+19015
+13350.0
+2703.75
+?
+4008
+1304.25
+5793.75
+?
+11066
+5272.25
+2022-04-04
+Monday
+89
+61 veganFullEnglish
+14 toast
+14 pancakes
+61 veganPizza
+14 fishAndChips
+14 mushroomOmelette
+9 nutBake
+0 porkSausages
+85 chocolateCake
+61 veganPizza
+14 fishAndChips
+14 mushroomOmelette
+9 nutBake
+0 porkSausages
+85 chocolateCake
+0 bananaIceCream
+0 canOfBeer
+257500.0
+?
+346893
+89393.0
+28968.75
+?
+40904
+11935.25
+5665.0
+?
+13787
+8122.0
+2703.75
+?
+4122
+1418.25
+5793.75
+?
+9355
+3561.25
+2022-04-05
+Tuesday
+89
+61 veganPorridge
+14 veganFullEnglish
+14 veganYoghurt
+61 veganSausageCasserole
+14 shepherdsPie
+14 beanChilli
+3 boiledEggs
+6 yorkshirePuddings
+85 walnutCake
+61 veganSausageCasserole
+14 shepherdsPie
+14 beanChilli
+3 boiledEggs
+6 yorkshirePuddings
+85 walnutCake
+89 peanutCookies
+89 glassOfWine
+257500.0
+?
+293826
+36326.0
+28968.75
+?
+36297
+7328.25
+5665.0
+?
+10001
+4336.0
+2703.75
+?
+6860
+4156.25
+5793.75
+?
+11622
+5828.25
+2022-04-06
+Wednesday
+89
+61 veganYoghurt
+14 fullEnglish
+14 toast
+28 fishPaella
+14 sushi
+47 potatoCurry
+13 eggFriedRice
+89 breadRolls
+85 peanutCookies
+28 fishPaella
+14 sushi
+47 potatoCurry
+13 eggFriedRice
+89 breadRolls
+85 peanutCookies
+0 peanutCookies
+0 glassOfWine
+257500.0
+?
+261783
+4283.0
+28968.75
+?
+29014
+45.25
+5665.0
+?
+10128
+4463.0
+2703.75
+?
+2704
+0.25
+5793.75
+?
+11768
+5974.25
+2022-04-07
+Thursday
+89
+14 pancakes
+14 yoghurt
+61 veganFullEnglish
+60 vegSpagBol
+14 ratatouille
+15 lambMoussaka
+81 beans
+0 broccoli
+89 fruitSalad
+60 vegSpagBol
+14 ratatouille
+15 lambMoussaka
+81 beans
+0 broccoli
+89 fruitSalad
+0 peanutCookies
+0 glassOfWine
+257500.0
+?
+268506
+11006.0
+28968.75
+?
+38328
+9359.25
+5665.0
+?
+5666
+1.0
+2703.75
+?
+7896
+5192.25
+5793.75
+?
+11103
+5309.25
+2022-04-08
+Friday
+89
+61 toast
+14 pancakes
+14 fullEnglish
+61 jacketSpud
+14 quornLasagne
+14 mushroomRisotto
+3 chips
+89 peas
+89 veganFruitYoghurt
+61 jacketSpud
+14 quornLasagne
+14 mushroomRisotto
+3 chips
+89 peas
+89 veganFruitYoghurt
+0 peanutCookies
+0 glassOfWine
+257500.0
+?
+257644
+144.0
+28968.75
+?
+28987
+18.25
+5665.0
+?
+10328
+4663.0
+2703.75
+?
+5431
+2727.25
+5793.75
+?
+10794
+5000.25
+2022-04-09
+Saturday
+89
+61 yoghurt
+14 veganYoghurt
+14 veganPorridge
+61 marghertia
+14 kievs
+14 mushroomSoup
+77 veganSausages
+0 Rice
+85 chocolateMousse
+61 marghertia
+14 kievs
+14 mushroomSoup
+77 veganSausages
+0 Rice
+85 chocolateMousse
+0 peanutCookies
+0 glassOfWine
+257500.0
+?
+323647
+66147.0
+28968.75
+?
+30821
+1852.25
+5665.0
+?
+17156
+11491.0
+2703.75
+?
+2706
+2.25
+5793.75
+?
+10348
+4554.25
+2022-04-10
+Sunday
+89
+61 fullEnglish
+14 veganPorridge
+14 yoghurt
+61 chickenNoodles
+14 pepperoniPizza
+14 vegChowMein
+89 bakedPotato
+16 roastPotatoes
+89 bananaIceCream
+61 chickenNoodles
+14 pepperoniPizza
+14 vegChowMein
+89 bakedPotato
+16 roastPotatoes
+89 bananaIceCream
+0 peanutCookies
+0 glassOfWine
+257500.0
+?
+346205
+88705.0
+28968.75
+?
+28997
+28.25
+5665.0
+?
+19015
+13350.0
+2703.75
+?
+4008
+1304.25
+5793.75
+?
+11066
+5272.25
+2022-04-11
+Monday
+89
+61 veganFullEnglish
+14 toast
+14 pancakes
+61 veganPizza
+14 fishAndChips
+14 mushroomOmelette
+9 nutBake
+0 porkSausages
+85 chocolateCake
+61 veganPizza
+14 fishAndChips
+14 mushroomOmelette
+9 nutBake
+0 porkSausages
+85 chocolateCake
+0 peanutCookies
+0 glassOfWine
+257500.0
+?
+346893
+89393.0
+28968.75
+?
+40904
+11935.25
+5665.0
+?
+13787
+8122.0
+2703.75
+?
+4122
+1418.25
+5793.75
+?
+9355
+3561.25
+2022-04-12
+Tuesday
+89
+61 veganPorridge
+14 veganFullEnglish
+14 veganYoghurt
+61 veganSausageCasserole
+14 shepherdsPie
+14 beanChilli
+3 boiledEggs
+6 yorkshirePuddings
+85 walnutCake
+61 veganSausageCasserole
+14 shepherdsPie
+14 beanChilli
+3 boiledEggs
+6 yorkshirePuddings
+85 walnutCake
+89 bananaIceCream
+89 canOfBeer
+257500.0
+?
+293826
+36326.0
+28968.75
+?
+36297
+7328.25
+5665.0
+?
+10001
+4336.0
+2703.75
+?
+6860
+4156.25
+5793.75
+?
+11622
+5828.25
+2022-04-13
+Wednesday
+89
+61 veganYoghurt
+14 fullEnglish
+14 toast
+28 fishPaella
+14 sushi
+47 potatoCurry
+13 eggFriedRice
+89 breadRolls
+85 peanutCookies
+28 fishPaella
+14 sushi
+47 potatoCurry
+13 eggFriedRice
+89 breadRolls
+85 peanutCookies
+0 bananaIceCream
+0 canOfBeer
+257500.0
+?
+261783
+4283.0
+28968.75
+?
+29014
+45.25
+5665.0
+?
+10128
+4463.0
+2703.75
+?
+2704
+0.25
+5793.75
+?
+11768
+5974.25
+2022-04-14
+Thursday
+89
+14 pancakes
+14 yoghurt
+61 veganFullEnglish
+60 vegSpagBol
+14 ratatouille
+15 lambMoussaka
+81 beans
+0 broccoli
+89 fruitSalad
+60 vegSpagBol
+14 ratatouille
+15 lambMoussaka
+81 beans
+0 broccoli
+89 fruitSalad
+0 bananaIceCream
+0 canOfBeer
+257500.0
+?
+268506
+11006.0
+28968.75
+?
+38328
+9359.25
+5665.0
+?
+5666
+1.0
+2703.75
+?
+7896
+5192.25
+5793.75
+?
+11103
+5309.25
+2022-04-15
+Friday
+89
+61 toast
+14 pancakes
+14 fullEnglish
+61 jacketSpud
+14 quornLasagne
+14 mushroomRisotto
+3 chips
+89 peas
+89 veganFruitYoghurt
+61 jacketSpud
+14 quornLasagne
+14 mushroomRisotto
+3 chips
+89 peas
+89 veganFruitYoghurt
+0 bananaIceCream
+0 canOfBeer
+257500.0
+?
+257644
+144.0
+28968.75
+?
+28987
+18.25
+5665.0
+?
+10328
+4663.0
+2703.75
+?
+5431
+2727.25
+5793.75
+?
+10794
+5000.25
+2022-04-16
+Saturday
+89
+61 yoghurt
+14 veganYoghurt
+14 veganPorridge
+61 marghertia
+14 kievs
+14 mushroomSoup
+77 veganSausages
+0 Rice
+85 chocolateMousse
+61 marghertia
+14 kievs
+14 mushroomSoup
+77 veganSausages
+0 Rice
+85 chocolateMousse
+0 bananaIceCream
+0 canOfBeer
+257500.0
+?
+323647
+66147.0
+28968.75
+?
+30821
+1852.25
+5665.0
+?
+17156
+11491.0
+2703.75
+?
+2706
+2.25
+5793.75
+?
+10348
+4554.25
+2022-04-17
+Sunday
+89
+61 fullEnglish
+14 veganPorridge
+14 yoghurt
+61 chickenNoodles
+14 pepperoniPizza
+14 vegChowMein
+89 bakedPotato
+16 roastPotatoes
+89 bananaIceCream
+61 chickenNoodles
+14 pepperoniPizza
+14 vegChowMein
+89 bakedPotato
+16 roastPotatoes
+89 bananaIceCream
+0 bananaIceCream
+0 canOfBeer
+257500.0
+?
+346205
+88705.0
+28968.75
+?
+28997
+28.25
+5665.0
+?
+19015
+13350.0
+2703.75
+?
+4008
+1304.25
+5793.75
+?
+11066
+5272.25
+2022-04-18
+Monday
+89
+61 veganFullEnglish
+14 toast
+14 pancakes
+61 veganPizza
+14 fishAndChips
+14 mushroomOmelette
+9 nutBake
+0 porkSausages
+85 chocolateCake
+61 veganPizza
+14 fishAndChips
+14 mushroomOmelette
+9 nutBake
+0 porkSausages
+85 chocolateCake
+0 bananaIceCream
+0 canOfBeer
+257500.0
+?
+346893
+89393.0
+28968.75
+?
+40904
+11935.25
+5665.0
+?
+13787
+8122.0
+2703.75
+?
+4122
+1418.25
+5793.75
+?
+9355
+3561.25
+2022-04-19
+Tuesday
+89
+61 toast
+14 porridge
+14 pancakes
+61 veganPizza
+14 sushi
+14 quornChilli
+3 porkSausages
+9 yorkshirePuddings
+85 chocolateCake
+61 veganPizza
+14 sushi
+14 quornChilli
+3 porkSausages
+9 yorkshirePuddings
+85 chocolateCake
+0 veganFruitYoghurt
+0 canOfBeer
+257500.0
+?
+273760
+16260.0
+28968.75
+?
+37932
+8963.25
+5665.0
+?
+9586
+3921.0
+2703.75
+?
+3177
+473.25
+5793.75
+?
+7623
+1829.25
+2022-04-20
+Wednesday
+89
+61 pancakes
+14 veganFullEnglish
+14 veganYoghurt
+61 veganSausageCasserole
+14 chickenCurry
+14 veganCanneloni
+3 eggFriedRice
+29 breadRolls
+80 jelly
+61 veganSausageCasserole
+14 chickenCurry
+14 veganCanneloni
+3 eggFriedRice
+29 breadRolls
+80 jelly
+0 veganFruitYoghurt
+0 canOfBeer
+257500.0
+?
+258004
+504.0
+28968.75
+?
+34841
+5872.25
+5665.0
+?
+6952
+1287.0
+2703.75
+?
+5837
+3133.25
+5793.75
+?
+11926
+6132.25
+2022-04-21
+Thursday
+89
+61 veganYoghurt
+14 yoghurt
+14 toast
+61 fishAndChips
+14 lambMoussaka
+14 marghertia
+1 beans
+8 broccoli
+86 berryCrumble
+61 fishAndChips
+14 lambMoussaka
+14 marghertia
+1 beans
+8 broccoli
+86 berryCrumble
+0 veganFruitYoghurt
+0 canOfBeer
+257500.0
+?
+297554
+40054.0
+28968.75
+?
+29063
+94.25
+5665.0
+?
+11814
+6149.0
+2703.75
+?
+2855
+151.25
+5793.75
+?
+10872
+5078.25
+2022-04-22
+Friday
+89
+61 porridge
+14 pancakes
+14 veganFullEnglish
+61 jacketSpud
+14 quornLasagne
+14 mushroomRisotto
+11 chips
+0 peas
+85 peanutCookies
+61 jacketSpud
+14 quornLasagne
+14 mushroomRisotto
+11 chips
+0 peas
+85 peanutCookies
+0 veganFruitYoghurt
+0 canOfBeer
+257500.0
+?
+300700
+43200.0
+28968.75
+?
+29131
+162.25
+5665.0
+?
+13615
+7950.0
+2703.75
+?
+5032
+2328.25
+5793.75
+?
+9537
+3743.25
+2022-04-23
+Saturday
+91
+61 yoghurt
+15 veganYoghurt
+15 veganPorridge
+61 beanChilli
+15 kievs
+15 chickenNoodles
+0 veganSausages
+10 Rice
+81 walnutCake
+61 beanChilli
+15 kievs
+15 chickenNoodles
+0 veganSausages
+10 Rice
+81 walnutCake
+0 veganFruitYoghurt
+0 canOfBeer
+263000.0
+?
+275998
+12998.0
+29587.5
+?
+32118
+2530.5
+5786.0
+?
+11304
+5518.0
+2761.5
+?
+5189
+2427.5
+5917.5
+?
+10312
+4394.5
+2022-04-24
+Sunday
+91
+61 veganFullEnglish
+15 veganPorridge
+15 yoghurt
+61 mushroomSoup
+15 pepperoniPizza
+15 vegChowMein
+29 bakedPotato
+0 roastPotatoes
+81 spongeCustard
+61 mushroomSoup
+15 pepperoniPizza
+15 vegChowMein
+29 bakedPotato
+0 roastPotatoes
+81 spongeCustard
+0 veganFruitYoghurt
+0 canOfBeer
+263000.0
+?
+278306
+15306.0
+29587.5
+?
+29652
+64.5
+5786.0
+?
+12811
+7025.0
+2761.5
+?
+2869
+107.5
+5917.5
+?
+7918
+2000.5
+2022-04-25
+Monday
+91
+61 veganPorridge
+15 toast
+15 porridge
+61 beefBurgers
+15 ratatouille
+15 vegSpagBol
+10 carrots
+0 nutBake
+81 veganPancakes
+61 beefBurgers
+15 ratatouille
+15 vegSpagBol
+10 carrots
+0 nutBake
+81 veganPancakes
+91 veganFruitYoghurt
+91 canOfBeer
+263000.0
+?
+367322
+104322.0
+29587.5
+?
+39754
+10166.5
+5786.0
+?
+11082
+5296.0
+2761.5
+?
+3731
+969.5
+5917.5
+?
+10503
+4585.5
+2022-04-26
+Tuesday
+91
+61 toast
+15 porridge
+15 pancakes
+61 veganPizza
+15 sushi
+15 quornChilli
+7 porkSausages
+5 yorkshirePuddings
+81 chocolateCake
+61 veganPizza
+15 sushi
+15 quornChilli
+7 porkSausages
+5 yorkshirePuddings
+81 chocolateCake
+0 veganFruitYoghurt
+0 canOfBeer
+263000.0
+?
+273170
+10170.0
+29587.5
+?
+37849
+8261.5
+5786.0
+?
+9460
+3674.0
+2761.5
+?
+3231
+469.5
+5917.5
+?
+7789
+1871.5
+2022-04-27
+Wednesday
+91
+61 pancakes
+15 veganFullEnglish
+15 veganYoghurt
+61 veganSausageCasserole
+15 chickenCurry
+15 veganCanneloni
+7 eggFriedRice
+26 breadRolls
+81 jelly
+61 veganSausageCasserole
+15 chickenCurry
+15 veganCanneloni
+7 eggFriedRice
+26 breadRolls
+81 jelly
+0 veganFruitYoghurt
+0 canOfBeer
+263000.0
+?
+263104
+104.0
+29587.5
+?
+35244
+5656.5
+5786.0
+?
+7183
+1397.0
+2761.5
+?
+5876
+3114.5
+5917.5
+?
+12211
+6293.5
+2022-04-28
+Thursday
+40
+28 veganYoghurt
+6 yoghurt
+6 toast
+28 fishAndChips
+6 lambMoussaka
+6 marghertia
+34 beans
+33 broccoli
+37 berryCrumble
+28 fishAndChips
+6 lambMoussaka
+6 marghertia
+34 beans
+33 broccoli
+37 berryCrumble
+0 veganFruitYoghurt
+0 canOfBeer
+161000.0
+?
+161716
+716.0
+18112.5
+?
+18113
+0.5
+3542.0
+?
+5331
+1789.0
+1690.5
+?
+2644
+953.5
+3622.5
+?
+6656
+3033.5
+2022-04-29
+Friday
+40
+28 porridge
+6 pancakes
+6 veganFullEnglish
+28 jacketSpud
+6 quornLasagne
+6 mushroomRisotto
+5 chips
+39 peas
+37 peanutCookies
+28 jacketSpud
+6 quornLasagne
+6 mushroomRisotto
+5 chips
+39 peas
+37 peanutCookies
+0 veganFruitYoghurt
+0 canOfBeer
+124000.0
+?
+139759
+15759.0
+13950.0
+?
+13970
+20.0
+2728.0
+?
+6091
+3363.0
+1302.0
+?
+2579
+1277.0
+2790.0
+?
+4563
+1773.0
+2022-04-30
+Saturday
+40
+28 yoghurt
+6 veganYoghurt
+6 veganPorridge
+28 beanChilli
+6 kievs
+6 chickenNoodles
+0 veganSausages
+10 Rice
+37 walnutCake
+28 beanChilli
+6 kievs
+6 chickenNoodles
+0 veganSausages
+10 Rice
+37 walnutCake
+0 veganFruitYoghurt
+0 canOfBeer
+124000.0
+?
+124113
+113.0
+13950.0
+?
+14847
+897.0
+2728.0
+?
+4915
+2187.0
+1302.0
+?
+2355
+1053.0
+2790.0
+?
+4594
+1804.0
+2022-05-01
+Sunday
+40
+28 veganFullEnglish
+6 veganPorridge
+6 yoghurt
+28 mushroomSoup
+6 pepperoniPizza
+6 vegChowMein
+24 bakedPotato
+0 roastPotatoes
+37 spongeCustard
+28 mushroomSoup
+6 pepperoniPizza
+6 vegChowMein
+24 bakedPotato
+0 roastPotatoes
+37 spongeCustard
+0 veganFruitYoghurt
+0 canOfBeer
+124000.0
+?
+127262
+3262.0
+13950.0
+?
+13988
+38.0
+2728.0
+?
+5699
+2971.0
+1302.0
+?
+1368
+66.0
+2790.0
+?
+3566
+776.0
+2022-05-02
+Monday
+40
+28 veganPorridge
+6 toast
+6 porridge
+28 beefBurgers
+6 ratatouille
+6 vegSpagBol
+3 carrots
+0 nutBake
+39 veganPancakes
+28 beefBurgers
+6 ratatouille
+6 vegSpagBol
+3 carrots
+0 nutBake
+39 veganPancakes
+40 peanutCookies
+40 glassOfWine
+124000.0
+?
+167812
+43812.0
+13950.0
+?
+18222
+4272.0
+2728.0
+?
+5047
+2319.0
+1302.0
+?
+1674
+372.0
+2790.0
+?
+4757
+1967.0
+2022-05-03
+Tuesday
+40
+28 toast
+6 porridge
+6 pancakes
+28 veganPizza
+6 sushi
+6 quornChilli
+3 porkSausages
+7 yorkshirePuddings
+37 chocolateCake
+28 veganPizza
+6 sushi
+6 quornChilli
+3 porkSausages
+7 yorkshirePuddings
+37 chocolateCake
+0 peanutCookies
+0 glassOfWine
+124000.0
+?
+124065
+65.0
+13950.0
+?
+17105
+3155.0
+2728.0
+?
+4379
+1651.0
+1302.0
+?
+1414
+112.0
+2790.0
+?
+3473
+683.0
+2022-05-04
+Wednesday
+40
+28 pancakes
+6 veganFullEnglish
+6 veganYoghurt
+28 veganSausageCasserole
+6 chickenCurry
+6 veganCanneloni
+39 eggFriedRice
+3 breadRolls
+39 jelly
+28 veganSausageCasserole
+6 chickenCurry
+6 veganCanneloni
+39 eggFriedRice
+3 breadRolls
+39 jelly
+0 peanutCookies
+0 glassOfWine
+124000.0
+?
+124263
+263.0
+13950.0
+?
+16876
+2926.0
+2728.0
+?
+3239
+511.0
+1302.0
+?
+2627
+1325.0
+2790.0
+?
+5852
+3062.0
+2022-05-05
+Thursday
+40
+28 veganYoghurt
+6 yoghurt
+6 toast
+28 fishAndChips
+6 lambMoussaka
+6 marghertia
+7 beans
+21 broccoli
+37 berryCrumble
+28 fishAndChips
+6 lambMoussaka
+6 marghertia
+7 beans
+21 broccoli
+37 berryCrumble
+0 peanutCookies
+0 glassOfWine
+124000.0
+?
+138668
+14668.0
+13950.0
+?
+13955
+5.0
+2728.0
+?
+5266
+2538.0
+1302.0
+?
+1575
+273.0
+2790.0
+?
+5263
+2473.0
+2022-05-06
+Friday
+40
+28 porridge
+6 pancakes
+6 veganFullEnglish
+28 jacketSpud
+6 quornLasagne
+6 mushroomRisotto
+5 chips
+39 peas
+37 peanutCookies
+28 jacketSpud
+6 quornLasagne
+6 mushroomRisotto
+5 chips
+39 peas
+37 peanutCookies
+0 peanutCookies
+0 glassOfWine
+124000.0
+?
+139759
+15759.0
+13950.0
+?
+13970
+20.0
+2728.0
+?
+6091
+3363.0
+1302.0
+?
+2579
+1277.0
+2790.0
+?
+4563
+1773.0
+2022-05-07
+Saturday
+40
+28 yoghurt
+6 veganYoghurt
+6 veganPorridge
+28 beanChilli
+6 kievs
+6 chickenNoodles
+0 veganSausages
+10 Rice
+37 walnutCake
+28 beanChilli
+6 kievs
+6 chickenNoodles
+0 veganSausages
+10 Rice
+37 walnutCake
+0 peanutCookies
+0 glassOfWine
+124000.0
+?
+124113
+113.0
+13950.0
+?
+14847
+897.0
+2728.0
+?
+4915
+2187.0
+1302.0
+?
+2355
+1053.0
+2790.0
+?
+4594
+1804.0
+2022-05-08
+Sunday
+40
+28 veganFullEnglish
+6 veganPorridge
+6 yoghurt
+28 mushroomSoup
+6 pepperoniPizza
+6 vegChowMein
+24 bakedPotato
+0 roastPotatoes
+37 spongeCustard
+28 mushroomSoup
+6 pepperoniPizza
+6 vegChowMein
+24 bakedPotato
+0 roastPotatoes
+37 spongeCustard
+0 peanutCookies
+0 glassOfWine
+124000.0
+?
+127262
+3262.0
+13950.0
+?
+13988
+38.0
+2728.0
+?
+5699
+2971.0
+1302.0
+?
+1368
+66.0
+2790.0
+?
+3566
+776.0
+2022-05-09
+Monday
+25
+17 veganPorridge
+4 toast
+4 porridge
+17 beefBurgers
+4 ratatouille
+4 vegSpagBol
+2 carrots
+0 nutBake
+24 veganPancakes
+17 beefBurgers
+4 ratatouille
+4 vegSpagBol
+2 carrots
+0 nutBake
+24 veganPancakes
+25 veganFruitYoghurt
+25 canOfBeer
+94000.0
+?
+102809
+8809.0
+10575.0
+?
+11178
+603.0
+2068.0
+?
+3095
+1027.0
+987.0
+?
+1037
+50.0
+2115.0
+?
+2923
+808.0
+2022-05-10
+Tuesday
+25
+17 toast
+4 porridge
+4 pancakes
+17 veganPizza
+4 sushi
+4 quornChilli
+1 porkSausages
+24 yorkshirePuddings
+24 chocolateCake
+17 veganPizza
+4 sushi
+4 quornChilli
+1 porkSausages
+24 yorkshirePuddings
+24 chocolateCake
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85529
+29.0
+9618.75
+?
+11490
+1871.25
+1881.0
+?
+3125
+1244.0
+897.75
+?
+925
+27.25
+1923.75
+?
+2477
+553.25
+2022-05-11
+Wednesday
+25
+17 pancakes
+4 veganFullEnglish
+4 veganYoghurt
+17 veganSausageCasserole
+4 chickenCurry
+4 veganCanneloni
+1 eggFriedRice
+25 breadRolls
+23 jelly
+17 veganSausageCasserole
+4 chickenCurry
+4 veganCanneloni
+1 eggFriedRice
+25 breadRolls
+23 jelly
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85755
+255.0
+9618.75
+?
+11728
+2109.25
+1881.0
+?
+2382
+501.0
+897.75
+?
+1701
+803.25
+1923.75
+?
+3733
+1809.25
+2022-05-12
+Thursday
+25
+17 veganYoghurt
+4 yoghurt
+4 toast
+17 fishAndChips
+4 lambMoussaka
+4 marghertia
+10 beans
+2 broccoli
+24 berryCrumble
+17 fishAndChips
+4 lambMoussaka
+4 marghertia
+10 beans
+2 broccoli
+24 berryCrumble
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+91581
+6081.0
+9618.75
+?
+9623
+4.25
+1881.0
+?
+3338
+1457.0
+897.75
+?
+1174
+276.25
+1923.75
+?
+3537
+1613.25
+2022-05-13
+Friday
+25
+17 porridge
+4 pancakes
+4 veganFullEnglish
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+7 chips
+12 peas
+24 peanutCookies
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+7 chips
+12 peas
+24 peanutCookies
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+97927
+12427.0
+9618.75
+?
+9622
+3.25
+1881.0
+?
+4156
+2275.0
+897.75
+?
+1618
+720.25
+1923.75
+?
+2933
+1009.25
+2022-05-14
+Saturday
+25
+17 yoghurt
+4 veganYoghurt
+4 veganPorridge
+17 beanChilli
+4 kievs
+4 chickenNoodles
+7 veganSausages
+25 Rice
+24 walnutCake
+17 beanChilli
+4 kievs
+4 chickenNoodles
+7 veganSausages
+25 Rice
+24 walnutCake
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85625
+125.0
+9618.75
+?
+10396
+777.25
+1881.0
+?
+3346
+1465.0
+897.75
+?
+1487
+589.25
+1923.75
+?
+3107
+1183.25
+2022-05-15
+Sunday
+25
+17 veganFullEnglish
+4 veganPorridge
+4 yoghurt
+17 mushroomSoup
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+4 roastPotatoes
+24 spongeCustard
+17 mushroomSoup
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+4 roastPotatoes
+24 spongeCustard
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85581
+81.0
+9618.75
+?
+9839
+220.25
+1881.0
+?
+3687
+1806.0
+897.75
+?
+962
+64.25
+1923.75
+?
+2372
+448.25
+2022-05-16
+Monday
+25
+17 veganPorridge
+4 toast
+4 porridge
+17 beefBurgers
+4 ratatouille
+4 vegSpagBol
+2 carrots
+0 nutBake
+24 veganPancakes
+17 beefBurgers
+4 ratatouille
+4 vegSpagBol
+2 carrots
+0 nutBake
+24 veganPancakes
+25 peanutCookies
+25 glassOfWine
+85500.0
+?
+102809
+17309.0
+9618.75
+?
+11178
+1559.25
+1881.0
+?
+3095
+1214.0
+897.75
+?
+1037
+139.25
+1923.75
+?
+2923
+999.25
+2022-05-17
+Tuesday
+25
+17 toast
+4 porridge
+4 pancakes
+17 veganPizza
+4 sushi
+4 quornChilli
+1 porkSausages
+24 yorkshirePuddings
+24 chocolateCake
+17 veganPizza
+4 sushi
+4 quornChilli
+1 porkSausages
+24 yorkshirePuddings
+24 chocolateCake
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+85529
+29.0
+9618.75
+?
+11490
+1871.25
+1881.0
+?
+3125
+1244.0
+897.75
+?
+925
+27.25
+1923.75
+?
+2477
+553.25
+2022-05-18
+Wednesday
+25
+17 pancakes
+4 veganFullEnglish
+4 veganYoghurt
+17 veganSausageCasserole
+4 chickenCurry
+4 veganCanneloni
+1 eggFriedRice
+25 breadRolls
+23 jelly
+17 veganSausageCasserole
+4 chickenCurry
+4 veganCanneloni
+1 eggFriedRice
+25 breadRolls
+23 jelly
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+85755
+255.0
+9618.75
+?
+11728
+2109.25
+1881.0
+?
+2382
+501.0
+897.75
+?
+1701
+803.25
+1923.75
+?
+3733
+1809.25
+2022-05-19
+Thursday
+25
+17 veganYoghurt
+4 yoghurt
+4 toast
+17 fishAndChips
+4 lambMoussaka
+4 marghertia
+10 beans
+2 broccoli
+24 berryCrumble
+17 fishAndChips
+4 lambMoussaka
+4 marghertia
+10 beans
+2 broccoli
+24 berryCrumble
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+91581
+6081.0
+9618.75
+?
+9623
+4.25
+1881.0
+?
+3338
+1457.0
+897.75
+?
+1174
+276.25
+1923.75
+?
+3537
+1613.25
+2022-05-20
+Friday
+25
+17 porridge
+4 pancakes
+4 veganFullEnglish
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+7 chips
+12 peas
+24 peanutCookies
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+7 chips
+12 peas
+24 peanutCookies
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+97927
+12427.0
+9618.75
+?
+9622
+3.25
+1881.0
+?
+4156
+2275.0
+897.75
+?
+1618
+720.25
+1923.75
+?
+2933
+1009.25
+2022-05-21
+Saturday
+25
+17 yoghurt
+4 veganYoghurt
+4 veganPorridge
+17 beanChilli
+4 kievs
+4 chickenNoodles
+7 veganSausages
+25 Rice
+24 walnutCake
+17 beanChilli
+4 kievs
+4 chickenNoodles
+7 veganSausages
+25 Rice
+24 walnutCake
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+85625
+125.0
+9618.75
+?
+10396
+777.25
+1881.0
+?
+3346
+1465.0
+897.75
+?
+1487
+589.25
+1923.75
+?
+3107
+1183.25
+2022-05-22
+Sunday
+25
+17 veganFullEnglish
+4 veganPorridge
+4 yoghurt
+17 mushroomSoup
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+4 roastPotatoes
+24 spongeCustard
+17 mushroomSoup
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+4 roastPotatoes
+24 spongeCustard
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+85581
+81.0
+9618.75
+?
+9839
+220.25
+1881.0
+?
+3687
+1806.0
+897.75
+?
+962
+64.25
+1923.75
+?
+2372
+448.25
+2022-05-23
+Monday
+25
+17 veganPorridge
+4 toast
+4 porridge
+17 beefBurgers
+4 ratatouille
+4 vegSpagBol
+2 carrots
+0 nutBake
+24 veganPancakes
+17 beefBurgers
+4 ratatouille
+4 vegSpagBol
+2 carrots
+0 nutBake
+24 veganPancakes
+25 veganFruitYoghurt
+25 canOfBeer
+85500.0
+?
+102809
+17309.0
+9618.75
+?
+11178
+1559.25
+1881.0
+?
+3095
+1214.0
+897.75
+?
+1037
+139.25
+1923.75
+?
+2923
+999.25
+2022-05-24
+Tuesday
+25
+17 toast
+4 porridge
+4 pancakes
+17 veganPizza
+4 sushi
+4 quornChilli
+1 porkSausages
+24 yorkshirePuddings
+24 chocolateCake
+17 veganPizza
+4 sushi
+4 quornChilli
+1 porkSausages
+24 yorkshirePuddings
+24 chocolateCake
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85529
+29.0
+9618.75
+?
+11490
+1871.25
+1881.0
+?
+3125
+1244.0
+897.75
+?
+925
+27.25
+1923.75
+?
+2477
+553.25
+2022-05-25
+Wednesday
+25
+17 pancakes
+4 veganFullEnglish
+4 veganYoghurt
+17 veganSausageCasserole
+4 chickenCurry
+4 veganCanneloni
+1 eggFriedRice
+25 breadRolls
+23 jelly
+17 veganSausageCasserole
+4 chickenCurry
+4 veganCanneloni
+1 eggFriedRice
+25 breadRolls
+23 jelly
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85755
+255.0
+9618.75
+?
+11728
+2109.25
+1881.0
+?
+2382
+501.0
+897.75
+?
+1701
+803.25
+1923.75
+?
+3733
+1809.25
+2022-05-26
+Thursday
+25
+17 veganYoghurt
+4 yoghurt
+4 toast
+17 fishAndChips
+4 lambMoussaka
+4 marghertia
+10 beans
+2 broccoli
+24 berryCrumble
+17 fishAndChips
+4 lambMoussaka
+4 marghertia
+10 beans
+2 broccoli
+24 berryCrumble
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+91581
+6081.0
+9618.75
+?
+9623
+4.25
+1881.0
+?
+3338
+1457.0
+897.75
+?
+1174
+276.25
+1923.75
+?
+3537
+1613.25
+2022-05-27
+Friday
+25
+17 porridge
+4 pancakes
+4 veganFullEnglish
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+7 chips
+12 peas
+24 peanutCookies
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+7 chips
+12 peas
+24 peanutCookies
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+97927
+12427.0
+9618.75
+?
+9622
+3.25
+1881.0
+?
+4156
+2275.0
+897.75
+?
+1618
+720.25
+1923.75
+?
+2933
+1009.25
+2022-05-28
+Saturday
+25
+17 yoghurt
+4 veganYoghurt
+4 veganPorridge
+17 beanChilli
+4 kievs
+4 chickenNoodles
+7 veganSausages
+25 Rice
+24 walnutCake
+17 beanChilli
+4 kievs
+4 chickenNoodles
+7 veganSausages
+25 Rice
+24 walnutCake
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85625
+125.0
+9618.75
+?
+10396
+777.25
+1881.0
+?
+3346
+1465.0
+897.75
+?
+1487
+589.25
+1923.75
+?
+3107
+1183.25
+2022-05-29
+Sunday
+25
+17 veganFullEnglish
+4 veganPorridge
+4 yoghurt
+17 mushroomSoup
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+4 roastPotatoes
+24 spongeCustard
+17 mushroomSoup
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+4 roastPotatoes
+24 spongeCustard
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85581
+81.0
+9618.75
+?
+9839
+220.25
+1881.0
+?
+3687
+1806.0
+897.75
+?
+962
+64.25
+1923.75
+?
+2372
+448.25
+2022-05-30
+Monday
+25
+17 veganPorridge
+4 toast
+4 porridge
+17 beefBurgers
+4 ratatouille
+4 vegSpagBol
+2 carrots
+0 nutBake
+24 veganPancakes
+17 beefBurgers
+4 ratatouille
+4 vegSpagBol
+2 carrots
+0 nutBake
+24 veganPancakes
+25 peanutCookies
+25 glassOfWine
+85500.0
+?
+102809
+17309.0
+9618.75
+?
+11178
+1559.25
+1881.0
+?
+3095
+1214.0
+897.75
+?
+1037
+139.25
+1923.75
+?
+2923
+999.25
+2022-05-31
+Tuesday
+25
+17 toast
+4 porridge
+4 pancakes
+17 veganPizza
+4 sushi
+4 quornChilli
+1 porkSausages
+24 yorkshirePuddings
+24 chocolateCake
+17 veganPizza
+4 sushi
+4 quornChilli
+1 porkSausages
+24 yorkshirePuddings
+24 chocolateCake
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+85529
+29.0
+9618.75
+?
+11490
+1871.25
+1881.0
+?
+3125
+1244.0
+897.75
+?
+925
+27.25
+1923.75
+?
+2477
+553.25
+2022-06-01
+Wednesday
+25
+17 pancakes
+4 veganFullEnglish
+4 veganYoghurt
+17 veganSausageCasserole
+4 chickenCurry
+4 veganCanneloni
+1 eggFriedRice
+25 breadRolls
+23 jelly
+17 veganSausageCasserole
+4 chickenCurry
+4 veganCanneloni
+1 eggFriedRice
+25 breadRolls
+23 jelly
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+85755
+255.0
+9618.75
+?
+11728
+2109.25
+1881.0
+?
+2382
+501.0
+897.75
+?
+1701
+803.25
+1923.75
+?
+3733
+1809.25
+2022-06-02
+Thursday
+25
+17 veganYoghurt
+4 yoghurt
+4 toast
+17 fishAndChips
+4 lambMoussaka
+4 marghertia
+10 beans
+2 broccoli
+24 berryCrumble
+17 fishAndChips
+4 lambMoussaka
+4 marghertia
+10 beans
+2 broccoli
+24 berryCrumble
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+91581
+6081.0
+9618.75
+?
+9623
+4.25
+1881.0
+?
+3338
+1457.0
+897.75
+?
+1174
+276.25
+1923.75
+?
+3537
+1613.25
+2022-06-03
+Friday
+25
+17 porridge
+4 pancakes
+4 veganFullEnglish
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+7 chips
+12 peas
+24 peanutCookies
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+7 chips
+12 peas
+24 peanutCookies
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+97927
+12427.0
+9618.75
+?
+9622
+3.25
+1881.0
+?
+4156
+2275.0
+897.75
+?
+1618
+720.25
+1923.75
+?
+2933
+1009.25
+2022-06-04
+Saturday
+25
+17 yoghurt
+4 veganYoghurt
+4 veganPorridge
+17 beanChilli
+4 kievs
+4 chickenNoodles
+7 veganSausages
+25 Rice
+24 walnutCake
+17 beanChilli
+4 kievs
+4 chickenNoodles
+7 veganSausages
+25 Rice
+24 walnutCake
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+85625
+125.0
+9618.75
+?
+10396
+777.25
+1881.0
+?
+3346
+1465.0
+897.75
+?
+1487
+589.25
+1923.75
+?
+3107
+1183.25
+2022-06-05
+Sunday
+25
+17 veganFullEnglish
+4 veganPorridge
+4 yoghurt
+17 mushroomSoup
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+4 roastPotatoes
+24 spongeCustard
+17 mushroomSoup
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+4 roastPotatoes
+24 spongeCustard
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+85581
+81.0
+9618.75
+?
+9839
+220.25
+1881.0
+?
+3687
+1806.0
+897.75
+?
+962
+64.25
+1923.75
+?
+2372
+448.25
+2022-06-06
+Monday
+25
+17 veganPorridge
+4 toast
+4 porridge
+17 beefBurgers
+4 ratatouille
+4 vegSpagBol
+2 carrots
+0 nutBake
+24 veganPancakes
+17 beefBurgers
+4 ratatouille
+4 vegSpagBol
+2 carrots
+0 nutBake
+24 veganPancakes
+25 veganFruitYoghurt
+25 canOfBeer
+85500.0
+?
+102809
+17309.0
+9618.75
+?
+11178
+1559.25
+1881.0
+?
+3095
+1214.0
+897.75
+?
+1037
+139.25
+1923.75
+?
+2923
+999.25
+2022-06-07
+Tuesday
+25
+17 toast
+4 porridge
+4 pancakes
+17 veganPizza
+4 sushi
+4 quornChilli
+1 porkSausages
+24 yorkshirePuddings
+24 chocolateCake
+17 veganPizza
+4 sushi
+4 quornChilli
+1 porkSausages
+24 yorkshirePuddings
+24 chocolateCake
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85529
+29.0
+9618.75
+?
+11490
+1871.25
+1881.0
+?
+3125
+1244.0
+897.75
+?
+925
+27.25
+1923.75
+?
+2477
+553.25
+2022-06-08
+Wednesday
+25
+17 pancakes
+4 veganFullEnglish
+4 veganYoghurt
+17 veganSausageCasserole
+4 chickenCurry
+4 veganCanneloni
+1 eggFriedRice
+25 breadRolls
+23 jelly
+17 veganSausageCasserole
+4 chickenCurry
+4 veganCanneloni
+1 eggFriedRice
+25 breadRolls
+23 jelly
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85755
+255.0
+9618.75
+?
+11728
+2109.25
+1881.0
+?
+2382
+501.0
+897.75
+?
+1701
+803.25
+1923.75
+?
+3733
+1809.25
+2022-06-09
+Thursday
+25
+17 veganYoghurt
+4 yoghurt
+4 toast
+17 fishAndChips
+4 lambMoussaka
+4 marghertia
+10 beans
+2 broccoli
+24 berryCrumble
+17 fishAndChips
+4 lambMoussaka
+4 marghertia
+10 beans
+2 broccoli
+24 berryCrumble
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+91581
+6081.0
+9618.75
+?
+9623
+4.25
+1881.0
+?
+3338
+1457.0
+897.75
+?
+1174
+276.25
+1923.75
+?
+3537
+1613.25
+2022-06-10
+Friday
+25
+17 porridge
+4 pancakes
+4 veganFullEnglish
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+7 chips
+12 peas
+24 peanutCookies
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+7 chips
+12 peas
+24 peanutCookies
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+97927
+12427.0
+9618.75
+?
+9622
+3.25
+1881.0
+?
+4156
+2275.0
+897.75
+?
+1618
+720.25
+1923.75
+?
+2933
+1009.25
+2022-06-11
+Saturday
+25
+17 yoghurt
+4 veganYoghurt
+4 veganPorridge
+17 beanChilli
+4 kievs
+4 chickenNoodles
+7 veganSausages
+25 Rice
+24 walnutCake
+17 beanChilli
+4 kievs
+4 chickenNoodles
+7 veganSausages
+25 Rice
+24 walnutCake
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85625
+125.0
+9618.75
+?
+10396
+777.25
+1881.0
+?
+3346
+1465.0
+897.75
+?
+1487
+589.25
+1923.75
+?
+3107
+1183.25
+2022-06-12
+Sunday
+25
+17 veganFullEnglish
+4 veganPorridge
+4 yoghurt
+17 mushroomSoup
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+4 roastPotatoes
+24 spongeCustard
+17 mushroomSoup
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+4 roastPotatoes
+24 spongeCustard
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85581
+81.0
+9618.75
+?
+9839
+220.25
+1881.0
+?
+3687
+1806.0
+897.75
+?
+962
+64.25
+1923.75
+?
+2372
+448.25
+2022-06-13
+Monday
+25
+17 veganPorridge
+4 toast
+4 porridge
+17 beefBurgers
+4 ratatouille
+4 vegSpagBol
+2 carrots
+0 nutBake
+24 veganPancakes
+17 beefBurgers
+4 ratatouille
+4 vegSpagBol
+2 carrots
+0 nutBake
+24 veganPancakes
+25 peanutCookies
+25 glassOfWine
+85500.0
+?
+102809
+17309.0
+9618.75
+?
+11178
+1559.25
+1881.0
+?
+3095
+1214.0
+897.75
+?
+1037
+139.25
+1923.75
+?
+2923
+999.25
+2022-06-14
+Tuesday
+25
+17 toast
+4 porridge
+4 pancakes
+17 veganPizza
+4 sushi
+4 quornChilli
+1 porkSausages
+24 yorkshirePuddings
+24 chocolateCake
+17 veganPizza
+4 sushi
+4 quornChilli
+1 porkSausages
+24 yorkshirePuddings
+24 chocolateCake
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+85529
+29.0
+9618.75
+?
+11490
+1871.25
+1881.0
+?
+3125
+1244.0
+897.75
+?
+925
+27.25
+1923.75
+?
+2477
+553.25
+2022-06-15
+Wednesday
+25
+17 pancakes
+4 veganFullEnglish
+4 veganYoghurt
+17 veganSausageCasserole
+4 chickenCurry
+4 veganCanneloni
+1 eggFriedRice
+25 breadRolls
+23 jelly
+17 veganSausageCasserole
+4 chickenCurry
+4 veganCanneloni
+1 eggFriedRice
+25 breadRolls
+23 jelly
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+85755
+255.0
+9618.75
+?
+11728
+2109.25
+1881.0
+?
+2382
+501.0
+897.75
+?
+1701
+803.25
+1923.75
+?
+3733
+1809.25
+2022-06-16
+Thursday
+25
+17 veganYoghurt
+4 yoghurt
+4 toast
+17 fishAndChips
+4 lambMoussaka
+4 marghertia
+10 beans
+2 broccoli
+24 berryCrumble
+17 fishAndChips
+4 lambMoussaka
+4 marghertia
+10 beans
+2 broccoli
+24 berryCrumble
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+91581
+6081.0
+9618.75
+?
+9623
+4.25
+1881.0
+?
+3338
+1457.0
+897.75
+?
+1174
+276.25
+1923.75
+?
+3537
+1613.25
+2022-06-17
+Friday
+25
+17 porridge
+4 pancakes
+4 veganFullEnglish
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+7 chips
+12 peas
+24 peanutCookies
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+7 chips
+12 peas
+24 peanutCookies
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+97927
+12427.0
+9618.75
+?
+9622
+3.25
+1881.0
+?
+4156
+2275.0
+897.75
+?
+1618
+720.25
+1923.75
+?
+2933
+1009.25
+2022-06-18
+Saturday
+25
+17 yoghurt
+4 veganYoghurt
+4 veganPorridge
+17 beanChilli
+4 kievs
+4 chickenNoodles
+7 veganSausages
+25 Rice
+24 walnutCake
+17 beanChilli
+4 kievs
+4 chickenNoodles
+7 veganSausages
+25 Rice
+24 walnutCake
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+85625
+125.0
+9618.75
+?
+10396
+777.25
+1881.0
+?
+3346
+1465.0
+897.75
+?
+1487
+589.25
+1923.75
+?
+3107
+1183.25
+2022-06-19
+Sunday
+25
+17 veganFullEnglish
+4 veganPorridge
+4 yoghurt
+17 mushroomSoup
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+4 roastPotatoes
+24 spongeCustard
+17 mushroomSoup
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+4 roastPotatoes
+24 spongeCustard
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+85581
+81.0
+9618.75
+?
+9839
+220.25
+1881.0
+?
+3687
+1806.0
+897.75
+?
+962
+64.25
+1923.75
+?
+2372
+448.25
+2022-06-20
+Monday
+25
+17 veganPorridge
+4 toast
+4 porridge
+17 beefBurgers
+4 ratatouille
+4 vegSpagBol
+2 carrots
+0 nutBake
+24 veganPancakes
+17 beefBurgers
+4 ratatouille
+4 vegSpagBol
+2 carrots
+0 nutBake
+24 veganPancakes
+25 veganFruitYoghurt
+25 canOfBeer
+85500.0
+?
+102809
+17309.0
+9618.75
+?
+11178
+1559.25
+1881.0
+?
+3095
+1214.0
+897.75
+?
+1037
+139.25
+1923.75
+?
+2923
+999.25
+2022-06-21
+Tuesday
+25
+17 toast
+4 porridge
+4 pancakes
+17 veganPizza
+4 sushi
+4 quornChilli
+1 porkSausages
+24 yorkshirePuddings
+24 chocolateCake
+17 veganPizza
+4 sushi
+4 quornChilli
+1 porkSausages
+24 yorkshirePuddings
+24 chocolateCake
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85529
+29.0
+9618.75
+?
+11490
+1871.25
+1881.0
+?
+3125
+1244.0
+897.75
+?
+925
+27.25
+1923.75
+?
+2477
+553.25
+2022-06-22
+Wednesday
+25
+17 pancakes
+4 veganFullEnglish
+4 veganYoghurt
+17 veganSausageCasserole
+4 chickenCurry
+4 veganCanneloni
+1 eggFriedRice
+25 breadRolls
+23 jelly
+17 veganSausageCasserole
+4 chickenCurry
+4 veganCanneloni
+1 eggFriedRice
+25 breadRolls
+23 jelly
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85755
+255.0
+9618.75
+?
+11728
+2109.25
+1881.0
+?
+2382
+501.0
+897.75
+?
+1701
+803.25
+1923.75
+?
+3733
+1809.25
+2022-06-23
+Thursday
+25
+17 veganYoghurt
+4 yoghurt
+4 toast
+17 fishAndChips
+4 lambMoussaka
+4 marghertia
+10 beans
+2 broccoli
+24 berryCrumble
+17 fishAndChips
+4 lambMoussaka
+4 marghertia
+10 beans
+2 broccoli
+24 berryCrumble
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+91581
+6081.0
+9618.75
+?
+9623
+4.25
+1881.0
+?
+3338
+1457.0
+897.75
+?
+1174
+276.25
+1923.75
+?
+3537
+1613.25
+2022-06-24
+Friday
+25
+17 porridge
+4 pancakes
+4 veganFullEnglish
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+7 chips
+12 peas
+24 peanutCookies
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+7 chips
+12 peas
+24 peanutCookies
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+97927
+12427.0
+9618.75
+?
+9622
+3.25
+1881.0
+?
+4156
+2275.0
+897.75
+?
+1618
+720.25
+1923.75
+?
+2933
+1009.25
+2022-06-25
+Saturday
+25
+17 yoghurt
+4 veganYoghurt
+4 veganPorridge
+17 beanChilli
+4 kievs
+4 chickenNoodles
+7 veganSausages
+25 Rice
+24 walnutCake
+17 beanChilli
+4 kievs
+4 chickenNoodles
+7 veganSausages
+25 Rice
+24 walnutCake
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85625
+125.0
+9618.75
+?
+10396
+777.25
+1881.0
+?
+3346
+1465.0
+897.75
+?
+1487
+589.25
+1923.75
+?
+3107
+1183.25
+2022-06-26
+Sunday
+25
+17 veganFullEnglish
+4 veganPorridge
+4 yoghurt
+17 mushroomSoup
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+4 roastPotatoes
+24 spongeCustard
+17 mushroomSoup
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+4 roastPotatoes
+24 spongeCustard
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85581
+81.0
+9618.75
+?
+9839
+220.25
+1881.0
+?
+3687
+1806.0
+897.75
+?
+962
+64.25
+1923.75
+?
+2372
+448.25
+2022-06-27
+Monday
+25
+17 veganPorridge
+4 toast
+4 porridge
+17 beefBurgers
+4 ratatouille
+4 vegSpagBol
+2 carrots
+0 nutBake
+24 veganPancakes
+17 beefBurgers
+4 ratatouille
+4 vegSpagBol
+2 carrots
+0 nutBake
+24 veganPancakes
+25 peanutCookies
+25 glassOfWine
+85500.0
+?
+102809
+17309.0
+9618.75
+?
+11178
+1559.25
+1881.0
+?
+3095
+1214.0
+897.75
+?
+1037
+139.25
+1923.75
+?
+2923
+999.25
+2022-06-28
+Tuesday
+25
+17 toast
+4 porridge
+4 pancakes
+17 veganPizza
+4 sushi
+4 quornChilli
+1 porkSausages
+24 yorkshirePuddings
+24 chocolateCake
+17 veganPizza
+4 sushi
+4 quornChilli
+1 porkSausages
+24 yorkshirePuddings
+24 chocolateCake
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+85529
+29.0
+9618.75
+?
+11490
+1871.25
+1881.0
+?
+3125
+1244.0
+897.75
+?
+925
+27.25
+1923.75
+?
+2477
+553.25
+2022-06-29
+Wednesday
+25
+17 pancakes
+4 veganFullEnglish
+4 veganYoghurt
+17 veganSausageCasserole
+4 chickenCurry
+4 veganCanneloni
+1 eggFriedRice
+25 breadRolls
+23 jelly
+17 veganSausageCasserole
+4 chickenCurry
+4 veganCanneloni
+1 eggFriedRice
+25 breadRolls
+23 jelly
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+85755
+255.0
+9618.75
+?
+11728
+2109.25
+1881.0
+?
+2382
+501.0
+897.75
+?
+1701
+803.25
+1923.75
+?
+3733
+1809.25
+2022-06-30
+Thursday
+25
+17 veganYoghurt
+4 yoghurt
+4 toast
+17 fishAndChips
+4 lambMoussaka
+4 marghertia
+10 beans
+2 broccoli
+24 berryCrumble
+17 fishAndChips
+4 lambMoussaka
+4 marghertia
+10 beans
+2 broccoli
+24 berryCrumble
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+91581
+6081.0
+9618.75
+?
+9623
+4.25
+1881.0
+?
+3338
+1457.0
+897.75
+?
+1174
+276.25
+1923.75
+?
+3537
+1613.25
+2022-07-01
+Friday
+25
+17 porridge
+4 pancakes
+4 veganFullEnglish
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+7 chips
+12 peas
+24 peanutCookies
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+7 chips
+12 peas
+24 peanutCookies
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+97927
+12427.0
+9618.75
+?
+9622
+3.25
+1881.0
+?
+4156
+2275.0
+897.75
+?
+1618
+720.25
+1923.75
+?
+2933
+1009.25
+2022-07-02
+Saturday
+25
+17 yoghurt
+4 veganYoghurt
+4 veganPorridge
+17 beanChilli
+4 kievs
+4 chickenNoodles
+7 veganSausages
+25 Rice
+24 walnutCake
+17 beanChilli
+4 kievs
+4 chickenNoodles
+7 veganSausages
+25 Rice
+24 walnutCake
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+85625
+125.0
+9618.75
+?
+10396
+777.25
+1881.0
+?
+3346
+1465.0
+897.75
+?
+1487
+589.25
+1923.75
+?
+3107
+1183.25
+2022-07-03
+Sunday
+25
+17 veganFullEnglish
+4 veganPorridge
+4 yoghurt
+17 mushroomSoup
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+4 roastPotatoes
+24 spongeCustard
+17 mushroomSoup
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+4 roastPotatoes
+24 spongeCustard
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+85581
+81.0
+9618.75
+?
+9839
+220.25
+1881.0
+?
+3687
+1806.0
+897.75
+?
+962
+64.25
+1923.75
+?
+2372
+448.25
+2022-07-04
+Monday
+25
+17 veganPorridge
+4 toast
+4 porridge
+17 beefBurgers
+4 ratatouille
+4 vegSpagBol
+2 carrots
+0 nutBake
+24 veganPancakes
+17 beefBurgers
+4 ratatouille
+4 vegSpagBol
+2 carrots
+0 nutBake
+24 veganPancakes
+25 veganFruitYoghurt
+25 canOfBeer
+85500.0
+?
+102809
+17309.0
+9618.75
+?
+11178
+1559.25
+1881.0
+?
+3095
+1214.0
+897.75
+?
+1037
+139.25
+1923.75
+?
+2923
+999.25
+2022-07-05
+Tuesday
+25
+17 toast
+4 porridge
+4 pancakes
+17 veganPizza
+4 sushi
+4 quornChilli
+1 porkSausages
+24 yorkshirePuddings
+24 chocolateCake
+17 veganPizza
+4 sushi
+4 quornChilli
+1 porkSausages
+24 yorkshirePuddings
+24 chocolateCake
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85529
+29.0
+9618.75
+?
+11490
+1871.25
+1881.0
+?
+3125
+1244.0
+897.75
+?
+925
+27.25
+1923.75
+?
+2477
+553.25
+2022-07-06
+Wednesday
+25
+17 pancakes
+4 veganFullEnglish
+4 veganYoghurt
+17 veganSausageCasserole
+4 chickenCurry
+4 veganCanneloni
+1 eggFriedRice
+25 breadRolls
+23 jelly
+17 veganSausageCasserole
+4 chickenCurry
+4 veganCanneloni
+1 eggFriedRice
+25 breadRolls
+23 jelly
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85755
+255.0
+9618.75
+?
+11728
+2109.25
+1881.0
+?
+2382
+501.0
+897.75
+?
+1701
+803.25
+1923.75
+?
+3733
+1809.25
+2022-07-07
+Thursday
+25
+17 veganYoghurt
+4 yoghurt
+4 toast
+17 fishAndChips
+4 lambMoussaka
+4 marghertia
+10 beans
+2 broccoli
+24 berryCrumble
+17 fishAndChips
+4 lambMoussaka
+4 marghertia
+10 beans
+2 broccoli
+24 berryCrumble
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+91581
+6081.0
+9618.75
+?
+9623
+4.25
+1881.0
+?
+3338
+1457.0
+897.75
+?
+1174
+276.25
+1923.75
+?
+3537
+1613.25
+2022-07-08
+Friday
+25
+17 porridge
+4 pancakes
+4 veganFullEnglish
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+7 chips
+12 peas
+24 peanutCookies
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+7 chips
+12 peas
+24 peanutCookies
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+97927
+12427.0
+9618.75
+?
+9622
+3.25
+1881.0
+?
+4156
+2275.0
+897.75
+?
+1618
+720.25
+1923.75
+?
+2933
+1009.25
+2022-07-09
+Saturday
+25
+17 yoghurt
+4 veganYoghurt
+4 veganPorridge
+17 beanChilli
+4 kievs
+4 chickenNoodles
+7 veganSausages
+25 Rice
+24 walnutCake
+17 beanChilli
+4 kievs
+4 chickenNoodles
+7 veganSausages
+25 Rice
+24 walnutCake
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85625
+125.0
+9618.75
+?
+10396
+777.25
+1881.0
+?
+3346
+1465.0
+897.75
+?
+1487
+589.25
+1923.75
+?
+3107
+1183.25
+2022-07-10
+Sunday
+25
+17 veganFullEnglish
+4 veganPorridge
+4 yoghurt
+17 mushroomSoup
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+4 roastPotatoes
+24 spongeCustard
+17 mushroomSoup
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+4 roastPotatoes
+24 spongeCustard
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85581
+81.0
+9618.75
+?
+9839
+220.25
+1881.0
+?
+3687
+1806.0
+897.75
+?
+962
+64.25
+1923.75
+?
+2372
+448.25
+2022-07-11
+Monday
+25
+17 veganPorridge
+4 toast
+4 porridge
+17 beefBurgers
+4 ratatouille
+4 vegSpagBol
+2 carrots
+0 nutBake
+24 veganPancakes
+17 beefBurgers
+4 ratatouille
+4 vegSpagBol
+2 carrots
+0 nutBake
+24 veganPancakes
+25 peanutCookies
+25 glassOfWine
+85500.0
+?
+102809
+17309.0
+9618.75
+?
+11178
+1559.25
+1881.0
+?
+3095
+1214.0
+897.75
+?
+1037
+139.25
+1923.75
+?
+2923
+999.25
+2022-07-12
+Tuesday
+25
+17 toast
+4 porridge
+4 pancakes
+17 veganPizza
+4 sushi
+4 quornChilli
+1 porkSausages
+24 yorkshirePuddings
+24 chocolateCake
+17 veganPizza
+4 sushi
+4 quornChilli
+1 porkSausages
+24 yorkshirePuddings
+24 chocolateCake
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+85529
+29.0
+9618.75
+?
+11490
+1871.25
+1881.0
+?
+3125
+1244.0
+897.75
+?
+925
+27.25
+1923.75
+?
+2477
+553.25
+2022-07-13
+Wednesday
+25
+17 pancakes
+4 veganFullEnglish
+4 veganYoghurt
+17 veganSausageCasserole
+4 chickenCurry
+4 veganCanneloni
+1 eggFriedRice
+25 breadRolls
+23 jelly
+17 veganSausageCasserole
+4 chickenCurry
+4 veganCanneloni
+1 eggFriedRice
+25 breadRolls
+23 jelly
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+85755
+255.0
+9618.75
+?
+11728
+2109.25
+1881.0
+?
+2382
+501.0
+897.75
+?
+1701
+803.25
+1923.75
+?
+3733
+1809.25
+2022-07-14
+Thursday
+25
+17 veganYoghurt
+4 yoghurt
+4 toast
+17 fishAndChips
+4 lambMoussaka
+4 marghertia
+10 beans
+2 broccoli
+24 berryCrumble
+17 fishAndChips
+4 lambMoussaka
+4 marghertia
+10 beans
+2 broccoli
+24 berryCrumble
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+91581
+6081.0
+9618.75
+?
+9623
+4.25
+1881.0
+?
+3338
+1457.0
+897.75
+?
+1174
+276.25
+1923.75
+?
+3537
+1613.25
+2022-07-15
+Friday
+25
+17 porridge
+4 pancakes
+4 veganFullEnglish
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+7 chips
+12 peas
+24 peanutCookies
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+7 chips
+12 peas
+24 peanutCookies
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+97927
+12427.0
+9618.75
+?
+9622
+3.25
+1881.0
+?
+4156
+2275.0
+897.75
+?
+1618
+720.25
+1923.75
+?
+2933
+1009.25
+2022-07-16
+Saturday
+25
+17 yoghurt
+4 veganYoghurt
+4 veganPorridge
+17 beanChilli
+4 kievs
+4 chickenNoodles
+7 veganSausages
+25 Rice
+24 walnutCake
+17 beanChilli
+4 kievs
+4 chickenNoodles
+7 veganSausages
+25 Rice
+24 walnutCake
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+85625
+125.0
+9618.75
+?
+10396
+777.25
+1881.0
+?
+3346
+1465.0
+897.75
+?
+1487
+589.25
+1923.75
+?
+3107
+1183.25
+2022-07-17
+Sunday
+25
+17 veganFullEnglish
+4 veganPorridge
+4 yoghurt
+17 mushroomSoup
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+4 roastPotatoes
+24 spongeCustard
+17 mushroomSoup
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+4 roastPotatoes
+24 spongeCustard
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+85581
+81.0
+9618.75
+?
+9839
+220.25
+1881.0
+?
+3687
+1806.0
+897.75
+?
+962
+64.25
+1923.75
+?
+2372
+448.25
+2022-07-18
+Monday
+25
+17 veganPorridge
+4 toast
+4 porridge
+17 beefBurgers
+4 ratatouille
+4 vegSpagBol
+2 carrots
+0 nutBake
+24 veganPancakes
+17 beefBurgers
+4 ratatouille
+4 vegSpagBol
+2 carrots
+0 nutBake
+24 veganPancakes
+25 veganFruitYoghurt
+25 canOfBeer
+85500.0
+?
+102809
+17309.0
+9618.75
+?
+11178
+1559.25
+1881.0
+?
+3095
+1214.0
+897.75
+?
+1037
+139.25
+1923.75
+?
+2923
+999.25
+2022-07-19
+Tuesday
+25
+17 toast
+4 porridge
+4 pancakes
+17 veganPizza
+4 sushi
+4 quornChilli
+1 porkSausages
+24 yorkshirePuddings
+24 chocolateCake
+17 veganPizza
+4 sushi
+4 quornChilli
+1 porkSausages
+24 yorkshirePuddings
+24 chocolateCake
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85529
+29.0
+9618.75
+?
+11490
+1871.25
+1881.0
+?
+3125
+1244.0
+897.75
+?
+925
+27.25
+1923.75
+?
+2477
+553.25
+2022-07-20
+Wednesday
+25
+17 pancakes
+4 veganFullEnglish
+4 veganYoghurt
+17 veganSausageCasserole
+4 chickenCurry
+4 veganCanneloni
+1 eggFriedRice
+25 breadRolls
+23 jelly
+17 veganSausageCasserole
+4 chickenCurry
+4 veganCanneloni
+1 eggFriedRice
+25 breadRolls
+23 jelly
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85755
+255.0
+9618.75
+?
+11728
+2109.25
+1881.0
+?
+2382
+501.0
+897.75
+?
+1701
+803.25
+1923.75
+?
+3733
+1809.25
+2022-07-21
+Thursday
+25
+17 veganYoghurt
+4 yoghurt
+4 toast
+17 quornChilli
+4 vegSpagBol
+4 ratatouille
+24 beans
+17 broccoli
+24 chocolateCake
+17 quornChilli
+4 vegSpagBol
+4 ratatouille
+24 beans
+17 broccoli
+24 chocolateCake
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85524
+24.0
+9618.75
+?
+12483
+2864.25
+1881.0
+?
+2053
+172.0
+897.75
+?
+2674
+1776.25
+1923.75
+?
+4050
+2126.25
+2022-07-22
+Friday
+25
+17 porridge
+4 pancakes
+4 veganFullEnglish
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+4 chips
+21 peas
+24 walnutCake
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+4 chips
+21 peas
+24 walnutCake
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+92379
+6879.0
+9618.75
+?
+9628
+9.25
+1881.0
+?
+4151
+2270.0
+897.75
+?
+1436
+538.25
+1923.75
+?
+2319
+395.25
+2022-07-23
+Saturday
+25
+17 yoghurt
+4 veganYoghurt
+4 veganPorridge
+17 beefBurgers
+4 mushroomSoup
+4 chickenNoodles
+0 veganSausages
+7 Rice
+24 peanutCookies
+17 beefBurgers
+4 mushroomSoup
+4 chickenNoodles
+0 veganSausages
+7 Rice
+24 peanutCookies
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+114322
+28822.0
+9618.75
+?
+9620
+1.25
+1881.0
+?
+4895
+3014.0
+897.75
+?
+941
+43.25
+1923.75
+?
+3630
+1706.25
+2022-07-24
+Sunday
+25
+17 veganFullEnglish
+4 veganPorridge
+4 yoghurt
+17 kievs
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+16 roastPotatoes
+23 jelly
+17 kievs
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+16 roastPotatoes
+23 jelly
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+93321
+7821.0
+9618.75
+?
+9665
+46.25
+1881.0
+?
+3757
+1876.0
+897.75
+?
+1269
+371.25
+1923.75
+?
+3925
+2001.25
+2022-07-25
+Monday
+25
+17 veganPorridge
+4 toast
+4 porridge
+17 marghertia
+4 beanChilli
+4 lambMoussaka
+2 carrots
+0 nutBake
+24 berryCrumble
+17 marghertia
+4 beanChilli
+4 lambMoussaka
+2 carrots
+0 nutBake
+24 berryCrumble
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+88748
+3248.0
+9618.75
+?
+11883
+2264.25
+1881.0
+?
+3119
+1238.0
+897.75
+?
+981
+83.25
+1923.75
+?
+2585
+661.25
+2022-07-26
+Tuesday
+25
+17 toast
+4 porridge
+4 pancakes
+17 fishAndChips
+4 veganSausageCasserole
+4 veganPizza
+1 porkSausages
+10 yorkshirePuddings
+24 veganPancakes
+17 fishAndChips
+4 veganSausageCasserole
+4 veganPizza
+1 porkSausages
+10 yorkshirePuddings
+24 veganPancakes
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+86269
+769.0
+9618.75
+?
+9651
+32.25
+1881.0
+?
+2786
+905.0
+897.75
+?
+1024
+126.25
+1923.75
+?
+3151
+1227.25
+2022-07-27
+Wednesday
+25
+17 pancakes
+4 veganFullEnglish
+4 veganYoghurt
+17 veganBangersMash
+4 chickenCurry
+4 potatoCurry
+1 eggFriedRice
+23 breadRolls
+24 spongeCustard
+17 veganBangersMash
+4 chickenCurry
+4 potatoCurry
+1 eggFriedRice
+23 breadRolls
+24 spongeCustard
+25 veganFruitYoghurt
+25 canOfBeer
+85500.0
+?
+85615
+115.0
+9618.75
+?
+11273
+1654.25
+1881.0
+?
+3074
+1193.0
+897.75
+?
+899
+1.25
+1923.75
+?
+2971
+1047.25
+2022-07-28
+Thursday
+25
+17 veganYoghurt
+4 yoghurt
+4 toast
+17 quornChilli
+4 vegSpagBol
+4 ratatouille
+24 beans
+17 broccoli
+24 chocolateCake
+17 quornChilli
+4 vegSpagBol
+4 ratatouille
+24 beans
+17 broccoli
+24 chocolateCake
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85524
+24.0
+9618.75
+?
+12483
+2864.25
+1881.0
+?
+2053
+172.0
+897.75
+?
+2674
+1776.25
+1923.75
+?
+4050
+2126.25
+2022-07-29
+Friday
+25
+17 porridge
+4 pancakes
+4 veganFullEnglish
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+4 chips
+21 peas
+24 walnutCake
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+4 chips
+21 peas
+24 walnutCake
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+92379
+6879.0
+9618.75
+?
+9628
+9.25
+1881.0
+?
+4151
+2270.0
+897.75
+?
+1436
+538.25
+1923.75
+?
+2319
+395.25
+2022-07-30
+Saturday
+25
+17 yoghurt
+4 veganYoghurt
+4 veganPorridge
+17 beefBurgers
+4 mushroomSoup
+4 chickenNoodles
+0 veganSausages
+7 Rice
+24 peanutCookies
+17 beefBurgers
+4 mushroomSoup
+4 chickenNoodles
+0 veganSausages
+7 Rice
+24 peanutCookies
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+114322
+28822.0
+9618.75
+?
+9620
+1.25
+1881.0
+?
+4895
+3014.0
+897.75
+?
+941
+43.25
+1923.75
+?
+3630
+1706.25
+2022-07-31
+Sunday
+25
+17 veganFullEnglish
+4 veganPorridge
+4 yoghurt
+17 kievs
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+16 roastPotatoes
+23 jelly
+17 kievs
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+16 roastPotatoes
+23 jelly
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+93321
+7821.0
+9618.75
+?
+9665
+46.25
+1881.0
+?
+3757
+1876.0
+897.75
+?
+1269
+371.25
+1923.75
+?
+3925
+2001.25
+2022-08-01
+Monday
+25
+17 veganPorridge
+4 toast
+4 porridge
+17 marghertia
+4 beanChilli
+4 lambMoussaka
+2 carrots
+0 nutBake
+24 berryCrumble
+17 marghertia
+4 beanChilli
+4 lambMoussaka
+2 carrots
+0 nutBake
+24 berryCrumble
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+88748
+3248.0
+9618.75
+?
+11883
+2264.25
+1881.0
+?
+3119
+1238.0
+897.75
+?
+981
+83.25
+1923.75
+?
+2585
+661.25
+2022-08-02
+Tuesday
+25
+17 toast
+4 porridge
+4 pancakes
+17 fishAndChips
+4 veganSausageCasserole
+4 veganPizza
+1 porkSausages
+10 yorkshirePuddings
+24 veganPancakes
+17 fishAndChips
+4 veganSausageCasserole
+4 veganPizza
+1 porkSausages
+10 yorkshirePuddings
+24 veganPancakes
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+86269
+769.0
+9618.75
+?
+9651
+32.25
+1881.0
+?
+2786
+905.0
+897.75
+?
+1024
+126.25
+1923.75
+?
+3151
+1227.25
+2022-08-03
+Wednesday
+25
+17 pancakes
+4 veganFullEnglish
+4 veganYoghurt
+17 veganBangersMash
+4 chickenCurry
+4 potatoCurry
+1 eggFriedRice
+23 breadRolls
+24 spongeCustard
+17 veganBangersMash
+4 chickenCurry
+4 potatoCurry
+1 eggFriedRice
+23 breadRolls
+24 spongeCustard
+25 peanutCookies
+25 glassOfWine
+85500.0
+?
+85615
+115.0
+9618.75
+?
+11273
+1654.25
+1881.0
+?
+3074
+1193.0
+897.75
+?
+899
+1.25
+1923.75
+?
+2971
+1047.25
+2022-08-04
+Thursday
+25
+17 veganYoghurt
+4 yoghurt
+4 toast
+17 quornChilli
+4 vegSpagBol
+4 ratatouille
+24 beans
+17 broccoli
+24 chocolateCake
+17 quornChilli
+4 vegSpagBol
+4 ratatouille
+24 beans
+17 broccoli
+24 chocolateCake
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+85524
+24.0
+9618.75
+?
+12483
+2864.25
+1881.0
+?
+2053
+172.0
+897.75
+?
+2674
+1776.25
+1923.75
+?
+4050
+2126.25
+2022-08-05
+Friday
+25
+17 porridge
+4 pancakes
+4 veganFullEnglish
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+4 chips
+21 peas
+24 walnutCake
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+4 chips
+21 peas
+24 walnutCake
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+92379
+6879.0
+9618.75
+?
+9628
+9.25
+1881.0
+?
+4151
+2270.0
+897.75
+?
+1436
+538.25
+1923.75
+?
+2319
+395.25
+2022-08-06
+Saturday
+25
+17 yoghurt
+4 veganYoghurt
+4 veganPorridge
+17 beefBurgers
+4 mushroomSoup
+4 chickenNoodles
+0 veganSausages
+7 Rice
+24 peanutCookies
+17 beefBurgers
+4 mushroomSoup
+4 chickenNoodles
+0 veganSausages
+7 Rice
+24 peanutCookies
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+114322
+28822.0
+9618.75
+?
+9620
+1.25
+1881.0
+?
+4895
+3014.0
+897.75
+?
+941
+43.25
+1923.75
+?
+3630
+1706.25
+2022-08-07
+Sunday
+25
+17 veganFullEnglish
+4 veganPorridge
+4 yoghurt
+17 kievs
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+16 roastPotatoes
+23 jelly
+17 kievs
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+16 roastPotatoes
+23 jelly
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+93321
+7821.0
+9618.75
+?
+9665
+46.25
+1881.0
+?
+3757
+1876.0
+897.75
+?
+1269
+371.25
+1923.75
+?
+3925
+2001.25
+2022-08-08
+Monday
+25
+17 veganPorridge
+4 toast
+4 porridge
+17 marghertia
+4 beanChilli
+4 lambMoussaka
+2 carrots
+0 nutBake
+24 berryCrumble
+17 marghertia
+4 beanChilli
+4 lambMoussaka
+2 carrots
+0 nutBake
+24 berryCrumble
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+88748
+3248.0
+9618.75
+?
+11883
+2264.25
+1881.0
+?
+3119
+1238.0
+897.75
+?
+981
+83.25
+1923.75
+?
+2585
+661.25
+2022-08-09
+Tuesday
+25
+17 toast
+4 porridge
+4 pancakes
+17 fishAndChips
+4 veganSausageCasserole
+4 veganPizza
+1 porkSausages
+10 yorkshirePuddings
+24 veganPancakes
+17 fishAndChips
+4 veganSausageCasserole
+4 veganPizza
+1 porkSausages
+10 yorkshirePuddings
+24 veganPancakes
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+86269
+769.0
+9618.75
+?
+9651
+32.25
+1881.0
+?
+2786
+905.0
+897.75
+?
+1024
+126.25
+1923.75
+?
+3151
+1227.25
+2022-08-10
+Wednesday
+25
+17 pancakes
+4 veganFullEnglish
+4 veganYoghurt
+17 veganBangersMash
+4 chickenCurry
+4 potatoCurry
+1 eggFriedRice
+23 breadRolls
+24 spongeCustard
+17 veganBangersMash
+4 chickenCurry
+4 potatoCurry
+1 eggFriedRice
+23 breadRolls
+24 spongeCustard
+25 veganFruitYoghurt
+25 canOfBeer
+85500.0
+?
+85615
+115.0
+9618.75
+?
+11273
+1654.25
+1881.0
+?
+3074
+1193.0
+897.75
+?
+899
+1.25
+1923.75
+?
+2971
+1047.25
+2022-08-11
+Thursday
+25
+17 veganYoghurt
+4 yoghurt
+4 toast
+17 quornChilli
+4 vegSpagBol
+4 ratatouille
+24 beans
+17 broccoli
+24 chocolateCake
+17 quornChilli
+4 vegSpagBol
+4 ratatouille
+24 beans
+17 broccoli
+24 chocolateCake
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85524
+24.0
+9618.75
+?
+12483
+2864.25
+1881.0
+?
+2053
+172.0
+897.75
+?
+2674
+1776.25
+1923.75
+?
+4050
+2126.25
+2022-08-12
+Friday
+25
+17 porridge
+4 pancakes
+4 veganFullEnglish
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+4 chips
+21 peas
+24 walnutCake
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+4 chips
+21 peas
+24 walnutCake
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+92379
+6879.0
+9618.75
+?
+9628
+9.25
+1881.0
+?
+4151
+2270.0
+897.75
+?
+1436
+538.25
+1923.75
+?
+2319
+395.25
+2022-08-13
+Saturday
+25
+17 yoghurt
+4 veganYoghurt
+4 veganPorridge
+17 beefBurgers
+4 mushroomSoup
+4 chickenNoodles
+0 veganSausages
+7 Rice
+24 peanutCookies
+17 beefBurgers
+4 mushroomSoup
+4 chickenNoodles
+0 veganSausages
+7 Rice
+24 peanutCookies
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+114322
+28822.0
+9618.75
+?
+9620
+1.25
+1881.0
+?
+4895
+3014.0
+897.75
+?
+941
+43.25
+1923.75
+?
+3630
+1706.25
+2022-08-14
+Sunday
+25
+17 veganFullEnglish
+4 veganPorridge
+4 yoghurt
+17 kievs
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+16 roastPotatoes
+23 jelly
+17 kievs
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+16 roastPotatoes
+23 jelly
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+93321
+7821.0
+9618.75
+?
+9665
+46.25
+1881.0
+?
+3757
+1876.0
+897.75
+?
+1269
+371.25
+1923.75
+?
+3925
+2001.25
+2022-08-15
+Monday
+25
+17 veganPorridge
+4 toast
+4 porridge
+17 marghertia
+4 beanChilli
+4 lambMoussaka
+2 carrots
+0 nutBake
+24 berryCrumble
+17 marghertia
+4 beanChilli
+4 lambMoussaka
+2 carrots
+0 nutBake
+24 berryCrumble
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+88748
+3248.0
+9618.75
+?
+11883
+2264.25
+1881.0
+?
+3119
+1238.0
+897.75
+?
+981
+83.25
+1923.75
+?
+2585
+661.25
+2022-08-16
+Tuesday
+25
+17 toast
+4 porridge
+4 pancakes
+17 fishAndChips
+4 veganSausageCasserole
+4 veganPizza
+1 porkSausages
+10 yorkshirePuddings
+24 veganPancakes
+17 fishAndChips
+4 veganSausageCasserole
+4 veganPizza
+1 porkSausages
+10 yorkshirePuddings
+24 veganPancakes
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+86269
+769.0
+9618.75
+?
+9651
+32.25
+1881.0
+?
+2786
+905.0
+897.75
+?
+1024
+126.25
+1923.75
+?
+3151
+1227.25
+2022-08-17
+Wednesday
+25
+17 pancakes
+4 veganFullEnglish
+4 veganYoghurt
+17 veganBangersMash
+4 chickenCurry
+4 potatoCurry
+1 eggFriedRice
+23 breadRolls
+24 spongeCustard
+17 veganBangersMash
+4 chickenCurry
+4 potatoCurry
+1 eggFriedRice
+23 breadRolls
+24 spongeCustard
+25 peanutCookies
+25 glassOfWine
+85500.0
+?
+85615
+115.0
+9618.75
+?
+11273
+1654.25
+1881.0
+?
+3074
+1193.0
+897.75
+?
+899
+1.25
+1923.75
+?
+2971
+1047.25
+2022-08-18
+Thursday
+25
+17 veganYoghurt
+4 yoghurt
+4 toast
+17 quornChilli
+4 vegSpagBol
+4 ratatouille
+24 beans
+17 broccoli
+24 chocolateCake
+17 quornChilli
+4 vegSpagBol
+4 ratatouille
+24 beans
+17 broccoli
+24 chocolateCake
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+85524
+24.0
+9618.75
+?
+12483
+2864.25
+1881.0
+?
+2053
+172.0
+897.75
+?
+2674
+1776.25
+1923.75
+?
+4050
+2126.25
+2022-08-19
+Friday
+25
+17 porridge
+4 pancakes
+4 veganFullEnglish
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+4 chips
+21 peas
+24 walnutCake
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+4 chips
+21 peas
+24 walnutCake
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+92379
+6879.0
+9618.75
+?
+9628
+9.25
+1881.0
+?
+4151
+2270.0
+897.75
+?
+1436
+538.25
+1923.75
+?
+2319
+395.25
+2022-08-20
+Saturday
+25
+17 yoghurt
+4 veganYoghurt
+4 veganPorridge
+17 beefBurgers
+4 mushroomSoup
+4 chickenNoodles
+0 veganSausages
+7 Rice
+24 peanutCookies
+17 beefBurgers
+4 mushroomSoup
+4 chickenNoodles
+0 veganSausages
+7 Rice
+24 peanutCookies
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+114322
+28822.0
+9618.75
+?
+9620
+1.25
+1881.0
+?
+4895
+3014.0
+897.75
+?
+941
+43.25
+1923.75
+?
+3630
+1706.25
+2022-08-21
+Sunday
+25
+17 veganFullEnglish
+4 veganPorridge
+4 yoghurt
+17 kievs
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+16 roastPotatoes
+23 jelly
+17 kievs
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+16 roastPotatoes
+23 jelly
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+93321
+7821.0
+9618.75
+?
+9665
+46.25
+1881.0
+?
+3757
+1876.0
+897.75
+?
+1269
+371.25
+1923.75
+?
+3925
+2001.25
+2022-08-22
+Monday
+25
+17 veganPorridge
+4 toast
+4 porridge
+17 marghertia
+4 beanChilli
+4 lambMoussaka
+2 carrots
+0 nutBake
+24 berryCrumble
+17 marghertia
+4 beanChilli
+4 lambMoussaka
+2 carrots
+0 nutBake
+24 berryCrumble
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+88748
+3248.0
+9618.75
+?
+11883
+2264.25
+1881.0
+?
+3119
+1238.0
+897.75
+?
+981
+83.25
+1923.75
+?
+2585
+661.25
+2022-08-23
+Tuesday
+25
+17 toast
+4 porridge
+4 pancakes
+17 fishAndChips
+4 veganSausageCasserole
+4 veganPizza
+1 porkSausages
+10 yorkshirePuddings
+24 veganPancakes
+17 fishAndChips
+4 veganSausageCasserole
+4 veganPizza
+1 porkSausages
+10 yorkshirePuddings
+24 veganPancakes
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+86269
+769.0
+9618.75
+?
+9651
+32.25
+1881.0
+?
+2786
+905.0
+897.75
+?
+1024
+126.25
+1923.75
+?
+3151
+1227.25
+2022-08-24
+Wednesday
+25
+17 pancakes
+4 veganFullEnglish
+4 veganYoghurt
+17 veganBangersMash
+4 chickenCurry
+4 potatoCurry
+1 eggFriedRice
+23 breadRolls
+24 spongeCustard
+17 veganBangersMash
+4 chickenCurry
+4 potatoCurry
+1 eggFriedRice
+23 breadRolls
+24 spongeCustard
+25 veganFruitYoghurt
+25 canOfBeer
+85500.0
+?
+85615
+115.0
+9618.75
+?
+11273
+1654.25
+1881.0
+?
+3074
+1193.0
+897.75
+?
+899
+1.25
+1923.75
+?
+2971
+1047.25
+2022-08-25
+Thursday
+25
+17 veganYoghurt
+4 yoghurt
+4 toast
+17 quornChilli
+4 vegSpagBol
+4 ratatouille
+24 beans
+17 broccoli
+24 chocolateCake
+17 quornChilli
+4 vegSpagBol
+4 ratatouille
+24 beans
+17 broccoli
+24 chocolateCake
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85524
+24.0
+9618.75
+?
+12483
+2864.25
+1881.0
+?
+2053
+172.0
+897.75
+?
+2674
+1776.25
+1923.75
+?
+4050
+2126.25
+2022-08-26
+Friday
+25
+17 porridge
+4 pancakes
+4 veganFullEnglish
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+4 chips
+21 peas
+24 walnutCake
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+4 chips
+21 peas
+24 walnutCake
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+92379
+6879.0
+9618.75
+?
+9628
+9.25
+1881.0
+?
+4151
+2270.0
+897.75
+?
+1436
+538.25
+1923.75
+?
+2319
+395.25
+2022-08-27
+Saturday
+25
+17 yoghurt
+4 veganYoghurt
+4 veganPorridge
+17 beefBurgers
+4 mushroomSoup
+4 chickenNoodles
+0 veganSausages
+7 Rice
+24 peanutCookies
+17 beefBurgers
+4 mushroomSoup
+4 chickenNoodles
+0 veganSausages
+7 Rice
+24 peanutCookies
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+114322
+28822.0
+9618.75
+?
+9620
+1.25
+1881.0
+?
+4895
+3014.0
+897.75
+?
+941
+43.25
+1923.75
+?
+3630
+1706.25
+2022-08-28
+Sunday
+25
+17 veganFullEnglish
+4 veganPorridge
+4 yoghurt
+17 kievs
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+16 roastPotatoes
+23 jelly
+17 kievs
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+16 roastPotatoes
+23 jelly
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+93321
+7821.0
+9618.75
+?
+9665
+46.25
+1881.0
+?
+3757
+1876.0
+897.75
+?
+1269
+371.25
+1923.75
+?
+3925
+2001.25
+2022-08-29
+Monday
+25
+17 veganPorridge
+4 toast
+4 porridge
+17 marghertia
+4 beanChilli
+4 lambMoussaka
+2 carrots
+0 nutBake
+24 berryCrumble
+17 marghertia
+4 beanChilli
+4 lambMoussaka
+2 carrots
+0 nutBake
+24 berryCrumble
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+88748
+3248.0
+9618.75
+?
+11883
+2264.25
+1881.0
+?
+3119
+1238.0
+897.75
+?
+981
+83.25
+1923.75
+?
+2585
+661.25
+2022-08-30
+Tuesday
+25
+17 toast
+4 porridge
+4 pancakes
+17 fishAndChips
+4 veganSausageCasserole
+4 veganPizza
+1 porkSausages
+10 yorkshirePuddings
+24 veganPancakes
+17 fishAndChips
+4 veganSausageCasserole
+4 veganPizza
+1 porkSausages
+10 yorkshirePuddings
+24 veganPancakes
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+86269
+769.0
+9618.75
+?
+9651
+32.25
+1881.0
+?
+2786
+905.0
+897.75
+?
+1024
+126.25
+1923.75
+?
+3151
+1227.25
+2022-08-31
+Wednesday
+25
+17 pancakes
+4 veganFullEnglish
+4 veganYoghurt
+17 veganBangersMash
+4 chickenCurry
+4 potatoCurry
+1 eggFriedRice
+23 breadRolls
+24 spongeCustard
+17 veganBangersMash
+4 chickenCurry
+4 potatoCurry
+1 eggFriedRice
+23 breadRolls
+24 spongeCustard
+25 peanutCookies
+25 glassOfWine
+85500.0
+?
+85615
+115.0
+9618.75
+?
+11273
+1654.25
+1881.0
+?
+3074
+1193.0
+897.75
+?
+899
+1.25
+1923.75
+?
+2971
+1047.25
+2022-09-01
+Thursday
+25
+17 veganYoghurt
+4 yoghurt
+4 toast
+17 quornChilli
+4 vegSpagBol
+4 ratatouille
+24 beans
+17 broccoli
+24 chocolateCake
+17 quornChilli
+4 vegSpagBol
+4 ratatouille
+24 beans
+17 broccoli
+24 chocolateCake
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+85524
+24.0
+9618.75
+?
+12483
+2864.25
+1881.0
+?
+2053
+172.0
+897.75
+?
+2674
+1776.25
+1923.75
+?
+4050
+2126.25
+2022-09-02
+Friday
+25
+17 porridge
+4 pancakes
+4 veganFullEnglish
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+4 chips
+21 peas
+24 walnutCake
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+4 chips
+21 peas
+24 walnutCake
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+92379
+6879.0
+9618.75
+?
+9628
+9.25
+1881.0
+?
+4151
+2270.0
+897.75
+?
+1436
+538.25
+1923.75
+?
+2319
+395.25
+2022-09-03
+Saturday
+25
+17 yoghurt
+4 veganYoghurt
+4 veganPorridge
+17 beefBurgers
+4 mushroomSoup
+4 chickenNoodles
+0 veganSausages
+7 Rice
+24 peanutCookies
+17 beefBurgers
+4 mushroomSoup
+4 chickenNoodles
+0 veganSausages
+7 Rice
+24 peanutCookies
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+114322
+28822.0
+9618.75
+?
+9620
+1.25
+1881.0
+?
+4895
+3014.0
+897.75
+?
+941
+43.25
+1923.75
+?
+3630
+1706.25
+2022-09-04
+Sunday
+25
+17 veganFullEnglish
+4 veganPorridge
+4 yoghurt
+17 kievs
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+16 roastPotatoes
+23 jelly
+17 kievs
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+16 roastPotatoes
+23 jelly
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+93321
+7821.0
+9618.75
+?
+9665
+46.25
+1881.0
+?
+3757
+1876.0
+897.75
+?
+1269
+371.25
+1923.75
+?
+3925
+2001.25
+2022-09-05
+Monday
+25
+17 veganPorridge
+4 toast
+4 porridge
+17 marghertia
+4 beanChilli
+4 lambMoussaka
+2 carrots
+0 nutBake
+24 berryCrumble
+17 marghertia
+4 beanChilli
+4 lambMoussaka
+2 carrots
+0 nutBake
+24 berryCrumble
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+88748
+3248.0
+9618.75
+?
+11883
+2264.25
+1881.0
+?
+3119
+1238.0
+897.75
+?
+981
+83.25
+1923.75
+?
+2585
+661.25
+2022-09-06
+Tuesday
+25
+17 toast
+4 porridge
+4 pancakes
+17 fishAndChips
+4 veganSausageCasserole
+4 veganPizza
+1 porkSausages
+10 yorkshirePuddings
+24 veganPancakes
+17 fishAndChips
+4 veganSausageCasserole
+4 veganPizza
+1 porkSausages
+10 yorkshirePuddings
+24 veganPancakes
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+86269
+769.0
+9618.75
+?
+9651
+32.25
+1881.0
+?
+2786
+905.0
+897.75
+?
+1024
+126.25
+1923.75
+?
+3151
+1227.25
+2022-09-07
+Wednesday
+25
+17 pancakes
+4 veganFullEnglish
+4 veganYoghurt
+17 veganBangersMash
+4 chickenCurry
+4 potatoCurry
+1 eggFriedRice
+23 breadRolls
+24 spongeCustard
+17 veganBangersMash
+4 chickenCurry
+4 potatoCurry
+1 eggFriedRice
+23 breadRolls
+24 spongeCustard
+25 veganFruitYoghurt
+25 canOfBeer
+85500.0
+?
+85615
+115.0
+9618.75
+?
+11273
+1654.25
+1881.0
+?
+3074
+1193.0
+897.75
+?
+899
+1.25
+1923.75
+?
+2971
+1047.25
+2022-09-08
+Thursday
+25
+17 veganYoghurt
+4 yoghurt
+4 toast
+17 quornChilli
+4 vegSpagBol
+4 ratatouille
+24 beans
+17 broccoli
+24 chocolateCake
+17 quornChilli
+4 vegSpagBol
+4 ratatouille
+24 beans
+17 broccoli
+24 chocolateCake
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85524
+24.0
+9618.75
+?
+12483
+2864.25
+1881.0
+?
+2053
+172.0
+897.75
+?
+2674
+1776.25
+1923.75
+?
+4050
+2126.25
+2022-09-09
+Friday
+25
+17 porridge
+4 pancakes
+4 veganFullEnglish
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+4 chips
+21 peas
+24 walnutCake
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+4 chips
+21 peas
+24 walnutCake
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+92379
+6879.0
+9618.75
+?
+9628
+9.25
+1881.0
+?
+4151
+2270.0
+897.75
+?
+1436
+538.25
+1923.75
+?
+2319
+395.25
+2022-09-10
+Saturday
+25
+17 yoghurt
+4 veganYoghurt
+4 veganPorridge
+17 beefBurgers
+4 mushroomSoup
+4 chickenNoodles
+0 veganSausages
+7 Rice
+24 peanutCookies
+17 beefBurgers
+4 mushroomSoup
+4 chickenNoodles
+0 veganSausages
+7 Rice
+24 peanutCookies
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+114322
+28822.0
+9618.75
+?
+9620
+1.25
+1881.0
+?
+4895
+3014.0
+897.75
+?
+941
+43.25
+1923.75
+?
+3630
+1706.25
+2022-09-11
+Sunday
+25
+17 veganFullEnglish
+4 veganPorridge
+4 yoghurt
+17 kievs
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+16 roastPotatoes
+23 jelly
+17 kievs
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+16 roastPotatoes
+23 jelly
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+93321
+7821.0
+9618.75
+?
+9665
+46.25
+1881.0
+?
+3757
+1876.0
+897.75
+?
+1269
+371.25
+1923.75
+?
+3925
+2001.25
+2022-09-12
+Monday
+25
+17 veganPorridge
+4 toast
+4 porridge
+17 marghertia
+4 beanChilli
+4 lambMoussaka
+2 carrots
+0 nutBake
+24 berryCrumble
+17 marghertia
+4 beanChilli
+4 lambMoussaka
+2 carrots
+0 nutBake
+24 berryCrumble
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+88748
+3248.0
+9618.75
+?
+11883
+2264.25
+1881.0
+?
+3119
+1238.0
+897.75
+?
+981
+83.25
+1923.75
+?
+2585
+661.25
+2022-09-13
+Tuesday
+25
+17 toast
+4 porridge
+4 pancakes
+17 fishAndChips
+4 veganSausageCasserole
+4 veganPizza
+1 porkSausages
+10 yorkshirePuddings
+24 veganPancakes
+17 fishAndChips
+4 veganSausageCasserole
+4 veganPizza
+1 porkSausages
+10 yorkshirePuddings
+24 veganPancakes
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+86269
+769.0
+9618.75
+?
+9651
+32.25
+1881.0
+?
+2786
+905.0
+897.75
+?
+1024
+126.25
+1923.75
+?
+3151
+1227.25
+2022-09-14
+Wednesday
+25
+17 pancakes
+4 veganFullEnglish
+4 veganYoghurt
+17 veganBangersMash
+4 chickenCurry
+4 potatoCurry
+1 eggFriedRice
+23 breadRolls
+24 spongeCustard
+17 veganBangersMash
+4 chickenCurry
+4 potatoCurry
+1 eggFriedRice
+23 breadRolls
+24 spongeCustard
+25 peanutCookies
+25 glassOfWine
+85500.0
+?
+85615
+115.0
+9618.75
+?
+11273
+1654.25
+1881.0
+?
+3074
+1193.0
+897.75
+?
+899
+1.25
+1923.75
+?
+2971
+1047.25
+2022-09-15
+Thursday
+25
+17 veganYoghurt
+4 yoghurt
+4 toast
+17 quornChilli
+4 vegSpagBol
+4 ratatouille
+24 beans
+17 broccoli
+24 chocolateCake
+17 quornChilli
+4 vegSpagBol
+4 ratatouille
+24 beans
+17 broccoli
+24 chocolateCake
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+85524
+24.0
+9618.75
+?
+12483
+2864.25
+1881.0
+?
+2053
+172.0
+897.75
+?
+2674
+1776.25
+1923.75
+?
+4050
+2126.25
+2022-09-16
+Friday
+25
+17 porridge
+4 pancakes
+4 veganFullEnglish
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+4 chips
+21 peas
+24 walnutCake
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+4 chips
+21 peas
+24 walnutCake
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+92379
+6879.0
+9618.75
+?
+9628
+9.25
+1881.0
+?
+4151
+2270.0
+897.75
+?
+1436
+538.25
+1923.75
+?
+2319
+395.25
+2022-09-17
+Saturday
+25
+17 yoghurt
+4 veganYoghurt
+4 veganPorridge
+17 beefBurgers
+4 mushroomSoup
+4 chickenNoodles
+0 veganSausages
+7 Rice
+24 peanutCookies
+17 beefBurgers
+4 mushroomSoup
+4 chickenNoodles
+0 veganSausages
+7 Rice
+24 peanutCookies
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+114322
+28822.0
+9618.75
+?
+9620
+1.25
+1881.0
+?
+4895
+3014.0
+897.75
+?
+941
+43.25
+1923.75
+?
+3630
+1706.25
+2022-09-18
+Sunday
+25
+17 veganFullEnglish
+4 veganPorridge
+4 yoghurt
+17 kievs
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+16 roastPotatoes
+23 jelly
+17 kievs
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+16 roastPotatoes
+23 jelly
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+93321
+7821.0
+9618.75
+?
+9665
+46.25
+1881.0
+?
+3757
+1876.0
+897.75
+?
+1269
+371.25
+1923.75
+?
+3925
+2001.25
+2022-09-19
+Monday
+25
+17 veganPorridge
+4 toast
+4 porridge
+17 marghertia
+4 beanChilli
+4 lambMoussaka
+2 carrots
+0 nutBake
+24 berryCrumble
+17 marghertia
+4 beanChilli
+4 lambMoussaka
+2 carrots
+0 nutBake
+24 berryCrumble
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+88748
+3248.0
+9618.75
+?
+11883
+2264.25
+1881.0
+?
+3119
+1238.0
+897.75
+?
+981
+83.25
+1923.75
+?
+2585
+661.25
+2022-09-20
+Tuesday
+25
+17 toast
+4 porridge
+4 pancakes
+17 fishAndChips
+4 veganSausageCasserole
+4 veganPizza
+1 porkSausages
+10 yorkshirePuddings
+24 veganPancakes
+17 fishAndChips
+4 veganSausageCasserole
+4 veganPizza
+1 porkSausages
+10 yorkshirePuddings
+24 veganPancakes
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+86269
+769.0
+9618.75
+?
+9651
+32.25
+1881.0
+?
+2786
+905.0
+897.75
+?
+1024
+126.25
+1923.75
+?
+3151
+1227.25
+2022-09-21
+Wednesday
+25
+17 pancakes
+4 veganFullEnglish
+4 veganYoghurt
+17 veganBangersMash
+4 chickenCurry
+4 potatoCurry
+1 eggFriedRice
+23 breadRolls
+24 spongeCustard
+17 veganBangersMash
+4 chickenCurry
+4 potatoCurry
+1 eggFriedRice
+23 breadRolls
+24 spongeCustard
+25 veganFruitYoghurt
+25 canOfBeer
+85500.0
+?
+85615
+115.0
+9618.75
+?
+11273
+1654.25
+1881.0
+?
+3074
+1193.0
+897.75
+?
+899
+1.25
+1923.75
+?
+2971
+1047.25
+2022-09-22
+Thursday
+25
+17 veganYoghurt
+4 yoghurt
+4 toast
+17 quornChilli
+4 vegSpagBol
+4 ratatouille
+24 beans
+17 broccoli
+24 chocolateCake
+17 quornChilli
+4 vegSpagBol
+4 ratatouille
+24 beans
+17 broccoli
+24 chocolateCake
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85524
+24.0
+9618.75
+?
+12483
+2864.25
+1881.0
+?
+2053
+172.0
+897.75
+?
+2674
+1776.25
+1923.75
+?
+4050
+2126.25
+2022-09-23
+Friday
+25
+17 porridge
+4 pancakes
+4 veganFullEnglish
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+4 chips
+21 peas
+24 walnutCake
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+4 chips
+21 peas
+24 walnutCake
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+92379
+6879.0
+9618.75
+?
+9628
+9.25
+1881.0
+?
+4151
+2270.0
+897.75
+?
+1436
+538.25
+1923.75
+?
+2319
+395.25
+2022-09-24
+Saturday
+25
+17 yoghurt
+4 veganYoghurt
+4 veganPorridge
+17 beefBurgers
+4 mushroomSoup
+4 chickenNoodles
+0 veganSausages
+7 Rice
+24 peanutCookies
+17 beefBurgers
+4 mushroomSoup
+4 chickenNoodles
+0 veganSausages
+7 Rice
+24 peanutCookies
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+114322
+28822.0
+9618.75
+?
+9620
+1.25
+1881.0
+?
+4895
+3014.0
+897.75
+?
+941
+43.25
+1923.75
+?
+3630
+1706.25
+2022-09-25
+Sunday
+25
+17 veganFullEnglish
+4 veganPorridge
+4 yoghurt
+17 kievs
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+16 roastPotatoes
+23 jelly
+17 kievs
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+16 roastPotatoes
+23 jelly
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+93321
+7821.0
+9618.75
+?
+9665
+46.25
+1881.0
+?
+3757
+1876.0
+897.75
+?
+1269
+371.25
+1923.75
+?
+3925
+2001.25
+2022-09-26
+Monday
+25
+17 veganPorridge
+4 toast
+4 porridge
+17 marghertia
+4 beanChilli
+4 lambMoussaka
+2 carrots
+0 nutBake
+24 berryCrumble
+17 marghertia
+4 beanChilli
+4 lambMoussaka
+2 carrots
+0 nutBake
+24 berryCrumble
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+88748
+3248.0
+9618.75
+?
+11883
+2264.25
+1881.0
+?
+3119
+1238.0
+897.75
+?
+981
+83.25
+1923.75
+?
+2585
+661.25
+2022-09-27
+Tuesday
+25
+17 toast
+4 porridge
+4 pancakes
+17 fishAndChips
+4 veganSausageCasserole
+4 veganPizza
+1 porkSausages
+10 yorkshirePuddings
+24 veganPancakes
+17 fishAndChips
+4 veganSausageCasserole
+4 veganPizza
+1 porkSausages
+10 yorkshirePuddings
+24 veganPancakes
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+86269
+769.0
+9618.75
+?
+9651
+32.25
+1881.0
+?
+2786
+905.0
+897.75
+?
+1024
+126.25
+1923.75
+?
+3151
+1227.25
+2022-09-28
+Wednesday
+25
+17 pancakes
+4 veganFullEnglish
+4 veganYoghurt
+17 veganBangersMash
+4 chickenCurry
+4 potatoCurry
+1 eggFriedRice
+23 breadRolls
+24 spongeCustard
+17 veganBangersMash
+4 chickenCurry
+4 potatoCurry
+1 eggFriedRice
+23 breadRolls
+24 spongeCustard
+25 peanutCookies
+25 glassOfWine
+85500.0
+?
+85615
+115.0
+9618.75
+?
+11273
+1654.25
+1881.0
+?
+3074
+1193.0
+897.75
+?
+899
+1.25
+1923.75
+?
+2971
+1047.25
+2022-09-29
+Thursday
+25
+17 veganYoghurt
+4 yoghurt
+4 toast
+17 quornChilli
+4 vegSpagBol
+4 ratatouille
+24 beans
+17 broccoli
+24 chocolateCake
+17 quornChilli
+4 vegSpagBol
+4 ratatouille
+24 beans
+17 broccoli
+24 chocolateCake
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+85524
+24.0
+9618.75
+?
+12483
+2864.25
+1881.0
+?
+2053
+172.0
+897.75
+?
+2674
+1776.25
+1923.75
+?
+4050
+2126.25
+2022-09-30
+Friday
+25
+17 porridge
+4 pancakes
+4 veganFullEnglish
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+4 chips
+21 peas
+24 walnutCake
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+4 chips
+21 peas
+24 walnutCake
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+92379
+6879.0
+9618.75
+?
+9628
+9.25
+1881.0
+?
+4151
+2270.0
+897.75
+?
+1436
+538.25
+1923.75
+?
+2319
+395.25
+2022-10-01
+Saturday
+25
+17 yoghurt
+4 veganYoghurt
+4 veganPorridge
+17 beefBurgers
+4 mushroomSoup
+4 chickenNoodles
+0 veganSausages
+7 Rice
+24 peanutCookies
+17 beefBurgers
+4 mushroomSoup
+4 chickenNoodles
+0 veganSausages
+7 Rice
+24 peanutCookies
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+114322
+28822.0
+9618.75
+?
+9620
+1.25
+1881.0
+?
+4895
+3014.0
+897.75
+?
+941
+43.25
+1923.75
+?
+3630
+1706.25
+2022-10-02
+Sunday
+25
+17 veganFullEnglish
+4 veganPorridge
+4 yoghurt
+17 kievs
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+16 roastPotatoes
+23 jelly
+17 kievs
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+16 roastPotatoes
+23 jelly
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+93321
+7821.0
+9618.75
+?
+9665
+46.25
+1881.0
+?
+3757
+1876.0
+897.75
+?
+1269
+371.25
+1923.75
+?
+3925
+2001.25
+2022-10-03
+Monday
+25
+17 veganPorridge
+4 toast
+4 porridge
+17 marghertia
+4 beanChilli
+4 lambMoussaka
+2 carrots
+0 nutBake
+24 berryCrumble
+17 marghertia
+4 beanChilli
+4 lambMoussaka
+2 carrots
+0 nutBake
+24 berryCrumble
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+88748
+3248.0
+9618.75
+?
+11883
+2264.25
+1881.0
+?
+3119
+1238.0
+897.75
+?
+981
+83.25
+1923.75
+?
+2585
+661.25
+2022-10-04
+Tuesday
+25
+17 toast
+4 porridge
+4 pancakes
+17 fishAndChips
+4 veganSausageCasserole
+4 veganPizza
+1 porkSausages
+10 yorkshirePuddings
+24 veganPancakes
+17 fishAndChips
+4 veganSausageCasserole
+4 veganPizza
+1 porkSausages
+10 yorkshirePuddings
+24 veganPancakes
+0 peanutCookies
+0 glassOfWine
+85500.0
+?
+86269
+769.0
+9618.75
+?
+9651
+32.25
+1881.0
+?
+2786
+905.0
+897.75
+?
+1024
+126.25
+1923.75
+?
+3151
+1227.25
+2022-10-05
+Wednesday
+25
+17 pancakes
+4 veganFullEnglish
+4 veganYoghurt
+17 veganBangersMash
+4 chickenCurry
+4 potatoCurry
+1 eggFriedRice
+23 breadRolls
+24 spongeCustard
+17 veganBangersMash
+4 chickenCurry
+4 potatoCurry
+1 eggFriedRice
+23 breadRolls
+24 spongeCustard
+25 veganFruitYoghurt
+25 canOfBeer
+85500.0
+?
+85615
+115.0
+9618.75
+?
+11273
+1654.25
+1881.0
+?
+3074
+1193.0
+897.75
+?
+899
+1.25
+1923.75
+?
+2971
+1047.25
+2022-10-06
+Thursday
+25
+17 veganYoghurt
+4 yoghurt
+4 toast
+17 quornChilli
+4 vegSpagBol
+4 ratatouille
+24 beans
+17 broccoli
+24 chocolateCake
+17 quornChilli
+4 vegSpagBol
+4 ratatouille
+24 beans
+17 broccoli
+24 chocolateCake
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+85524
+24.0
+9618.75
+?
+12483
+2864.25
+1881.0
+?
+2053
+172.0
+897.75
+?
+2674
+1776.25
+1923.75
+?
+4050
+2126.25
+2022-10-07
+Friday
+25
+17 porridge
+4 pancakes
+4 veganFullEnglish
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+4 chips
+21 peas
+24 walnutCake
+17 jacketSpud
+4 quornLasagne
+4 mushroomRisotto
+4 chips
+21 peas
+24 walnutCake
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+92379
+6879.0
+9618.75
+?
+9628
+9.25
+1881.0
+?
+4151
+2270.0
+897.75
+?
+1436
+538.25
+1923.75
+?
+2319
+395.25
+2022-10-08
+Saturday
+25
+17 yoghurt
+4 veganYoghurt
+4 veganPorridge
+17 beefBurgers
+4 mushroomSoup
+4 chickenNoodles
+0 veganSausages
+7 Rice
+24 peanutCookies
+17 beefBurgers
+4 mushroomSoup
+4 chickenNoodles
+0 veganSausages
+7 Rice
+24 peanutCookies
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+114322
+28822.0
+9618.75
+?
+9620
+1.25
+1881.0
+?
+4895
+3014.0
+897.75
+?
+941
+43.25
+1923.75
+?
+3630
+1706.25
+2022-10-09
+Sunday
+25
+17 veganFullEnglish
+4 veganPorridge
+4 yoghurt
+17 kievs
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+16 roastPotatoes
+23 jelly
+17 kievs
+4 pepperoniPizza
+4 vegChowMein
+25 bakedPotato
+16 roastPotatoes
+23 jelly
+0 veganFruitYoghurt
+0 canOfBeer
+85500.0
+?
+93321
+7821.0
+9618.75
+?
+9665
+46.25
+1881.0
+?
+3757
+1876.0
+897.75
+?
+1269
+371.25
+1923.75
+?
+3925
+2001.25
