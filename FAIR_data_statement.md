@@ -2,7 +2,7 @@
 
 The project aims to satisfy the [FAIR data principles](https://www.go-fair.org/fair-principles/).
 
-A copy of the personnel schedule data provided by the British Antarctic Survey are included in the program files, at [/Data/MasterPAX.xlsx](https://github.com/Sophie-Turner/Antarctic-Food-Optimisation/blob/main/Data/MasterPAX.xlsx),
+A copy of the personnel schedule data provided by the British Antarctic Survey is included in the program files, at [/Data/MasterPAX.xlsx](https://github.com/Sophie-Turner/Antarctic-Food-Optimisation/blob/main/Data/MasterPAX.xlsx),
 but people's names have been removed to protect their identities and comply with [General Data Protection Regulations](https://www.gov.uk/government/publications/guide-to-the-general-data-protection-regulation).
 For more information, contact Maria Fox at marfox@bas.ac.uk or Nopi Exizidou at pardou@bas.ac.uk.
 Other information sources used for the development of the program are listed in the program files, at [/Documentation/References/References.txt](https://github.com/Sophie-Turner/Antarctic-Food-Optimisation/tree/main/Documentation/References)
