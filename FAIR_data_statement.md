@@ -12,7 +12,7 @@ Pandas, numpy and matplotlib were imported into the python code and are also ope
 ```pip install pandas```<br/>
 ```pip install numpy```<br/>
 ```pip install matplotlib```<br/>
-[Gecode](https://www.gecode.org/) was used as the solver in MiniZinc. It is open-source.
+[Gecode](https://www.gecode.org/) was used as the solver in MiniZinc. It is open-source.<br/>
 No specialist computing infrastructure is required to run this code other than a typical personal computer with an up-to-date operating system.   
 
 Random dietary requirements were generated for the batches of MiniZinc data. These data files have been included in the [code folder](https://github.com/Sophie-Turner/Antarctic-Food-Optimisation/tree/main/Code) so that the results shown can be exactly reproduced. Running the [batch generation script](https://github.com/Sophie-Turner/Antarctic-Food-Optimisation/blob/main/Code/Batches_read_write.py) will create a new random set of dietary restrictions. 
