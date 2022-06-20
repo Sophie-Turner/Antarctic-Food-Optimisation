@@ -18,7 +18,7 @@ to be optimised.
 The aim of this project is to construct a constraint program to solve this problem. The program 
 scales to instances of about 160 people over 20 days, or 25 people over 4 months, and batches of data can be combined to allow planning for longer periods of time. The example provided in the program files is for 370 days of a real Rothera schedule. The food purchasing strategy is chosen according to availability of fresh foods brought by air.
 
-Not all the necessary real data were available for this project so the implementation was based on some dummy data. Real data were used for Rothera personnel movements, Rothera schedule, emissions and aircraft fuel calulations. In the abscence of data specific to Rothera, dummy data were created, based on other sources, for meal arrangements, recipes, food costs, ship fuel calculations and people's dietary restrictions.
+Not all the necessary real data were available for this project so the implementation was based on some dummy data. Real data were used for Rothera personnel movements, Rothera schedule, emissions and aircraft fuel calulations. In the abscence of data specific to Rothera, dummy data were created, based on [other sources](https://github.com/Sophie-Turner/Antarctic-Food-Optimisation/blob/main/Documentation/References/References.txt), for meal arrangements, recipes, food costs, ship fuel calculations and people's dietary restrictions.
 
 <h2>How to use</h2>
   
