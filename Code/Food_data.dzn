@@ -67,9 +67,6 @@ emissions = [| 0,0,0 |
              6,19,1 | 42,19,1 | 97,19,2 | 22,19,2 | 97,19,1 | 8,19,1 | 10,19,2 |
               10,85,1 | 5,85,1 | 5,85,1 | 5,85,1 | 14,19,1 | 18,19,1 | 16,19,1 |];
 
-% Grams of packaging per 100g of ingredient.
-%packagingWaste = [];
-
 % Amount of nutrients in 100g of ingredient.
 % nutrients = {calories, carbohydrate, fat, fibre, protein};
 nutrition = [|0,0,0,0,0 | 
