@@ -8,10 +8,10 @@ For more information, contact Maria Fox at marfox@bas.ac.uk or Nopi Exizidou at 
 Other information sources used for the development of the program are listed in the program files, at [/Documentation/References/References.txt](https://github.com/Sophie-Turner/Antarctic-Food-Optimisation/tree/main/Documentation/References)
 
 [Python](https://www.python.org/downloads/) and [MiniZinc](https://www.minizinc.org/) were used for this project and are both open-source. 
-Pandas, numpy and matplotlib were imported into the python code and are also open-source. They can be installed using [Pip](https://pypi.org/project/pip/) by typing into the terminal:
-pip install pandas
-pip install numpy
-pip install matplotlib
+Pandas, numpy and matplotlib were imported into the python code and are also open-source. They can be installed using [Pip](https://pypi.org/project/pip/) by typing into the terminal:<br/>
+```pip install pandas```<br/>
+```pip install numpy```<br/>
+```pip install matplotlib```<br/>
 [Gecode](https://www.gecode.org/) was used as the solver in MiniZinc. It is open-source.
 No specialist computing infrastructure is required to run this code other than a typical personal computer with an up-to-date operating system.   
 
