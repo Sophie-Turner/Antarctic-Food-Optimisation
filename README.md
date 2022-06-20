@@ -20,7 +20,7 @@ scales to instances of about 160 people over 20 days, or 25 people over 4 months
 
 <h2>File structure</h2>
 
-<img src=Images/Tree.jpg/>
+<img src=Images/Tree.jpg>
 
 
 
