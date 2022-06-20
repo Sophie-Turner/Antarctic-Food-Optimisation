@@ -1,5 +1,6 @@
 <h1>FAIR data statement</h1>
-The project aims to meet the [FAIR data principles](https://www.go-fair.org/fair-principles/)
+
+The project aims to meet the [FAIR data principles](https://www.go-fair.org/fair-principles/).
 
 A copy of the personnel schedule data provided by the British Antarctic Survey are included in the program files, at [/Data/MasterPAX.xlsx](https://github.com/Sophie-Turner/Antarctic-Food-Optimisation/blob/main/Data/MasterPAX.xlsx),
 but people's names have been removed to protect their identities and comply with [General Data Protection Regulations](https://www.gov.uk/government/publications/guide-to-the-general-data-protection-regulation).
