@@ -12,6 +12,24 @@ freshFoods = [eggsFresh, bananaFresh, applesFresh, grapesFresh, orangesFresh];
 notIngredient = null;
 nothing = none;
 
+% Grams of non-recyclable, non-biodegradable packaging per kg of ingredient.
+% Assuming that we care more about the environmental impact of the waste than the amount we have to carry on the ship
+% because we already offloaded a lot of cargo when the ship arrived so there should be plenty of space.
+% Plastic and foil packets were weighed on scale and multiplied up to 1kg ingredient.
+% Assume that some recyclable packaging will end up being wasted so = 1g per kg.
+% Assume that bio-degradable packaging will not become significant waste so = 0.
+% Assume most fruit and veg are bought without packaging.
+packaging = [0,
+             3, 5, 0, 3, 5, 5, 5, 3,
+             1, 0, 0, 5, 1, 0, 1, 0,
+              0, 0,
+             3, 1, 5, 1, 1, 0, 5, 2,
+             2, 2, 5, 5, 5, 5, 5, 5,
+              5, 5,
+             1, 1, 1, 1, 1, 1, 1, 1, 1,
+             1, 1, 1, 1, 1, 5, 5,
+              0, 0, 2, 0, 5, 5, 1];
+
 %portionTypes = {grams, millilitres, millilitres_equivalent};
 %ingredientPortions = [grams,
 %                      grams, grams, grams, grams, grams, grams, grams, grams,
