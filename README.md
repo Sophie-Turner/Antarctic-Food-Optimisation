@@ -9,18 +9,14 @@
 Optimising logistics operations has a crucial impact on the overall carbon emissions entailed when 
 planning a science campaign in Antarctica. One important problem is the planning of the food 
 supply to feed a science team based at one of the remote Antarctic field stations over a season. 
-The objective is to minimize food and plastic waste, as well as financial cost and the carbon 
-emissions involved in transportation and storage of the foods. This must be done in the context of 
-a variety of constraints, eg: daily food must meet nutritional requirements, and must be satisfying 
-and enjoyable. It should satisfy any individual dietary restrictions, and meet as many of the stated 
-preferences as possible. These requirements can all be expressed as constraints with an objective 
-to be optimized. For example, food and inorganic waste should be minimized. The carbon costs of 
-storing and transporting food, as well as the costs of the food itself, should also be minimized. 
+The objective is to minimise waste, financial cost and the carbon 
+emissions associated with the foods. This is done in the context of 
+a variety of constraints. The daily menu meets nutritional requirements, is satisfying 
+and enjoyable and satisfies individual dietary restrictions. These requirements are expressed as constraints with an objective 
+to be optimised.  
 
 The aim of this project is to construct a constraint program to solve this problem. The program 
-should scale to a typical sized instance, eg: about 60 people over a 3-month season. Certain fixed 
-resupply dates can be assumed, and the food purchasing strategy should be chosen to exploit 
-these dates.
+scales to instances of about 160 people over 20 days, or 25 people over 4 months. The food purchasing strategy is chosen according to availability of fresh foods brought by air.
 
 
 
