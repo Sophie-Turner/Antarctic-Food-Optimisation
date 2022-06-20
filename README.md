@@ -18,6 +18,77 @@ to be optimised.
 The aim of this project is to construct a constraint program to solve this problem. The program 
 scales to instances of about 160 people over 20 days, or 25 people over 4 months, and batches of data can be combined to allow planning for longer periods of time. The example provided in the program files is for 370 days of a real Rothera schedule. The food purchasing strategy is chosen according to availability of fresh foods brought by air.
 
+<h2>File structure</h2>
+
+Antarctic-Food-Optimisation
+├── Code
+│   ├── Plots
+│   │   └── <i>Plots generated from benchmark tests</i> .py
+│   ├── Test
+│   │   ├── Test_data.dzn 
+│   │   ├── MiniZinc schedule datafile 
+│   │   └── without dietary restrictions
+│   ├── Batches generated from data .dzn
+│   ├── Batches_read_write.py
+│   ├── Script to generate .dzn batches 
+│   ├── from .xlsx schedule data
+│   ├── Food_data_no_ruminents.dzn
+│   ├── Beef and lamb swapped out for 
+│   ├── pork, mycoprotein and chicken
+│   ├── Food_data.dzn
+│   ├── MiniZinc datafile for food
+│   ├── Format_output.py
+│   ├── Script to generate .xlsx menu
+│   ├── from plain text output
+│   ├── Meals.mzn
+│   ├── MiniZinc model to run on datafiles
+│   ├── Output.txt
+│   └── Plain text output menu
+├── Data
+│   ├── 2017_electricity_usage.xls
+│   ├── BAS data
+│   ├── Emissions.xlsx
+│   ├── Table of emissions from 
+│   ├── food production
+│   ├── Jobs_physical_intensity.txt
+│   ├── List of BAS job roles requiring
+│   ├── extra nutrition
+│   ├── MasterPAX.csv
+│   ├── MasterPAX.xlsx
+│   ├── Original schedule data
+│   ├── Results_charts.xlsx
+│   ├── Table of emissions from
+│   └── Edmund's report
+├── Documentation
+│   ├── Meetings
+│   │   └── Project Meeting minutes .docx
+│   ├── References
+│   │   ├── Edmund_report.docx
+│   │   ├── Edmund's previous work on 
+│   │   ├── this topic
+│   │   ├── References.txt
+│   │   ├── All sources of information
+│   │   ├── used for this project
+│   │   └── Other information sources .pdf
+│   ├── Calculations_assumptions.txt
+│   └── Fuel and transport calculations
+├── Images
+│   └── Logos and plots
+├── Output
+│   ├── Test
+│   │   ├── Benchmarks.xlsx
+│   │   ├── Results of tests throughout 
+│   │   ├── the project
+│   │   ├── Month_menu.xlsx
+│   │   ├── Output_menu_test.xlsx
+│   │   ├── Output_order_test.xlsx
+│   │   └── Outputs from earlier tests
+│   ├── Output_menu.xlsx
+│   ├── Output_order.xlsx
+│   └── Final result from program
+├── LICENSE
+└── README.md
+
 
 
 
