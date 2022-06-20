@@ -28,7 +28,7 @@ Not all the necessary real data were available for this project so the implement
   
 1. Run the 'Batches_read_write.py' Python script on an up-to-date version of the 'MasterPAX.xlsx' spreadsheet. The script randomly generates fictional dietary restrictions for the group because these data were not provided. Update the script to include these if real data become available.
 2. Run the 'Meals.mzn' model in MiniZinc with the GeCode solver, specifying 'Food_data.dzn' and a 'BatchX.dzn' as MiniZinc datafiles. If you wish to see the effect on emissions of removing beef and lamb from the menu, select 'Food_data_no_ruminents.dzn' instead as the food data file.
-3. Give MiniZinc three to twelve minutes to produce a satisfactory solution. The output will be a menu, nutritional information and a shopping list to order with its costs.
+3. Give MiniZinc three to twelve minutes to produce a satisfactory solution. The output will be a menu, nutritional information and a shopping list to order with its costs.<br/>
 If you wish to save the menu its nutritional information:
 4. Save the menu output portion as plain text. If running multiple batches, one after the other, the output can all be placed in the same .txt file.
 5. Run the 'Format_output.py' script on the text output. This will create a spreadsheet in the same directory.
