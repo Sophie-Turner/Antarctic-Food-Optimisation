@@ -20,10 +20,6 @@ scales to instances of about 160 people over 20 days, or 25 people over 4 months
 
 Not all the necessary real data were available for this project so the implementation was based on some dummy data. Real data were used for Rothera personnel movements, Rothera schedule, emissions and aircraft fuel calulations. In the abscence of data specific to Rothera, dummy data were created, based on other sources, for meal arrangements, recipes, food costs, ship fuel calculations and people's dietary restrictions.
 
-<h2>File structure</h2>
-
-![File tree](Images/Tree.jpg)
-
 <h2>How to use</h2>
   
 1. Run the 'Batches_read_write.py' Python script on an up-to-date version of the 'MasterPAX.xlsx' spreadsheet. The script randomly generates fictional dietary restrictions for the group because these data were not provided. Update the script to include these if real data become available.
@@ -32,6 +28,12 @@ Not all the necessary real data were available for this project so the implement
 If you wish to save the menu and its nutritional information:
 4. Save the menu output portion as plain text. If running multiple batches, one after the other, the output can all be placed in the same .txt file.
 5. Run the 'Format_output.py' script on the text output. This will create a spreadsheet in the same directory.
+
+<h2>File structure</h2>
+
+![File tree](Images/Tree.jpg)
+
+
 
 
 
