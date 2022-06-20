@@ -16,7 +16,7 @@ and enjoyable and satisfies individual dietary restrictions. These requirements 
 to be optimised.  
 
 The aim of this project is to construct a constraint program to solve this problem. The program 
-scales to instances of about 160 people over 20 days, or 25 people over 4 months. The food purchasing strategy is chosen according to availability of fresh foods brought by air.
+scales to instances of about 160 people over 20 days, or 25 people over 4 months, and batches of data can be combined to allow planning for longer periods of time. The example provided in the program files is for 370 days of a real Rothera schedule. The food purchasing strategy is chosen according to availability of fresh foods brought by air.
 
 
 
