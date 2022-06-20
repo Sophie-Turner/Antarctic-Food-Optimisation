@@ -68,7 +68,6 @@ def formatString(strName, dataArray):
 def findListIndices(rowOrColList, startOrEnd, startIndex=1, endIndex=380):
     # Binary search for indices of row or col. Pass in the whole row or col as a 1d array.
     mid = round((endIndex + startIndex) / 2)
-    print(mid)
     midValue = rowOrColList[mid]
     if (type(midValue) == int and startOrEnd == "end") or (type(midValue) != int and startOrEnd == "start"):
         startIndex = mid 
