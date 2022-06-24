@@ -122,7 +122,7 @@ constraint forall(day in weekdays, optionNumI in 2..numBreakfastsOffered)
 constraint forall(dayI in 1..6, dayJ in dayI+1..7, optionNum in 1..numBreakfastsOffered)
                         (breakfastsServed[weekdays[dayI], optionNum] != breakfastsServed[weekdays[dayJ], optionNum]);                        
 
-% Breakfast is an essential meal so enure that everyone can eat it.
+% Breakfast is an essential meal so ensure that everyone can eat it.
 array[dates, 1..numBreakfastsOffered] of var int: numBreakfastsServed;                           
                  
 % The right number of breakfasts must be offered.
