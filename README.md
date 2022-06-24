@@ -39,6 +39,11 @@ If you wish to save the menu and its nutritional information:
 
 ![File tree](Images/Tree.jpg)
 
+<h2>Notes</h2>
+
+Some of the model code appears repetitive for the following reasons:
+- Using different enumerables is an effective way of processing different meal types but enumerable types cannot be passed as parameters in functions or predicates in MiniZinc.
+- Combining all the calculations and constraints into loops with larger bodies and fewer repeated iterations through the complete sets resulted in slower processing and loop unrolls were found to improve the situation.  
 
 
 
