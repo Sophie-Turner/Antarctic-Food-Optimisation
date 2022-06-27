@@ -105,10 +105,11 @@ nutrition = [|0,0,0,0,0 |
 %spaceTaken = [|0,0 | 10,0|];
 
 numBreakfastsOffered = 3;             
-breakfasts = {veganPorridge, veganFullEnglish, toast, veganYoghurt, pancakes, fruitNuts, porridge};
-breakfastCookingCosts = [3, 7, 7, 1, 0, 1, 0];
-breakfastIngredients = [|
+breakfasts = {yoghurt, veganPorridge, fullEnglish, veganFullEnglish, toast, veganYoghurt, pancakes, fruitNuts, porridge};
+breakfastCookingCosts = [0, 3, 3, 7, 7, 1, 0, 1, 0];
+breakfastIngredients = [| yoghurtFrozen, fruitMixFrozen, null, null, null | % 250, 50, 0, 0, 0
                           oats, oatMilk, fruitMixFrozen, null, null | % 50, 250, 50, 0, 0
+                          beansTinned, sausagesFrozen, baconFrozen, eggsFresh, hashBrownsFrozen | % 100, 114, 30, 100, 130
                           beansTinned, veganSausagesFrozen, hashBrownsFrozen, mushroomsTinned, tomatoesTinned | % 100, 114, 130, 78, 100
                           breadRollsFrozen, peanutButter, null, null, null | % 100, 30, 0, 0, 0
                           veganYoghurtFrozen, fruitMixFrozen, null, null, null |
@@ -116,76 +117,85 @@ breakfastIngredients = [|
                           fruitMixFrozen, nuts, grapesFresh, bananaFresh, applesFresh | % 50, 15, 50, 50, 50
                            oats, milkPowder, fruitMixFrozen, null, null |]; % 50, 250, 50, 0, 0
 % Grams per serving.
-breakfastAmounts = [| 50, 250, 50, 0, 0 | 100, 114, 130, 78, 100 |
+breakfastAmounts = [| 250, 50, 0, 0, 0 | 50, 250, 50, 0, 0 | 100, 114, 30, 100, 130 | 100, 114, 130, 78, 100 |
                       100, 30, 0, 0, 0 | 250, 50, 0, 0, 0 | 70, 40, 5, 15, 25 | 50, 15, 50, 50, 50 | 50, 250, 50, 0, 0 |];
-breakfastContains = [| none, none, none | none, none, none | 
+breakfastContains = [| milk, none, none | none, none, none | meat, egg, none | none, none, none | 
                        gluten, nut, none | none, none, none | gluten, egg, sugars | nut, none, none | milk, none, none|];
 
 numMealsOffered = 3; % 3 choices of meal will be served at the buffet bar.
 
-meals = {vegChowMein, vegPizza, mushroomSoup, mushroomRisotto, quornLasagne, jacketSpud, marghertia, moussaka, ratatouille, vegSpagBol, potatoCurry, sushi, paella, beanChilli, vegPie, veganSausageCasserole,
- veganPizza, quornChilli, veganBangersMash, veganCanneloni, stuffedPeppers, stuffedAubergine, pastaBake, vegHotPot, nutNoodles, squashRisotto, nutRoast};
+meals = {vegChowMein, pepperoniPizza, chickenNoodles, mushroomSoup, kievs, mushroomRisotto, quornLasagne, jacketSpud, marghertia, lambMoussaka, ratatouille, vegSpagBol, potatoCurry, sushi, fishPaella, beanChilli, shepherdsPie, veganSausageCasserole, mushroomOmelette, fishAndChips,
+ veganPizza, quornChilli, chickenCurry, veganBangersMash, veganCanneloni, beefBurgers, roastPork, stuffedPeppers, stuffedAubergine, shakshuka, tunaPastaBake, vegHotPot, nutNoodles, eggBaconPie, squashRisotto, nutRoast};
 
 % Oven and grill cost 10p for 10 mins. Hob and microwave cost 6p for 10 mins. Assume 4 portions of food fit in each.
 % Most oven energy is for preheating. It doesn't increase linearly with time.
-mealCookingCosts = [2, 3, 4, 12, 10, 12, 4, 12, 12, 3, 3, 7, 3, 12, 12, 9, 4, 9, 5, 5, 12, 12, 12, 12, 2, 7, 10]; 
+mealCookingCosts = [2, 3, 3, 4, 7, 12, 10, 12, 4, 12, 12, 3, 3, 7, 3, 12, 12, 9, 4, 5, 4, 9, 12, 5, 5, 8, 12, 12, 12, 3, 12, 12, 2, 12, 7, 10]; 
 
 maxIngredients = 5;
 mealIngredients = 
      [|noodlesDried, mushroomsTinned, peppersFrozen, broccoliFrozen, soySauce % 100, 80, 100, 112, 24
-     |flour, veganCheeseFrozen, mushroomsTinned, tomatoesTinned, herbsDried % 150, 100, 100, 50, 15
-     |mushroomsTinned, stockCube, oil, potatoesFrozen, herbsDried % 156, 6, 12, 12, 15
+     |flour, cheeseFrozen, pepperoniFrozen, tomatoesTinned, herbsDried % 150, 100, 100, 50, 15
+     |noodlesDried, poultryMeatFrozen, peasFrozen, soySauce, oil % 56, 56, 45, 50, 75 
+     |mushroomsTinned, creamPowder, oil, butterFrozen, herbsDried % 156, 31, 12, 12, 15
+     |poultryMeatFrozen, flour, peasFrozen, eggPowder, butterFrozen % 174, 50, 90, 25, 40
      |rice, oil, wine, mushroomsTinned, onionPowder % 63, 15, 200, 85, 25 
-     |pasta, tomatoesTinned, veganCheeseFrozen, beansTinned, mushroomsTinned % 75, 92, 46, 75, 42
+     |pasta, tomatoesTinned, cheeseFrozen, quornFrozen, mushroomsTinned % 75, 92, 46, 75, 42
      |potatoesFrozen, oil, beansTinned, veganCheeseFrozen, tomatoesTinned % 200, 50, 120, 15, 100 
-     |flour, tomatoesTinned, veganCheeseFrozen, oil, herbsDried % 250, 200, 63, 31, 15
-     |potatoesFrozen, onionPowder, tomatoesTinned, aubergineFrozen, oil % 113, 28, 133, 400, 13
+     |flour, tomatoesTinned, cheeseFrozen, oil, herbsDried % 250, 200, 63, 31, 15
+     |lambFrozen, onionPowder, tomatoesTinned, aubergineFrozen, oil % 113, 28, 133, 400, 13
      |tomatoesTinned, peppersFrozen, oil, aubergineFrozen, onionPowder % 400, 70, 18, 200, 85
-     |pasta, mushroomsTinned, tomatoesTinned, herbsDried, cheeseFrozen % 75, 75, 100, 15, 25
+     |pasta, quornFrozen, tomatoesTinned, herbsDried, cheeseFrozen % 75, 75, 100, 15, 25
      |potatoesFrozen, spicesDried, onionPowder, peasFrozen, rice % 233, 15, 57, 33, 33 
-     |rice, beansTinned, soySauce, herbsDried, spicesDried % 188, 113, 24, 15, 15 
-     |rice, beansTinned, wine, tomatoesTinned, onionPowder % 67, 185, 29, 67, 28
+     |rice, fishFrozen, soySauce, herbsDried, spicesDried % 188, 113, 24, 15, 15 
+     |rice, fishFrozen, wine, tomatoesTinned, onionPowder % 67, 185, 29, 67, 28
      |rice, beansTinned, tomatoesTinned, onionPowder, spicesDried % 100, 200, 200, 85, 8 
-     |potatoesFrozen, veganCheeseFrozen, tomatoesTinned, stockCube, onionPowder % 175, 125, 100, 6, 44 
+     |potatoesFrozen, lambFrozen, tomatoesTinned, stockCube, onionPowder % 175, 125, 100, 6, 44 
      |veganSausagesFrozen, beansTinned, onionPowder, stockCube, wine % 114, 200, 43, 6, 25    
+     |eggsFresh, mushroomsTinned, herbsDried, oil, onionPowder % 200, 156, 15, 15, 85
+     |fishFrozen, chipsFrozen, peasFrozen, eggPowder, oil % 150, 150, 80, 30, 3  
      |flour, veganCheeseFrozen, tomatoesTinned, mushroomsTinned, peppersFrozen % 150, 100, 50, 80, 80
-     |rice, mushroomsTinned, beansTinned, spicesDried, tomatoesTinned % 50, 63, 200, 15, 100   
+     |rice, quornFrozen, beansTinned, spicesDried, tomatoesTinned % 50, 63, 200, 15, 100 
+     |poultryMeatFrozen, rice, potatoesFrozen, spicesDried, stockCube % 338, 100, 100, 20, 6  
      |veganSausagesFrozen, potatoesFrozen, onionPowder, gravyPowder, peasFrozen % 114, 250, 85, 15, 80
      |pasta, veganCheeseFrozen, herbsDried, onionPowder, tomatoesTinned % 100, 288, 15, 43, 200
+     |breadRollsFrozen, beefFrozen, cheeseFrozen, onionPowder, chipsFrozen % 100, 114, 20, 43, 284
+     |porkFrozen, herbsDried, onionPowder, gravyPowder, applesFresh % 375, 15, 85, 15, 75 
      |peppersFrozen, rice, veganCheeseFrozen, herbsDried, beansTinned % 120, 50, 25, 15, 100
      |aubergineFrozen, rice, wine, veganCheeseFrozen, spicesDried % 600, 50, 50, 25, 15
-     |onionPowder, broccoliFrozen, pasta, veganCheeseFrozen, tomatoesTinned % 5, 63, 50, 50, 150
+     |tomatoesTinned, eggsFresh, peppersFrozen, spicesDried, cheeseFrozen % 200, 100, 120, 15, 51
+     |fishFrozen, broccoliFrozen, pasta, cheeseFrozen, milkPowder % 46, 63, 50, 19, 150
      |squashFrozen, carrotsFrozen, tomatoesTinned, onionPowder, stockCube % 200, 75, 100, 85, 6
      |noodlesDried, nuts, peanutButter, spicesDried, soySauce % 100, 50, 50, 5, 24
+     |eggsFresh, baconFrozen, flour, butterFrozen, cheeseFrozen % 50, 67, 46, 23, 33
      |squashFrozen, wine, rice, stockCube, veganCheeseFrozen  % 250, 38, 100, 6, 25  
      |nuts, peanutButter, stockCube, carrotsFrozen, oatMilk |];
      
 % amount of ingredient in meal x g or ml.
 mealAmounts = 
-    [|100, 80, 100, 112, 24 | 150, 100, 100, 50, 15 | 156, 31, 12, 12, 15 |
-      63, 15, 200, 85, 25 | 75, 92, 46, 75, 42 | 200, 50, 120, 15, 100 |
+    [|100, 80, 100, 112, 24 | 150, 100, 100, 50, 15 | 56, 56, 45, 50, 75 | 156, 31, 12, 12, 15 |
+      174, 50, 90, 25, 40 | 63, 15, 200, 85, 25 | 75, 92, 46, 75, 42 | 200, 50, 120, 15, 100 |
       250, 200, 63, 31, 15 | 113, 28, 133, 400, 13 | 400, 70, 18, 200, 85 | 75, 75, 100, 15, 25 |
       233, 15, 57, 33, 33 | 188, 113, 24, 15, 15 | 67, 185, 29, 67, 28 | 100, 200, 200, 85, 8 | 
-      175, 125, 100, 6, 44 | 114, 200, 43, 6, 25 | 
-      150, 100, 50, 80, 80 | 50, 63, 200, 15, 100 | 114, 250, 85, 15, 80 |
-      100, 288, 15, 43, 200 | 120, 50, 25, 15, 100 |
-      600, 50, 50, 25, 15 | 46, 63, 50, 19, 150 | 200, 75, 100, 85, 6 |
-      100, 50, 50, 5, 24 | 250, 38, 100, 6, 25 | 80,13,6,25,13 |];    
+      175, 125, 100, 6, 44 | 114, 200, 43, 6, 25 | 200, 156, 15, 15, 85 | 150, 150, 80, 30, 3 |  
+      150, 100, 50, 80, 80 | 50, 63, 200, 15, 100 | 338, 100, 100, 20, 6 | 114, 250, 85, 15, 80 |
+      100, 288, 15, 43, 200 | 100, 114, 20, 43, 284 | 375, 15, 85, 15, 75 | 120, 50, 25, 15, 100 |
+      600, 50, 50, 25, 15 | 200, 100, 120, 15, 51 | 46, 63, 50, 19, 150 | 200, 75, 100, 85, 6 |
+      100, 50, 50, 5, 24 | 50, 67, 46, 23, 33 | 250, 38, 100, 6, 25 | 80,13,6,25,13 |];    
      
 maxContains = 3;     
-mealContains = [|gluten, egg, none| none, none, gluten| none, none, none|
-                 none, none, none| gluten, none, none| none, none, none| gluten, none, none| none, none, none|
-                 none, none, none| none, gluten, none| none, none, none| none, none, none| none, none, none|
-                 none, none, none| none, none, none| none, none, none|
-                 gluten, none, none| none, none, none| none, none, none| gluten, none, none|
-                 none, none, none| none, none, none|
-                 none, none, gluten| none, none, none | gluten, nut, none | none, none, none |
+mealContains = [|gluten, egg, none| meat, milk, gluten| meat, gluten, egg| milk, none, none| meat, gluten, none|
+                 none, none, none| gluten, milk, egg| none, none, none| gluten, milk, none| meat, none, none|
+                 none, none, none| egg, gluten, milk| none, none, none| meat, none, none| meat, none, none|
+                 none, none, none| meat, none, none| none, none, none| egg, none, none| meat, none, none|
+                 gluten, none, none| egg, none, none| meat, milk, none| none, none, none| gluten, none, none|
+                 gluten, meat, milk| meat, none, none| none, none, none| none, none, none| egg, milk, none|
+                 meat, milk, gluten| none, none, none | gluten, nut, egg | meat, milk, gluten | none, none, none |
                  nut, none, none |];
 
 % The sides can all be eaten by every diet type.
 numSidesOffered = 2;              
-sides = {roastPotatoes, bakedPotato, Rice, veganSausages, peas, chips, broccoli, beans, breadRolls, nutBake, carrots, roastSquash, potatoSalad};                     
-sideCookingCosts = [10, 12, 3, 7, 2, 7, 10, 1, 0, 10, 10, 10, 0];          
+sides = {roastPotatoes, bakedPotato, Rice, veganSausages, peas, chips, broccoli, beans, breadRolls, yorkshirePuddings, eggFriedRice, boiledEggs, porkSausages, nutBake, carrots, roastSquash, potatoSalad};                     
+sideCookingCosts = [10, 12, 3, 7, 2, 7, 10, 1, 0, 3, 3, 1, 7, 10, 10, 10, 0];          
 sideIngredients = [| potatoesFrozen, oil, herbsDried, null, null |
                      potatoesFrozen, null, null, null, null | 
                      rice, null, null, null, null |
@@ -194,35 +204,44 @@ sideIngredients = [| potatoesFrozen, oil, herbsDried, null, null |
                      chipsFrozen, null, null, null, null |
                      broccoliFrozen, null, null, null, null |
                      beansTinned, null, null, null, null |
-                     breadRollsFrozen, null, null, null, null |
+                     breadRollsFrozen, butterFrozen, null, null, null |
+                     flour, oil, eggPowder, milkPowder, null |
+                     rice, eggPowder, null, null, null |
+                     eggsFresh, null, null, null, null |
+                     sausagesFrozen, null, null, null, null |
                      nuts, peanutButter, stockCube, carrotsFrozen, oatMilk |
                      carrotsFrozen, null, null, null, null |
                      squashFrozen, null, null, null, null |
                      potatoesFrozen, peppersFrozen, carrotsFrozen, peasFrozen, onionPowder |]; 
 sideAmounts = [| 200,10,5,0,0 | 200,0,0,0,0 | 100,0,0,0,0 | 75,0,0,0,0 | 80,0,0,0,0 | 284,0,0,0,0 | 45,0,0,0,0 | 120,0,0,0,0 | 100,14,0,0,0 |
-                 80,13,6,25,13 | 55,0,0,0,0 | 100,0,0,0,0 | 40,40,40,40,5 |];
+                 23,6,33,33,0 | 100,50,0,0,0 | 50,0,0,0,0 | 75,0,0,0,0 | 80,13,6,25,13 | 55,0,0,0,0 | 100,0,0,0,0 | 40,40,40,40,5 |];
 sideContains = [|none,none,none|none,none,none|none,none,none|none,none,none|none,none,none|none,none,none|none,none,none|
-                 none,none,none|gluten,none,none|nut,none,none|
+                 none,none,none|gluten,milk,none|gluten,egg,milk|egg,none,none|egg,none,none|meat,none,none|nut,none,none|
                  none,none,none|none,none,none|none,none,none|];
           
 numDessertsOffered = 1;
-desserts = {bananaIceCream, veganFruitYoghurt, fruitSalad, jelly, Biscuits, veganPancakes, fruitCustard};
-dessertCookingCosts = [0, 0, 0, 0, 0, 5, 1]; 
-dessertIngredients = [|
+desserts = {peanutCookies, bananaIceCream, chocolateMousse, veganFruitYoghurt, fruitSalad, walnutCake, chocolateCake, spongeCustard, jelly, cheeseBiscuits, veganPancakes, berryCrumble, fruitCustard};
+dessertCookingCosts = [9, 1, 1, 0, 0, 12, 12, 12, 0, 0, 1, 5, 1]; 
+dessertIngredients = [|peanutButter, eggPowder, sugar, null, null| % 56, 13, 25, 0, 0
                        bananaFresh, darkChocolate, null, null, null| % 118, 25, 0, 0, 0 
+                       darkChocolate, eggsFresh, sugar, oil, null| % 25, 33, 8, 17, 0
                        veganYoghurtFrozen, fruitMixFrozen, null, null, null| % 250, 50, 0, 0, 0
                        applesFresh, orangesFresh, grapesFresh, bananaFresh, null| % 100, 120, 100, 118, 0
+                       flour, sugar, butterFrozen, eggPowder, nuts| % 17, 33, 23, 17, 17
+                       flour, sugar, butterFrozen, eggPowder, darkChocolate| % 17, 33, 23, 17, 24
+                       flour, sugar, butterFrozen, eggPowder, custardTinned| % 17, 33, 23, 17, 200
                        jellyPowder, fruitMixFrozen, null, null, null| % 34, 50, 0, 0, 0
-                       biscuits, veganCheeseFrozen, grapesFresh, null, null| % 48, 150, 100, 0, 0
+                       biscuits, cheeseFrozen, grapesFresh, null, null| % 48, 150, 100, 0, 0
                        oatMilk, flour, oil, sugar, fruitMixFrozen| % 70, 40, 5, 15, 25
+                       fruitMixFrozen, flour, sugar, custardTinned, butterFrozen| % 30, 30, 17, 75 ,17
                        fruitMixFrozen, nuts, grapesFresh, bananaFresh, custardTinned |]; % 50, 15, 50, 50, 50                 
                                                                                
-dessertAmounts = [| 118, 25, 0, 0, 0 | 250, 50, 0, 0, 0 | 
-                    100, 120, 100, 118, 0 |  
-                    34, 50, 0, 0, 0 | 48, 150, 100, 0, 0 | 70, 40, 5, 15, 25 | 50, 15, 50, 50, 50 |];          
-dessertContains = [| none, none, none | none, none, none | none, none, none | 
-                     sugars, none, none | none, none, none | 
-                     sugars, none, none | nut, none, none |];                    
+dessertAmounts = [| 56, 13, 25, 0, 0 | 118, 25, 0, 0, 0 | 25, 33, 8, 17, 0 | 250, 50, 0, 0, 0 | 
+                    100, 120, 100, 118, 0 | 17, 33, 23, 17, 17 | 17, 33, 23, 17, 24 | 17, 33, 23, 17, 200 | 
+                    34, 50, 0, 0, 0 | 48, 150, 100, 0, 0 | 70, 40, 5, 15, 25 | 30, 30, 17, 75, 17 | 50, 15, 50, 50, 50 |];          
+dessertContains = [|egg, nut, sugars | none, none, none | sugars, egg, none | none, none, none | none, none, none | 
+                     nut, egg, sugars | milk, egg, sugars | milk, egg, sugars | sugars, meat, none | milk, none, none | 
+                     sugars, none, none | gluten, egg, milk | nut, egg, none |];                    
                        
 treatDrinks = {glassOfWine, canOfBeer};
 treatIngredients = [wine, beerCanned];

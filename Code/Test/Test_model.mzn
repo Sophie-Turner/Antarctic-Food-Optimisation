@@ -116,11 +116,11 @@ constraint forall(date in dates, nutrient in nutrients)
 array[weekdays, 1..numBreakfastsOffered] of var breakfasts: breakfastsServed;
 
 % The breakfast options on each day must not be the same but options can be repeated throughout the week.
-constraint forall(day in weekdays, optionNumI in 2..numBreakfastsOffered)
-                 (forall(optionNumJ in 1..optionNumI-1)
-                        (breakfastsServed[day, optionNumI] != breakfastsServed[day, optionNumJ]));
-constraint forall(dayI in 1..6, dayJ in dayI+1..7, optionNum in 1..numBreakfastsOffered)
-                        (breakfastsServed[weekdays[dayI], optionNum] != breakfastsServed[weekdays[dayJ], optionNum]);                        
+%constraint forall(day in weekdays, optionNumI in 2..numBreakfastsOffered)
+%                 (forall(optionNumJ in 1..optionNumI-1)
+%                        (breakfastsServed[day, optionNumI] != breakfastsServed[day, optionNumJ]));
+%constraint forall(dayI in 1..6, dayJ in dayI+1..7, optionNum in 1..numBreakfastsOffered)
+%                        (breakfastsServed[weekdays[dayI], optionNum] != breakfastsServed[weekdays[dayJ], optionNum]);                        
 
 % Breakfast is an essential meal so ensure that everyone can eat it.
 array[dates, 1..numBreakfastsOffered] of var int: numBreakfastsServed;                           
@@ -134,13 +134,13 @@ constraint forall(date in dates)
                        (numBreakfastsServed[date, optionNum] >= minServings[date]));       
                      
 % Make sure everyone can eat something and there are enough servings for each diet type.            
-constraint forall(date in dates, 
-                  foodType in contains)
-                     (numRefusals[date, foodType] <= 
-                      sum(optionNum in 1..numBreakfastsOffered)
-                         (forall(itemNum in 1..maxContains)
-                                (breakfastContains[breakfastsServed[daysOfWeek[date], optionNum], itemNum] != foodType) 
-                                 * numBreakfastsServed[date, optionNum]));   
+%constraint forall(date in dates, 
+%                  foodType in contains)
+%                     (numRefusals[date, foodType] <= 
+%                      sum(optionNum in 1..numBreakfastsOffered)
+%                         (forall(itemNum in 1..maxContains)
+%                                (breakfastContains[breakfastsServed[daysOfWeek[date], optionNum], itemNum] != foodType) 
+%                                 * numBreakfastsServed[date, optionNum]));   
                                  
 % Work out the nutrition on offer.
 array[dates, nutrients] of var int: breakfastsNutrition;
@@ -188,7 +188,7 @@ array[dates, 1..numMealsOffered] of var int: numMealsServed;
 % A variety of meals must be offered.
 % All the meal options at each meal time must be different.
 include "alldifferent.mzn";
-constraint alldifferent(mealsServed);
+%constraint alldifferent(mealsServed);
                  
 % The right number of meals must be offered.
 constraint forall(date in dates)
@@ -199,13 +199,13 @@ constraint forall(date in dates)
                     (numMealsServed[date, optionNum]) = numPeople[date]);                 
          
 % Make sure everyone can eat something and there are enough servings for each diet type.            
-constraint forall(date in dates, 
-                  foodType in contains)
-                     (numRefusals[date, foodType] <= 
-                      sum(optionNum in 1..numMealsOffered)
-                         (forall(itemNum in 1..maxContains)
-                                (mealContains[mealsServed[daysOfWeek[date], optionNum], itemNum] != foodType) 
-                                 * numMealsServed[date, optionNum]));
+%constraint forall(date in dates, 
+%                  foodType in contains)
+%                     (numRefusals[date, foodType] <= 
+%                      sum(optionNum in 1..numMealsOffered)
+%                         (forall(itemNum in 1..maxContains)
+%                                (mealContains[mealsServed[daysOfWeek[date], optionNum], itemNum] != foodType) 
+%                                 * numMealsServed[date, optionNum]));
                                                                                  
 % Work out the nutrition on offer.
 array[dates, nutrients] of var int: mealsNutrition;
@@ -256,16 +256,16 @@ constraint forall(date in dates)
                          numSidesServed[date, optionNum] <= numPeople[date]));
                         
 % The sides options on each day must not be the same but options can be repeated throughout the week.
-constraint alldifferent(sidesServed);
+%constraint alldifferent(sidesServed);
                                   
 % Make sure everyone can eat something.
-constraint forall(date in dates, 
-                  foodType in contains)
-                     (numRefusals[date, foodType] <= 
-                      sum(optionNum in 1..numSidesOffered)
-                         (forall(itemNum in 1..maxContains)
-                                (sideContains[sidesServed[daysOfWeek[date], optionNum], itemNum] != foodType) 
-                                 * numSidesServed[date, optionNum]));                                 
+%constraint forall(date in dates, 
+%                  foodType in contains)
+%                     (numRefusals[date, foodType] <= 
+%                      sum(optionNum in 1..numSidesOffered)
+%                         (forall(itemNum in 1..maxContains)
+%                                (sideContains[sidesServed[daysOfWeek[date], optionNum], itemNum] != foodType) 
+%                                 * numSidesServed[date, optionNum]));                                 
                                                                                                    
 % Work out the nutrition on offer.
 array[dates, nutrients] of var int: sidesNutrition;
@@ -309,14 +309,15 @@ array[weekdays, 1..numDessertsOffered] of var desserts: dessertsServed;
 array[dates, 1..numDessertsOffered] of var int: numDessertsServed;
 
 % Don't serve the same dessert again for a week after it's served.
-constraint alldifferent(dessertsServed);                 
+%constraint alldifferent(dessertsServed);                 
                   
 % Don't offer more desserts than people can eat. Desserts are not important so don't bother much with diet types.
-constraint forall(date in dates, 
-                  optionNum in 1..numDessertsOffered)
-                       (numDessertsServed[date, optionNum] = 
-                        numPeople[date] - max(itemNum in 1..maxContains)
-                           (numRefusals[date, dessertContains[dessertsServed[daysOfWeek[date], optionNum], itemNum]]));                                                       
+%constraint forall(date in dates, 
+%                  optionNum in 1..numDessertsOffered)
+%                       (numDessertsServed[date, optionNum] = 
+%                        numPeople[date] - max(itemNum in 1..maxContains)
+%                           (numRefusals[date, dessertContains[dessertsServed[daysOfWeek[date], optionNum], itemNum]]));                                                      
+constraint forall(date in dates)(numDessertsServed[date, 1] = numPeople[date]); 
                                                    
 % Work out the nutrition on offer.
 array[dates, nutrients] of var int: dessertsNutrition;
@@ -444,8 +445,8 @@ constraint forall(date in dates, nutrient in nutrients)
                     * 2)) % Muliply meals by 2 because there are lunch and tea.
                  div 100); % Per 100g, not per gram.
                                                    
-constraint forall(date in dates, nutrient in nutrients)
-                 (dailyNutrition[date, nutrient] >= dailyNutrientsRequired[date, nutrient]);
+constraint forall(date in dates)
+                 (dailyNutrition[date, calories] >= dailyNutrientsRequired[date, calories]);
 
 array[ingredients] of var int: order;
 constraint forall(ingredient in ingredients)
@@ -481,14 +482,14 @@ var int: varietyLack = sum(date in dates)
                               (abs(numMealsServed[date, mI] - numMealsServed[date, mI+1])));
 
 % Constrain cals to > minimum, then minimise to avoid food waste.
-%solve minimize sum(dailyNutrition) + totalCost + totalEmissions + varietyLack + totalPackaging;
-solve satisfy;
+solve minimize sum(dailyNutrition) + totalCost + totalEmissions + varietyLack + totalPackaging;
+%solve satisfy;
 %%%%%%%%%%%%%%%%%%%%%%%% OUTPUT INFO %%%%%%%%%%%%%%%%%%%%%%%%%
 
 int: zero = 0;
 
 % Menu.
-output["\(dates[dateNum])\n\(daysOfWeek[dates[dateNum]])\n\(numPeople[dates[dateNum]])\n\(numBreakfastsServed[dates[dateNum], 1]) \(breakfastsServed[daysOfWeek[dates[dateNum]], 1])\n\(numBreakfastsServed[dates[dateNum], 2]) \(breakfastsServed[daysOfWeek[dates[dateNum]], 2])\n\(numBreakfastsServed[dates[dateNum], 3]) \(breakfastsServed[daysOfWeek[dates[dateNum]], 3])\n\(numMealsServed[dates[dateNum], 1]) \(mealsServed[daysOfWeek[dates[dateNum]], 1])\n\(numMealsServed[dates[dateNum], 2]) \(mealsServed[daysOfWeek[dates[dateNum]], 2])\n\(numMealsServed[dates[dateNum], 3]) \(mealsServed[daysOfWeek[dates[dateNum]], 3])\n\(numSidesServed[dates[dateNum], 1]) \(sidesServed[daysOfWeek[dates[dateNum]], 1])\n\(numSidesServed[dates[dateNum], 2]) \(sidesServed[daysOfWeek[dates[dateNum]], 2])\n\(numDessertsServed[dates[dateNum], 1]) \(dessertsServed[daysOfWeek[dates[dateNum]], 1])\n\(numMealsServed[dates[dateNum], 1]) \(mealsServed[daysOfWeek[dates[dateNum]], 1])\n\(numMealsServed[dates[dateNum], 2]) \(mealsServed[daysOfWeek[dates[dateNum]], 2])\n\(numMealsServed[dates[dateNum], 3]) \(mealsServed[daysOfWeek[dates[dateNum]], 3])\n\(numSidesServed[dates[dateNum], 1]) \(sidesServed[daysOfWeek[dates[dateNum]], 1])\n\(numSidesServed[dates[dateNum], 2]) \(sidesServed[daysOfWeek[dates[dateNum]], 2])\n\(numDessertsServed[dates[dateNum], 1]) \(dessertsServed[daysOfWeek[dates[dateNum]], 1])\n\(if dateNum mod treatFrequency = 0 then numPeople[dates[dateNum]] else zero endif) \(if dateNum < treatFrequency then treatFoodsServed[1] else treatFoodsServed[dateNum div treatFrequency] endif)\n\(if dateNum mod treatFrequency = 0 then numPeople[dates[dateNum]] else zero endif) \(if dateNum < treatFrequency then treatDrinksServed[1] else treatDrinksServed[dates[dateNum div treatFrequency]] endif)\n\(dailyNutrientsRequired[dates[dateNum], calories])\n?\n\(dailyNutrition[dates[dateNum], calories])\n\(dailyNutrition[dates[dateNum], calories] - dailyNutrientsRequired[dates[dateNum], calories])\n\(dailyNutrientsRequired[dates[dateNum], carbohydrate])\n?\n\(dailyNutrition[dates[dateNum], carbohydrate])\n\(dailyNutrition[dates[dateNum], carbohydrate] - dailyNutrientsRequired[dates[dateNum], carbohydrate])\n\(dailyNutrientsRequired[dates[dateNum], fat])\n?\n\(dailyNutrition[dates[dateNum], fat])\n\(dailyNutrition[dates[dateNum], fat] - dailyNutrientsRequired[dates[dateNum], fat])\n\(dailyNutrientsRequired[dates[dateNum], fibre])\n?\n\(dailyNutrition[dates[dateNum], fibre])\n\(dailyNutrition[dates[dateNum], fibre] - dailyNutrientsRequired[dates[dateNum], fibre])\n\(dailyNutrientsRequired[dates[dateNum], protein])\n?\n\(dailyNutrition[dates[dateNum], protein])\n\(dailyNutrition[dates[dateNum], protein] - dailyNutrientsRequired[dates[dateNum], protein])\n" | dateNum in 1..numDays]; 
+output["\(dates[dateNum])\n\(daysOfWeek[dates[dateNum]])\n\(numPeople[dates[dateNum]])\n\(numBreakfastsServed[dates[dateNum], 1]) \(breakfastsServed[daysOfWeek[dates[dateNum]], 1])\n\(numBreakfastsServed[dates[dateNum], 2]) \(breakfastsServed[daysOfWeek[dates[dateNum]], 2])\n\(numMealsServed[dates[dateNum], 1]) \(mealsServed[daysOfWeek[dates[dateNum]], 1])\n\(numMealsServed[dates[dateNum], 2]) \(mealsServed[daysOfWeek[dates[dateNum]], 2])\n\(numMealsServed[dates[dateNum], 3]) \(mealsServed[daysOfWeek[dates[dateNum]], 3])\n\(numSidesServed[dates[dateNum], 1]) \(sidesServed[daysOfWeek[dates[dateNum]], 1])\n\(numSidesServed[dates[dateNum], 2]) \(sidesServed[daysOfWeek[dates[dateNum]], 2])\n\(numDessertsServed[dates[dateNum], 1]) \(dessertsServed[daysOfWeek[dates[dateNum]], 1])\n\(numMealsServed[dates[dateNum], 1]) \(mealsServed[daysOfWeek[dates[dateNum]], 1])\n\(numMealsServed[dates[dateNum], 2]) \(mealsServed[daysOfWeek[dates[dateNum]], 2])\n\(numMealsServed[dates[dateNum], 3]) \(mealsServed[daysOfWeek[dates[dateNum]], 3])\n\(numSidesServed[dates[dateNum], 1]) \(sidesServed[daysOfWeek[dates[dateNum]], 1])\n\(numSidesServed[dates[dateNum], 2]) \(sidesServed[daysOfWeek[dates[dateNum]], 2])\n\(numDessertsServed[dates[dateNum], 1]) \(dessertsServed[daysOfWeek[dates[dateNum]], 1])\n\(if dateNum mod treatFrequency = 0 then numPeople[dates[dateNum]] else zero endif) \(if dateNum < treatFrequency then treatFoodsServed[1] else treatFoodsServed[dateNum div treatFrequency] endif)\n\(if dateNum mod treatFrequency = 0 then numPeople[dates[dateNum]] else zero endif) \(if dateNum < treatFrequency then treatDrinksServed[1] else treatDrinksServed[dates[dateNum div treatFrequency]] endif)\n\(dailyNutrientsRequired[dates[dateNum], calories])\n?\n\(dailyNutrition[dates[dateNum], calories])\n\(dailyNutrition[dates[dateNum], calories] - dailyNutrientsRequired[dates[dateNum], calories])\n\(dailyNutrientsRequired[dates[dateNum], carbohydrate])\n?\n\(dailyNutrition[dates[dateNum], carbohydrate])\n\(dailyNutrition[dates[dateNum], carbohydrate] - dailyNutrientsRequired[dates[dateNum], carbohydrate])\n\(dailyNutrientsRequired[dates[dateNum], fat])\n?\n\(dailyNutrition[dates[dateNum], fat])\n\(dailyNutrition[dates[dateNum], fat] - dailyNutrientsRequired[dates[dateNum], fat])\n\(dailyNutrientsRequired[dates[dateNum], fibre])\n?\n\(dailyNutrition[dates[dateNum], fibre])\n\(dailyNutrition[dates[dateNum], fibre] - dailyNutrientsRequired[dates[dateNum], fibre])\n\(dailyNutrientsRequired[dates[dateNum], protein])\n?\n\(dailyNutrition[dates[dateNum], protein])\n\(dailyNutrition[dates[dateNum], protein] - dailyNutrientsRequired[dates[dateNum], protein])\n" | dateNum in 1..numDays]; 
 
 % Shopping list.
 output["\n\n\n"];
