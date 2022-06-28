@@ -6,7 +6,7 @@ ship has 1440 m3 max food capacity (total storage capacity minus fuel storage)
 11cm x 6cm x 5cm = 330 cm3 = 0.00033 m3
 
 1440 / 0.00033 = 4363636
-The ship can carry about 4363636 x 100g portions of food
+The ship can carry about 4363636 x 100g portions of food (436 tonnes)
 
 ship fuel costs £20,000 per day
 = 2,000,000p 

@@ -481,8 +481,8 @@ var int: varietyLack = sum(date in dates)
                               (abs(numMealsServed[date, mI] - numMealsServed[date, mI+1])));
 
 % Constrain cals to > minimum, then minimise to avoid food waste.
-%solve minimize sum(dailyNutrition) + totalCost + totalEmissions + varietyLack + totalPackaging;
-solve satisfy;
+solve minimize sum(dailyNutrition) + totalCost + totalEmissions + varietyLack + totalPackaging;
+
 %%%%%%%%%%%%%%%%%%%%%%%% OUTPUT INFO %%%%%%%%%%%%%%%%%%%%%%%%%
 
 int: zero = 0;

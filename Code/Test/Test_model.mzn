@@ -483,7 +483,6 @@ var int: varietyLack = sum(date in dates)
 
 % Constrain cals to > minimum, then minimise to avoid food waste.
 solve minimize sum(dailyNutrition) + totalCost + totalEmissions + varietyLack + totalPackaging;
-%solve satisfy;
 %%%%%%%%%%%%%%%%%%%%%%%% OUTPUT INFO %%%%%%%%%%%%%%%%%%%%%%%%%
 
 int: zero = 0;
