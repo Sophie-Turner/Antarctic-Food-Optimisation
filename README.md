@@ -21,6 +21,7 @@ scales to instances of about 160 people over 20 days, or 25 people over 4 months
 Not all the necessary real data were available for this project so the implementation was based on some dummy data. Real data were used for Rothera personnel movements, Rothera schedule, emissions and aircraft fuel calulations. In the abscence of data specific to Rothera, dummy data were created, based on [other sources](https://github.com/Sophie-Turner/Antarctic-Food-Optimisation/blob/main/Documentation/References/References.txt), for meal arrangements, recipes, food costs, ship fuel calculations and people's dietary restrictions.
 
 <h2>Video</h2>
+
 Here is [the video](https://youtu.be/mDgD6Yb-SEA/) presentation.
 
 <h2>How to use</h2>
